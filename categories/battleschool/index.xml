@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Battleschool on Spencer Gibb</title>
-    <link>http://localhost:1313/categories/battleschool/</link>
+    <link>http://spencer.gibb.us/categories/battleschool/</link>
     <description>Recent content in Battleschool on Spencer Gibb</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2013 - 2015, Spencer Gibb; all rights reserved.</copyright>
     <lastBuildDate>Mon, 03 Feb 2014 23:18:53 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/battleschool/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://spencer.gibb.us/categories/battleschool/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Introducing Battleschool</title>
-      <link>http://localhost:1313/blog/2014/02/03/introducing-battleschool/</link>
+      <link>http://spencer.gibb.us/blog/2014/02/03/introducing-battleschool/</link>
       <pubDate>Mon, 03 Feb 2014 23:18:53 -0700</pubDate>
       
-      <guid>http://localhost:1313/blog/2014/02/03/introducing-battleschool/</guid>
+      <guid>http://spencer.gibb.us/blog/2014/02/03/introducing-battleschool/</guid>
       <description>
 
 &lt;p&gt;I&amp;rsquo;ve been on an &lt;a href=&#34;http://ansible.com&#34;&gt;Ansible&lt;/a&gt; kick recently at work (&lt;a href=&#34;http://domo.com&#34;&gt;domo&lt;/a&gt;). While working on a

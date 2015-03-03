@@ -2,33 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://spencer.gibb.us/</loc>
     <lastmod>2015-03-03T15:45:06-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/blog/2015/03/03/go-hugo/</loc>
+    <loc>http://spencer.gibb.us/blog/2015/03/03/go-hugo/</loc>
     <lastmod>2015-03-03T15:45:06-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/license/</loc>
+    <loc>http://spencer.gibb.us/license/</loc>
     <lastmod>2015-03-03T15:21:38-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/blog/2014/02/03/introducing-battleschool/</loc>
+    <loc>http://spencer.gibb.us/blog/2014/02/03/introducing-battleschool/</loc>
     <lastmod>2014-02-03T23:18:53-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>http://spencer.gibb.us/about/</loc>
     <lastmod>2013-03-12T12:27:08-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/blog/2013/03/12/new-blog/</loc>
+    <loc>http://spencer.gibb.us/blog/2013/03/12/new-blog/</loc>
     <lastmod>2013-03-12T11:58:47-07:00</lastmod>
   </url>
   

@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Spencer Gibb</title>
-    <link>http://localhost:1313/post/</link>
+    <link>http://spencer.gibb.us/post/</link>
     <description>Recent content in Posts on Spencer Gibb</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2013 - 2015, Spencer Gibb; all rights reserved.</copyright>
     <lastBuildDate>Tue, 03 Mar 2015 15:45:06 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://spencer.gibb.us/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>go hugo</title>
-      <link>http://localhost:1313/blog/2015/03/03/go-hugo/</link>
+      <link>http://spencer.gibb.us/blog/2015/03/03/go-hugo/</link>
       <pubDate>Tue, 03 Mar 2015 15:45:06 -0700</pubDate>
       
-      <guid>http://localhost:1313/blog/2015/03/03/go-hugo/</guid>
+      <guid>http://spencer.gibb.us/blog/2015/03/03/go-hugo/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve migrated my blog from &lt;a href=&#34;http://octopress.org&#34;&gt;octopress&lt;/a&gt; to &lt;a href=&#34;http://gohugo.io&#34;&gt;hugo&lt;/a&gt; by &lt;a href=&#34;https://github.com/spf13&#34;&gt;Steve Francia&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;I used &lt;a href=&#34;http://andy4thehuynh.github.io/post/hugo--simple-deploy-to-github-pages/&#34;&gt;this post&lt;/a&gt; to setup the deploy to github pages and of course the &lt;a href=&#34;http://gohugo.io/overview/introduction&#34;&gt;hugo documentation&lt;/a&gt;.&lt;/p&gt;
@@ -26,10 +26,10 @@
     
     <item>
       <title>Introducing Battleschool</title>
-      <link>http://localhost:1313/blog/2014/02/03/introducing-battleschool/</link>
+      <link>http://spencer.gibb.us/blog/2014/02/03/introducing-battleschool/</link>
       <pubDate>Mon, 03 Feb 2014 23:18:53 -0700</pubDate>
       
-      <guid>http://localhost:1313/blog/2014/02/03/introducing-battleschool/</guid>
+      <guid>http://spencer.gibb.us/blog/2014/02/03/introducing-battleschool/</guid>
       <description>
 
 &lt;p&gt;I&amp;rsquo;ve been on an &lt;a href=&#34;http://ansible.com&#34;&gt;Ansible&lt;/a&gt; kick recently at work (&lt;a href=&#34;http://domo.com&#34;&gt;domo&lt;/a&gt;). While working on a
@@ -290,10 +290,10 @@ Already have homebrew installed? No, problem, it won&amp;rsquo;t try and install
     
     <item>
       <title>New Blog</title>
-      <link>http://localhost:1313/blog/2013/03/12/new-blog/</link>
+      <link>http://spencer.gibb.us/blog/2013/03/12/new-blog/</link>
       <pubDate>Tue, 12 Mar 2013 11:58:47 -0700</pubDate>
       
-      <guid>http://localhost:1313/blog/2013/03/12/new-blog/</guid>
+      <guid>http://spencer.gibb.us/blog/2013/03/12/new-blog/</guid>
       <description>&lt;p&gt;Welcome to me new blog.  I&amp;rsquo;ve wanted to post more than just snippets to twitter.  I want to write about my experiences
 with &lt;a href=&#34;http://dropwizard.codahale.com&#34;&gt;Dropwizard&lt;/a&gt;, &lt;a href=&#34;http://aws.amazon.com&#34;&gt;Amazon web services&lt;/a&gt;,
 &lt;a href=&#34;http://cassandra.apache.org&#34;&gt;Cassandra&lt;/a&gt;, &lt;a href=&#34;http://mongodb.org&#34;&gt;MongoDB&lt;/a&gt;, &lt;a href=&#34;http://netflix.github.org&#34;&gt;Netflix OSS&lt;/a&gt;,
