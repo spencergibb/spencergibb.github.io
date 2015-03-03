@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Resume on Spencer Gibb</title>
+    <link>http://localhost:1313/categories/resume/</link>
+    <description>Recent content in Resume on Spencer Gibb</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright (c) 2013 - 2015, Spencer Gibb; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 12 Mar 2013 12:27:08 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/resume/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>about</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Tue, 12 Mar 2013 12:27:08 -0700</pubDate>
+      
+      <guid>http://localhost:1313/about/</guid>
+      <description>
+
+&lt;p&gt;Download: &lt;a href=&#34;http://localhost:1313/resume/spencer_gibb_resume.pdf&#34;&gt;pdf&lt;/a&gt;
+&lt;a href=&#34;http://localhost:1313/resume/spencer_gibb_resume.odt&#34;&gt;odt&lt;/a&gt;
+&lt;a href=&#34;http://localhost:1313/resume/spencer_gibb_resume.doc&#34;&gt;doc&lt;/a&gt;
+&lt;a href=&#34;http://localhost:1313/resume/spencer_gibb_resume.rtf&#34;&gt;rtf&lt;/a&gt;
+&lt;a href=&#34;http://localhost:1313/resume/spencer_gibb_resume.txt&#34;&gt;txt&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;spencer-gibb:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Spencer Gibb&lt;/h2&gt;
+
+&lt;p&gt;1919 Jackson St, Kaysville, UT 84037&lt;br/&gt;
+Mobile: 801-540-5830&lt;br/&gt;
+spencer@gibb.us&lt;br/&gt;
+@spudgibb&lt;/p&gt;
+
+&lt;h2 id=&#34;skills:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Skills&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Java tech (Spring, Scala, Hibernate, JPA, Maven, Swing, Ant, GWT, JEE, JSE)&lt;/li&gt;
+&lt;li&gt;Web tech (nodejs, HTML, CSS, JS, Rest)&lt;/li&gt;
+&lt;li&gt;Large scale distributed systems&lt;/li&gt;
+&lt;li&gt;NoSQL and SQL databases&lt;/li&gt;
+&lt;li&gt;Working in cross-functional teams&lt;/li&gt;
+&lt;li&gt;Unit and integration testing&lt;/li&gt;
+&lt;li&gt;Team leadership&lt;/li&gt;
+&lt;li&gt;Full product life cycle&lt;/li&gt;
+&lt;li&gt;Functional requirements&lt;/li&gt;
+&lt;li&gt;Mentoring junior co-workers&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;professional-experience:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Professional Experience&lt;/h2&gt;
+
+&lt;p&gt;STAFF ENGINEER, Pivotal, Palo Alto CA (Remote), Jun 2014 – Present&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Co-lead on Spring Cloud&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;PRINCIPAL ENGINEER, Domo, American Fork UT, May 2013 – Jun 2014&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Dropwizard, AWS, MySQL, Java, Spring&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;PRINCIPAL ENGINEER, FamilySearch, Salt Lake City UT, Feb 2013 – May 2013&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Cassandra, Dropwizard, AWS, MongoDB, json, 800M records&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;ARCHITECT/PRINCIPAL ENGINEER, LDS Church, Salt Lake City UT&lt;br&gt;
+Nov 2010 – Jan 2013&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Developer on Leader Portal (nodejs, Javascript, Riak), &lt;code&gt;9/2012 – 1/2013&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Team lead on digital catalog application (Java, Spring, MarkLogic), &lt;sup&gt;9&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2011&lt;/sub&gt; – &lt;sup&gt;8&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2012&lt;/sub&gt;&lt;/li&gt;
+&lt;li&gt;Enterprise Software Architect for a portfolio of applications, &lt;sup&gt;11&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2010&lt;/sub&gt; – &lt;sup&gt;9&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2011&lt;/sub&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Responsible for architectural cohesion across all projects in the portfolio&lt;/li&gt;
+&lt;li&gt;Continued, part time, as lead software engineer for preservation system&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;SENIOR SOFTWARE ENGINEER, LDS Church, Salt Lake City UT&lt;br&gt;
+  Jul 2007 – Jul 2008, Jul 2009 – Nov 2010&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Developed Digital Preservation submission application (GWT, Java, Scala, Spring)&lt;/li&gt;
+&lt;li&gt;Developed Personal Video Conferencing account creation application (JSF, Spring)&lt;/li&gt;
+&lt;li&gt;Senior team member on entrance security project for the 130+ temples (see
+www.lds.org/temples for explanation)&lt;/li&gt;
+&lt;li&gt;Developed web services, web-applications and Swing clients&lt;/li&gt;
+&lt;li&gt;Developed using Java Server Faces, Facelets, Java Persistence API (Hibernate provider),
+Web Services (XFire)&lt;/li&gt;
+&lt;li&gt;Developed swing interface for bar-coding application to inventory between 2-4 million
+archive items&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;SOFTWARE CONTRACTOR, Salt Lake City UT&lt;br/&gt;
+  Jul 2007 – Present&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;(Company: STG Inc., Client: Northrop Grumman) Senior Engineer on a large government
+research application.  Implemented code using Spring, iBatis, SQL, Apache Digester,
+JavaCC and Oracle 10g.  Database contained over 750 tables.&lt;/li&gt;
+&lt;li&gt;(Company: Alta Consulting LLC, Client: RX America) Designed, architected and implemented
+a web service to gather and send data to a 3rd party printing company using JEE 5, Web
+Services, JPA, Session EJB&amp;rsquo;s, Oracle and XML&lt;/li&gt;
+&lt;li&gt;(Company: Self, Client: Broadweave) Developed RESTful shopping cart API using Maven,
+Spring, Hibernate and CXF&lt;/li&gt;
+&lt;li&gt;(Company: Self, Client: Broadweave) Created administration application using Eclipse
+Rich Client Platform (RCP)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;SENIOR SOFTWARE DEVELOPER, Collabraspace Inc., Annapolis MD&lt;br&gt;
+ Aug 2004 – Jul 2007&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Team Leader on a complex government application&lt;/li&gt;
+&lt;li&gt;Tasked, mentored and reviewed deliverables for each team member&lt;/li&gt;
+&lt;li&gt;Lead developer for 1st Air Force Collaborative Decision Aid, a Weblogic Portal
+application that integrates various third party applications and a custom J2EE/Swing
+Applet&lt;/li&gt;
+&lt;li&gt;Developer for CollobraSuite, a set of graphical collaboration modules using Swing, J2EE,
+and BEA Weblogic Portal&lt;/li&gt;
+&lt;li&gt;Built multiple N-Tier clusters using J2EE, Web Services, Weblogic, Oracle and Apache&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;SOFTWARE DEVELOPMENT SPECIALIST, Dept. of Defense, Ft. Meade MD&lt;br&gt;
+ Apr 2003 – Aug 2004&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Ported an Oracle Forms-based issue tracking system to a web-based application&lt;/li&gt;
+&lt;li&gt;Mentored other team members in Java and J2EE best practices&lt;/li&gt;
+&lt;li&gt;Collaborated in design of a legacy database port to Oracle&lt;/li&gt;
+&lt;li&gt;Developed applications with BEA Weblogic 8 and Oracle 9&lt;/li&gt;
+&lt;li&gt;Completed &amp;lsquo;Software Engineering Process&amp;rsquo; Course&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;SENIOR DEVELOPER, BuildersNet, Inc., Orem UT&lt;br&gt;
+ Jan 2002 – Sep 2002&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Designed and developed web-based applications in: e-commerce, web hosting and groupware
+applications&lt;/li&gt;
+&lt;li&gt;Built systems, installed and configured Linux, Apache, BIND, and MySQL&lt;/li&gt;
+&lt;li&gt;Designed and created database schemas for applications&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;PARTNER/SENIOR ENGINEER, NetBing LLC, Orem UT&lt;br&gt;
+ Mar 2001 – Jan 2002&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Designed and implemented E-Commerce systems in a J2EE/Linux environment&lt;/li&gt;
+&lt;li&gt;Collaborated in decisions regarding purchase of hardware, software and Internet
+connectivity&lt;/li&gt;
+&lt;li&gt;Designed and implemented a scalable and flexible e-commerce system using JSP, EJB 2.0
+(Entity and Session beans), PHP, payment gateway and 3rd party loan software integration&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;USER INTERFACE ENGINEER, Excite@Home (Formerly iMall Inc), Orem UT&lt;br/&gt;
+ Jan 1998 – Dec 2001&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Team member on large-scale web applications for AT&amp;amp;T Small Business Hosting and IBM
+Homepage Creator&lt;/li&gt;
+&lt;li&gt;Created co-branded web based interfaces using Java, JSP/Servlets, and Netscape Server
+Side JavaScript)&lt;/li&gt;
+&lt;li&gt;Developed EJBs BEA Weblogic Application Server in a cooperative environment&lt;/li&gt;
+&lt;li&gt;Gained expertise in JSP/Servlets, JavaScript, and HTML and performed limited graphic
+design in Adobe Photoshop.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;open-source-projects:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Open Source Projects&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Halfpipe: &lt;a href=&#34;https://github.com/32degrees/halfpipe&#34;&gt;https://github.com/32degrees/halfpipe&lt;/a&gt;&lt;br/&gt;
+A Dropwizard clone using Spring &amp;amp; Tomcat&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;technologies:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Technologies&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Java (1.4, 5, 6, 7), Spring, Hibernate (JPA), iBatis, Java Server Faces (JSF), Facelets,
+JEE (JSP, EJB, JMS, Servlets), Swing, JDBC, Maven, Ant, Eclipse, Eclipse RCP, JAX-RS,
+Velocity, JUnit, TestNG, DBUnit&lt;/li&gt;
+&lt;li&gt;App Servers:  Tomcat, Jetty, Weblogic, Websphere, JBoss, Glassfish&lt;/li&gt;
+&lt;li&gt;JavaScript, HTML, CSS, Web Services, Apache, PHP&lt;/li&gt;
+&lt;li&gt;Platforms – Linux (Ubuntu, Red Hat, Fedora, Debian), Solaris, Mac, Windows&lt;/li&gt;
+&lt;li&gt;Database – SQL, Oracle, MySQL, Riak, Mongodb&lt;/li&gt;
+&lt;li&gt;Misc. – git, C++, C, Python, Ruby, Perl, Shell Scripts, Photoshop, Subversion, CVS&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;education-bs-computer-science-brigham-young-university:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Education – BS, Computer Science, Brigham Young University&lt;/h3&gt;
+
+&lt;p&gt;Provo UT, December 2002&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Senior courses in: Software Engineering, Distributed System Design, Database Modeling
+Concepts, Computer Communication and Networking and Machine Learning.&lt;/li&gt;
+&lt;li&gt;Sun Certified Java Programmer, October 2004&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;volunteer-representative:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Volunteer Representative&lt;/h3&gt;
+
+&lt;p&gt;The Church of Jesus Christ of Latter-day Saints&lt;br/&gt;
+  Recife, Brazil, Dec 1994 – Dec 1996&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Learned Portuguese almost fluently&lt;/li&gt;
+&lt;li&gt;Developed and taught weekly training meetings for 20 – 30 representatives&lt;/li&gt;
+&lt;li&gt;Traveled and helped individual representatives learn problem solving, effective teaching
+and leadership skills&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
