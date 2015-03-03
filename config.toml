@@ -1,0 +1,52 @@
+baseurl = "http://spencer.gibb.us/"
+languageCode = "en-us"
+title = "Spencer Gibb"
+builddrafts = true
+copyright = "Copyright (c) 2013 - 2015, Spencer Gibb; all rights reserved."
+canonifyurls = true
+theme = "hyde-x"
+
+[author]
+    name = "Spencer Gibb"
+
+[permalinks]
+    # Optional. Change the permalink format for the 'post' content type.
+    # The format shown here is the same one Jekyll/Octopress uses by default.
+    post = "/blog/:year/:month/:day/:title/"
+
+[indexes]
+    # Optional. Use if you want tags and lists.
+    category = "categories"
+
+#
+# All parameters below here are optional and can be mixed and matched.
+#
+[params]
+    # Used when a given page doesn't set its own.
+    # defaultDescription = "Your default page description"
+    # defaultKeywords = "your,default,page,keywords"
+
+    # Changes sidebar background and link/accent colours.
+    # See below for more colour options.
+    # This also works: "theme-base-08 layout-reverse", or just "layout-reverse".
+    # theme = "theme-base-0f"
+
+    # Select a syntax highight.
+    # Check the static/css/highlight directory for options.
+    highlight = "sunburst"
+
+    # Displays under the author name in the sidebar, keep it short.
+    tagline = "tech musings"
+
+    # Metadata used to drive integrations.
+    #googleAuthorship = "Your Google+ profile ID"
+    #googleAnalytics = "Your Google Analytics tracking code"
+    gravatarHash = "9829cffffee70b8d4f48230d907837cf"
+
+    # Sidebar social links, avoid enabling too many of these if possible.
+    # These should be full URLs.
+    github = "https://github.com/spencergibb"
+    linkedin = "http://www.linkedin.com/in/spencergibb"
+    googleplus = ""
+    facebook = ""
+    twitter = "http://twitter.com/spencerbgibb"
