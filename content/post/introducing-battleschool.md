@@ -1,6 +1,5 @@
 +++
 date = "2014-02-03T23:18:53-07:00"
-draft = true
 title = "Introducing Battleschool"
 categories = [
   "battleschool"

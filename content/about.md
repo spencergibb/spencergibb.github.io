@@ -1,6 +1,5 @@
 +++
 date = "2013-03-12T12:27:08-07:00"
-draft = true
 title = "about"
 menu = "main"
 categories = [
