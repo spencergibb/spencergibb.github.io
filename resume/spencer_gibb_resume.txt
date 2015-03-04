@@ -1,7 +1,7 @@
 S p e n c e r   G i b b
 ------------------------------------------------------------------------------------------
 1919 Jackson St, Kaysville, UT 84037
-Mobile: 801-540-5830, spencer@gibb.us, @spudgibb
+Mobile: 801-540-5830, spencer@gibb.us, @spencerbgibb
 ------------------------------------------------------------------------------------------
 Skills
 ------------------------------------------------------------------------------------------
@@ -9,7 +9,6 @@ Skills
 * Web tech (nodejs, HTML, CSS, JS, Rest)
 * Large scale distributed systems 
 * NoSQL and SQL databases
-* Simultaneous large-scale projects 
 * Working in cross-functional teams 
 * Unit and integration testing
 * Team leadership 
@@ -20,7 +19,11 @@ Skills
 ------------------------------------------------------------------------------------------
 Professional Experience
 ------------------------------------------------------------------------------------------
-PRINCIPAL ENGINEER, Domo, American Fork UT, May 2013 – Present
+STAFF ENGINEER, Pivotal, Palo Alto CA (Remote), Jul 2014 – Present
+* Co-lead on Spring Cloud https://github.com/spring-cloud
+
+PRINCIPAL ENGINEER, Domo, American Fork UT, May 2013 – Jun 2014
+* Dropwizard, AWS, MySQL, Java, Spring
 
 PRINCIPAL ENGINEER, FamilySearch, Salt Lake City UT, Feb 2013 – May 2013
 * Cassandra, Dropwizard, AWS, MongoDB, json, 800M records
@@ -105,9 +108,9 @@ Open Source Projects –
 ------------------------------------------------------------------------------------------
 Technologies 
 ------------------------------------------------------------------------------------------
-* Java (1.4, 5, 6, 7), Spring, Hibernate (JPA), iBatis, Java Server Faces (JSF), Facelets,
-  JEE (JSP, EJB, JMS, Servlets), Swing, JDBC, Maven, Ant, Eclipse, Eclipse RCP, JAX-RS,
-  Velocity, JUnit, TestNG, DBUnit
+* Java (1.4, 5, 6, 7, 8), Groovy, Scala, Spring, Hibernate (JPA), iBatis, Java Server 
+  Faces (JSF), Facelets, JEE (JSP, EJB, JMS, Servlets), Swing, JDBC, Maven, Ant, Eclipse, 
+  Eclipse RCP, JAX-RS, Velocity, JUnit, TestNG, DBUnit
 * App Servers:  Tomcat, Jetty, Weblogic, Websphere, JBoss, Glassfish
 * JavaScript, HTML, CSS, Web Services, Apache, PHP
 * Platforms – Linux (Ubuntu, Red Hat, Fedora, Debian), Solaris, Mac, Windows 

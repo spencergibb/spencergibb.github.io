@@ -307,9 +307,7 @@ Already have homebrew installed? No, problem, it won&amp;rsquo;t try and install
       <description>
 
 &lt;p&gt;Download: &lt;a href=&#34;http://spencer.gibb.us/resume/spencer_gibb_resume.pdf&#34;&gt;pdf&lt;/a&gt;
-&lt;a href=&#34;http://spencer.gibb.us/resume/spencer_gibb_resume.odt&#34;&gt;odt&lt;/a&gt;
-&lt;a href=&#34;http://spencer.gibb.us/resume/spencer_gibb_resume.doc&#34;&gt;doc&lt;/a&gt;
-&lt;a href=&#34;http://spencer.gibb.us/resume/spencer_gibb_resume.rtf&#34;&gt;rtf&lt;/a&gt;
+&lt;a href=&#34;http://spencer.gibb.us/resume/spencer_gibb_resume.docx&#34;&gt;docx&lt;/a&gt;
 &lt;a href=&#34;http://spencer.gibb.us/resume/spencer_gibb_resume.txt&#34;&gt;txt&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;spencer-gibb:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Spencer Gibb&lt;/h2&gt;
@@ -317,7 +315,9 @@ Already have homebrew installed? No, problem, it won&amp;rsquo;t try and install
 &lt;p&gt;1919 Jackson St, Kaysville, UT 84037&lt;br/&gt;
 Mobile: 801-540-5830&lt;br/&gt;
 spencer@gibb.us&lt;br/&gt;
-@spudgibb&lt;/p&gt;
+&lt;a href=&#34;http://twitter.com/spencerbgibb&#34;&gt;@spencerbgibb&lt;/a&gt;
+&lt;a href=&#34;https://github.com/spencergibb&#34;&gt;github&lt;/a&gt;
+&lt;a href=&#34;http://www.linkedin.com/in/spencergibb&#34;&gt;linkedin&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;skills:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Skills&lt;/h2&gt;
 
@@ -336,10 +336,10 @@ spencer@gibb.us&lt;br/&gt;
 
 &lt;h2 id=&#34;professional-experience:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Professional Experience&lt;/h2&gt;
 
-&lt;p&gt;STAFF ENGINEER, Pivotal, Palo Alto CA (Remote), Jun 2014 – Present&lt;/p&gt;
+&lt;p&gt;STAFF ENGINEER, Pivotal, Palo Alto CA (Remote), Jul 2014 – Present&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Co-lead on Spring Cloud&lt;/li&gt;
+&lt;li&gt;Co-lead on &lt;a href=&#34;https://github.com/spring-cloud&#34;&gt;Spring Cloud&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;PRINCIPAL ENGINEER, Domo, American Fork UT, May 2013 – Jun 2014&lt;/p&gt;
@@ -358,9 +358,9 @@ spencer@gibb.us&lt;br/&gt;
 Nov 2010 – Jan 2013&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Developer on Leader Portal (nodejs, Javascript, Riak), &lt;code&gt;9/2012 – 1/2013&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Team lead on digital catalog application (Java, Spring, MarkLogic), &lt;sup&gt;9&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2011&lt;/sub&gt; – &lt;sup&gt;8&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2012&lt;/sub&gt;&lt;/li&gt;
-&lt;li&gt;Enterprise Software Architect for a portfolio of applications, &lt;sup&gt;11&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2010&lt;/sub&gt; – &lt;sup&gt;9&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2011&lt;/sub&gt;
+&lt;li&gt;Developer on Leader Portal (nodejs, Javascript, Riak), Nov/2012 – Jan/2013&lt;/li&gt;
+&lt;li&gt;Team lead on digital catalog application (Java, Spring, MarkLogic), Sep/2011 – Aug/2012&lt;/li&gt;
+&lt;li&gt;Enterprise Software Architect for a portfolio of applications, Nov/2010 – Sep/2011
 
 &lt;ul&gt;
 &lt;li&gt;Responsible for architectural cohesion across all projects in the portfolio&lt;/li&gt;
@@ -468,7 +468,7 @@ A Dropwizard clone using Spring &amp;amp; Tomcat&lt;/li&gt;
 &lt;h4 id=&#34;technologies:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Technologies&lt;/h4&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Java (1.4, 5, 6, 7), Spring, Hibernate (JPA), iBatis, Java Server Faces (JSF), Facelets,
+&lt;li&gt;Java (1.4, 5, 6, 7, 8), Groovy, Scala, Spring, Hibernate (JPA), iBatis, Java Server Faces (JSF), Facelets,
 JEE (JSP, EJB, JMS, Servlets), Swing, JDBC, Maven, Ant, Eclipse, Eclipse RCP, JAX-RS,
 Velocity, JUnit, TestNG, DBUnit&lt;/li&gt;
 &lt;li&gt;App Servers:  Tomcat, Jetty, Weblogic, Websphere, JBoss, Glassfish&lt;/li&gt;
