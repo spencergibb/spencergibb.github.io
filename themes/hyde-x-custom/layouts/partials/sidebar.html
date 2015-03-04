@@ -1,0 +1,31 @@
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      {{ with .Site.Params.gravatarHash }}<img src="http://www.gravatar.com/avatar/{{ . }}?s=200" alt="gravatar">{{ end }}
+      <h1>{{ .Site.Author.name }}</h1>
+      {{ with .Site.Params.tagline }}<p class="lead">{{ . }}</p>{{ end }}
+    </div>
+
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-item"><a href="{{ .Site.BaseUrl }}">blog</a></li>
+      {{ range .Site.Menus.main }}
+      <li class="sidebar-nav-item"><a href="{{ .Url }}">{{ .Name }}</a></li>
+      {{end}}
+    </ul>
+
+    <div class="social">
+      {{ with .Site.Params.twitter }}<a class="twitter" href="{{ . }}" title="Twitter">Twitter</a>{{ end }}
+      {{ with .Site.Params.github }}<a class="github" href="{{ . }}" title="GitHub">GitHub</a>{{ end }}
+        {{ with .Site.Params.linkedin }}<a class="linkedin" href="{{ . }}" title="GitHub">GitHub</a>{{ end }}
+        {{ with .Site.Params.googleplus }}<a class="googleplus" href="{{ . }}">Google+</a>{{ end }}
+        {{ with .Site.Params.facebook }}<a class="googleplus" href="{{ . }}">Facebook</a>{{ end }}
+      <a class="rss" href="/index.xml" title="RSS">RSS</a>
+    </div>
+    <ul class="sidebar-nav">
+      {{ with .Site.Params.twitter }}<li class="sidebar-nav-item"><a href="{{ . }}">Twitter</a></li>{{ end }}
+    </ul>
+
+    <p>Copyright &copy; {{ .Now.Format "2006" }} <a href="{{ .Site.BaseUrl }}license">License</a><br/>
+       Powered by <a href="http://hugo.spf13.com">Hugo</a> and <a href="https://github.com/zyro/hyde-x">Hyde-X</a></p>
+  </div>
+</div>

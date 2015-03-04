@@ -4,7 +4,7 @@ title = "Spencer Gibb"
 builddrafts = true
 copyright = "Copyright (c) 2013 - 2015, Spencer Gibb; all rights reserved."
 canonifyurls = true
-theme = "hyde-x"
+theme = "hyde-x-custom"
 
 [author]
     name = "Spencer Gibb"
@@ -29,7 +29,7 @@ theme = "hyde-x"
     # Changes sidebar background and link/accent colours.
     # See below for more colour options.
     # This also works: "theme-base-08 layout-reverse", or just "layout-reverse".
-    # theme = "theme-base-0f"
+    theme = "theme-base-spencer"
 
     # Select a syntax highight.
     # Check the static/css/highlight directory for options.
