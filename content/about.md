@@ -134,8 +134,10 @@ USER INTERFACE ENGINEER, Excite@Home (Formerly iMall Inc), Orem UT<br/>
 
 #### Open Source Projects
 
- * Halfpipe: https://github.com/32degrees/halfpipe<br/>
-   A Dropwizard clone using Spring & Tomcat
+ * Battleschool: https://github.com/spencergibb/battleschool<br/>
+   Development environment provisioning using [ansible](http:ansible.com), ala boxen -> puppet, kitchenplan -> chef
+ * Halfpipe: https://github.com/spencergibb/halfpipe<br/>
+   A Dropwizard clone using Spring & Tomcat (superseded by [Spring Cloud](https://github.com/spring-cloud)
 
 #### Technologies
 
