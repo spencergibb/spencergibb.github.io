@@ -15,7 +15,7 @@ Spencer Gibb
 ---------
 1919 Jackson St, Kaysville, UT 84037<br/>
 Mobile: 801-540-5830<br/>
-spencer@gibb.us<br/>
+[spencer at gibb.us](mailto:spencer@gibb.us)<br/>
 [@spencerbgibb](http://twitter.com/spencerbgibb)
 [github](https://github.com/spencergibb)
 [linkedin](http://www.linkedin.com/in/spencergibb)
