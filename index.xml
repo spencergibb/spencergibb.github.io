@@ -461,8 +461,10 @@ design in Adobe Photoshop.&lt;/li&gt;
 &lt;h4 id=&#34;open-source-projects:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Open Source Projects&lt;/h4&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Halfpipe: &lt;a href=&#34;https://github.com/32degrees/halfpipe&#34;&gt;https://github.com/32degrees/halfpipe&lt;/a&gt;&lt;br/&gt;
-A Dropwizard clone using Spring &amp;amp; Tomcat&lt;/li&gt;
+&lt;li&gt;Battleschool: &lt;a href=&#34;https://github.com/spencergibb/battleschool&#34;&gt;https://github.com/spencergibb/battleschool&lt;/a&gt;&lt;br/&gt;
+Development environment provisioning using &lt;a href=&#34;http:ansible.com&#34;&gt;ansible&lt;/a&gt;, ala boxen -&amp;gt; puppet, kitchenplan -&amp;gt; chef&lt;/li&gt;
+&lt;li&gt;Halfpipe: &lt;a href=&#34;https://github.com/spencergibb/halfpipe&#34;&gt;https://github.com/spencergibb/halfpipe&lt;/a&gt;&lt;br/&gt;
+A Dropwizard clone using Spring &amp;amp; Tomcat (superseded by &lt;a href=&#34;https://github.com/spring-cloud&#34;&gt;Spring Cloud&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4 id=&#34;technologies:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Technologies&lt;/h4&gt;
