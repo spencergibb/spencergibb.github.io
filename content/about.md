@@ -8,9 +8,7 @@ categories = [
 +++
 
 Download: [pdf](/resume/spencer_gibb_resume.pdf)
-[odt](/resume/spencer_gibb_resume.odt)
-[doc](/resume/spencer_gibb_resume.doc)
-[rtf](/resume/spencer_gibb_resume.rtf)
+[docx](/resume/spencer_gibb_resume.docx)
 [txt](/resume/spencer_gibb_resume.txt)
 
 Spencer Gibb
@@ -18,7 +16,9 @@ Spencer Gibb
 1919 Jackson St, Kaysville, UT 84037<br/>
 Mobile: 801-540-5830<br/>
 spencer@gibb.us<br/>
-@spudgibb
+[@spencerbgibb](http://twitter.com/spencerbgibb)
+[github](https://github.com/spencergibb)
+[linkedin](http://www.linkedin.com/in/spencergibb)
 
 Skills
 ---------
@@ -35,9 +35,9 @@ Skills
 
 Professional Experience
 ------------------------------------------------------------------------------------------
-STAFF ENGINEER, Pivotal, Palo Alto CA (Remote), Jun 2014 – Present
+STAFF ENGINEER, Pivotal, Palo Alto CA (Remote), Jul 2014 – Present
 
-* Co-lead on Spring Cloud
+* Co-lead on [Spring Cloud](https://github.com/spring-cloud)
 
 PRINCIPAL ENGINEER, Domo, American Fork UT, May 2013 – Jun 2014
 
@@ -50,9 +50,9 @@ PRINCIPAL ENGINEER, FamilySearch, Salt Lake City UT, Feb 2013 – May 2013
 ARCHITECT/PRINCIPAL ENGINEER, LDS Church, Salt Lake City UT<br>
 Nov 2010 – Jan 2013
 
-* Developer on Leader Portal (nodejs, Javascript, Riak), `9/2012 – 1/2013`
-* Team lead on digital catalog application (Java, Spring, MarkLogic), 9/2011 – 8/2012
-* Enterprise Software Architect for a portfolio of applications, 11/2010 – 9/2011
+* Developer on Leader Portal (nodejs, Javascript, Riak), Nov/2012 – Jan/2013
+* Team lead on digital catalog application (Java, Spring, MarkLogic), Sep/2011 – Aug/2012
+* Enterprise Software Architect for a portfolio of applications, Nov/2010 – Sep/2011
   * Responsible for architectural cohesion across all projects in the portfolio
   * Continued, part time, as lead software engineer for preservation system
 
@@ -139,7 +139,7 @@ USER INTERFACE ENGINEER, Excite@Home (Formerly iMall Inc), Orem UT<br/>
 
 #### Technologies
 
-* Java (1.4, 5, 6, 7), Spring, Hibernate (JPA), iBatis, Java Server Faces (JSF), Facelets,
+* Java (1.4, 5, 6, 7, 8), Groovy, Scala, Spring, Hibernate (JPA), iBatis, Java Server Faces (JSF), Facelets,
   JEE (JSP, EJB, JMS, Servlets), Swing, JDBC, Maven, Ant, Eclipse, Eclipse RCP, JAX-RS,
   Velocity, JUnit, TestNG, DBUnit
 * App Servers:  Tomcat, Jetty, Weblogic, Websphere, JBoss, Glassfish
