@@ -430,6 +430,18 @@ a.pagination-item:hover {
  * Based on colors from Base16: http://chriskempson.github.io/base16/#default.
  */
 
+/* spencer */
+.theme-base-spencer .sidebar,
+.theme-base-spencer .sidebar-toggle:active,
+.theme-base-spencer #sidebar-checkbox:checked ~ .sidebar-toggle {
+    background-color: #efeff2;
+}
+.theme-base-spencer .container a,
+.theme-base-spencer .sidebar-toggle,
+.theme-base-spencer .related-posts li a:hover {
+    color: #efeff2;
+}
+
 /* Red */
 .theme-base-08 .sidebar,
 .theme-base-08 .sidebar-toggle:active,

@@ -177,6 +177,28 @@ a.sidebar-nav-item:focus {
 
 /* Base16 (http://chriskempson.github.io/base16/#default) */
 
+/* spencer http://www.color-hex.com/color-palette/194 */
+.theme-base-spencer .sidebar {
+    background-color: #efeff2;
+}
+.theme-base-spencer .content a,
+.theme-base-spencer .related-posts li a:hover {
+    color: #000000;
+}
+
+.theme-base-spencer .sidebar {
+    color: #515151;
+}
+
+.theme-base-spencer .sidebar a {
+    color: #000000;
+}
+
+.theme-base-spencer .sidebar-about > h1 {
+    color: #000000;
+    font-family: sans-serif;
+}
+
 /* Red */
 .theme-base-08 .sidebar {
   background-color: #ac4142;

@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Resume on Spencer Gibb</title>
+      <title>Spencer Gibb</title>
     <link>http://spencer.gibb.us/categories/resume/</link>
-    <description>Recent content in Resume on Spencer Gibb</description>
-    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright (c) 2013 - 2015, Spencer Gibb; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 12 Mar 2013 12:27:08 -0700</lastBuildDate>
-    <atom:link href="http://spencer.gibb.us/categories/resume/index.xml" rel="self" type="application/rss+xml" />
+    <author>Spencer Gibb</author>
+    <rights>Copyright (c) 2013, Spencer Gibb; all rights reserved.</rights>
+    <updated>Tue, 12 Mar 2013 12:27:08 -0700</updated>
     
     <item>
       <title>about</title>
       <link>http://spencer.gibb.us/about/</link>
       <pubDate>Tue, 12 Mar 2013 12:27:08 -0700</pubDate>
-      
+      <author>Nick O'Neill</author>
       <guid>http://spencer.gibb.us/about/</guid>
       <description>
 
@@ -214,7 +212,7 @@ Concepts, Computer Communication and Networking and Machine Learning.&lt;/li&gt;
 and leadership skills&lt;/li&gt;
 &lt;/ul&gt;
 </description>
+      
     </item>
-    
   </channel>
 </rss>

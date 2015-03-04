@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Battleschool on Spencer Gibb</title>
+      <title>Spencer Gibb</title>
     <link>http://spencer.gibb.us/categories/battleschool/</link>
-    <description>Recent content in Battleschool on Spencer Gibb</description>
-    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright (c) 2013 - 2015, Spencer Gibb; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 03 Feb 2014 23:18:53 -0700</lastBuildDate>
-    <atom:link href="http://spencer.gibb.us/categories/battleschool/index.xml" rel="self" type="application/rss+xml" />
+    <author>Spencer Gibb</author>
+    <rights>Copyright (c) 2014, Spencer Gibb; all rights reserved.</rights>
+    <updated>Mon, 03 Feb 2014 23:18:53 MST</updated>
     
     <item>
       <title>Introducing Battleschool</title>
       <link>http://spencer.gibb.us/blog/2014/02/03/introducing-battleschool/</link>
-      <pubDate>Mon, 03 Feb 2014 23:18:53 -0700</pubDate>
-      
+      <pubDate>Mon, 03 Feb 2014 23:18:53 MST</pubDate>
+      <author>Nick O'Neill</author>
       <guid>http://spencer.gibb.us/blog/2014/02/03/introducing-battleschool/</guid>
       <description>
 
@@ -272,7 +270,7 @@ Already have homebrew installed? No, problem, it won&amp;rsquo;t try and install
 
 &lt;p&gt;Github project for issues, forks, pull requests: &lt;a href=&#34;https://github.com/spencergibb/battleschool&#34;&gt;https://github.com/spencergibb/battleschool&lt;/a&gt;&lt;/p&gt;
 </description>
+      
     </item>
-    
   </channel>
 </rss>

@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Spencer Gibb</title>
+      <title>Spencer Gibb</title>
     <link>http://spencer.gibb.us/post/</link>
-    <description>Recent content in Posts on Spencer Gibb</description>
-    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright (c) 2013 - 2015, Spencer Gibb; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 03 Mar 2015 15:45:06 -0700</lastBuildDate>
-    <atom:link href="http://spencer.gibb.us/post/index.xml" rel="self" type="application/rss+xml" />
+    <author>Spencer Gibb</author>
+    <rights>Copyright (c) 2015, Spencer Gibb; all rights reserved.</rights>
+    <updated>Tue, 03 Mar 2015 15:45:06 MST</updated>
     
     <item>
       <title>go hugo</title>
       <link>http://spencer.gibb.us/blog/2015/03/03/go-hugo/</link>
-      <pubDate>Tue, 03 Mar 2015 15:45:06 -0700</pubDate>
-      
+      <pubDate>Tue, 03 Mar 2015 15:45:06 MST</pubDate>
+      <author>Nick O'Neill</author>
       <guid>http://spencer.gibb.us/blog/2015/03/03/go-hugo/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve migrated my blog from &lt;a href=&#34;http://octopress.org&#34;&gt;octopress&lt;/a&gt; to &lt;a href=&#34;http://gohugo.io&#34;&gt;hugo&lt;/a&gt; by &lt;a href=&#34;https://github.com/spf13&#34;&gt;Steve Francia&lt;/a&gt;.&lt;/p&gt;
 
@@ -22,13 +20,13 @@
 
 &lt;p&gt;Hopefully you will see more blog posts here and maybe on &lt;a href=&#34;http://spring.io&#34;&gt;http://spring.io&lt;/a&gt;&lt;/p&gt;
 </description>
+      
     </item>
-    
     <item>
       <title>Introducing Battleschool</title>
       <link>http://spencer.gibb.us/blog/2014/02/03/introducing-battleschool/</link>
-      <pubDate>Mon, 03 Feb 2014 23:18:53 -0700</pubDate>
-      
+      <pubDate>Mon, 03 Feb 2014 23:18:53 MST</pubDate>
+      <author>Nick O'Neill</author>
       <guid>http://spencer.gibb.us/blog/2014/02/03/introducing-battleschool/</guid>
       <description>
 
@@ -286,20 +284,20 @@ Already have homebrew installed? No, problem, it won&amp;rsquo;t try and install
 
 &lt;p&gt;Github project for issues, forks, pull requests: &lt;a href=&#34;https://github.com/spencergibb/battleschool&#34;&gt;https://github.com/spencergibb/battleschool&lt;/a&gt;&lt;/p&gt;
 </description>
+      
     </item>
-    
     <item>
       <title>New Blog</title>
       <link>http://spencer.gibb.us/blog/2013/03/12/new-blog/</link>
       <pubDate>Tue, 12 Mar 2013 11:58:47 -0700</pubDate>
-      
+      <author>Nick O'Neill</author>
       <guid>http://spencer.gibb.us/blog/2013/03/12/new-blog/</guid>
       <description>&lt;p&gt;Welcome to me new blog.  I&amp;rsquo;ve wanted to post more than just snippets to twitter.  I want to write about my experiences
 with &lt;a href=&#34;http://dropwizard.codahale.com&#34;&gt;Dropwizard&lt;/a&gt;, &lt;a href=&#34;http://aws.amazon.com&#34;&gt;Amazon web services&lt;/a&gt;,
 &lt;a href=&#34;http://cassandra.apache.org&#34;&gt;Cassandra&lt;/a&gt;, &lt;a href=&#34;http://mongodb.org&#34;&gt;MongoDB&lt;/a&gt;, &lt;a href=&#34;http://netflix.github.org&#34;&gt;Netflix OSS&lt;/a&gt;,
 and &lt;a href=&#34;http://github.com/32degrees/halfpipe&#34;&gt;Halfpipe&lt;/a&gt;&lt;/p&gt;
 </description>
+      
     </item>
-    
   </channel>
 </rss>

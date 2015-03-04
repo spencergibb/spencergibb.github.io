@@ -130,6 +130,123 @@ a.label:focus {
   cursor: pointer;
 }
 
+/* spencer */
+.social a:hover {
+    opacity: 1;
+}
+
+.social a.google {
+    background: url("/images/social/google.png") center no-repeat #c83d20;
+    border: 1px solid #C83D20;
+}
+
+.social a.google:hover {
+    border: 1px solid #9c3019;
+}
+
+.social a.twitter {
+    background: url("/images/social/twitter.png") center no-repeat #55cff8;
+    border: 1px solid #55CFF8;
+}
+
+.social a.twitter:hover {
+    border: 1px solid #24c1f6;
+}
+
+.social a.github {
+    background: url("/images/social/github.png") center no-repeat #afb6ca;
+    border: 1px solid #afb6ca;
+}
+
+.social a.github:hover {
+    border: 1px solid #909ab6;
+}
+
+.social a.coderwall {
+    background: url("/images/social/coderwall.png") center no-repeat #3a729f;
+    border: 1px solid #3a729f;
+}
+
+.social a.coderwall:hover {
+    border: 1px solid #2c577a;
+}
+
+.social a.pinboard {
+    background: url("/images/social/pinboard.png") center no-repeat #0066c8;
+    border: 1px solid #3a729f;
+}
+
+.social a.pinboard:hover {
+    border: 1px solid #0052cc;
+}
+
+.social a.linkedin {
+    background: url("/images/social/linkedin.png") center no-repeat #0077B5;
+    border: 1px solid #3a729f;
+}
+
+.social a.linkedin:hover {
+    border: 1px solid #2c577a;
+}
+
+.social a.rss {
+    background: url("/images/social/rss.png") center no-repeat #ef7522;
+    border: 1px solid #ef7522;
+}
+
+.social a.rss:hover {
+    border: 1px solid #cf5d0f;
+}
+
+.social a {
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: baseline;
+    zoom: 1;
+    text-indent: -9999px;
+    margin-right: 15px;
+    opacity: 0.5;
+    width: 28px;
+    height: 28px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.theme-base-spencer .label {
+    background-color: #efeff2;
+}
+
+.theme-base-spencer .pagination > li > a,
+.theme-base-spencer .pagination > li > span {
+    color: #efeff2;
+}
+
+.theme-base-spencer .pagination > .active > a,
+.theme-base-spencer .pagination > .active > span,
+.theme-base-spencer .pagination > .active > a:hover,
+.theme-base-spencer .pagination > .active > span:hover,
+.theme-base-spencer .pagination > .active > a:focus,
+.theme-base-spencer .pagination > .active > span:focus {
+    background-color: #efeff2;
+    border-color: #efeff2;
+}
+
+.theme-base-spencer .pagination > .disabled > span,
+.theme-base-spencer .pagination > .disabled > span:hover,
+.theme-base-spencer .pagination > .disabled > span:focus,
+.theme-base-spencer .pagination > .disabled > a,
+.theme-base-spencer .pagination > .disabled > a:hover,
+.theme-base-spencer .pagination > .disabled > a:focus {
+    color: #777;
+    background-color: #fff;
+    border-color: #ddd;
+}
+
+.theme-base-spencer .post-date > a.label {
+    color: #a69eb0;
+}
+
 /* Red */
 .theme-base-08 .label {
   background-color: #ac4142;
