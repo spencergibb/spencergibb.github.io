@@ -1,0 +1,262 @@
+<div class="slide" id="slide1"><h2 id="toc_0">Monolithic vs Microservices</h2>
+
+<ul>
+<li>Easy/Hard vs Simple/Complex</li>
+<li>Monolithic
+
+<ul>
+<li>Complex / Easy</li>
+<li>Language / Framework modularity</li>
+<li>Fewer scaling vectors</li>
+<li>Long-term commitment to tech stack</li>
+<li>coupled changes make harder deploys</li>
+<li>hard to scale dev</li>
+</ul></li>
+<li>Microservice
+
+<ul>
+<li>Simple / Hard</li>
+<li>for continuous delivery</li>
+<li>12 factor apps</li>
+<li>diversity of clients (mobile, desktop, devices)</li>
+<li>modularity based on services</li>
+<li>uncoupled changes enable frequent deploys</li>
+<li>more scaling vectors</li>
+<li>dev friendly</li>
+<li>easier to scale dev</li>
+<li>no long term commitment to tech stack</li>
+</ul></li>
+</ul>
+
+</div><div class="slide" id="slide2"><h2 id="toc_1">Microservices with Spring Boot</h2>
+
+<ul>
+<li>partition strategies
+
+<ul>
+<li>Noun (product info service)</li>
+<li>Verb (shipping service)</li>
+<li>Single Responsibility Principle</li>
+<li>Bounded Context</li>
+</ul></li>
+<li>Polyglot persistence</li>
+<li>Unix pipes and filters</li>
+<li>Choreography vs Orchestration</li>
+</ul>
+
+</div><div class="slide" id="slide3"><h2 id="toc_2">No Man (Microservice) is an Island</h2>
+
+<ul>
+<li>No free lunch
+
+<ul>
+<li>Ops overhead</li>
+<li>Substantial Devops Skills required</li>
+<li>Implicit interfaces</li>
+<li>Duplication of effort</li>
+<li>Distributed System complexity</li>
+<li>Asynchronicity is difficult</li>
+<li>Testability chalenges</li>
+</ul></li>
+</ul>
+
+<p>Spring CLI Support
+http command is from httpie.org</p>
+
+</div><div class="slide" id="slide4"><h2 id="toc_3">Configuration Server</h2>
+
+<p>cd ~/workspace/spencergibb/myfeed</p>
+
+<p>show ConfigApp
+start config server</p>
+
+<p>http -a user:password :11020/admin/health<br>
+http -a user:password :11020/myapp/default<br>
+http -a user:password :11020/myfeed-ui/development
+http -a user:password :11020/myfeed-ui/development/test</p>
+
+<h3 id="toc_4">Config Client</h3>
+
+<p>run myfeed-ui
+http :11040/env</p>
+
+<p>http :11040/info
+http --form :11040/env info.foo=bar
+http :11040/env
+http :11040/info</p>
+
+<p>http --form :11040/env logging.level.ROOT=DEBUG
+http --form :11040/env logging.level.com.netflix=OFF</p>
+
+<p>open UiApp
+show @RefreshScope</p>
+
+<p>http :11040/ui/features
+http --form :11040/env myfeed.ui.featureAaaFlag=devnexus
+http POST :11040/refresh
+http :11040/ui/features</p>
+
+<p>change a value at <a href="https://github.com/spencergibb/myfeed-config">https://github.com/spencergibb/myfeed-config</a></p>
+
+<p>http POST :11040/refresh</p>
+
+<p>http POST :11040/shutdown</p>
+
+<h3 id="toc_5">encryption/decryption</h3>
+
+<p>cat /Users/sgibb/workspace/spencergibb/myfeed-config/application.yml
+http -a user:password :11020/myapp/default # show encrypted.password</p>
+
+<p>export TESTVAL=<code>spring encrypt --key=foobar this is a test</code><br>
+echo $TESTVAL<br>
+spring decrypt --key=foobar $TESTVAL</p>
+
+<p>cli and server also support keystores</p>
+
+</div><div class="slide" id="slide5"><h2 id="toc_6">Discovery: Eureka</h2>
+
+<p>open DiscoveryApp
+start eureka<br>
+<a href="http://discovery.myfeed.com:11010/">http://discovery.myfeed.com:11010/</a></p>
+
+<p>open CustomerApp.java
+start Ui again</p>
+
+<p>show eureka dashboard<br>
+http :11040/metrics # or <a href="http://ui.myfeed.com:11040/metrics">http://ui.myfeed.com:11040/metrics</a></p>
+
+<p>by default configserver gives eureka address, can setup eureka to locate configserver</p>
+
+</div><div class="slide" id="slide6"><h2 id="toc_7">Ribbon and Hystrix</h2>
+
+<p>open AdminApp, show LoadBalancerClient</p>
+
+<p>open feed UserService and show HystrixCommand</p>
+
+<p>open TurbineApp and start</p>
+
+<p>open AdminApp, show @EnableHystrixDashboard</p>
+
+<p>start admin app
+start feed app</p>
+
+<p>hit this over and over and break circuit<br>
+<a href="http://feed.myfeed.com:11060/@spencergibb">http://feed.myfeed.com:11060/@spencergibb</a></p>
+
+<p>goto <a href="http://admin.myfeed.com:11050/admin/">http://admin.myfeed.com:11050/admin/</a>
+show dashboard</p>
+
+<p>start users</p>
+
+<p>hit customers over and over again<br>
+show dashboard</p>
+
+<p>open feed UserService again and show RestTemplate</p>
+
+<p>open UiApp and show @FeignClientScan
+open UiController and show Feign and client call</p>
+
+<p>Uses Spring MVC annotations<br>
+Uses Spring HttpMessageConverters configured by spring boot</p>
+
+</div><div class="slide" id="slide7"><h2 id="toc_8">Rx Java</h2>
+
+<p>show UiController.feed
+show FeedService.feed</p>
+
+</div><div class="slide" id="slide8"><h2 id="toc_9">Routing: Zuul</h2>
+
+<p>open RoutingApp
+start router</p>
+
+<p><a href="http://www.myfeed.com:11080">http://www.myfeed.com:11080</a></p>
+
+<p>cat /Users/sgibb/workspace/spencergibb/myfeed-config/myfeed-router.yml</p>
+
+<p>http :11081/routes</p>
+
+<p>run other ui&#39;s</p>
+
+<p>hit <a href="http://www.myfeed.com:11080/whoami">http://www.myfeed.com:11080/whoami</a></p>
+
+</div><div class="slide" id="slide9"><h2 id="toc_10">Spring Cloud Security</h2>
+
+<p>show RouterApp and router application.yml
+show UiApp and ui application.yml</p>
+
+<p>Spring Session Redis for AdminApp</p>
+
+</div><div class="slide" id="slide10"><h2 id="toc_11">Spring Cloud Bus</h2>
+
+<p>http --form :11081/bus/env logging.level.ROOT=INFO
+http --form :11081/bus/env my.prop=my.val
+http POST :11081/bus/refresh</p>
+
+<p>open s-c-bus<br>
+extend RemoteApplicationEvent<br>
+publish to ApplicationEventPublisher.publish(event)</p>
+
+<p>ability to extend to other messaging systems besids RabbitMQ</p>
+
+</div><div class="slide" id="slide11"><h2 id="toc_12">Spring Cloud Sidecar</h2>
+
+<p>open s-c-netflix<br>
+open SidecarApplication</p>
+
+<p>run sidecar</p>
+
+<p>http :11100
+http :11100/ping
+http :11100/health</p>
+
+<p>shut down local server<br>
+http :11100/health</p>
+
+<p>run local server<br>
+http :11100/health</p>
+
+<p>web interface for discovery<br>
+http :11100/hosts/configserver etc...</p>
+
+<p>zuul proxy<br>
+http :11100/myfeed-user
+http :11100/myfeed-feed/@spencergibb</p>
+
+<p>proxy to configserver
+http -a user:password :11100/configserver/myapp-default.yml</p>
+
+</div><div class="slide" id="slide12"><h2 id="toc_13">Preview: Spring Cloud Consul</h2>
+
+<p>cat run_consul.sh<br>
+./run_consul.sh</p>
+
+<p>open <a href="http://consului.local.spring.io:8500">http://consului.local.spring.io:8500</a></p>
+
+<p>open s-c-consul</p>
+
+<p>show sample pom.xml<br>
+show SampleApplication<br>
+run SampleApplication</p>
+
+<p>http :8080/health</p>
+
+<p>show consul ui services</p>
+
+<p>http :8080/myenv prop==myprop</p>
+
+<p>add testConsulApp property through consul ui</p>
+
+<p>run SampleApplication 8083</p>
+
+<p>run this until 8083 shows up<br>
+http :8080/</p>
+
+<p>http POST :8083/shutdown<br>
+http :8080/</p>
+
+<p>run SampleApplication 8083</p>
+
+<p>http --form :8080/bus/env my.value=consul.value  </p>
+
+<p>http :8080/bus/refresh</p>
+</div>

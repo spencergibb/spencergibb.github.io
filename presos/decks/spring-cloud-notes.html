@@ -1,0 +1,248 @@
+<div class="slide" id="slide1"><h2 id="toc_0">Monolithic vs Microservices</h2>
+
+<ul>
+<li>Easy/Hard vs Simple/Complex</li>
+<li>Monolithic
+
+<ul>
+<li>Complex / Easy</li>
+<li>Language / Framework modularity</li>
+<li>Fewer scaling vectors</li>
+<li>Long-term commitment to tech stack</li>
+<li>coupled changes make harder deploys</li>
+<li>hard to scale dev</li>
+</ul></li>
+<li>Microservice
+
+<ul>
+<li>Simple / Hard</li>
+<li>for continuous delivery</li>
+<li>12 factor apps</li>
+<li>diversity of clients (mobile, desktop, devices)</li>
+<li>modularity based on services</li>
+<li>uncoupled changes enable frequent deploys</li>
+<li>more scaling vectors</li>
+<li>dev friendly</li>
+<li>easier to scale dev</li>
+<li>no long term commitment to tech stack</li>
+</ul></li>
+</ul>
+
+</div><div class="slide" id="slide2"><h2 id="toc_1">Microservices with Spring Boot</h2>
+
+<ul>
+<li>partition strategies
+
+<ul>
+<li>Noun (product info service)</li>
+<li>Verb (shipping service)</li>
+<li>Single Responsibility Principle</li>
+<li>Bounded Context</li>
+</ul></li>
+<li>Polyglot persistence</li>
+<li>Unix pipes and filters</li>
+<li>Choreography vs Orchestration</li>
+</ul>
+
+</div><div class="slide" id="slide3"><h2 id="toc_2">No Man (Microservice) is an Island</h2>
+
+<ul>
+<li>No free lunch
+
+<ul>
+<li>Ops overhead</li>
+<li>Substantial Devops Skills required</li>
+<li>Implicit interfaces</li>
+<li>Duplication of effort</li>
+<li>Distributed System complexity</li>
+<li>Asynchronicity is difficult</li>
+<li>Testability chalenges</li>
+</ul></li>
+</ul>
+
+<p>Spring CLI Support
+http command is from httpie.org</p>
+
+</div><div class="slide" id="slide4"><h2 id="toc_3">Configuration Server</h2>
+
+<p>cd ~/workspace/spring/spring-cloud-samples/scripts/demo</p>
+
+<p>cat ../configserver/src/main/java/demo/ConfigServerApplication.java<br>
+start config server</p>
+
+<p>http -a user:password :8888/admin/health<br>
+http -a user:password :8888/myapp/default<br>
+http -a user:password :8888/foo/default<br>
+http -a user:password :8888/foo/development<br>
+http -a user:password :8888/foo/default/test<br>
+http -a user:password :8888/foo/development,myprofile/test</p>
+
+<h3 id="toc_4">Config Client</h3>
+
+<p>run sandbox backend
+http :7080/env</p>
+
+<p>http --form :7080/env info.foo=bar<br>
+http :7080/env<br>
+http :7080/info</p>
+
+<p>http --form :7080/env logging.level.ROOT=DEBUG</p>
+
+<p>open BackendApplication<br>
+show @RefreshScope</p>
+
+<p>http --form :7080/env myprops.name=phoenix<br>
+http POST :7080/refresh</p>
+
+<p>change a value at <a href="https://github.com/spring-cloud-samples/config-repo">https://github.com/spring-cloud-samples/config-repo</a></p>
+
+<p>http POST :7080/refresh  </p>
+
+<p>http POST :7080/shutdown</p>
+
+<h3 id="toc_5">encryption/decryption</h3>
+
+<p>cat ../../config-repo/application.yml # show eureka.password<br>
+http -a user:password :8888/myapp/default # show eureka.password</p>
+
+<p>export TESTVAL=<code>spring encrypt --key=foobar this is a test</code><br>
+echo $TESTVAL<br>
+spring decrypt --key=foobar $TESTVAL</p>
+
+<p>cli and server also support keystores</p>
+
+</div><div class="slide" id="slide5"><h2 id="toc_6">Discovery: Eureka</h2>
+
+<p>cat eureka.groovy<br>
+start eureka<br>
+<a href="http://eureka.local.spring.io:8761/">http://eureka.local.spring.io:8761/</a></p>
+
+<p>open CustomerApp.java<br>
+start customers<br>
+http :9000/customers &lt; ../customers-stores/rest-microservices-customers/src/test/resources/customers.json<br>
+http :9000/customers/1</p>
+
+<p>show eureka dashboard<br>
+http :9000/metrics</p>
+
+<p>by default configserver gives eureka address, can setup eureka to locate configserver</p>
+
+</div><div class="slide" id="slide6"><h2 id="toc_7">Ribbon and Hystrix</h2>
+
+<p>open StoreIntegration, show LoadBalancerClient and HystrixCommand</p>
+
+<p>start bus turbine</p>
+
+<p>cat hystrix.groovy</p>
+
+<p>start hystrix dashboard</p>
+
+<p>goto <a href="http://hystrix.local.spring.io:7979/hystrix/monitor?stream=http%3A%2F%2Flocalhost%3A8989&amp;title=Customers">http://hystrix.local.spring.io:7979/hystrix/monitor?stream=http%3A%2F%2Flocalhost%3A8989&amp;title=Customers</a></p>
+
+<p>hit this over and over and break circuit<br>
+<a href="http://customers.local.spring.io:9000/customers">http://customers.local.spring.io:9000/customers</a><br>
+show dashboard</p>
+
+<p>start stores</p>
+
+<p>hit customers over and over again<br>
+show dashboard</p>
+
+<p>open sandbox</p>
+
+<p>open HelloService and show RestTemplate</p>
+
+<p>open FrontendApplication and show @FeignClientScan<br>
+open HelloClient and show Feign<br>
+go back to HelloService and show feign client call</p>
+
+<p>Uses Spring MVC annotations<br>
+Uses Spring HttpMessageConverters configured by spring boot</p>
+
+</div><div class="slide" id="slide7"><h2 id="toc_8">Routing: Zuul</h2>
+
+<p>cat ../customers-stores/customers-stores-ui/app.groovy<br>
+start customers ui</p>
+
+<p><a href="http://ui.local.spring.io:9900/">http://ui.local.spring.io:9900/</a></p>
+
+<p>http ui.local.spring.io:9900/customers/1</p>
+
+<p>show ui application.yml</p>
+
+<p>http :9900/routes</p>
+
+</div><div class="slide" id="slide8"><h2 id="toc_9">Spring Cloud Bus</h2>
+
+<p>http --form :9000/bus/env logging.level.ROOT=INFO<br>
+http --form :9000/bus/env my.prop=my.val<br>
+http POST :9000/bus/refresh</p>
+
+<p>open s-c-bus<br>
+extend RemoteApplicationEvent<br>
+publish to ApplicationEventPublisher.publish(event)</p>
+
+<p>ability to extend to other messaging systems besids RabbitMQ</p>
+
+</div><div class="slide" id="slide9"><h2 id="toc_10">Spring Cloud Sidecar</h2>
+
+<p>open s-c-netflix<br>
+open SidecarApplication</p>
+
+<p>run sidecar</p>
+
+<p>http :5678<br>
+http :5678/ping<br>
+http :5678/health</p>
+
+<p>shut down local server<br>
+http :5678/health</p>
+
+<p>run local server<br>
+http :5678/health</p>
+
+<p>web interface for discovery<br>
+http :5678/hosts/configserver etc...</p>
+
+<p>zuul proxy<br>
+http :5678/stores<br>
+http :5678/customers/customers/1</p>
+
+<p>proxy to configserver<br>
+http -a user:password :5678/configserver/foo/development/test</p>
+
+</div><div class="slide" id="slide10"><h2 id="toc_11">Preview: Spring Cloud Consul</h2>
+
+<p>cat run_consul.sh<br>
+./run_consul.sh</p>
+
+<p>open <a href="http://consului.local.spring.io:8500">http://consului.local.spring.io:8500</a></p>
+
+<p>open s-c-consul</p>
+
+<p>show sample pom.xml<br>
+show SampleApplication<br>
+run SampleApplication</p>
+
+<p>http :8080/health</p>
+
+<p>show consul ui services</p>
+
+<p>http :8080/myenv prop==myprop</p>
+
+<p>add testConsulApp property through consul ui</p>
+
+<p>run SampleApplication 8083</p>
+
+<p>run this until 8083 shows up<br>
+http :8080/</p>
+
+<p>http POST :8083/shutdown<br>
+http :8080/</p>
+
+<p>run SampleApplication 8083</p>
+
+<p>http --form :8080/bus/env my.value=consul.value  </p>
+
+<p>http :8080/bus/refresh</p>
+</div>
