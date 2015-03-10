@@ -15,12 +15,18 @@ email: dsyer@pivotal.io
 
 
 
-## Pivotal
+## ![pivotal](/images/pivotal_logo.png)
 
-<style>img[alt=what-is-pivotal] { width: 80%; }</style>
+<style>img[alt=spring_io] { width: 40%; }</style>
+<style>img[alt=gemfire] { width: 80%; }</style>
+<style>img[alt=greenplum] { width: 40%; }</style>
+<style>img[alt=tomcat] { width: 40%; }</style>
 
-![what-is-pivotal](/images/whatispivotal.png)
-
+|               |               |       |
+| ------------- |:-------------:| -----:|
+| ![cf_logo](/images/cf_logo.png) | ![spring_io](/images/spring-io.png) | ![rabbitmq](/images/rabbitmq.png) |
+| ![gemfire](/images/gemfire.png)  | ![greenplum](/images/greenplum.jpg) | ![pivotal_labs](/images/pivotal_labs_logo.png) |
+| ![redis](/images/redis.png) | ![tomcat](/images/tomcat_logo.png) | ![bigtop](/images/bigtop.png) |
 
 
 ## Cloud Native
@@ -186,13 +192,11 @@ http://techblog.netflix.com/2013/01/announcing-ribbon-tying-netflix-mid.html
 http://techblog.netflix.com/2012/11/hystrix.html
 
 
-
 ## Hystrix 
 
 <style>img[alt=hystrix] { width: 92%; }</style>
 
 ![hystrix](/images/HystrixGraph.svg)
-
 
 
 ## Hystrix Fallback
@@ -214,15 +218,18 @@ http://techblog.netflix.com/2012/11/hystrix.html
 
 ## Rx Java
 
-<style>img[alt=rx-logo] { width: 30%; float: right; }</style>
+<style>img[alt=rx-logo] { width: 15%; float: right; }</style>
 
 ![rx-logo](/images/Rx_Logo_M.png)
 
 * Reactive: push vs. pull
 * Functional
 * Composable
-* Return `Observable` from<br>Spring MVC Controller (soon)
+* Return `Observable` from Spring MVC<br>Controller (soon)
+* API Gateway combining services
 
+
+## Rx Java Example
 ```
 public static void hello(String... names) {
     Observable.from(names).subscribe(s -> {
@@ -230,6 +237,14 @@ public static void hello(String... names) {
     });
 }
 ```
+
+Sample functions:
+* map
+* flatMap
+* zip
+* take
+* merge
+* 350+ operators!
 
 http://techblog.netflix.com/2013/02/rxjava-netflix-api.html<br>
 https://github.com/ReactiveX/RxJava<br>
@@ -372,7 +387,7 @@ and you don't get much more convenient than that.
 (Same argument for other PaaS solutions)
 
 
-## Micro vs Monolithic... is NOT new
+### Micro vs Monolithic... is NOT new
 
 ```
 From:         kt4@prism.gatech.EDU (Ken Thompson)
@@ -391,6 +406,6 @@ Regards, Ken
 ![mono-vs-micro-os](/images/mono-vs-micro-os.svg)
 
 
-## What's wrong with a monolith?
+### What's wrong with a monolith?
 
 ![monolith](/images/monolith.jpg)
