@@ -318,7 +318,7 @@ Enable security using OAuth2 access tokens
 
 ## Spring Cloud Sidecar
 
-<style>img[alt=sidecar] { width: 50%; float: right; }</style>
+<style>img[alt=sidecar] { width: 30%; float: right; }</style>
 
 ![sidecar](/images/Vespa_sidecar.png)
 
@@ -335,9 +335,9 @@ http://techblog.netflix.com/2014/11/prana-sidecar-for-your-netflix-paas.html
 _Previews, experiments or ideas_ (ie: **no guarantees!**)
 
 * Distributed Locks, Leader election
-* Consul: Config, Discovery, Bus, Locks
-* Zookeeper or etcd: Locks, Leader Election, Discovery, Config
-* Zipkin for distributed tracing
+* [**Consul**](http://consul.io): Config, Discovery, Bus, Locks
+* [**Zookeeper**](http://zookeeper.apache.org) or [**etcd**](https://github.com/coreos/etcd): Locks, Leader Election,<br>[Discovery](http://curator.apache.org/curator-x-discovery/index.html), Config
+* [**Zipkin**](http://twitter.github.io/zipkin) for distributed tracing
 * Moar Bus! Moar Messaging!
 
 
