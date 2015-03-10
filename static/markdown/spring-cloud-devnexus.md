@@ -29,12 +29,14 @@ email: dsyer@pivotal.io
 | ![redis](/images/redis.png) | ![tomcat](/images/tomcat_logo.png) | ![bigtop](/images/bigtop.png) |
 
 
+
 ## Cloud Native
 
 * Distributed
 * Automated
 * Organizational
 * Anti-fragile
+* Replaceable
 
 <blockquote cite="https://twitter.com/spencerbgibb/status/566399494154371072">I like 'cloud native' better than microservice. I think its more descriptive and doesn't have the awkwardness of having 'micro" in the name.</blockquote>
 
