@@ -56,6 +56,7 @@ class ThisWillActuallyRun {
 
 
 
+<!-- .slide: data-background="#CCCCCC" data-background-transition="zoom" -->
 ### Example Distributed System: Minified
 
 <style>img[alt=myfeed-blank] { width: 70%; }</style>
@@ -97,6 +98,7 @@ Coordination of distributed systems<br>leads to boiler plate patterns
 
 
 
+<!-- .slide: data-background="#CCCCCC" data-background-transition="zoom" -->
 ### Example: Coordination Boiler Plate
 
 <style>img[alt=myfeed-system] { width: 70%; }</style>
@@ -125,6 +127,7 @@ Coordination of distributed systems<br>leads to boiler plate patterns
 
 
 
+<!-- .slide: data-background="#CCCCCC" data-background-transition="zoom" -->
 ### Example: Spring Cloud and Netflix
 
 <style>img[alt=myfeed] { width: 70%; }</style>
@@ -240,6 +243,7 @@ public static void hello(String... names) {
 ```
 
 Sample functions:
+
 * map
 * flatMap
 * zip
@@ -247,9 +251,7 @@ Sample functions:
 * merge
 * 350+ operators!
 
-http://techblog.netflix.com/2013/02/rxjava-netflix-api.html<br>
-https://github.com/ReactiveX/RxJava<br>
-http://reactivex.io
+http://techblog.netflix.com/2013/02/rxjava-netflix-api.html
 
 
 
@@ -341,10 +343,11 @@ _Previews, experiments or ideas_ (ie: **no guarantees!**)
 
 ## Links
 
-* [http://github.com/spring-cloud](http://github.com/spring-cloud)
-* [http://github.com/spring-cloud-samples](http://github.com/spring-cloud-samples)
-* [http://blog.spring.io](http://blog.spring.io)
-* [http://presos.dsyer.com/decks/spring-cloud.html](http://presos.dsyer.com/decks/spring-cloud.html)
+* https://github.com/spring-cloud
+* https://github.com/spring-cloud-samples
+* http://blog.spring.io
+* http://spencer.gibb.us/preso/cloud-native-devnexus.html
+* https://github.com/spencergibb/myfeed
 * Twitter: [@spencerbgibb](http://twitter.com/spencerbgibb), [@david_syer](http://twitter.com/david_syer)
 * Email: sgibb@pivotal.io, dsyer@pivotal.io
 
@@ -352,14 +355,20 @@ _Previews, experiments or ideas_ (ie: **no guarantees!**)
 
 ## Notes
 
-* [CD with CF](https://speakerdeck.com/mstine/architecting-for-continuous-delivery-microservices-with-pivotal-cf-and-spring-cloud)
-* [micro-services-small-is-beautiful](http://www.slideshare.net/ewolff/micro-services-small-is-beautiful)
-* [Martin Fowler: Microservices](http://martinfowler.com/articles/microservices.html)
-* [what-are-micro-services](http://davidmorgantini.blogspot.com/2013/08/micro-services-what-are-micro-services.html)
-* Book (Humble and Farley): [continuousdelivery.com](http://continuousdelivery.com/)
-* [Netflix Blog: Deploying Netflix API](http://techblog.netflix.com/2013/08/deploying-netflix-api.html)
+* https://speakerdeck.com/mstine/architecting-for-continuous-delivery-microservices-with-pivotal-cf-and-spring-cloud
+* http://www.slideshare.net/ewolff/micro-services-small-is-beautiful
+* http://martinfowler.com/articles/microservices.html
+* http://davidmorgantini.blogspot.com/2013/08/micro-services-what-are-micro-services.html
+
+
+## Notes cont.
+
+* Book (Humble and Farley): http://continuousdelivery.com
+* http://techblog.netflix.com/2013/08/deploying-netflix-api.html
 * [Mikey Cohen Netflix edge architecture, http://goo.gl/M159zi](http://goo.gl/M159zi)
-* [Release It!](https://pragprog.com/book/mnee/release-it)
+* https://pragprog.com/book/mnee/release-it
+* https://github.com/ReactiveX/RxJava
+* http://reactivex.io
 
 
 ## Continuous Delivery
