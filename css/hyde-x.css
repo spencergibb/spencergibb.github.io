@@ -125,7 +125,7 @@ a.label:focus {
 
 .posts a.label,
 .post-date a.label {
-  color: #fff;
+  color: #a69eb0;
   text-decoration: none;
   cursor: pointer;
 }
