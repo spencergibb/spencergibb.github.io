@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Spencer Gibb</title>
+    <link>http://spencer.gibb.us/categories/presentations/</link>
+    <language>en-us</language>
+    <author>Spencer Gibb</author>
+    <rights>Copyright (c) 2015, Spencer Gibb; all rights reserved.</rights>
+    <updated>Mon, 09 Mar 2015 15:54:01 MDT</updated>
+    
+    <item>
+      <title>Cloud Native Apps with Spring Cloud</title>
+      <link>http://spencer.gibb.us/preso/cloud-native-devnexus/</link>
+      <pubDate>Mon, 09 Mar 2015 15:54:01 MDT</pubDate>
+      <author>Nick O'Neill</author>
+      <guid>http://spencer.gibb.us/preso/cloud-native-devnexus/</guid>
+      <description>&lt;style&gt;
+    /*.reveal .slides {
+        text-align: left;
+    }
+    .reveal .slides section &gt; * {
+        margin-left: 0;
+        margin-right: 0;
+    }*/
+    .reveal section img {
+        border: 0px;
+        box-shadow: 0 0 0px rgba(0, 0, 0, 0.55);
+    }
+&lt;/style&gt;
+
+</description>
+      
+    </item>
+  </channel>
+</rss>

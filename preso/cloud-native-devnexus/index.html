@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Cloud Native Apps with Spring Cloud &middot; Spencer Gibb</title>
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    
+    <meta name="author" content="Spencer Gibb">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="http://spencer.gibb.us//css/reveal.css">
+    <link rel="stylesheet" href="http://spencer.gibb.us//css/theme/white.css" id="theme">
+
+    
+    <link rel="stylesheet" href="http://spencer.gibb.us//lib/css/zenburn.css">
+
+    
+    <script>
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? '/css/print/pdf.css' : '/css/print/paper.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    
+</head>
+
+<body>
+
+
+<div class="reveal">
+    
+    <div class="slides">
+        <style>
+    /*.reveal .slides {
+        text-align: left;
+    }
+    .reveal .slides section > * {
+        margin-left: 0;
+        margin-right: 0;
+    }*/
+    .reveal section img {
+        border: 0px;
+        box-shadow: 0 0 0px rgba(0, 0, 0, 0.55);
+    }
+</style>
+
+
+    
+        <section data-markdown="/markdown/spring-cloud-devnexus.md"
+                 data-separator="^\n\n\n"
+                 data-separator-vertical="^\n\n"
+                 data-separator-notes="^Note:"
+                 data-charset="iso-8859-15">
+        </section>
+    
+    </div>
+
+</div>
+
+
+<script src="http://spencer.gibb.us/lib/js/head.min.js"></script>
+<script src="http://spencer.gibb.us/js/reveal.js"></script>
+
+<script>
+
+    
+    
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', 
+
+        
+        dependencies: [
+            { src: '/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+            { src: '/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: '/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: '/plugin/highlight/highlight.js', async: true, condition: function() { return true; }, callback: function() { hljs.initHighlightingOnLoad(); } },
+            
+            { src: '/plugin/zoom-js/zoom.js', async: true },
+            { src: '/plugin/notes/notes.js', async: true }
+        ]
+    });
+
+</script>
+
+</body>
+</html>

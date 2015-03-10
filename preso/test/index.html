@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>test &middot; Spencer Gibb</title>
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    
+    <meta name="author" content="Spencer Gibb">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="http://localhost:1313//css/reveal.css">
+    <link rel="stylesheet" href="http://localhost:1313//css/theme/black.css" id="theme">
+
+    
+    <link rel="stylesheet" href="http://localhost:1313//lib/css/zenburn.css">
+
+    
+    <script>
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? 'http:\/\/localhost:1313\//css/print/pdf.css' : 'http:\/\/localhost:1313\/css/print/paper.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    
+</head>
+
+<body>
+
+<div class="reveal">
+
+    
+    <div class="slides">
+        
+    </div>
+
+</div>
+
+<script src="http://localhost:1313//lib/js/head.min.js"></script>
+<script src="http://localhost:1313//js/reveal.js"></script>
+
+<script>
+
+    
+    
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', 
+
+        
+        dependencies: [
+            { src: 'http:\/\/localhost:1313\//lib/js/classList.js', condition: function() { return !document.body.classList; } },
+            { src: 'http:\/\/localhost:1313\//plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'http:\/\/localhost:1313\//plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'http:\/\/localhost:1313\//plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+            { src: 'http:\/\/localhost:1313\//plugin/zoom-js/zoom.js', async: true },
+            { src: 'http:\/\/localhost:1313\//plugin/notes/notes.js', async: true }
+        ]
+    });
+
+</script>
+
+<script>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
+</html>
