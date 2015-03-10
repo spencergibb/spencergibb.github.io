@@ -76,18 +76,18 @@ addressed with *generic*, *boiler plate* patterns.
 
 
 
-## Emergent features of cloud native systems
+### Emergent features of cloud native systems
 
-Coordination of distributed systems leads to boiler plate patterns
+Coordination of distributed systems<br>leads to boiler plate patterns
 
-* Distributed/versioned configuration
-* Service registration and discovery
-* Routing
-* Service-to-service calls
-* Load balancing
-* Circuit Breaker
-* Asynchronous
-* Distributed messaging
+* Distributed/versioned configuration <!-- .element: class="fragment" -->
+* Service registration and discovery <!-- .element: class="fragment" -->
+* Routing <!-- .element: class="fragment" -->
+* Service-to-service calls <!-- .element: class="fragment" -->
+* Load balancing <!-- .element: class="fragment" -->
+* Circuit Breaker <!-- .element: class="fragment" -->
+* Asynchronous <!-- .element: class="fragment" -->
+* Distributed messaging <!-- .element: class="fragment" -->
 
 
 
@@ -105,6 +105,7 @@ Coordination of distributed systems leads to boiler plate patterns
 
 
 
+<!-- .slide: data-background="#EE3424" data-background-transition="zoom" -->
 ## Netflix OSS
 
 <style>img[alt=Netflix_logo] { width: 60%; float: right; }</style>
