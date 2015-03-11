@@ -172,7 +172,7 @@ cat /Users/sgibb/workspace/spencergibb/myfeed-config/myfeed-router.yml
 
 http :11081/routes
 
-run other ui's
+run other uis
 
 hit http://www.myfeed.com:11080/whoami
 
