@@ -373,6 +373,43 @@ _Previews, experiments or ideas_ (ie: **no guarantees!**)
 * http://reactivex.io
 
 
+## Spring Restdocs
+
+* Programatically generated snippets from unit tests!
+* Hand write **asciidoc** docs including generated snippets
+
+```
+[source,http]
+----
+HTTP/1.1 200 OK
+Content-Type: application/hal+json
+
+{
+  "_links" : {
+    "users" : {
+      "href" : "http://localhost:11070/users{?page,size,sort}",
+      "templated" : true
+    },
+    "profile" : {
+      "href" : "http://localhost:11070/alps"
+    }
+  }
+}
+----
+```
+https://github.com/spring-projects/spring-restdocs
+
+
+## Spring Session
+
+* Generic vendor session abstraction
+* Can be used in any environment, not just web
+
+__`@EnableRedisHttpSession`__
+
+http://projects.spring.io/spring-session
+
+
 ## Continuous Delivery
 
 * Microservices lend themselves to continuous delivery.
