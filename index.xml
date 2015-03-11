@@ -6,8 +6,294 @@
     <language>en-us</language>
     <author>Spencer Gibb</author>
     <rights>Copyright (c) 2015, Spencer Gibb; all rights reserved.</rights>
-    <updated>Mon, 09 Mar 2015 15:54:01 MDT</updated>
+    <updated>Wed, 11 Mar 2015 09:45:06 -0700</updated>
     
+    <item>
+      <title>Spring Cloud Devnexus Notes</title>
+      <link>http://spencer.gibb.us/notes/spring-cloud-devnexus-notes/</link>
+      <pubDate>Wed, 11 Mar 2015 09:45:06 -0700</pubDate>
+      <author>Nick O'Neill</author>
+      <guid>http://spencer.gibb.us/notes/spring-cloud-devnexus-notes/</guid>
+      <description>
+
+&lt;h2 id=&#34;monolithic-vs-microservices:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;Monolithic vs Microservices&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Easy/Hard vs Simple/Complex&lt;/li&gt;
+&lt;li&gt;Monolithic
+
+&lt;ul&gt;
+&lt;li&gt;Complex / Easy&lt;/li&gt;
+&lt;li&gt;Language / Framework modularity&lt;/li&gt;
+&lt;li&gt;Fewer scaling vectors&lt;/li&gt;
+&lt;li&gt;Long-term commitment to tech stack&lt;/li&gt;
+&lt;li&gt;coupled changes make harder deploys&lt;/li&gt;
+&lt;li&gt;hard to scale dev&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Microservice
+
+&lt;ul&gt;
+&lt;li&gt;Simple / Hard&lt;/li&gt;
+&lt;li&gt;for continuous delivery&lt;/li&gt;
+&lt;li&gt;12 factor apps&lt;/li&gt;
+&lt;li&gt;diversity of clients (mobile, desktop, devices)&lt;/li&gt;
+&lt;li&gt;modularity based on services&lt;/li&gt;
+&lt;li&gt;uncoupled changes enable frequent deploys&lt;/li&gt;
+&lt;li&gt;more scaling vectors&lt;/li&gt;
+&lt;li&gt;dev friendly&lt;/li&gt;
+&lt;li&gt;easier to scale dev&lt;/li&gt;
+&lt;li&gt;no long term commitment to tech stack&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;microservices-with-spring-boot:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;Microservices with Spring Boot&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;partition strategies
+
+&lt;ul&gt;
+&lt;li&gt;Noun (product info service)&lt;/li&gt;
+&lt;li&gt;Verb (shipping service)&lt;/li&gt;
+&lt;li&gt;Single Responsibility Principle&lt;/li&gt;
+&lt;li&gt;Bounded Context&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Polyglot persistence&lt;/li&gt;
+&lt;li&gt;Unix pipes and filters&lt;/li&gt;
+&lt;li&gt;Choreography vs Orchestration&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;no-man-microservice-is-an-island:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;No Man (Microservice) is an Island&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;No free lunch
+
+&lt;ul&gt;
+&lt;li&gt;Ops overhead&lt;/li&gt;
+&lt;li&gt;Substantial Devops Skills required&lt;/li&gt;
+&lt;li&gt;Implicit interfaces&lt;/li&gt;
+&lt;li&gt;Duplication of effort&lt;/li&gt;
+&lt;li&gt;Distributed System complexity&lt;/li&gt;
+&lt;li&gt;Asynchronicity is difficult&lt;/li&gt;
+&lt;li&gt;Testability chalenges&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Spring CLI Support
+http command is from httpie.org&lt;/p&gt;
+
+&lt;h2 id=&#34;configuration-server:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;Configuration Server&lt;/h2&gt;
+
+&lt;p&gt;cd ~/workspace/spencergibb/myfeed&lt;/p&gt;
+
+&lt;p&gt;show ConfigApp
+start config server&lt;/p&gt;
+
+&lt;p&gt;http -a user:password :11020/admin/health&lt;br /&gt;
+http -a user:password :11020/myapp/default&lt;br /&gt;
+http -a user:password :11020/myfeed-ui/development
+http -a user:password :11020/myfeed-ui/development/test&lt;/p&gt;
+
+&lt;h3 id=&#34;config-client:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;Config Client&lt;/h3&gt;
+
+&lt;p&gt;run myfeed-ui
+http :11040/env&lt;/p&gt;
+
+&lt;p&gt;http :11040/info
+http &amp;ndash;form :11040/env info.foo=bar
+http :11040/env
+http :11040/info&lt;/p&gt;
+
+&lt;p&gt;http &amp;ndash;form :11040/env logging.level.ROOT=DEBUG
+http &amp;ndash;form :11040/env logging.level.com.netflix=OFF&lt;/p&gt;
+
+&lt;p&gt;open UiApp
+show @RefreshScope&lt;/p&gt;
+
+&lt;p&gt;http :11040/ui/features
+http &amp;ndash;form :11040/env myfeed.ui.featureAaaFlag=devnexus
+http POST :11040/refresh
+http :11040/ui/features&lt;/p&gt;
+
+&lt;p&gt;change a value at &lt;a href=&#34;https://github.com/spencergibb/myfeed-config&#34;&gt;https://github.com/spencergibb/myfeed-config&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;http POST :11040/refresh&lt;/p&gt;
+
+&lt;p&gt;http POST :11040/shutdown&lt;/p&gt;
+
+&lt;h3 id=&#34;encryption-decryption:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;encryption/decryption&lt;/h3&gt;
+
+&lt;p&gt;cat /Users/sgibb/workspace/spencergibb/myfeed-config/application.yml
+http -a user:password :11020/myapp/default # show encrypted.password&lt;/p&gt;
+
+&lt;p&gt;export TESTVAL=&lt;code&gt;spring encrypt --key=foobar this is a test&lt;/code&gt;&lt;br /&gt;
+echo $TESTVAL&lt;br /&gt;
+spring decrypt &amp;ndash;key=foobar $TESTVAL&lt;/p&gt;
+
+&lt;p&gt;cli and server also support keystores&lt;/p&gt;
+
+&lt;h2 id=&#34;discovery-eureka:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;Discovery: Eureka&lt;/h2&gt;
+
+&lt;p&gt;open DiscoveryApp
+start eureka&lt;br /&gt;
+&lt;a href=&#34;http://discovery.myfeed.com:11010/&#34;&gt;http://discovery.myfeed.com:11010/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;open CustomerApp.java
+start Ui again&lt;/p&gt;
+
+&lt;p&gt;show eureka dashboard&lt;br /&gt;
+http :11040/metrics # or &lt;a href=&#34;http://ui.myfeed.com:11040/metrics&#34;&gt;http://ui.myfeed.com:11040/metrics&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;by default configserver gives eureka address, can setup eureka to locate configserver&lt;/p&gt;
+
+&lt;h2 id=&#34;ribbon-and-hystrix:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;Ribbon and Hystrix&lt;/h2&gt;
+
+&lt;p&gt;open AdminApp, show LoadBalancerClient&lt;/p&gt;
+
+&lt;p&gt;open feed UserService and show HystrixCommand&lt;/p&gt;
+
+&lt;p&gt;open TurbineApp and start&lt;/p&gt;
+
+&lt;p&gt;open AdminApp, show @EnableHystrixDashboard&lt;/p&gt;
+
+&lt;p&gt;start admin app
+start feed app&lt;/p&gt;
+
+&lt;p&gt;hit this over and over and break circuit&lt;br /&gt;
+&lt;a href=&#34;http://feed.myfeed.com:11060/@spencergibb&#34;&gt;http://feed.myfeed.com:11060/@spencergibb&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;goto &lt;a href=&#34;http://admin.myfeed.com:11050/admin/&#34;&gt;http://admin.myfeed.com:11050/admin/&lt;/a&gt;
+show dashboard&lt;/p&gt;
+
+&lt;p&gt;start users&lt;/p&gt;
+
+&lt;p&gt;hit customers over and over again&lt;br /&gt;
+show dashboard&lt;/p&gt;
+
+&lt;p&gt;open feed UserService again and show RestTemplate&lt;/p&gt;
+
+&lt;p&gt;open UiApp and show @FeignClientScan
+open UiController and show Feign and client call&lt;/p&gt;
+
+&lt;p&gt;Uses Spring MVC annotations&lt;br /&gt;
+Uses Spring HttpMessageConverters configured by spring boot&lt;/p&gt;
+
+&lt;h2 id=&#34;rx-java:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;Rx Java&lt;/h2&gt;
+
+&lt;p&gt;show UiController.feed
+show FeedService.feed&lt;/p&gt;
+
+&lt;h2 id=&#34;routing-zuul:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;Routing: Zuul&lt;/h2&gt;
+
+&lt;p&gt;open RoutingApp
+start router&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.myfeed.com:11080&#34;&gt;http://www.myfeed.com:11080&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;cat /Users/sgibb/workspace/spencergibb/myfeed-config/myfeed-router.yml&lt;/p&gt;
+
+&lt;p&gt;http :11081/routes&lt;/p&gt;
+
+&lt;p&gt;run other ui&amp;rsquo;s&lt;/p&gt;
+
+&lt;p&gt;hit &lt;a href=&#34;http://www.myfeed.com:11080/whoami&#34;&gt;http://www.myfeed.com:11080/whoami&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;spring-cloud-security:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;Spring Cloud Security&lt;/h2&gt;
+
+&lt;p&gt;show RouterApp and router application.yml
+show UiApp and ui application.yml&lt;/p&gt;
+
+&lt;p&gt;Spring Session Redis for AdminApp&lt;/p&gt;
+
+&lt;h2 id=&#34;spring-cloud-bus:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;Spring Cloud Bus&lt;/h2&gt;
+
+&lt;p&gt;http &amp;ndash;form :11081/bus/env logging.level.ROOT=INFO
+http &amp;ndash;form :11081/bus/env my.prop=my.val
+http POST :11081/bus/refresh&lt;/p&gt;
+
+&lt;p&gt;open s-c-bus&lt;br /&gt;
+extend RemoteApplicationEvent&lt;br /&gt;
+publish to ApplicationEventPublisher.publish(event)&lt;/p&gt;
+
+&lt;p&gt;ability to extend to other messaging systems besids RabbitMQ&lt;/p&gt;
+
+&lt;h2 id=&#34;spring-cloud-sidecar:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;Spring Cloud Sidecar&lt;/h2&gt;
+
+&lt;p&gt;open s-c-netflix&lt;br /&gt;
+open SidecarApplication&lt;/p&gt;
+
+&lt;p&gt;run sidecar&lt;/p&gt;
+
+&lt;p&gt;http :11100
+http :11100/ping
+http :11100/health&lt;/p&gt;
+
+&lt;p&gt;shut down local server&lt;br /&gt;
+http :11100/health&lt;/p&gt;
+
+&lt;p&gt;run local server&lt;br /&gt;
+http :11100/health&lt;/p&gt;
+
+&lt;p&gt;web interface for discovery&lt;br /&gt;
+http :11100/hosts/configserver etc&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;zuul proxy&lt;br /&gt;
+http :11100/myfeed-user
+http :11100/myfeed-feed/@spencergibb&lt;/p&gt;
+
+&lt;p&gt;proxy to configserver
+http -a user:password :11100/configserver/myapp-default.yml&lt;/p&gt;
+
+&lt;h2 id=&#34;spring-restdocs:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;Spring Restdocs&lt;/h2&gt;
+
+&lt;p&gt;./myfeed-user/target/myfeed-user-1.0.0.BUILD-SNAPSHOT.jar &amp;ndash;server.port=11072&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://localhost:11072/docs/api-guide.html&#34;&gt;http://localhost:11072/docs/api-guide.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://localhost:11072/docs/getting-started-guide.html&#34;&gt;http://localhost:11072/docs/getting-started-guide.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;spring-session-redis:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;Spring Session Redis&lt;/h2&gt;
+
+&lt;p&gt;open RouterApp show @EnableRedisHttpSession&lt;/p&gt;
+
+&lt;p&gt;show admin application.yml show security part&lt;/p&gt;
+
+&lt;h2 id=&#34;preview-spring-cloud-consul:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;Preview: Spring Cloud Consul&lt;/h2&gt;
+
+&lt;p&gt;cat run_consul.sh&lt;br /&gt;
+./run_consul.sh&lt;/p&gt;
+
+&lt;p&gt;open &lt;a href=&#34;http://consului.local.spring.io:8500&#34;&gt;http://consului.local.spring.io:8500&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;open s-c-consul&lt;/p&gt;
+
+&lt;p&gt;show sample pom.xml&lt;br /&gt;
+show SampleApplication&lt;br /&gt;
+run SampleApplication&lt;/p&gt;
+
+&lt;p&gt;http :8080/health&lt;/p&gt;
+
+&lt;p&gt;show consul ui services&lt;/p&gt;
+
+&lt;p&gt;http :8080/myenv prop==myprop&lt;/p&gt;
+
+&lt;p&gt;add testConsulApp property through consul ui&lt;/p&gt;
+
+&lt;p&gt;run SampleApplication 8083&lt;/p&gt;
+
+&lt;p&gt;run this until 8083 shows up&lt;br /&gt;
+http :8080/&lt;/p&gt;
+
+&lt;p&gt;http POST :8083/shutdown&lt;br /&gt;
+http :8080/&lt;/p&gt;
+
+&lt;p&gt;run SampleApplication 8083&lt;/p&gt;
+
+&lt;p&gt;http &amp;ndash;form :8080/bus/env my.value=consul.value&lt;/p&gt;
+
+&lt;p&gt;http :8080/bus/refresh&lt;/p&gt;
+</description>
+      
+    </item>
     <item>
       <title>Cloud Native Apps with Spring Cloud</title>
       <link>http://spencer.gibb.us/preso/cloud-native-devnexus/</link>
@@ -26,6 +312,19 @@
         border: 0px;
         box-shadow: 0 0 0px rgba(0, 0, 0, 0.55);
     }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+        margin: 0 0 20px 0;
+        font-family: &#34;League Gothic&#34;, Impact, sans-serif;
+        line-height: 0.9em;
+        letter-spacing: 0.02em;
+        text-transform: none;
+        text-shadow: none; }
 &lt;/style&gt;
 
 </description>

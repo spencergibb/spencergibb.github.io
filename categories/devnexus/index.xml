@@ -26,6 +26,19 @@
         border: 0px;
         box-shadow: 0 0 0px rgba(0, 0, 0, 0.55);
     }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+        margin: 0 0 20px 0;
+        font-family: &#34;League Gothic&#34;, Impact, sans-serif;
+        line-height: 0.9em;
+        letter-spacing: 0.02em;
+        text-transform: none;
+        text-shadow: none; }
 &lt;/style&gt;
 
 </description>
