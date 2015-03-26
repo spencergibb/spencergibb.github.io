@@ -1,3 +1,14 @@
+https://github.com/mstine/microservices-lab/blob/master/springbox-cloud/catalog/src/main/resources/bootstrap.yml
+https://github.com/mstine/config-repo/blob/master/application.yml#L18-L32
+http://lattice.cf/docs/getting-started.html
+https://github.com/markfisher/receptor-client
+https://github.com/markfisher/receptor-client/blob/master/src/test/java/io/pivotal/receptor/client/ReceptorClientTests.java
+https://github.com/markfisher/receptor-client/blob/master/src/main/java/io/pivotal/receptor/client/ReceptorClient.java#L72-L74
+
+# lattice-app is an appname
+http://receptor.192.168.11.11.xip.io/v1/actual_lrps/lattice-app
+
+
 ## Cloud Native Apps
 ## with Spring Cloud
 
