@@ -193,7 +193,7 @@ start router&lt;/p&gt;
 
 &lt;p&gt;http :11081/routes&lt;/p&gt;
 
-&lt;p&gt;run other ui&amp;rsquo;s&lt;/p&gt;
+&lt;p&gt;run other uis&lt;/p&gt;
 
 &lt;p&gt;hit &lt;a href=&#34;http://www.myfeed.com:11080/whoami&#34;&gt;http://www.myfeed.com:11080/whoami&lt;/a&gt;&lt;/p&gt;
 

@@ -44,18 +44,9 @@ email: dsyer@pivotal.io
 
 ## Cloud Native with Spring Boot
 
-It needs to be super easy to implement and update a service:
+It needs to be super easy to implement and update a service.
 
-```
-@RestController
-class ThisWillActuallyRun {
-  @RequestMapping("/")
-  String home() {
-    Hello World!
-  }
-}
-```
-
+<blockquote>DEMO</blockquote> <!-- .element: class="fragment" -->
 
 
 <!-- .slide: data-background="#CCCCCC" data-background-transition="zoom" -->
@@ -89,7 +80,7 @@ Coordination of distributed systems<br>leads to boiler plate patterns
 * Service-to-service calls <!-- .element: class="fragment" -->
 * Load balancing <!-- .element: class="fragment" -->
 * Circuit Breaker <!-- .element: class="fragment" -->
-* Asynchronous / Reactive <!-- .element: class="fragment" -->
+* API Gateway <!-- .element: class="fragment" -->
 * Distributed messaging <!-- .element: class="fragment" -->
 
 
@@ -122,10 +113,16 @@ Coordination of distributed systems<br>leads to boiler plate patterns
 * Feign
 * Zuul
 * Archaius
-
-* Curator
-* Asgaard
 * ...
+
+
+
+## Spring Cloud
+
+### = Spring Boot & Netflix OSS
+<br>
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr">That moment when a F50 CIO calls you for a day long meeting on <a href="https://twitter.com/cloudfoundry">@cloudfoundry</a> <a href="https://twitter.com/SpringCloudOSS">@SpringCloudOSS</a>.  Only way to achieve cloud native status</p>&mdash; Andrew Ettinger (@ahe23) <a href="https://twitter.com/ahe23/status/620919069320028160">July 14, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 
@@ -152,6 +149,8 @@ Coordination of distributed systems<br>leads to boiler plate patterns
 * Rollback-able
 * Configuration client <br>auto-configured via starter
 
+<blockquote>DEMO</blockquote> <!-- .element: class="fragment" -->
+
 
 
 ## Discovery: Eureka
@@ -166,6 +165,8 @@ Coordination of distributed systems<br>leads to boiler plate patterns
 
 http://techblog.netflix.com/2012/09/eureka.html
 
+<blockquote>DEMO</blockquote> <!-- .element: class="fragment" -->
+
 
 
 ## Client Side Load-balancing: Ribbon
@@ -179,6 +180,18 @@ http://techblog.netflix.com/2012/09/eureka.html
 * Round robin, random,<br>weighted response time
 
 http://techblog.netflix.com/2013/01/announcing-ribbon-tying-netflix-mid.html
+
+<blockquote>DEMO</blockquote> <!-- .element: class="fragment" -->
+
+
+
+## Declarative Rest Client: Feign
+
+* Pluggable Codecs, Clients and Annotations
+* Aims to be simple
+* Creates a proxy from a Java interface
+
+<blockquote>DEMO</blockquote> <!-- .element: class="fragment" -->
 
 
 
@@ -198,7 +211,7 @@ http://techblog.netflix.com/2013/01/announcing-ribbon-tying-netflix-mid.html
 http://techblog.netflix.com/2012/11/hystrix.html
 
 
-## Hystrix 
+## Hystrix
 
 <style>img[alt=hystrix] { width: 92%; }</style>
 
@@ -219,6 +232,102 @@ http://techblog.netflix.com/2012/11/hystrix.html
 * Server side event stream `/hystrix.stream`
   * also via rabbitmq
 * Dashboard app via `@EnableHystrixDashboard`
+
+<blockquote>DEMO</blockquote> <!-- .element: class="fragment" -->
+
+
+
+## Routing: Zuul
+
+<style>img[alt=zuul] { width:30%; float: right; }</style>
+
+![zuul](/images/zuul.png)
+
+* JVM based router and filter
+* Similar routing role as httpd,<br>nginx, or CF go router
+* Fully programmable rules and filters
+* Groovy
+* Java
+* any JVM language
+
+http://techblog.netflix.com/2013/06/announcing-zuul-edge-service-in-cloud.html
+
+
+## How Netflix uses Zuul
+* Authentication
+* Insights
+* Stress Testing
+* Canary Testing
+* Dynamic Routing
+* Service Migration
+* Load Shedding
+* Security
+* Static Response handling
+* Active/Active traffic management
+
+<blockquote>DEMO</blockquote> <!-- .element: class="fragment" -->
+
+
+
+## Spring Cloud Actuator
+
+| Spring Cloud Commons | Spring Cloud Netflix |
+|---|---|
+| `/env` (POST)       | `/routes` (POST) |
+| `/pause` (POST)     |  `/routes` (GET) |
+| `/refresh` (POST)   |  `/hystrix.stream/**` (GET) |
+| `/restart` (POST)   |  |
+| `/resume` (POST)    |  |
+
+<blockquote>DEMO</blockquote> <!-- .element: class="fragment" -->
+
+
+
+## Spring Cloud Bus
+
+* Distributed actuator
+* `/bus/env` and `/bus/refresh` actuator endpoints
+* uses Spring Messaging and Spring Integration
+
+<blockquote>DEMO</blockquote> <!-- .element: class="fragment" -->
+
+
+
+## No soup for you!
+
+![nojava](/images/nojava.png)
+
+
+## Spring Cloud Sidecar
+
+<style>img[alt=sidecar] { width: 30%; float: right; }</style>
+
+![sidecar](/images/Vespa_sidecar.png)
+
+* For you non-java apps
+* Modeled after Netflix Prana
+* Built in zuul proxy
+
+http://techblog.netflix.com/2014/11/prana-sidecar-for-your-netflix-paas.html
+
+<blockquote>DEMO</blockquote> <!-- .element: class="fragment" -->
+
+
+
+## Spring Cloud Security
+
+Enable Single Sign On (SSO) with an OAuth2 provider declared in external properties.
+
+```
+@EnableOAuth2Sso
+```
+Enable security using OAuth2 access tokens
+
+```
+@EnableOAuth2Resource
+```
+
+<blockquote>DEMO</blockquote> <!-- .element: class="fragment" -->
 
 
 
@@ -257,87 +366,17 @@ http://techblog.netflix.com/2013/02/rxjava-netflix-api.html
 
 
 
-## Routing: Zuul
-
-<style>img[alt=zuul] { width:30%; float: right; }</style>
-
-![zuul](/images/zuul.png)
-
-* JVM based router and filter
-* Similar routing role as httpd,<br>nginx, or CF go router
-* Fully programmable rules and filters
-* Groovy
-* Java
-* any JVM language
-
-http://techblog.netflix.com/2013/06/announcing-zuul-edge-service-in-cloud.html
-
-
-## How Netflix uses Zuul
-* Authentication
-* Insights
-* Stress Testing
-* Canary Testing
-* Dynamic Routing
-* Service Migration
-* Load Shedding
-* Security
-* Static Response handling
-* Active/Active traffic management
-
-
-
-## Spring Cloud Security
-
-Enable Single Sign On (SSO) with an OAuth2 provider declared in external properties.
-
-```
-@EnableOAuth2Sso
-```
-Enable security using OAuth2 access tokens
-
-```
-@EnableOAuth2Resource
-```
-
-
-
-## Spring Cloud Bus
-
-* Distributed actuator
-* `/bus/env` and `/bus/refresh` actuator endpoints
-* uses Spring Messaging and Spring Integration
-
-
-
-## No soup for you!
-
-![nojava](/images/nojava.png)
-
-
-
-## Spring Cloud Sidecar
-
-<style>img[alt=sidecar] { width: 30%; float: right; }</style>
-
-![sidecar](/images/Vespa_sidecar.png)
-
-* For you non-java apps
-* Modeled after Netflix Prana
-* Built in zuul proxy
-
-http://techblog.netflix.com/2014/11/prana-sidecar-for-your-netflix-paas.html
-
-
-
 ## Spring Cloud Future
+
+Milestones:
+
+* [Spring Cloud](https://github.com/spring-cloud/spring-cloud-consul) [Consul](http://consul.io): [Config, Discovery, Bus, Locks]
 
 _Previews, experiments or ideas_ (ie: **no guarantees!**)
 
-* Distributed Locks, Leader election
-* [**Consul**](http://consul.io): Config, Discovery, Bus, Locks
-* [**Zookeeper**](http://zookeeper.apache.org) or [**etcd**](https://github.com/coreos/etcd): Locks, Leader Election,<br>[Discovery](http://curator.apache.org/curator-x-discovery/index.html), Config
-* [**Zipkin**](http://twitter.github.io/zipkin) for distributed tracing
+* [Spring Cloud](https://github.com/spring-cloud/spring-cloud-zookeeper) [Zookeeper](http://zookeeper.apache.org): Config, Discovery, Locks, Leader Election
+* [Spring Cloud Sleuth](https://github.com/spring-cloud-incubator/spring-cloud-sleuth) distributed tracing
+* [Spring Cloud](https://github.com/spring-cloud-incubator/spring-cloud-etcd) [Etcd](https://github.com/coreos/etcd): Config, Discovery, Locks, Leader Election
 * Moar Bus! Moar Messaging!
 
 
@@ -348,7 +387,7 @@ _Previews, experiments or ideas_ (ie: **no guarantees!**)
 * https://github.com/spring-cloud
 * https://github.com/spring-cloud-samples
 * http://blog.spring.io
-* http://spencer.gibb.us/preso/cloud-native-devnexus.html
+* http://spencer.gibb.us/preso/spring-cloud-oscon-2015.html
 * https://github.com/spencergibb/myfeed
 * Twitter: [@spencerbgibb](http://twitter.com/spencerbgibb), [@david_syer](http://twitter.com/david_syer)
 * Email: sgibb@pivotal.io, dsyer@pivotal.io
