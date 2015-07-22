@@ -1,5 +1,5 @@
-## Cloud Native Apps
-## with Spring Cloud
+## Mircoservices with
+## Spring Cloud and Netflix OSS
 
 <style>img[alt=spring-cloud] { width: 40%; float: right; border: 0px solid #fff;}</style>
 
@@ -7,11 +7,8 @@
 
 Spencer Gibb<br>
 twitter: [@spencerbgibb](http://twitter.com/spencerbgibb)<br>
+http://spencer.gibb.us/preso<br>
 email: sgibb@pivotal.io
-
-Dave Syer<br>
-twitter: [@david_syer](http://twitter.com/david_syer)<br>
-email: dsyer@pivotal.io
 
 
 
@@ -331,6 +328,33 @@ Enable security using OAuth2 access tokens
 
 
 
+## Spring Cloud Future
+
+Milestones:
+
+* [Spring Cloud](https://github.com/spring-cloud/spring-cloud-consul) [Consul](http://consul.io): [Config, Discovery, Bus, Locks]
+
+_Previews, experiments or ideas_ (ie: **no guarantees!**)
+
+* [Spring Cloud](https://github.com/spring-cloud/spring-cloud-zookeeper) [Zookeeper](http://zookeeper.apache.org): Config, Discovery, Locks, Leader Election
+* [Spring Cloud Sleuth](https://github.com/spring-cloud-incubator/spring-cloud-sleuth) distributed tracing
+* [Spring Cloud](https://github.com/spring-cloud-incubator/spring-cloud-etcd) [Etcd](https://github.com/coreos/etcd): Config, Discovery, Locks, Leader Election
+* Moar Bus! Moar Messaging!
+
+
+
+
+## Links
+
+* https://github.com/spring-cloud
+* http://spencer.gibb.us/preso/spring-cloud-oscon-2015.html
+* https://github.com/spencergibb/oscon2015
+* https://github.com/spring-cloud-samples
+* http://blog.spring.io
+* Twitter: [@spencerbgibb](http://twitter.com/spencerbgibb), [@david_syer](http://twitter.com/david_syer)
+* Email: sgibb@pivotal.io, dsyer@pivotal.io
+
+
 ## Rx Java
 
 <style>img[alt=rx-logo] { width: 15%; float: right; }</style>
@@ -363,35 +387,6 @@ Sample functions:
 * 350+ operators!
 
 http://techblog.netflix.com/2013/02/rxjava-netflix-api.html
-
-
-
-## Spring Cloud Future
-
-Milestones:
-
-* [Spring Cloud](https://github.com/spring-cloud/spring-cloud-consul) [Consul](http://consul.io): [Config, Discovery, Bus, Locks]
-
-_Previews, experiments or ideas_ (ie: **no guarantees!**)
-
-* [Spring Cloud](https://github.com/spring-cloud/spring-cloud-zookeeper) [Zookeeper](http://zookeeper.apache.org): Config, Discovery, Locks, Leader Election
-* [Spring Cloud Sleuth](https://github.com/spring-cloud-incubator/spring-cloud-sleuth) distributed tracing
-* [Spring Cloud](https://github.com/spring-cloud-incubator/spring-cloud-etcd) [Etcd](https://github.com/coreos/etcd): Config, Discovery, Locks, Leader Election
-* Moar Bus! Moar Messaging!
-
-
-
-
-## Links
-
-* https://github.com/spring-cloud
-* https://github.com/spring-cloud-samples
-* http://blog.spring.io
-* http://spencer.gibb.us/preso/spring-cloud-oscon-2015.html
-* https://github.com/spencergibb/myfeed
-* Twitter: [@spencerbgibb](http://twitter.com/spencerbgibb), [@david_syer](http://twitter.com/david_syer)
-* Email: sgibb@pivotal.io, dsyer@pivotal.io
-
 
 
 ## Notes
