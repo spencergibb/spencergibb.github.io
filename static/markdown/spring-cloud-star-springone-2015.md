@@ -141,7 +141,6 @@ email: sgibb@pivotal.io
 * Consul has a full blown discovery service implemented
 * HTTP API and DNS interface
 * Rich health check system (HTTP, TCP or anything)
-* Polyglot support
 
 
 
@@ -149,14 +148,85 @@ email: sgibb@pivotal.io
 
 * Uses Consul Event HTTP API
 * Non-persisted control plane messages
+* Uses Spring Integration
+
+
+
+## Spring Cloud Consul
+
+* Polyglot
+* All-in-one (Discovery, config, bus, cluster)
+ * `localhost:8500`
+* Legacy support via DNS
 
 <blockquote>DEMO</blockquote> <!-- .element: class="fragment" -->
 
 
 
-## Linkis
+<!-- .slide: data-background="#2276ad" data-background-transition="zoom" -->
+## CoreOS Etcd
 
-* http://www.simplicityitself.com/learning/getting-started-microservices/service-discovery-overview/
-* http://tech.knewton.com/blog/2014/12/eureka-shouldnt-use-zookeeper-service-discovery/
-* https://www.consul.io/intro/vs/zookeeper.html
-* http://stackshare.io/stackups/consul-vs-zookeeper-vs-eureka
+* <u>**Incubator Project**</u><br>(Not part of a release, yet)
+* Distributed key/value store
+* CP in CAP
+* nice cli and HTTP API
+* Many language bindings
+
+
+
+## Spring Cloud Etcd Config
+
+* Uses consul Key/Value (K/V) HTTP API to store hierarchical properties
+* Mimics Spring Cloud Config Server loading order
+
+
+
+## Spring Cloud Etcd Discovery
+
+* Bespoke implementation
+ * creates value with TTL
+* Uses HTTP API
+* Spring `@Scheduled` heartbeat resets TTL
+
+<blockquote>DEMO</blockquote> <!-- .element: class="fragment" -->
+
+
+
+## Spring Cloud Cluster
+
+* <u>**Not Released**</u>
+* Distributed Locks
+* Leader election
+
+
+
+## Spring Cloud Cluster Impls
+
+* Hazelcast
+* Redis
+* *Zookeeper*
+
+
+
+## Spring Cloud Cluster Future
+
+* Consul
+* Etcd
+
+
+
+# Questions?
+
+
+
+## Links
+
+* Twitter: [@spencerbgibb](http://twitter.com/spencerbgibb)
+* Email: [sgibb@pivotal.io](mailto:sgibb@pivotal.io)
+* [This presentation](http://spencer.gibb.us/preso/spring-cloud-star-springone-2015)
+* [Simplicity Itself: Service Discovery Overview](http://www.simplicityitself.com/learning/getting-started-microservices/service-discovery-overview)
+* [Knewton: Eureka vs Zookeeper](http://tech.knewton.com/blog/2014/12/eureka-shouldnt-use-zookeeper-service-discovery/)
+* [Stackshare: Service Discovery Comparison](http://stackshare.io/stackups/consul-vs-zookeeper-vs-eureka)
+* [Consul.io: vs Zookeeper](https://www.consul.io/intro/vs/zookeeper.html)
+* https://zookeeper.apache.org
+* https://coreos.com/etcd/
