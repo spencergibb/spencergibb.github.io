@@ -1,5 +1,5 @@
 ## Spring Cloud <i class="fa fa-asterisk"></i>
-### Alternate implementations of
+### Alternative implementations of
 ### Discovery, Config & Bus
 
 <style>img[alt=spring-cloud] { width: 40%; float: right; border: 0px solid #fff;}</style>
