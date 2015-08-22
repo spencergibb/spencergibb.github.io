@@ -7,9 +7,9 @@
 ![spring-cloud](/images/spring-cloud.png)
 
 Spencer Gibb<br>
-twitter: [@spencerbgibb](http://twitter.com/spencerbgibb)<br>
-http://spencer.gibb.us/preso<br>
-email: sgibb@pivotal.io
+<i class="fa fa-twitter"></i> [@spencerbgibb](http://twitter.com/spencerbgibb)<br>
+<i class="fa fa-download"></i> [spencer.gibb.us/preso](http://spencer.gibb.us/preso)<br>
+<i class="fa fa-envelope-o"></i> sgibb@pivotal.io
 
 
 
