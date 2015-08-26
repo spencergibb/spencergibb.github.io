@@ -124,7 +124,7 @@ Spencer Gibb<br>
 * Multi-datacenter aware
 * peer-to-peer gossip system
 * By default CP, but tunable
-* Agent run as a sidecar, connects to server cluster
+* Agent runs as a sidecar, connects to server cluster
 * Web based UI
 
 
@@ -138,7 +138,7 @@ Spencer Gibb<br>
 
 ## Spring Cloud Consul Discovery
 
-* Consul has a full blown discovery service implemented
+* Full blown consul discovery service implementation
 * HTTP API and DNS interface
 * Rich health check system (HTTP, TCP or anything)
 
@@ -147,7 +147,7 @@ Spencer Gibb<br>
 ## Spring Cloud Consul Bus
 
 * Uses Consul Event HTTP API
-* Non-persisted control plane messages
+* Non-persistent control plane messages
 * Uses Spring Integration
 
 
