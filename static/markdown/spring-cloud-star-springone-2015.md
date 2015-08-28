@@ -192,6 +192,18 @@ Spencer Gibb<br>
 
 
 
+<!-- .slide: data-background="#34E97C" data-background-transition="zoom" -->
+## Spring Cloud Lattice Discovery
+
+* http://lattice.cf
+* Single tenant cloudfoundry--
+* Read Only
+ * Lattice does registration
+* Uses CF Diego Receptor API
+* Connectors for: redis, mysql & rabbitmq
+
+
+
 ## Spring Cloud Cluster
 
 * <u>**Not Released**</u>
