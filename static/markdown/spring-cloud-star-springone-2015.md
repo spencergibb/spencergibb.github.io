@@ -192,7 +192,7 @@ Spencer Gibb<br>
 
 
 
-<!-- .slide: data-background="#34E97C" data-background-transition="zoom" -->
+<!-- .slide: data-background="#2b6546" data-background-transition="zoom" -->
 ## Spring Cloud Lattice Discovery
 
 * http://lattice.cf
@@ -227,18 +227,16 @@ Spencer Gibb<br>
 
 
 
-# Questions<i class="fa fa-question"></i>
+## Questions<i class="fa fa-question"></i>
 
-
-
-## Links
-
-* <i class="fa fa-twitter"></i> [@spencerbgibb](http://twitter.com/spencerbgibb)
+<i class="fa fa-twitter"></i> [@spencerbgibb](http://twitter.com/spencerbgibb)
 <i class="fa fa-envelope-o"></i> [sgibb@pivotal.io](mailto:sgibb@pivotal.io)
-* <i class="fa fa-download"></i> [This presentation](http://spencer.gibb.us/preso/spring-cloud-star-springone-2015)
+
+<i class="fa fa-download"></i> [http://spencer.gibb.us/preso](http://spencer.gibb.us/preso/spring-cloud-star-springone-2015)
+
 * <i class="fa fa-external-link"></i> [Simplicity Itself: Service Discovery Overview](http://www.simplicityitself.com/learning/getting-started-microservices/service-discovery-overview)
 * <i class="fa fa-external-link"></i> [Knewton: Eureka vs Zookeeper](http://tech.knewton.com/blog/2014/12/eureka-shouldnt-use-zookeeper-service-discovery/)
 * <i class="fa fa-external-link"></i> [Stackshare: Service Discovery Comparison](http://stackshare.io/stackups/consul-vs-zookeeper-vs-eureka)
-* <i class="fa fa-external-link"></i> [Consul.io: vs Zookeeper](https://www.consul.io/intro/vs/zookeeper.html)
+* <i class="fa fa-external-link"></i> [Consul.io vs Zookeeper](https://www.consul.io/intro/vs/zookeeper.html)
 * <i class="fa fa-external-link"></i> https://zookeeper.apache.org
-* <i class="fa fa-external-link"></i> https://coreos.com/etcd/
+* <i class="fa fa-external-link"></i> https://coreos.com/etcd
