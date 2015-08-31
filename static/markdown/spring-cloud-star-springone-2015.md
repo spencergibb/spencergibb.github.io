@@ -212,18 +212,13 @@ Spencer Gibb<br>
 
 
 
-## Spring Cloud Cluster Impls
+## Spring Cloud Cluster
 
 * Hazelcast
 * Redis
 * *Zookeeper*
-
-
-
-## Spring Cloud Cluster Future
-
-* Consul
-* Etcd
+* Future: Consul<!-- .element: class="fragment" -->
+* Future: Etcd<!-- .element: class="fragment" -->
 
 
 
