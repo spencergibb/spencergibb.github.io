@@ -53,7 +53,8 @@ Spencer Gibb<br>
 
 * Hashicorp Consul
 * Apache Zookeeper
-* CoreOS etcd (Incubator)
+* CoreOS etcd (Possibly as a Service Release)
+* Cluster (Possibly as a Service Release)
 
 
 
