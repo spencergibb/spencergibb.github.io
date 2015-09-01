@@ -13,6 +13,7 @@ Spencer Gibb<br>
 
 
 
+<!-- .slide: data-background="#FFFFFF" data-background-transition="zoom" -->
 ## ![pivotal](/images/pivotal_logo.png)
 
 <style>img[alt=spring_io] { width: 40%; }</style>
