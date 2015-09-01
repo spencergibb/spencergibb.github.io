@@ -42,11 +42,13 @@ Spencer Gibb<br>
 * Netflix Eureka
 * Spring Cloud Config
 * Spring Cloud Bus AMQP (Rabbitmq)
-* N/A
+* No Cluster Implementation
 
 
 
 ## Spring Cloud: Brixton
+
+### Adds
 
 * Hashicorp Consul
 * Apache Zookeeper
@@ -56,10 +58,12 @@ Spencer Gibb<br>
 
 <!-- .slide: data-background="#B9090B" data-background-transition="zoom" -->
 ## Eureka
+<style>img[alt=eureka] { float: right; width: 20%; }</style>
+![eureka](/images/eureka.png)
 
 * Netflix OSS
-* Highly Available (prefers stale data vs no data, AP in CAP)
-* Long thresholds for registraion and cache refresh (30s)
+* Highly Available (prefers stale data vs<br>no data, AP in CAP)
+* Long thresholds for registraion and<br>cache refresh (30s)
 * Battle tested at Netflix
 
 
@@ -96,7 +100,7 @@ Spencer Gibb<br>
 
 
 
-## Spring Cloud Zookeeper Config
+### Spring Cloud Zookeeper Config
 
 * Uses Apache Curator library
 * Uses zookeeper to store hierarchical configuration
@@ -105,7 +109,7 @@ Spencer Gibb<br>
 
 
 
-## Spring Cloud Zookeeper Discovery
+### Spring Cloud Zookeeper Discovery
 
 * Uses Apache Curator Service Discovery Recipe
 * Requires ephemeral nodes<br>
@@ -136,7 +140,7 @@ Spencer Gibb<br>
 
 
 
-## Spring Cloud Consul Discovery
+### Spring Cloud Consul Discovery
 
 * Full blown consul discovery service implementation
 * HTTP API and DNS interface
@@ -193,7 +197,7 @@ Spencer Gibb<br>
 
 
 <!-- .slide: data-background="#2b6546" data-background-transition="zoom" -->
-## Spring Cloud Lattice Discovery
+### Spring Cloud Lattice Discovery
 
 * http://lattice.cf
 * Single tenant cloudfoundry--
