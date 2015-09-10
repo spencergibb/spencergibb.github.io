@@ -212,7 +212,7 @@ Spencer Gibb<br>
 
 ## Spring Cloud Cluster
 
-* <u>**Not Released**</u>
+* <u>**Brixton**</u>
 * Distributed Locks
 * Leader election
 
