@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Spencer Gibb</title>
+    <link>http://localhost:1313/categories/dcjugb/</link>
+    <language>en-us</language>
+    <author>Spencer Gibb</author>
+    <rights>Copyright (c) 2015, Spencer Gibb; all rights reserved.</rights>
+    <updated>Wed, 01 Jul 2015 15:54:01 MDT</updated>
+    
+    <item>
+      <title>Spring Cloud</title>
+      <link>http://localhost:1313/preso/spring-cloud-dcjug-2015/</link>
+      <pubDate>Wed, 01 Jul 2015 15:54:01 MDT</pubDate>
+      <author>Nick O'Neill</author>
+      <guid>http://localhost:1313/preso/spring-cloud-dcjug-2015/</guid>
+      <description>&lt;style&gt;
+    /*.reveal .slides {
+        text-align: left;
+    }
+    .reveal .slides section &gt; * {
+        margin-left: 0;
+        margin-right: 0;
+    }*/
+    .reveal section img {
+        border: 0px;
+        box-shadow: 0 0 0px rgba(0, 0, 0, 0.55);
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+        margin: 0 0 20px 0;
+        font-family: &#34;League Gothic&#34;, Impact, sans-serif;
+        line-height: 0.9em;
+        letter-spacing: 0.02em;
+        text-transform: none;
+        text-shadow: none; }
+&lt;/style&gt;
+</description>
+      
+    </item>
+  </channel>
+</rss>
