@@ -230,7 +230,7 @@ http://techblog.netflix.com/2013/06/announcing-zuul-edge-service-in-cloud.html
 
 * Distributed actuator
 * `/bus/env` and `/bus/refresh` actuator endpoints
-* uses Spring Messaging and Spring Integration
+* _uses Spring Cloud Stream!_
 
 <blockquote>DEMO</blockquote> <!-- .element: class="fragment" -->
 
@@ -270,30 +270,25 @@ Enable security using OAuth2 access tokens
 @EnableOAuth2Resource
 ```
 
-<blockquote>DEMO</blockquote> <!-- .element: class="fragment" -->
 
 
-
-## Spring Cloud Future
+## Spring Cloud Brixton
 
 Milestones:
 
-* [Spring Cloud](https://github.com/spring-cloud/spring-cloud-consul) [Consul](http://consul.io): [Config, Discovery, Bus, Locks]
-
-_Previews, experiments or ideas_ (ie: **no guarantees!**)
-
+* [Spring Cloud](https://github.com/spring-cloud/spring-cloud-consul) [Consul](http://consul.io): Config, Discovery, Bus, Leader Election, Locks
 * [Spring Cloud](https://github.com/spring-cloud/spring-cloud-zookeeper) [Zookeeper](http://zookeeper.apache.org): Config, Discovery, Locks, Leader Election
 * [Spring Cloud Sleuth](https://github.com/spring-cloud-incubator/spring-cloud-sleuth) distributed tracing
-* [Spring Cloud](https://github.com/spring-cloud-incubator/spring-cloud-etcd) [Etcd](https://github.com/coreos/etcd): Config, Discovery, Locks, Leader Election
-* Moar Bus! Moar Messaging!
 
+_Previews, experiments or ideas_ (ie: **no guarantees!**)
+* [Spring Cloud](https://github.com/spring-cloud-incubator/spring-cloud-etcd) [Etcd](https://github.com/coreos/etcd): Config, Discovery, Locks, Leader Election
 
 
 
 ## Links
 
 * https://github.com/spring-cloud
-* http://spencer.gibb.us/preso/spring-cloud-oscon-2015.html
+* http://spencer.gibb.us/preso/spring-cloud-dcjug-2015.html
 * https://github.com/spencergibb/oscon2015
 * https://github.com/spring-cloud-samples
 * http://blog.spring.io

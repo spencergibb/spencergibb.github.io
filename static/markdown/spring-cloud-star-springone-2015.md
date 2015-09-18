@@ -53,8 +53,9 @@ Spencer Gibb<br>
 
 * Hashicorp Consul
 * Apache Zookeeper
-* CoreOS etcd (Possibly as a Service Release)
-* Cluster (Possibly as a Service Release)
+* Sleuth (Tracing)
+* Cluster
+* CoreOS etcd (Incubator)
 
 
 
@@ -182,7 +183,7 @@ Spencer Gibb<br>
 
 ## Spring Cloud Etcd Config
 
-* Uses consul Key/Value (K/V) HTTP API to store hierarchical properties
+* Uses etcd Key/Value (K/V) HTTP API to store hierarchical properties
 * Mimics Spring Cloud Config Server loading order
 
 
