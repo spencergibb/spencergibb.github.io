@@ -240,5 +240,6 @@ Spencer Gibb<br>
 * <i class="fa fa-external-link"></i> [Knewton: Eureka vs Zookeeper](http://tech.knewton.com/blog/2014/12/eureka-shouldnt-use-zookeeper-service-discovery/)
 * <i class="fa fa-external-link"></i> [Stackshare: Service Discovery Comparison](http://stackshare.io/stackups/consul-vs-zookeeper-vs-eureka)
 * <i class="fa fa-external-link"></i> [Consul.io vs Zookeeper](https://www.consul.io/intro/vs/zookeeper.html)
+* <i class="fa fa-external-link"></i> [Tech. Conversations: Zookeeper vs etcd vs Consul](http://technologyconversations.com/2015/09/08/service-discovery-zookeeper-vs-etcd-vs-consul/)
 * <i class="fa fa-external-link"></i> https://zookeeper.apache.org
 * <i class="fa fa-external-link"></i> https://coreos.com/etcd
