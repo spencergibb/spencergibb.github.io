@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>Spring Cloud Config Push Notifications &middot; Spencer Gibb</title>
+
+  
+  <link rel="stylesheet" href="http://spencer.gibb.us/css/poole.css">
+  <link rel="stylesheet" href="http://spencer.gibb.us/css/hyde.css">
+  <link rel="stylesheet" href="http://spencer.gibb.us/css/poole-overrides.css">
+  <link rel="stylesheet" href="http://spencer.gibb.us/css/hyde-overrides.css">
+  <link rel="stylesheet" href="http://spencer.gibb.us/css/hyde-x.css">
+  <link rel="stylesheet" href="http://spencer.gibb.us/css/highlight/sunburst.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://spencer.gibb.us/apple-touch-icon-144-precomposed.png">
+  <link href="http://spencer.gibb.us/favicon.png" rel="icon">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Spencer Gibb &middot; Spencer Gibb" />
+
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  
+</head>
+<body class="theme-base-spencer">
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <img src="http://www.gravatar.com/avatar/9829cffffee70b8d4f48230d907837cf?s=200" alt="gravatar">
+      <h1>Spencer Gibb</h1>
+      <p class="lead">tech musings</p>
+    </div>
+
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-item"><a href="http://spencer.gibb.us">blog</a></li>
+      
+      <li class="sidebar-nav-item"><a href="http://spencer.gibb.us/about">about</a></li>
+      
+      <li class="sidebar-nav-item"><a href="http://spencer.gibb.us/preso">presentations</a></li>
+    </ul>
+
+    <div class="social">
+      <a class="twitter" href="http://twitter.com/spencerbgibb" title="Twitter">Twitter</a>
+      <a class="github" href="https://github.com/spencergibb" title="GitHub">GitHub</a>
+        <a class="linkedin" href="http://www.linkedin.com/in/spencergibb" title="GitHub">GitHub</a>
+        
+        
+      <a class="rss" href="http://spencer.gibb.us/index.xml" title="RSS">RSS</a>
+    </div>
+
+    <p>Copyright &copy; 2015 <a href="http://spencer.gibb.uslicense">License</a><br/>
+       Powered by <a href="http://hugo.spf13.com">Hugo</a> and <a href="https://github.com/zyro/hyde-x">Hyde-X</a></p>
+  </div>
+</div>
+
+<div class="content container">
+  <div class="post">
+    <h1>Spring Cloud Config Push Notifications</h1>
+    <span class="post-date">Sep 24, 2015 &middot; 2 minute read
+    
+    <br/>
+    
+    
+    </span>
+    
+
+<p><a href="https://github.com/spring-cloud/spring-cloud-config/commit/8d8e07a78e73c3e1e08f4277a76c6e1a4104f103">This commit (8d8e07a78)</a>
+by <a href="https://github.com/dsyer">Dave Syer</a> in <a href="https://github.com/spring-cloud/spring-cloud-config">spring-cloud-config</a>
+added support for <a href="http://cloud.spring.io/spring-cloud-config/spring-cloud-config.html#_push_notifications_and_spring_cloud_bus">push notifications</a>
+to config clients.</p>
+
+<p><strong>NOTE:</strong> I am using <a href="https://github.com/jkbrzt/httpie">HTTPie</a> (pronounced <em>aych-tee-tee-pie</em>) for these demos. I believe it provides a more user friendly experience. To install on a mac with <a href="http://brew.sh/">Homebrew</a>: <code>brew install httpie</code>, otherwise see <a href="https://github.com/jkbrzt/httpie#installation">the install docs</a>.</p>
+
+<h2 id="dependencies:e78e9db90ac45826e12a3a6531ebb194">Dependencies</h2>
+
+<pre><code class="language-xml">&lt;parent&gt;
+  &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
+  &lt;artifactId&gt;spring-cloud-starter-parent&lt;/artifactId&gt;
+  &lt;version&gt;Brixton.BUILD-SNAPSHOT&lt;/version&gt;
+  &lt;relativePath /&gt; &lt;!-- lookup parent from repository --&gt;
+&lt;/parent&gt;
+&lt;dependencies&gt;
+  &lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-cloud-config-monitor&lt;/artifactId&gt;
+  &lt;/dependency&gt;
+  &lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-cloud-starter-bus-redis&lt;/artifactId&gt;
+    &lt;!-- or -amqp (rabbitmq) or -kafka --&gt;
+  &lt;/dependency&gt;
+&lt;!-- ... --&gt;
+&lt;/dependencies&gt;
+</code></pre>
+
+<p>I&rsquo;m using redis, installed via Homebrew. The bus dependency needs to be in configserver and each config client.</p>
+
+<p>I simply modified the <a href="https://github.com/spring-cloud-samples/configserver">sample configserver</a> who&rsquo;s main method starts out like this.</p>
+
+<pre><code class="language-java">@Configuration
+@EnableAutoConfiguration
+@EnableDiscoveryClient
+@EnableConfigServer
+public class ConfigServerApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ConfigServerApplication.class, args);
+	}
+
+}
+</code></pre>
+
+<h2 id="manual-push:e78e9db90ac45826e12a3a6531ebb194">Manual push</h2>
+
+<p>The <code>/monitor</code> endpoint includes a form encoded post that you can trigger as follows:</p>
+
+<pre><code class="language-bash">http --form POST :8888/monitor path=configserver
+</code></pre>
+
+<p>This allows you to develop your own hooks. It also allows for a central api to manually trigger refresh events.</p>
+
+<h2 id="remote-refresh-event:e78e9db90ac45826e12a3a6531ebb194">Remote Refresh Event</h2>
+
+<p>Config clients need to have the following dependencies (again, assuming redis) from <code>Brixton.BUILD-SNAPSHOT</code></p>
+
+<pre><code class="language-xml">&lt;dependency&gt;
+  &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
+  &lt;artifactId&gt;spring-cloud-starter-config&lt;/artifactId&gt;
+&lt;/dependency&gt;
+&lt;dependency&gt;
+  &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
+  &lt;artifactId&gt;spring-cloud-starter-bus-redis&lt;/artifactId&gt;
+  &lt;!-- or -amqp (rabbitmq) or -kafka --&gt;
+&lt;/dependency&gt;
+</code></pre>
+
+<p>When a successful event is received, you should see something like this in the logs:</p>
+
+<pre><code>2015-09-24 12:15:54.257  INFO 11202 --- [enerContainer-2] o.s.cloud.bus.event.RefreshListener      : Received remote refresh request. Keys refreshed [info.description]
+</code></pre>
+
+<h2 id="gitlab-webhook:e78e9db90ac45826e12a3a6531ebb194">Gitlab webhook</h2>
+
+<p>The Gitlab wehbhook doesn&rsquo;t list the files that changed, so all applications will receive a refresh event. That&rsquo;s the reason I don&rsquo;t have a specific configuration in the simulation link below.</p>
+
+<pre><code class="language-java">@Bean
+public GitlabPropertyPathNotificationExtractor gitlabPropertyPathNotificationExtractor() {
+  return new GitlabPropertyPathNotificationExtractor();
+}
+</code></pre>
+
+<p>To simulate the gitlab webhook:</p>
+
+<pre><code class="language-bash">http --json POST :8888/monitor X-Gitlab-Event:&quot;Push Event&quot; commits:='[{}]'
+</code></pre>
+
+<h2 id="github-webhook:e78e9db90ac45826e12a3a6531ebb194">Github webhook</h2>
+
+<p>Github  reports what files were added, deleted and modified and attempts to only send notifications to the impacted services.</p>
+
+<pre><code class="language-java">@Bean
+public GithubPropertyPathNotificationExtractor githubPropertyPathNotificationExtractor() {
+  return new GithubPropertyPathNotificationExtractor();
+}
+</code></pre>
+
+<p>To simulate the github webhook:</p>
+
+<pre><code class="language-bash">http --json POST :8888/monitor X-Github-Event:&quot;push&quot; commits:='[{&quot;modified&quot;: [&quot;configserver.yml&quot;] }]'
+</code></pre>
+
+<h3 id="test-github-via-ngrok:e78e9db90ac45826e12a3a6531ebb194">Test github via ngrok:</h3>
+
+<p><a href="https://ngrok.com/download">Install ngrok</a> first.</p>
+
+<pre><code class="language-bash">ngrok 8888
+</code></pre>
+
+<p>Add <code>https://41b2063a.ngrok.com/monitor</code> to you config repo&rsquo;s github webhooks settings. Commit changes and profit!</p>
+
+<h2 id="filesystem-watcher:e78e9db90ac45826e12a3a6531ebb194">Filesystem watcher</h2>
+
+<p>For the <code>native</code> file based repository, a watch is created that polls the filesystem for changes. If a change is found, a change event is sent.</p>
+
+  </div>
+  
+</div>
+
+
+
+
+<script src="http://spencer.gibb.us/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>
