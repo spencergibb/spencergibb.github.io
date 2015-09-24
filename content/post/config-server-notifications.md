@@ -12,6 +12,8 @@ by [Dave Syer](https://github.com/dsyer) in [spring-cloud-config](https://github
 added support for [push notifications](http://cloud.spring.io/spring-cloud-config/spring-cloud-config.html#_push_notifications_and_spring_cloud_bus)
 to config clients.
 
+<!--more-->
+
 **NOTE:** I am using [HTTPie](https://github.com/jkbrzt/httpie) (pronounced _aych-tee-tee-pie_) for these demos. I believe it provides a more user friendly experience. To install on a mac with [Homebrew](http://brew.sh/): `brew install httpie`, otherwise see [the install docs](https://github.com/jkbrzt/httpie#installation).
 
 ## Dependencies
