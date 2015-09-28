@@ -115,7 +115,7 @@ config file first.  I plan on creating a default one if battleschool doesn't fin
       local:
         - playbook.yml
 
-Any [ansible playbooks](http://docs.ansible.com/playbooks.html) located in ~/battleschool/playbooks
+Any [ansible playbooks](http://docs.ansible.com/playbooks.html) located in ~/.battleschool/playbooks
 can be listed under local.  Each playbook will be executed in order.  This can useful for custom
 configuration per workstation.  (You could install apps with homebrew or macports if those are installed, for example).
 After adding url sources (see below), this should probably be used sparingly.
