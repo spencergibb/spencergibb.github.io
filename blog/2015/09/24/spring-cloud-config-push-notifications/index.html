@@ -63,7 +63,7 @@
 <div class="content container">
   <div class="post">
     <h1>Spring Cloud Config Push Notifications</h1>
-    <span class="post-date">Sep 24, 2015 &middot; 2 minute read
+    <span class="post-date">Sep 24, 2015 &middot; 3 minute read
     
     <br/>
     
@@ -188,6 +188,24 @@ public GithubPropertyPathNotificationExtractor githubPropertyPathNotificationExt
 <h2 id="filesystem-watcher:e78e9db90ac45826e12a3a6531ebb194">Filesystem watcher</h2>
 
 <p>For the <code>native</code> file based repository, a watch is created that polls the filesystem for changes. If a change is found, a change event is sent.</p>
+
+<h2 id="update-1:e78e9db90ac45826e12a3a6531ebb194">Update #1</h2>
+
+<h3 id="auto-configuration:e78e9db90ac45826e12a3a6531ebb194">Auto-configuration</h3>
+
+<p>You no longer need to add <code>@Bean</code>s for each extractor, it is auto-configured, and you can disable them with:</p>
+
+<pre><code>spring.cloud.config.server.monitor.{github|gitlab|bitbucket}.enabled=false
+</code></pre>
+
+<h3 id="bitbucket-webhook:e78e9db90ac45826e12a3a6531ebb194">Bitbucket webhook</h3>
+
+<p>If you create webhook for your config server <code>/watches</code> on Bitbucket, it will trigger a global config update similar to Gitlab. Bitbucket doesn&rsquo;t says what files changed.</p>
+
+<p>To simulate the Bitbucket webhook:</p>
+
+<pre><code class="language-bash">http --json POST :8888/monitor X-Event-Key:&quot;repo:push&quot; X-Hook-UUID:123 push:='{&quot;changes&quot;: [{}]}'
+</code></pre>
 
   </div>
   

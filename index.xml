@@ -133,6 +133,24 @@ public GithubPropertyPathNotificationExtractor githubPropertyPathNotificationExt
 &lt;h2 id=&#34;filesystem-watcher:e78e9db90ac45826e12a3a6531ebb194&#34;&gt;Filesystem watcher&lt;/h2&gt;
 
 &lt;p&gt;For the &lt;code&gt;native&lt;/code&gt; file based repository, a watch is created that polls the filesystem for changes. If a change is found, a change event is sent.&lt;/p&gt;
+
+&lt;h2 id=&#34;update-1:e78e9db90ac45826e12a3a6531ebb194&#34;&gt;Update #1&lt;/h2&gt;
+
+&lt;h3 id=&#34;auto-configuration:e78e9db90ac45826e12a3a6531ebb194&#34;&gt;Auto-configuration&lt;/h3&gt;
+
+&lt;p&gt;You no longer need to add &lt;code&gt;@Bean&lt;/code&gt;s for each extractor, it is auto-configured, and you can disable them with:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;spring.cloud.config.server.monitor.{github|gitlab|bitbucket}.enabled=false
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;bitbucket-webhook:e78e9db90ac45826e12a3a6531ebb194&#34;&gt;Bitbucket webhook&lt;/h3&gt;
+
+&lt;p&gt;If you create webhook for your config server &lt;code&gt;/watches&lt;/code&gt; on Bitbucket, it will trigger a global config update similar to Gitlab. Bitbucket doesn&amp;rsquo;t says what files changed.&lt;/p&gt;
+
+&lt;p&gt;To simulate the Bitbucket webhook:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;http --json POST :8888/monitor X-Event-Key:&amp;quot;repo:push&amp;quot; X-Hook-UUID:123 push:=&#39;{&amp;quot;changes&amp;quot;: [{}]}&#39;
+&lt;/code&gt;&lt;/pre&gt;
 </description>
       
     </item>
