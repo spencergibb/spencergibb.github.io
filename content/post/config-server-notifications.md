@@ -134,3 +134,21 @@ Add `https://41b2063a.ngrok.com/monitor` to you config repo's github webhooks se
 ## Filesystem watcher
 
 For the `native` file based repository, a watch is created that polls the filesystem for changes. If a change is found, a change event is sent.
+
+## Update #1
+
+### Auto-configuration
+
+You no longer need to add `@Bean`s for each extractor, it is auto-configured, and you can disable them with:
+```
+spring.cloud.config.server.monitor.{github|gitlab|bitbucket}.enabled=false
+```
+
+### Bitbucket webhook
+
+If you create webhook for your config server `/watches` on Bitbucket, it will trigger a global config update similar to Gitlab. Bitbucket doesn't says what files changed.
+
+To simulate the Bitbucket webhook:
+```bash
+http --json POST :8888/monitor X-Event-Key:"repo:push" X-Hook-UUID:123 push:='{"changes": [{}]}'
+```
