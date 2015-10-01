@@ -6,16 +6,15 @@
     <language>en-us</language>
     <author>Spencer Gibb</author>
     <rights>Copyright (c) 2015, Spencer Gibb; all rights reserved.</rights>
-    <updated>Fri, 21 Aug 2015 14:35:54 MDT</updated>
+    <updated>Sun, 27 Sep 2015 14:35:54 MDT</updated>
     
     <item>
       <title>Spring Cloud *: SpringOne 2GX 2015</title>
       <link>http://spencer.gibb.us/preso/spring-cloud-star-springone-2015/</link>
-      <pubDate>Fri, 21 Aug 2015 14:35:54 MDT</pubDate>
+      <pubDate>Sun, 27 Sep 2015 14:35:54 MDT</pubDate>
       <author>Nick O'Neill</author>
       <guid>http://spencer.gibb.us/preso/spring-cloud-star-springone-2015/</guid>
-      <description>&lt;link rel=&#34;stylesheet&#34; href=&#34;https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css&#34;&gt;
-&lt;style&gt;
+      <description>&lt;style&gt;
     /*.reveal .slides {
         text-align: left;
     }
