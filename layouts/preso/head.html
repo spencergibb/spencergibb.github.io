@@ -15,6 +15,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="{{ .Site.BaseUrl }}/css/reveal.css">
     <link rel="stylesheet" href="{{ .Site.BaseUrl }}/css/theme/{{ .Params.theme }}.css" id="theme">
@@ -22,14 +23,27 @@
     <!-- Code syntax highlighting -->
     <link rel="stylesheet" href="{{ .Site.BaseUrl }}/lib/css/zenburn.css">
 
-    <!-- Printing and PDF exports -->
-    <script>
-        var link = document.createElement( 'link' );
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = window.location.search.match( /print-pdf/gi ) ? '/css/print/pdf.css' : '/css/print/paper.css';
-        document.getElementsByTagName( 'head' )[0].appendChild( link );
-    </script>
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = '/css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+    <style media="screen">
+    .reveal i.fa {
+        font-family: 'FontAwesome';
+        font-style: normal;
+        font-size: 100%;
+
+        &.small { font-size: 0.7em; }
+        &.big { font-size: 2em; }
+    }
+    </style>
 
     <!--[if lt IE 9]>
     <script src="{{ .Site.BaseUrl }}/lib/js/html5shiv.js"></script>
@@ -37,4 +51,3 @@
 </head>
 
 <body>
-
