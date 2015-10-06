@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Spencer Gibb</title>
+    <link>http://spencer.gibb.us/categories/spring/</link>
+    <language>en-us</language>
+    <author>Spencer Gibb</author>
+    <rights>Copyright (c) 2015, Spencer Gibb; all rights reserved.</rights>
+    <updated>Thu, 24 Sep 2015 10:48:18 MDT</updated>
+    
+    <item>
+      <title>Spring Cloud Config Push Notifications</title>
+      <link>http://spencer.gibb.us/blog/2015/09/24/spring-cloud-config-push-notifications/</link>
+      <pubDate>Thu, 24 Sep 2015 10:48:18 MDT</pubDate>
+      <author>Nick O'Neill</author>
+      <guid>http://spencer.gibb.us/blog/2015/09/24/spring-cloud-config-push-notifications/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/spring-cloud/spring-cloud-config/commit/8d8e07a78e73c3e1e08f4277a76c6e1a4104f103&#34;&gt;This commit (8d8e07a78)&lt;/a&gt;
+by &lt;a href=&#34;https://github.com/dsyer&#34;&gt;Dave Syer&lt;/a&gt; in &lt;a href=&#34;https://github.com/spring-cloud/spring-cloud-config&#34;&gt;spring-cloud-config&lt;/a&gt;
+added support for &lt;a href=&#34;http://cloud.spring.io/spring-cloud-config/spring-cloud-config.html#_push_notifications_and_spring_cloud_bus&#34;&gt;push notifications&lt;/a&gt;
+to config clients.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; I am using &lt;a href=&#34;https://github.com/jkbrzt/httpie&#34;&gt;HTTPie&lt;/a&gt; (pronounced &lt;em&gt;aych-tee-tee-pie&lt;/em&gt;) for these demos. I believe it provides a more user friendly experience. To install on a mac with &lt;a href=&#34;http://brew.sh/&#34;&gt;Homebrew&lt;/a&gt;: &lt;code&gt;brew install httpie&lt;/code&gt;, otherwise see &lt;a href=&#34;https://github.com/jkbrzt/httpie#installation&#34;&gt;the install docs&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;dependencies:e78e9db90ac45826e12a3a6531ebb194&#34;&gt;Dependencies&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-xml&#34;&gt;&amp;lt;parent&amp;gt;
+  &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;
+  &amp;lt;artifactId&amp;gt;spring-cloud-starter-parent&amp;lt;/artifactId&amp;gt;
+  &amp;lt;version&amp;gt;Brixton.BUILD-SNAPSHOT&amp;lt;/version&amp;gt;
+  &amp;lt;relativePath /&amp;gt; &amp;lt;!-- lookup parent from repository --&amp;gt;
+&amp;lt;/parent&amp;gt;
+&amp;lt;dependencies&amp;gt;
+  &amp;lt;dependency&amp;gt;
+    &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;
+    &amp;lt;artifactId&amp;gt;spring-cloud-config-monitor&amp;lt;/artifactId&amp;gt;
+  &amp;lt;/dependency&amp;gt;
+  &amp;lt;dependency&amp;gt;
+    &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;
+    &amp;lt;artifactId&amp;gt;spring-cloud-starter-bus-redis&amp;lt;/artifactId&amp;gt;
+    &amp;lt;!-- or -amqp (rabbitmq) or -kafka --&amp;gt;
+  &amp;lt;/dependency&amp;gt;
+&amp;lt;!-- ... --&amp;gt;
+&amp;lt;/dependencies&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I&amp;rsquo;m using redis, installed via Homebrew. The bus dependency needs to be in configserver and each config client.&lt;/p&gt;
+
+&lt;p&gt;I simply modified the &lt;a href=&#34;https://github.com/spring-cloud-samples/configserver&#34;&gt;sample configserver&lt;/a&gt; who&amp;rsquo;s main method starts out like this.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;@Configuration
+@EnableAutoConfiguration
+@EnableDiscoveryClient
+@EnableConfigServer
+public class ConfigServerApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ConfigServerApplication.class, args);
+	}
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;manual-push:e78e9db90ac45826e12a3a6531ebb194&#34;&gt;Manual push&lt;/h2&gt;
+
+&lt;p&gt;The &lt;code&gt;/monitor&lt;/code&gt; endpoint includes a form encoded post that you can trigger as follows:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;http --form POST :8888/monitor path=configserver
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This allows you to develop your own hooks. It also allows for a central api to manually trigger refresh events.&lt;/p&gt;
+
+&lt;h2 id=&#34;remote-refresh-event:e78e9db90ac45826e12a3a6531ebb194&#34;&gt;Remote Refresh Event&lt;/h2&gt;
+
+&lt;p&gt;Config clients need to have the following dependencies (again, assuming redis) from &lt;code&gt;Brixton.BUILD-SNAPSHOT&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-xml&#34;&gt;&amp;lt;dependency&amp;gt;
+  &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;
+  &amp;lt;artifactId&amp;gt;spring-cloud-starter-config&amp;lt;/artifactId&amp;gt;
+&amp;lt;/dependency&amp;gt;
+&amp;lt;dependency&amp;gt;
+  &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;
+  &amp;lt;artifactId&amp;gt;spring-cloud-starter-bus-redis&amp;lt;/artifactId&amp;gt;
+  &amp;lt;!-- or -amqp (rabbitmq) or -kafka --&amp;gt;
+&amp;lt;/dependency&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;When a successful event is received, you should see something like this in the logs:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;2015-09-24 12:15:54.257  INFO 11202 --- [enerContainer-2] o.s.cloud.bus.event.RefreshListener      : Received remote refresh request. Keys refreshed [info.description]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;gitlab-webhook:e78e9db90ac45826e12a3a6531ebb194&#34;&gt;Gitlab webhook&lt;/h2&gt;
+
+&lt;p&gt;The Gitlab wehbhook doesn&amp;rsquo;t list the files that changed, so all applications will receive a refresh event. That&amp;rsquo;s the reason I don&amp;rsquo;t have a specific configuration in the simulation link below.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;@Bean
+public GitlabPropertyPathNotificationExtractor gitlabPropertyPathNotificationExtractor() {
+  return new GitlabPropertyPathNotificationExtractor();
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To simulate the gitlab webhook:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;http --json POST :8888/monitor X-Gitlab-Event:&amp;quot;Push Event&amp;quot; commits:=&#39;[{}]&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;github-webhook:e78e9db90ac45826e12a3a6531ebb194&#34;&gt;Github webhook&lt;/h2&gt;
+
+&lt;p&gt;Github  reports what files were added, deleted and modified and attempts to only send notifications to the impacted services.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;@Bean
+public GithubPropertyPathNotificationExtractor githubPropertyPathNotificationExtractor() {
+  return new GithubPropertyPathNotificationExtractor();
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To simulate the github webhook:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;http --json POST :8888/monitor X-Github-Event:&amp;quot;push&amp;quot; commits:=&#39;[{&amp;quot;modified&amp;quot;: [&amp;quot;configserver.yml&amp;quot;] }]&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;test-github-via-ngrok:e78e9db90ac45826e12a3a6531ebb194&#34;&gt;Test github via ngrok:&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://ngrok.com/download&#34;&gt;Install ngrok&lt;/a&gt; first.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;ngrok 8888
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Add &lt;code&gt;https://41b2063a.ngrok.com/monitor&lt;/code&gt; to you config repo&amp;rsquo;s github webhooks settings. Commit changes and profit!&lt;/p&gt;
+
+&lt;h2 id=&#34;filesystem-watcher:e78e9db90ac45826e12a3a6531ebb194&#34;&gt;Filesystem watcher&lt;/h2&gt;
+
+&lt;p&gt;For the &lt;code&gt;native&lt;/code&gt; file based repository, a watch is created that polls the filesystem for changes. If a change is found, a change event is sent.&lt;/p&gt;
+
+&lt;h2 id=&#34;update-1:e78e9db90ac45826e12a3a6531ebb194&#34;&gt;Update #1&lt;/h2&gt;
+
+&lt;h3 id=&#34;auto-configuration:e78e9db90ac45826e12a3a6531ebb194&#34;&gt;Auto-configuration&lt;/h3&gt;
+
+&lt;p&gt;You no longer need to add &lt;code&gt;@Bean&lt;/code&gt;s for each extractor, it is auto-configured, and you can disable them with:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;spring.cloud.config.server.monitor.{github|gitlab|bitbucket}.enabled=false
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;bitbucket-webhook:e78e9db90ac45826e12a3a6531ebb194&#34;&gt;Bitbucket webhook&lt;/h3&gt;
+
+&lt;p&gt;If you create webhook for your config server &lt;code&gt;/watches&lt;/code&gt; on Bitbucket, it will trigger a global config update similar to Gitlab. Bitbucket doesn&amp;rsquo;t says what files changed.&lt;/p&gt;
+
+&lt;p&gt;To simulate the Bitbucket webhook:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;http --json POST :8888/monitor X-Event-Key:&amp;quot;repo:push&amp;quot; X-Hook-UUID:123 push:=&#39;{&amp;quot;changes&amp;quot;: [{}]}&#39;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+      
+    </item>
+  </channel>
+</rss>

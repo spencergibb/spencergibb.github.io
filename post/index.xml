@@ -6,8 +6,30 @@
     <language>en-us</language>
     <author>Spencer Gibb</author>
     <rights>Copyright (c) 2015, Spencer Gibb; all rights reserved.</rights>
-    <updated>Thu, 24 Sep 2015 10:48:18 MDT</updated>
+    <updated>Tue, 06 Oct 2015 09:07:07 MDT</updated>
     
+    <item>
+      <title>Trello for Feelings</title>
+      <link>http://spencer.gibb.us/blog/2015/10/06/trello-for-feelings/</link>
+      <pubDate>Tue, 06 Oct 2015 09:07:07 MDT</pubDate>
+      <author>Nick O'Neill</author>
+      <guid>http://spencer.gibb.us/blog/2015/10/06/trello-for-feelings/</guid>
+      <description>&lt;p&gt;Computer geeks often don&amp;rsquo;t know how to express their feelings very well. If &lt;a href=&#34;http://randsinrepose.com/archives/the-nerd-handbook/&#34;&gt;The Nerd Handbook&lt;/a&gt; rings a bell for you or your significant other, you know what I&amp;rsquo;m talking about. It rang true with me. The trouble I have is how to deal with someone else&amp;rsquo;s feelings and figure out what the heck mine are. I had a thought the other day and so far it has helped.&lt;/p&gt;
+
+&lt;p&gt;I was sitting in a weekly project meeting where we discuss things relevant to our project: bugs, releases, hiring, problems, highlights, etc&amp;hellip; I was listening when I had the thought, &amp;ldquo;I wish feelings were as easy as software.&amp;rdquo; I had seen a colleague &lt;a href=&#34;https://twitter.com/caseywest/status/650788737614540806&#34;&gt;tweet&lt;/a&gt; about a &lt;a href=&#34;http://osfeels.com/&#34;&gt;software conference about feelings&lt;/a&gt;. Then I thought, why not?&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve always admired &lt;a href=&#34;http://trello.com&#34;&gt;Trello&lt;/a&gt; as a project management tool, but haven&amp;rsquo;t had a really good, solid opportunity to use it. I&amp;rsquo;ve heard friends and co-workers say they use it at home for shopping and to-do lists. What if I could use it to help me talk about feelings with my wife? I setup a short appointment (20-45 min) 3-4 times a week on our calendar. I created a private Trello &lt;a href=&#34;https://trello.com/guide/board_basics.html&#34;&gt;board&lt;/a&gt; that we could use to guide our discussions. I created lists like: To Discuss, Follow Up, Completed and Goals. The first card I created was titled &amp;ldquo;Trello&amp;rdquo; and had a checklist to show her how to use Trello. Next was &amp;ldquo;Outline&amp;rdquo;, how would these discussions go.&lt;/p&gt;
+
+&lt;p&gt;The goal is for each of us to put a few things at the top of the &amp;ldquo;To Discuss&amp;rdquo; list for each session. It can be anything, from bugeting (our first item) to feelings about kids or each other or the in-laws. If you need to noodle on something for a day, move it to &amp;ldquo;Follow Up&amp;rdquo;. When you&amp;rsquo;re done, move it to &amp;ldquo;Completed&amp;rdquo;. If you decide that the item discussed is really a goal you both want to pursue (you can see where this is headed), move it to &amp;ldquo;Goals&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;For me it is helpful to have an idea ahead of time what the other wants to talk about. I&amp;rsquo;m not as anxious about how to react or what to say. It&amp;rsquo;s nerdy too as there are good mobile apps, so you don&amp;rsquo;t have to be in front of a computer to add ideas.&lt;/p&gt;
+
+&lt;p&gt;Not to say that this replaces all communication, but for me it&amp;rsquo;s a good start and for my wife it&amp;rsquo;s a relief.&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;Conflict is inevitable, but drama is a choice&amp;rdquo; &lt;a href=&#34;https://twitter.com/ChrisBrownOnAir&#34;&gt;@ChrisBrownOnAir&lt;/a&gt;&lt;/p&gt;
+</description>
+      
+    </item>
     <item>
       <title>Spring Cloud Config Push Notifications</title>
       <link>http://spencer.gibb.us/blog/2015/09/24/spring-cloud-config-push-notifications/</link>
