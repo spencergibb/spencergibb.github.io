@@ -1,8 +1,8 @@
 +++
-categories = []
+categories = [ "spring" ]
 date = "2015-09-24T10:48:18-06:00"
 description = ""
-keywords = []
+keywords = ["spring", "cloud"]
 title = "Spring Cloud Config Push Notifications"
 
 +++

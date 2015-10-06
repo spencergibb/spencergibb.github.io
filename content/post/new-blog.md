@@ -1,4 +1,5 @@
 +++
+categories = [ "blog" ]
 date = "2013-03-12T11:58:47-07:00"
 title = "New Blog"
 +++
