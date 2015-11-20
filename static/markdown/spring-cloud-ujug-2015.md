@@ -48,6 +48,18 @@ email: sgibb@pivotal.io
 
 
 
+<!-- .slide: data-background="/images/recipe_spring_framework.jpg" data-background-transition="zoom" -->
+
+
+
+<!-- .slide: data-background="/images/recipe_spring_boot.jpg" data-background-transition="zoom" -->
+
+
+
+<!-- .slide: data-background="/images/recipe_spring_cloud.jpg" data-background-transition="zoom" -->
+
+
+
 ## Cloud Native
 
 * Distributed
@@ -109,19 +121,6 @@ Coordination of distributed systems<br>leads to boiler plate patterns
 * Circuit Breaker <!-- .element: class="fragment" -->
 * Asynchronous / Reactive <!-- .element: class="fragment" -->
 * Distributed messaging <!-- .element: class="fragment" -->
-
-
-
-
-<!-- .slide: data-background="/images/recipe_spring_framework.jpg" data-background-transition="zoom" -->
-
-
-
-<!-- .slide: data-background="/images/recipe_spring_boot.jpg" data-background-transition="zoom" -->
-
-
-
-<!-- .slide: data-background="/images/recipe_spring_cloud.jpg" data-background-transition="zoom" -->
 
 
 
@@ -373,6 +372,7 @@ https://spring.io/guides/tutorials/spring-security-and-angular-js/
 * Message Driven Services
 * Broker is abstracted by `Binder`
 * uses Spring Messaging and Spring Integration
+* Binders for rabbitmq, redis or kafka
 
 ```
 @SpringBootApplication
@@ -442,7 +442,7 @@ Utah Spring Users Group is where you can learn more about Spring, Spring Boot, a
 * http://www.meetup.com/utahspring/
 * [@utahspring](https://twitter.com/utahspring)
 * http://utahspring.github.io/
-* Starting in 2016
+* First meeting: Thursday, February 11, 2016
 
 
 
