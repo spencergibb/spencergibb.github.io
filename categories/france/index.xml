@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>France on Spencer Gibb</title>
+    <link>http://spencer.gibb.us/categories/france/</link>
+    <description>Recent content in France on Spencer Gibb</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright (c) 2013 - 2015, Spencer Gibb; all rights reserved.</copyright>
+    <lastBuildDate>Fri, 22 Apr 2016 12:45:00 +0100</lastBuildDate>
+    <atom:link href="http://spencer.gibb.us/categories/france/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Spring Cloud *: Exploring Spring Cloud Implementations</title>
+      <link>http://spencer.gibb.us/preso/spring-cloud-star-devoxxfr-2016/</link>
+      <pubDate>Fri, 22 Apr 2016 12:45:00 +0100</pubDate>
+      
+      <guid>http://spencer.gibb.us/preso/spring-cloud-star-devoxxfr-2016/</guid>
+      <description>&lt;p&gt;I was invited to speak about different Discovery and Configuration Implementations in Spring Cloud at &lt;a href=&#34;http://devoxx.fr/&#34;&gt;Devoxx France&lt;/a&gt; in beautiful Paris!&lt;/p&gt;
+
+&lt;p&gt;Here are my &lt;a href=&#34;2016-04-22 Spring Cloud Star.pdf&#34;&gt;Slides&lt;/a&gt; and here is &lt;a href=&#34;https://youtu.be/sESK0svJ4Gs&#34;&gt;the video&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

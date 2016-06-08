@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Springio on Spencer Gibb</title>
+    <link>http://spencer.gibb.us/categories/springio/</link>
+    <description>Recent content in Springio on Spencer Gibb</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright (c) 2013 - 2015, Spencer Gibb; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 18 May 2016 14:00:00 +0100</lastBuildDate>
+    <atom:link href="http://spencer.gibb.us/categories/springio/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Spring Cloud *: Exploring Spring Cloud Implementations</title>
+      <link>http://spencer.gibb.us/preso/spring-cloud-discovery-config-springio-2016/</link>
+      <pubDate>Wed, 18 May 2016 14:00:00 +0100</pubDate>
+      
+      <guid>http://spencer.gibb.us/preso/spring-cloud-discovery-config-springio-2016/</guid>
+      <description>&lt;p&gt;I was invited to speak about comparing different Discovery and Configuration Implementations in Spring Cloud at &lt;a href=&#34;http://www.springio.net/&#34;&gt;Spring I/O&lt;/a&gt; in beautiful Barcelona!&lt;/p&gt;
+
+&lt;p&gt;Here are my &lt;a href=&#34;2016-05-18 Spring Cloud Discovery and Config Sys Comparison.pdf&#34;&gt;Slides&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I also gave a two hour workshop on Cloud Native Applications with Spring Cloud &amp;amp; Netflix OSS.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
