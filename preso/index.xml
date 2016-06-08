@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Spencer Gibb</title>
+    <title>Presos on Spencer Gibb</title>
     <link>http://spencer.gibb.us/preso/</link>
+    <description>Recent content in Presos on Spencer Gibb</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <author>Spencer Gibb</author>
-    <rights>Copyright (c) 2015, Spencer Gibb; all rights reserved.</rights>
-    <updated>Thu, 19 Nov 2015 15:54:01 -0600</updated>
+    <copyright>Copyright (c) 2013 - 2015, Spencer Gibb; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 19 Nov 2015 15:54:01 -0600</lastBuildDate>
+    <atom:link href="http://spencer.gibb.us/preso/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Cloud Native Apps with Spring Cloud - UJUG</title>
       <link>http://spencer.gibb.us/preso/spring-cloud-ujug-2015/</link>
       <pubDate>Thu, 19 Nov 2015 15:54:01 -0600</pubDate>
-      <author>Nick O'Neill</author>
+      
       <guid>http://spencer.gibb.us/preso/spring-cloud-ujug-2015/</guid>
       <description>&lt;style&gt;
     /*.reveal .slides {
@@ -41,13 +43,13 @@
         text-shadow: none; }
 &lt;/style&gt;
 </description>
-      
     </item>
+    
     <item>
       <title>scs training 2015</title>
       <link>http://spencer.gibb.us/preso/scs-training-2015/</link>
-      <pubDate>Mon, 02 Nov 2015 17:36:23 MST</pubDate>
-      <author>Nick O'Neill</author>
+      <pubDate>Mon, 02 Nov 2015 17:36:23 -0700</pubDate>
+      
       <guid>http://spencer.gibb.us/preso/scs-training-2015/</guid>
       <description>&lt;style&gt;
     /*.reveal .slides {
@@ -76,13 +78,13 @@
         text-shadow: none; }
 &lt;/style&gt;
 </description>
-      
     </item>
+    
     <item>
       <title>Spring Cloud *: SpringOne 2GX 2015</title>
       <link>http://spencer.gibb.us/preso/spring-cloud-star-springone-2015/</link>
-      <pubDate>Sun, 27 Sep 2015 14:35:54 MDT</pubDate>
-      <author>Nick O'Neill</author>
+      <pubDate>Sun, 27 Sep 2015 14:35:54 -0600</pubDate>
+      
       <guid>http://spencer.gibb.us/preso/spring-cloud-star-springone-2015/</guid>
       <description>&lt;style&gt;
     /*.reveal .slides {
@@ -111,13 +113,13 @@
         text-shadow: none; }
 &lt;/style&gt;
 </description>
-      
     </item>
+    
     <item>
       <title>Spring Cloud DCJUG</title>
       <link>http://spencer.gibb.us/preso/spring-cloud-dcjug-2015/</link>
-      <pubDate>Wed, 16 Sep 2015 00:00:00 MDT</pubDate>
-      <author>Nick O'Neill</author>
+      <pubDate>Wed, 16 Sep 2015 00:00:00 -0600</pubDate>
+      
       <guid>http://spencer.gibb.us/preso/spring-cloud-dcjug-2015/</guid>
       <description>&lt;style&gt;
     /*.reveal .slides {
@@ -146,13 +148,13 @@
         text-shadow: none; }
 &lt;/style&gt;
 </description>
-      
     </item>
+    
     <item>
       <title>Microservices with Spring Cloud and Netflix OSS</title>
       <link>http://spencer.gibb.us/preso/spring-cloud-oscon-2015/</link>
-      <pubDate>Wed, 01 Jul 2015 15:54:01 MDT</pubDate>
-      <author>Nick O'Neill</author>
+      <pubDate>Wed, 01 Jul 2015 15:54:01 -0600</pubDate>
+      
       <guid>http://spencer.gibb.us/preso/spring-cloud-oscon-2015/</guid>
       <description>&lt;style&gt;
     /*.reveal .slides {
@@ -181,13 +183,13 @@
         text-shadow: none; }
 &lt;/style&gt;
 </description>
-      
     </item>
+    
     <item>
       <title>Cloud Native Apps with Spring Cloud</title>
       <link>http://spencer.gibb.us/preso/cloud-native-devnexus/</link>
-      <pubDate>Mon, 09 Mar 2015 15:54:01 MDT</pubDate>
-      <author>Nick O'Neill</author>
+      <pubDate>Mon, 09 Mar 2015 15:54:01 -0600</pubDate>
+      
       <guid>http://spencer.gibb.us/preso/cloud-native-devnexus/</guid>
       <description>&lt;style&gt;
     /*.reveal .slides {
@@ -217,7 +219,7 @@
 &lt;/style&gt;
 
 </description>
-      
     </item>
+    
   </channel>
 </rss>

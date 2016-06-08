@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Spencer Gibb</title>
+    <title>Battleschool on Spencer Gibb</title>
     <link>http://spencer.gibb.us/categories/battleschool/</link>
+    <description>Recent content in Battleschool on Spencer Gibb</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <author>Spencer Gibb</author>
-    <rights>Copyright (c) 2014, Spencer Gibb; all rights reserved.</rights>
-    <updated>Mon, 03 Feb 2014 23:18:53 MST</updated>
+    <copyright>Copyright (c) 2013 - 2015, Spencer Gibb; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 03 Feb 2014 23:18:53 -0700</lastBuildDate>
+    <atom:link href="http://spencer.gibb.us/categories/battleschool/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Introducing Battleschool</title>
       <link>http://spencer.gibb.us/blog/2014/02/03/introducing-battleschool/</link>
-      <pubDate>Mon, 03 Feb 2014 23:18:53 MST</pubDate>
-      <author>Nick O'Neill</author>
+      <pubDate>Mon, 03 Feb 2014 23:18:53 -0700</pubDate>
+      
       <guid>http://spencer.gibb.us/blog/2014/02/03/introducing-battleschool/</guid>
       <description>
 
@@ -47,7 +49,7 @@ downloading packages to install.&lt;/p&gt;
 &lt;p&gt;In short, battleschool downloads and executes ansible playbooks against your local machine in a manner that is simple to
 configure and repeatable in cases of disaster (bad) or new machines (good).&lt;/p&gt;
 
-&lt;h3 id=&#34;simple-install:5a51e744cb3148bd389d3805956e280f&#34;&gt;Simple Install&lt;/h3&gt;
+&lt;h3 id=&#34;simple-install&#34;&gt;Simple Install&lt;/h3&gt;
 
 &lt;p&gt;I wanted a no forking install for battleschool.&lt;/p&gt;
 
@@ -61,7 +63,7 @@ $ sudo pip install battleschool
 deal with alternative installs of ansible via &lt;a href=&#34;http://brew.sh&#34;&gt;homebrew&lt;/a&gt;, &lt;a href=&#34;http://www.macports.org&#34;&gt;macports&lt;/a&gt; or
 &lt;a href=&#34;http://en.wikipedia.org/wiki/Advanced_Packaging_Tool&#34;&gt;apt&lt;/a&gt; (yes, this will work on linux/bsd as well).&lt;/p&gt;
 
-&lt;h3 id=&#34;private-playbook-repos:5a51e744cb3148bd389d3805956e280f&#34;&gt;Private Playbook Repos&lt;/h3&gt;
+&lt;h3 id=&#34;private-playbook-repos&#34;&gt;Private Playbook Repos&lt;/h3&gt;
 
 &lt;p&gt;Battleschool uses the &lt;a href=&#34;http://docs.ansible.com/git_module.html&#34;&gt;git&lt;/a&gt; and
 &lt;a href=&#34;http://docs.ansible.com/get_url_module.html&#34;&gt;get_url&lt;/a&gt; ansible modules to download remote playbooks.  That means you can
@@ -70,24 +72,24 @@ use private, self-hosted git repositories, private or public &lt;a href=&#34;htt
 forking battleschool.  Other version control systems (VCS) such as svn or mercurial should be simple to add because of
 ansible&amp;rsquo;s support for them.&lt;/p&gt;
 
-&lt;h3 id=&#34;built-on-ansible:5a51e744cb3148bd389d3805956e280f&#34;&gt;Built On Ansible&lt;/h3&gt;
+&lt;h3 id=&#34;built-on-ansible&#34;&gt;Built On Ansible&lt;/h3&gt;
 
 &lt;p&gt;I use ansible&amp;rsquo;s python api, so most of ansible-playbooks options are available to battleschool.  All of ansible&amp;rsquo;s
 &lt;a href=&#34;http://docs.ansible.com/modules_by_category.html&#34;&gt;modules&lt;/a&gt; are available.  I have been using ansible 1.3 to develop
 and plan on upgrading to 1.4 shortly.  Ansible, IMHO, is the most straightforward provisioner I have tried.  It&amp;rsquo;s
 written in python, which I have enjoyed.&lt;/p&gt;
 
-&lt;h2 id=&#34;tl-dr:5a51e744cb3148bd389d3805956e280f&#34;&gt;TL;DR&lt;/h2&gt;
+&lt;h2 id=&#34;tl-dr&#34;&gt;TL;DR&lt;/h2&gt;
 
 &lt;p&gt;Some of this comes from the &lt;a href=&#34;https://github.com/spencergibb/battleschool/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;about-the-name:5a51e744cb3148bd389d3805956e280f&#34;&gt;About the Name&lt;/h3&gt;
+&lt;h3 id=&#34;about-the-name&#34;&gt;About the Name&lt;/h3&gt;
 
 &lt;p&gt;I learned about the term &lt;a href=&#34;http://en.wikipedia.org/wiki/Ansible#In_Card.27s_work&#34;&gt;ansible&lt;/a&gt; from Ender&amp;rsquo;s Game. Taking a
 cue from Kitchenplan, I wanted to name my project with something from the enderverse.  I settled on battleschool as the
 project name and battle as the command.&lt;/p&gt;
 
-&lt;h3 id=&#34;running-battleschool:5a51e744cb3148bd389d3805956e280f&#34;&gt;Running battleschool&lt;/h3&gt;
+&lt;h3 id=&#34;running-battleschool&#34;&gt;Running battleschool&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;battle --ask-sudo-pass     #if you have setup nopasswd in sudo then omit --ask-sudo-pass
 &lt;/code&gt;&lt;/pre&gt;
@@ -101,7 +103,7 @@ cd .battleschool
 curl -L https://db.tt/aG2uyydU &amp;gt; config.yml    #this downloads my config as a starting point
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;config-yml:5a51e744cb3148bd389d3805956e280f&#34;&gt;config.yml&lt;/h3&gt;
+&lt;h3 id=&#34;config-yml&#34;&gt;config.yml&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;---
 sources:
@@ -119,9 +121,9 @@ sources:
          #- adium.yml
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id=&#34;explanation-of-battleschool-config-yml:5a51e744cb3148bd389d3805956e280f&#34;&gt;explanation of ~/.battleschool/config.yml&lt;/h4&gt;
+&lt;h4 id=&#34;explanation-of-battleschool-config-yml&#34;&gt;explanation of ~/.battleschool/config.yml&lt;/h4&gt;
 
-&lt;h5 id=&#34;local-sources:5a51e744cb3148bd389d3805956e280f&#34;&gt;local sources&lt;/h5&gt;
+&lt;h5 id=&#34;local-sources&#34;&gt;local sources&lt;/h5&gt;
 
 &lt;pre&gt;&lt;code&gt;sources:
   local:
@@ -133,7 +135,7 @@ can be listed under local.  Each playbook will be executed in order.  This can u
 configuration per workstation.  (You could install apps with homebrew or macports if those are installed, for example).
 After adding url sources (see below), this should probably be used sparingly.&lt;/p&gt;
 
-&lt;h5 id=&#34;url-sources:5a51e744cb3148bd389d3805956e280f&#34;&gt;url sources&lt;/h5&gt;
+&lt;h5 id=&#34;url-sources&#34;&gt;url sources&lt;/h5&gt;
 
 &lt;p&gt;url:
      - name: playbook.yml
@@ -155,7 +157,7 @@ you run battleschool).  For example, if you are restoring a machine, you might r
 &lt;p&gt;&lt;em&gt;NOTE: playbooks under the &lt;code&gt;local&lt;/code&gt; or &lt;code&gt;url&lt;/code&gt; sections, cannot reference anything outside of their own contents (e.g.
 files, templates, roles, etc&amp;hellip;).  See git sources below for more advanced playbooks.&lt;/em&gt;&lt;/p&gt;
 
-&lt;h5 id=&#34;git-sources:5a51e744cb3148bd389d3805956e280f&#34;&gt;git sources&lt;/h5&gt;
+&lt;h5 id=&#34;git-sources&#34;&gt;git sources&lt;/h5&gt;
 
 &lt;pre&gt;&lt;code&gt;git:
   - name: &#39;osx&#39;
@@ -168,7 +170,7 @@ files, templates, roles, etc&amp;hellip;).  See git sources below for more advan
 playsbooks is the relative location to a playbook in the specified git repository.  In the example above, adium.yml
 is in the root of the ansible-osx repository.&lt;/p&gt;
 
-&lt;h5 id=&#34;git-repo-sources:5a51e744cb3148bd389d3805956e280f&#34;&gt;git repo sources&lt;/h5&gt;
+&lt;h5 id=&#34;git-repo-sources&#34;&gt;git repo sources&lt;/h5&gt;
 
 &lt;p&gt;Directory Layout&lt;/p&gt;
 
@@ -189,7 +191,7 @@ library/                  # optional remote module definitions
 directory layout. The &lt;code&gt;library&lt;/code&gt; directory is the location for placing
 &lt;a href=&#34;http://docs.ansible.com/developing_modules.html&#34;&gt;custom ansible modules&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h4 id=&#34;the-mac-pkg-module:5a51e744cb3148bd389d3805956e280f&#34;&gt;the mac_pkg module&lt;/h4&gt;
+&lt;h4 id=&#34;the-mac-pkg-module&#34;&gt;the mac_pkg module&lt;/h4&gt;
 
 &lt;p&gt;This is the meat of battleschool.  How do you install mac apps?&lt;/p&gt;
 
@@ -248,13 +250,13 @@ used instead.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;NOTE: battleschool, currently does not install apps from the Apple App Store.&lt;/em&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;homebrew:5a51e744cb3148bd389d3805956e280f&#34;&gt;Homebrew&lt;/h3&gt;
+&lt;h3 id=&#34;homebrew&#34;&gt;Homebrew&lt;/h3&gt;
 
 &lt;p&gt;So, you like &lt;a href=&#34;http://brew.sh&#34;&gt;homebrew&lt;/a&gt; and want to use it to install apps on you mac.  No problem.  Battleschool can
 install homebrew for you (&lt;a href=&#34;https://raw.github.com/spencergibb/ansible-osx/master/homebrew.yml&#34;&gt;see this playbook&lt;/a&gt;).
 Already have homebrew installed? No, problem, it won&amp;rsquo;t try and install it again.&lt;/p&gt;
 
-&lt;h2 id=&#34;where-to-start:5a51e744cb3148bd389d3805956e280f&#34;&gt;Where to start?&lt;/h2&gt;
+&lt;h2 id=&#34;where-to-start&#34;&gt;Where to start?&lt;/h2&gt;
 
 &lt;p&gt;Probably the easiest way to start is by looking at my configuration:&lt;/p&gt;
 
@@ -264,13 +266,13 @@ Already have homebrew installed? No, problem, it won&amp;rsquo;t try and install
 
 &lt;p&gt;My playbook git repo: &lt;a href=&#34;https://github.com/spencergibb/ansible-osx&#34;&gt;https://github.com/spencergibb/ansible-osx&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;how-to-contact-me-or-the-community:5a51e744cb3148bd389d3805956e280f&#34;&gt;How to contact me or the community?&lt;/h3&gt;
+&lt;h3 id=&#34;how-to-contact-me-or-the-community&#34;&gt;How to contact me or the community?&lt;/h3&gt;
 
 &lt;p&gt;Google group: &lt;a href=&#34;https://groups.google.com/d/forum/battle-school&#34;&gt;https://groups.google.com/d/forum/battle-school&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Github project for issues, forks, pull requests: &lt;a href=&#34;https://github.com/spencergibb/battleschool&#34;&gt;https://github.com/spencergibb/battleschool&lt;/a&gt;&lt;/p&gt;
 </description>
-      
     </item>
+    
   </channel>
 </rss>

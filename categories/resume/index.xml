@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Spencer Gibb</title>
+    <title>Resume on Spencer Gibb</title>
     <link>http://spencer.gibb.us/categories/resume/</link>
+    <description>Recent content in Resume on Spencer Gibb</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <author>Spencer Gibb</author>
-    <rights>Copyright (c) 2013, Spencer Gibb; all rights reserved.</rights>
-    <updated>Tue, 12 Mar 2013 12:27:08 -0700</updated>
+    <copyright>Copyright (c) 2013 - 2015, Spencer Gibb; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 12 Mar 2013 12:27:08 -0700</lastBuildDate>
+    <atom:link href="http://spencer.gibb.us/categories/resume/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>about</title>
+      <title>About</title>
       <link>http://spencer.gibb.us/about/</link>
       <pubDate>Tue, 12 Mar 2013 12:27:08 -0700</pubDate>
-      <author>Nick O'Neill</author>
+      
       <guid>http://spencer.gibb.us/about/</guid>
       <description>
 
@@ -20,7 +22,7 @@
 &lt;a href=&#34;http://spencer.gibb.us/resume/spencer_gibb_resume.docx&#34;&gt;docx&lt;/a&gt;
 &lt;a href=&#34;http://spencer.gibb.us/resume/spencer_gibb_resume.txt&#34;&gt;txt&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;spencer-gibb:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Spencer Gibb&lt;/h2&gt;
+&lt;h2 id=&#34;spencer-gibb&#34;&gt;Spencer Gibb&lt;/h2&gt;
 
 &lt;p&gt;1919 Jackson St, Kaysville, UT 84037&lt;br/&gt;
 Mobile: 801-540-5830&lt;br/&gt;
@@ -29,7 +31,7 @@ Mobile: 801-540-5830&lt;br/&gt;
 &lt;a href=&#34;https://github.com/spencergibb&#34;&gt;github&lt;/a&gt;
 &lt;a href=&#34;http://www.linkedin.com/in/spencergibb&#34;&gt;linkedin&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;skills:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Skills&lt;/h2&gt;
+&lt;h2 id=&#34;skills&#34;&gt;Skills&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Java tech (Spring, Scala, Hibernate, JPA, Maven, Swing, Ant, GWT, JEE, JSE)&lt;/li&gt;
@@ -44,7 +46,7 @@ Mobile: 801-540-5830&lt;br/&gt;
 &lt;li&gt;Mentoring junior co-workers&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;professional-experience:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Professional Experience&lt;/h2&gt;
+&lt;h2 id=&#34;professional-experience&#34;&gt;Professional Experience&lt;/h2&gt;
 
 &lt;p&gt;STAFF ENGINEER, Pivotal, Palo Alto CA (Remote), Jul 2014 – Present&lt;/p&gt;
 
@@ -168,7 +170,7 @@ Side JavaScript)&lt;/li&gt;
 design in Adobe Photoshop.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;open-source-projects:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Open Source Projects&lt;/h4&gt;
+&lt;h4 id=&#34;open-source-projects&#34;&gt;Open Source Projects&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Battleschool: &lt;a href=&#34;https://github.com/spencergibb/battleschool&#34;&gt;https://github.com/spencergibb/battleschool&lt;/a&gt;&lt;br/&gt;
@@ -177,7 +179,7 @@ Development environment provisioning using &lt;a href=&#34;http:ansible.com&#34;
 A Dropwizard clone using Spring &amp;amp; Tomcat (superseded by &lt;a href=&#34;https://github.com/spring-cloud&#34;&gt;Spring Cloud&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;technologies:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Technologies&lt;/h4&gt;
+&lt;h4 id=&#34;technologies&#34;&gt;Technologies&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Java (1.4, 5, 6, 7, 8), Groovy, Scala, Spring, Hibernate (JPA), iBatis, Java Server Faces (JSF), Facelets,
@@ -190,7 +192,7 @@ Velocity, JUnit, TestNG, DBUnit&lt;/li&gt;
 &lt;li&gt;Misc. – git, C++, C, Python, Ruby, Perl, Shell Scripts, Photoshop, Subversion, CVS&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;education-bs-computer-science-brigham-young-university:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Education – BS, Computer Science, Brigham Young University&lt;/h3&gt;
+&lt;h3 id=&#34;education-bs-computer-science-brigham-young-university&#34;&gt;Education – BS, Computer Science, Brigham Young University&lt;/h3&gt;
 
 &lt;p&gt;Provo UT, December 2002&lt;/p&gt;
 
@@ -200,7 +202,7 @@ Concepts, Computer Communication and Networking and Machine Learning.&lt;/li&gt;
 &lt;li&gt;Sun Certified Java Programmer, October 2004&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;volunteer-representative:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Volunteer Representative&lt;/h3&gt;
+&lt;h3 id=&#34;volunteer-representative&#34;&gt;Volunteer Representative&lt;/h3&gt;
 
 &lt;p&gt;The Church of Jesus Christ of Latter-day Saints&lt;br/&gt;
   Recife, Brazil, Dec 1994 – Dec 1996&lt;/p&gt;
@@ -212,7 +214,7 @@ Concepts, Computer Communication and Networking and Machine Learning.&lt;/li&gt;
 and leadership skills&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-      
     </item>
+    
   </channel>
 </rss>

@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Spencer Gibb</title>
+    <title>Spencer Gibb</title>
     <link>http://spencer.gibb.us/</link>
+    <description>Recent content on Spencer Gibb</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <author>Spencer Gibb</author>
-    <rights>Copyright (c) 2015, Spencer Gibb; all rights reserved.</rights>
-    <updated>Thu, 19 Nov 2015 15:54:01 -0600</updated>
+    <copyright>Copyright (c) 2013 - 2015, Spencer Gibb; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 19 Nov 2015 15:54:01 -0600</lastBuildDate>
+    <atom:link href="http://spencer.gibb.us/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Cloud Native Apps with Spring Cloud - UJUG</title>
       <link>http://spencer.gibb.us/preso/spring-cloud-ujug-2015/</link>
       <pubDate>Thu, 19 Nov 2015 15:54:01 -0600</pubDate>
-      <author>Nick O'Neill</author>
+      
       <guid>http://spencer.gibb.us/preso/spring-cloud-ujug-2015/</guid>
       <description>&lt;style&gt;
     /*.reveal .slides {
@@ -41,13 +43,13 @@
         text-shadow: none; }
 &lt;/style&gt;
 </description>
-      
     </item>
+    
     <item>
       <title>scs training 2015</title>
       <link>http://spencer.gibb.us/preso/scs-training-2015/</link>
-      <pubDate>Mon, 02 Nov 2015 17:36:23 MST</pubDate>
-      <author>Nick O'Neill</author>
+      <pubDate>Mon, 02 Nov 2015 17:36:23 -0700</pubDate>
+      
       <guid>http://spencer.gibb.us/preso/scs-training-2015/</guid>
       <description>&lt;style&gt;
     /*.reveal .slides {
@@ -76,13 +78,13 @@
         text-shadow: none; }
 &lt;/style&gt;
 </description>
-      
     </item>
+    
     <item>
       <title>Trello for Feelings</title>
       <link>http://spencer.gibb.us/blog/2015/10/06/trello-for-feelings/</link>
-      <pubDate>Tue, 06 Oct 2015 09:07:07 MDT</pubDate>
-      <author>Nick O'Neill</author>
+      <pubDate>Tue, 06 Oct 2015 09:07:07 -0600</pubDate>
+      
       <guid>http://spencer.gibb.us/blog/2015/10/06/trello-for-feelings/</guid>
       <description>&lt;p&gt;Computer geeks often don&amp;rsquo;t know how to express their feelings very well. If &lt;a href=&#34;http://randsinrepose.com/archives/the-nerd-handbook/&#34;&gt;The Nerd Handbook&lt;/a&gt; rings a bell for you or your significant other, you know what I&amp;rsquo;m talking about. It rang true with me. The trouble I have is how to deal with someone else&amp;rsquo;s feelings and figure out what the heck mine are. I had a thought the other day and so far it has helped.&lt;/p&gt;
 
@@ -98,13 +100,13 @@
 
 &lt;p&gt;&amp;ldquo;Conflict is inevitable, but drama is a choice&amp;rdquo; &lt;a href=&#34;https://twitter.com/ChrisBrownOnAir&#34;&gt;@ChrisBrownOnAir&lt;/a&gt;&lt;/p&gt;
 </description>
-      
     </item>
+    
     <item>
       <title>Spring Cloud *: SpringOne 2GX 2015</title>
       <link>http://spencer.gibb.us/preso/spring-cloud-star-springone-2015/</link>
-      <pubDate>Sun, 27 Sep 2015 14:35:54 MDT</pubDate>
-      <author>Nick O'Neill</author>
+      <pubDate>Sun, 27 Sep 2015 14:35:54 -0600</pubDate>
+      
       <guid>http://spencer.gibb.us/preso/spring-cloud-star-springone-2015/</guid>
       <description>&lt;style&gt;
     /*.reveal .slides {
@@ -133,13 +135,13 @@
         text-shadow: none; }
 &lt;/style&gt;
 </description>
-      
     </item>
+    
     <item>
       <title>Spring Cloud Config Push Notifications</title>
       <link>http://spencer.gibb.us/blog/2015/09/24/spring-cloud-config-push-notifications/</link>
-      <pubDate>Thu, 24 Sep 2015 10:48:18 MDT</pubDate>
-      <author>Nick O'Neill</author>
+      <pubDate>Thu, 24 Sep 2015 10:48:18 -0600</pubDate>
+      
       <guid>http://spencer.gibb.us/blog/2015/09/24/spring-cloud-config-push-notifications/</guid>
       <description>
 
@@ -150,7 +152,7 @@ to config clients.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; I am using &lt;a href=&#34;https://github.com/jkbrzt/httpie&#34;&gt;HTTPie&lt;/a&gt; (pronounced &lt;em&gt;aych-tee-tee-pie&lt;/em&gt;) for these demos. I believe it provides a more user friendly experience. To install on a mac with &lt;a href=&#34;http://brew.sh/&#34;&gt;Homebrew&lt;/a&gt;: &lt;code&gt;brew install httpie&lt;/code&gt;, otherwise see &lt;a href=&#34;https://github.com/jkbrzt/httpie#installation&#34;&gt;the install docs&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;dependencies:e78e9db90ac45826e12a3a6531ebb194&#34;&gt;Dependencies&lt;/h2&gt;
+&lt;h2 id=&#34;dependencies&#34;&gt;Dependencies&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-xml&#34;&gt;&amp;lt;parent&amp;gt;
   &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;
@@ -189,7 +191,7 @@ public class ConfigServerApplication {
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;manual-push:e78e9db90ac45826e12a3a6531ebb194&#34;&gt;Manual push&lt;/h2&gt;
+&lt;h2 id=&#34;manual-push&#34;&gt;Manual push&lt;/h2&gt;
 
 &lt;p&gt;The &lt;code&gt;/monitor&lt;/code&gt; endpoint includes a form encoded post that you can trigger as follows:&lt;/p&gt;
 
@@ -198,7 +200,7 @@ public class ConfigServerApplication {
 
 &lt;p&gt;This allows you to develop your own hooks. It also allows for a central api to manually trigger refresh events.&lt;/p&gt;
 
-&lt;h2 id=&#34;remote-refresh-event:e78e9db90ac45826e12a3a6531ebb194&#34;&gt;Remote Refresh Event&lt;/h2&gt;
+&lt;h2 id=&#34;remote-refresh-event&#34;&gt;Remote Refresh Event&lt;/h2&gt;
 
 &lt;p&gt;Config clients need to have the following dependencies (again, assuming redis) from &lt;code&gt;Brixton.BUILD-SNAPSHOT&lt;/code&gt;&lt;/p&gt;
 
@@ -218,7 +220,7 @@ public class ConfigServerApplication {
 &lt;pre&gt;&lt;code&gt;2015-09-24 12:15:54.257  INFO 11202 --- [enerContainer-2] o.s.cloud.bus.event.RefreshListener      : Received remote refresh request. Keys refreshed [info.description]
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;gitlab-webhook:e78e9db90ac45826e12a3a6531ebb194&#34;&gt;Gitlab webhook&lt;/h2&gt;
+&lt;h2 id=&#34;gitlab-webhook&#34;&gt;Gitlab webhook&lt;/h2&gt;
 
 &lt;p&gt;The Gitlab wehbhook doesn&amp;rsquo;t list the files that changed, so all applications will receive a refresh event. That&amp;rsquo;s the reason I don&amp;rsquo;t have a specific configuration in the simulation link below.&lt;/p&gt;
 
@@ -233,7 +235,7 @@ public GitlabPropertyPathNotificationExtractor gitlabPropertyPathNotificationExt
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;http --json POST :8888/monitor X-Gitlab-Event:&amp;quot;Push Event&amp;quot; commits:=&#39;[{}]&#39;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;github-webhook:e78e9db90ac45826e12a3a6531ebb194&#34;&gt;Github webhook&lt;/h2&gt;
+&lt;h2 id=&#34;github-webhook&#34;&gt;Github webhook&lt;/h2&gt;
 
 &lt;p&gt;Github  reports what files were added, deleted and modified and attempts to only send notifications to the impacted services.&lt;/p&gt;
 
@@ -248,7 +250,7 @@ public GithubPropertyPathNotificationExtractor githubPropertyPathNotificationExt
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;http --json POST :8888/monitor X-Github-Event:&amp;quot;push&amp;quot; commits:=&#39;[{&amp;quot;modified&amp;quot;: [&amp;quot;configserver.yml&amp;quot;] }]&#39;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;test-github-via-ngrok:e78e9db90ac45826e12a3a6531ebb194&#34;&gt;Test github via ngrok:&lt;/h3&gt;
+&lt;h3 id=&#34;test-github-via-ngrok&#34;&gt;Test github via ngrok:&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://ngrok.com/download&#34;&gt;Install ngrok&lt;/a&gt; first.&lt;/p&gt;
 
@@ -257,20 +259,20 @@ public GithubPropertyPathNotificationExtractor githubPropertyPathNotificationExt
 
 &lt;p&gt;Add &lt;code&gt;https://41b2063a.ngrok.com/monitor&lt;/code&gt; to you config repo&amp;rsquo;s github webhooks settings. Commit changes and profit!&lt;/p&gt;
 
-&lt;h2 id=&#34;filesystem-watcher:e78e9db90ac45826e12a3a6531ebb194&#34;&gt;Filesystem watcher&lt;/h2&gt;
+&lt;h2 id=&#34;filesystem-watcher&#34;&gt;Filesystem watcher&lt;/h2&gt;
 
 &lt;p&gt;For the &lt;code&gt;native&lt;/code&gt; file based repository, a watch is created that polls the filesystem for changes. If a change is found, a change event is sent.&lt;/p&gt;
 
-&lt;h2 id=&#34;update-1:e78e9db90ac45826e12a3a6531ebb194&#34;&gt;Update #1&lt;/h2&gt;
+&lt;h2 id=&#34;update-1&#34;&gt;Update #1&lt;/h2&gt;
 
-&lt;h3 id=&#34;auto-configuration:e78e9db90ac45826e12a3a6531ebb194&#34;&gt;Auto-configuration&lt;/h3&gt;
+&lt;h3 id=&#34;auto-configuration&#34;&gt;Auto-configuration&lt;/h3&gt;
 
 &lt;p&gt;You no longer need to add &lt;code&gt;@Bean&lt;/code&gt;s for each extractor, it is auto-configured, and you can disable them with:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;spring.cloud.config.server.monitor.{github|gitlab|bitbucket}.enabled=false
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;bitbucket-webhook:e78e9db90ac45826e12a3a6531ebb194&#34;&gt;Bitbucket webhook&lt;/h3&gt;
+&lt;h3 id=&#34;bitbucket-webhook&#34;&gt;Bitbucket webhook&lt;/h3&gt;
 
 &lt;p&gt;If you create webhook for your config server &lt;code&gt;/watches&lt;/code&gt; on Bitbucket, it will trigger a global config update similar to Gitlab. Bitbucket doesn&amp;rsquo;t says what files changed.&lt;/p&gt;
 
@@ -279,13 +281,13 @@ public GithubPropertyPathNotificationExtractor githubPropertyPathNotificationExt
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;http --json POST :8888/monitor X-Event-Key:&amp;quot;repo:push&amp;quot; X-Hook-UUID:123 push:=&#39;{&amp;quot;changes&amp;quot;: [{}]}&#39;
 &lt;/code&gt;&lt;/pre&gt;
 </description>
-      
     </item>
+    
     <item>
       <title>Spring Cloud DCJUG</title>
       <link>http://spencer.gibb.us/preso/spring-cloud-dcjug-2015/</link>
-      <pubDate>Wed, 16 Sep 2015 00:00:00 MDT</pubDate>
-      <author>Nick O'Neill</author>
+      <pubDate>Wed, 16 Sep 2015 00:00:00 -0600</pubDate>
+      
       <guid>http://spencer.gibb.us/preso/spring-cloud-dcjug-2015/</guid>
       <description>&lt;style&gt;
     /*.reveal .slides {
@@ -314,13 +316,13 @@ public GithubPropertyPathNotificationExtractor githubPropertyPathNotificationExt
         text-shadow: none; }
 &lt;/style&gt;
 </description>
-      
     </item>
+    
     <item>
       <title>Microservices with Spring Cloud and Netflix OSS</title>
       <link>http://spencer.gibb.us/preso/spring-cloud-oscon-2015/</link>
-      <pubDate>Wed, 01 Jul 2015 15:54:01 MDT</pubDate>
-      <author>Nick O'Neill</author>
+      <pubDate>Wed, 01 Jul 2015 15:54:01 -0600</pubDate>
+      
       <guid>http://spencer.gibb.us/preso/spring-cloud-oscon-2015/</guid>
       <description>&lt;style&gt;
     /*.reveal .slides {
@@ -349,17 +351,17 @@ public GithubPropertyPathNotificationExtractor githubPropertyPathNotificationExt
         text-shadow: none; }
 &lt;/style&gt;
 </description>
-      
     </item>
+    
     <item>
       <title>Spring Cloud Devnexus Notes</title>
       <link>http://spencer.gibb.us/notes/spring-cloud-devnexus-notes/</link>
       <pubDate>Wed, 11 Mar 2015 09:45:06 -0700</pubDate>
-      <author>Nick O'Neill</author>
+      
       <guid>http://spencer.gibb.us/notes/spring-cloud-devnexus-notes/</guid>
       <description>
 
-&lt;h2 id=&#34;monolithic-vs-microservices:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;Monolithic vs Microservices&lt;/h2&gt;
+&lt;h2 id=&#34;monolithic-vs-microservices&#34;&gt;Monolithic vs Microservices&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Easy/Hard vs Simple/Complex&lt;/li&gt;
@@ -385,11 +387,12 @@ public GithubPropertyPathNotificationExtractor githubPropertyPathNotificationExt
 &lt;li&gt;more scaling vectors&lt;/li&gt;
 &lt;li&gt;dev friendly&lt;/li&gt;
 &lt;li&gt;easier to scale dev&lt;/li&gt;
-&lt;li&gt;no long term commitment to tech stack&lt;/li&gt;
+&lt;li&gt;no long term commitment to tech stack
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;microservices-with-spring-boot:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;Microservices with Spring Boot&lt;/h2&gt;
+&lt;h2 id=&#34;microservices-with-spring-boot&#34;&gt;Microservices with Spring Boot&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;partition strategies
@@ -405,7 +408,7 @@ public GithubPropertyPathNotificationExtractor githubPropertyPathNotificationExt
 &lt;li&gt;Choreography vs Orchestration&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;no-man-microservice-is-an-island:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;No Man (Microservice) is an Island&lt;/h2&gt;
+&lt;h2 id=&#34;no-man-microservice-is-an-island&#34;&gt;No Man (Microservice) is an Island&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;No free lunch
@@ -417,14 +420,15 @@ public GithubPropertyPathNotificationExtractor githubPropertyPathNotificationExt
 &lt;li&gt;Duplication of effort&lt;/li&gt;
 &lt;li&gt;Distributed System complexity&lt;/li&gt;
 &lt;li&gt;Asynchronicity is difficult&lt;/li&gt;
-&lt;li&gt;Testability chalenges&lt;/li&gt;
+&lt;li&gt;Testability chalenges
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Spring CLI Support
 http command is from httpie.org&lt;/p&gt;
 
-&lt;h2 id=&#34;configuration-server:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;Configuration Server&lt;/h2&gt;
+&lt;h2 id=&#34;configuration-server&#34;&gt;Configuration Server&lt;/h2&gt;
 
 &lt;p&gt;cd ~/workspace/spencergibb/myfeed&lt;/p&gt;
 
@@ -436,7 +440,7 @@ http -a user:password :11020/myapp/default&lt;br /&gt;
 http -a user:password :11020/myfeed-ui/development
 http -a user:password :11020/myfeed-ui/development/test&lt;/p&gt;
 
-&lt;h3 id=&#34;config-client:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;Config Client&lt;/h3&gt;
+&lt;h3 id=&#34;config-client&#34;&gt;Config Client&lt;/h3&gt;
 
 &lt;p&gt;run myfeed-ui
 http :11040/env&lt;/p&gt;
@@ -463,7 +467,7 @@ http :11040/ui/features&lt;/p&gt;
 
 &lt;p&gt;http POST :11040/shutdown&lt;/p&gt;
 
-&lt;h3 id=&#34;encryption-decryption:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;encryption/decryption&lt;/h3&gt;
+&lt;h3 id=&#34;encryption-decryption&#34;&gt;encryption/decryption&lt;/h3&gt;
 
 &lt;p&gt;cat /Users/sgibb/workspace/spencergibb/myfeed-config/application.yml
 http -a user:password :11020/myapp/default # show encrypted.password&lt;/p&gt;
@@ -474,7 +478,7 @@ spring decrypt &amp;ndash;key=foobar $TESTVAL&lt;/p&gt;
 
 &lt;p&gt;cli and server also support keystores&lt;/p&gt;
 
-&lt;h2 id=&#34;discovery-eureka:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;Discovery: Eureka&lt;/h2&gt;
+&lt;h2 id=&#34;discovery-eureka&#34;&gt;Discovery: Eureka&lt;/h2&gt;
 
 &lt;p&gt;open DiscoveryApp
 start eureka&lt;br /&gt;
@@ -488,7 +492,7 @@ http :11040/metrics # or &lt;a href=&#34;http://ui.myfeed.com:11040/metrics&#34;
 
 &lt;p&gt;by default configserver gives eureka address, can setup eureka to locate configserver&lt;/p&gt;
 
-&lt;h2 id=&#34;ribbon-and-hystrix:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;Ribbon and Hystrix&lt;/h2&gt;
+&lt;h2 id=&#34;ribbon-and-hystrix&#34;&gt;Ribbon and Hystrix&lt;/h2&gt;
 
 &lt;p&gt;open AdminApp, show LoadBalancerClient&lt;/p&gt;
 
@@ -520,12 +524,12 @@ open UiController and show Feign and client call&lt;/p&gt;
 &lt;p&gt;Uses Spring MVC annotations&lt;br /&gt;
 Uses Spring HttpMessageConverters configured by spring boot&lt;/p&gt;
 
-&lt;h2 id=&#34;rx-java:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;Rx Java&lt;/h2&gt;
+&lt;h2 id=&#34;rx-java&#34;&gt;Rx Java&lt;/h2&gt;
 
 &lt;p&gt;show UiController.feed
 show FeedService.feed&lt;/p&gt;
 
-&lt;h2 id=&#34;routing-zuul:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;Routing: Zuul&lt;/h2&gt;
+&lt;h2 id=&#34;routing-zuul&#34;&gt;Routing: Zuul&lt;/h2&gt;
 
 &lt;p&gt;open RoutingApp
 start router&lt;/p&gt;
@@ -540,14 +544,14 @@ start router&lt;/p&gt;
 
 &lt;p&gt;hit &lt;a href=&#34;http://www.myfeed.com:11080/whoami&#34;&gt;http://www.myfeed.com:11080/whoami&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;spring-cloud-security:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;Spring Cloud Security&lt;/h2&gt;
+&lt;h2 id=&#34;spring-cloud-security&#34;&gt;Spring Cloud Security&lt;/h2&gt;
 
 &lt;p&gt;show RouterApp and router application.yml
 show UiApp and ui application.yml&lt;/p&gt;
 
 &lt;p&gt;Spring Session Redis for AdminApp&lt;/p&gt;
 
-&lt;h2 id=&#34;spring-cloud-bus:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;Spring Cloud Bus&lt;/h2&gt;
+&lt;h2 id=&#34;spring-cloud-bus&#34;&gt;Spring Cloud Bus&lt;/h2&gt;
 
 &lt;p&gt;http &amp;ndash;form :11081/bus/env logging.level.ROOT=INFO
 http &amp;ndash;form :11081/bus/env my.prop=my.val
@@ -559,7 +563,7 @@ publish to ApplicationEventPublisher.publish(event)&lt;/p&gt;
 
 &lt;p&gt;ability to extend to other messaging systems besids RabbitMQ&lt;/p&gt;
 
-&lt;h2 id=&#34;spring-cloud-sidecar:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;Spring Cloud Sidecar&lt;/h2&gt;
+&lt;h2 id=&#34;spring-cloud-sidecar&#34;&gt;Spring Cloud Sidecar&lt;/h2&gt;
 
 &lt;p&gt;open s-c-netflix&lt;br /&gt;
 open SidecarApplication&lt;/p&gt;
@@ -586,7 +590,7 @@ http :11100/myfeed-feed/@spencergibb&lt;/p&gt;
 &lt;p&gt;proxy to configserver
 http -a user:password :11100/configserver/myapp-default.yml&lt;/p&gt;
 
-&lt;h2 id=&#34;spring-restdocs:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;Spring Restdocs&lt;/h2&gt;
+&lt;h2 id=&#34;spring-restdocs&#34;&gt;Spring Restdocs&lt;/h2&gt;
 
 &lt;p&gt;./myfeed-user/target/myfeed-user-1.0.0.BUILD-SNAPSHOT.jar &amp;ndash;server.port=11072&lt;/p&gt;
 
@@ -594,13 +598,13 @@ http -a user:password :11100/configserver/myapp-default.yml&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://localhost:11072/docs/getting-started-guide.html&#34;&gt;http://localhost:11072/docs/getting-started-guide.html&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;spring-session-redis:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;Spring Session Redis&lt;/h2&gt;
+&lt;h2 id=&#34;spring-session-redis&#34;&gt;Spring Session Redis&lt;/h2&gt;
 
 &lt;p&gt;open RouterApp show @EnableRedisHttpSession&lt;/p&gt;
 
 &lt;p&gt;show admin application.yml show security part&lt;/p&gt;
 
-&lt;h2 id=&#34;preview-spring-cloud-consul:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;Preview: Spring Cloud Consul&lt;/h2&gt;
+&lt;h2 id=&#34;preview-spring-cloud-consul&#34;&gt;Preview: Spring Cloud Consul&lt;/h2&gt;
 
 &lt;p&gt;cat run_consul.sh&lt;br /&gt;
 ./run_consul.sh&lt;/p&gt;
@@ -635,13 +639,13 @@ http :8080/&lt;/p&gt;
 
 &lt;p&gt;http :8080/bus/refresh&lt;/p&gt;
 </description>
-      
     </item>
+    
     <item>
       <title>Cloud Native Apps with Spring Cloud</title>
       <link>http://spencer.gibb.us/preso/cloud-native-devnexus/</link>
-      <pubDate>Mon, 09 Mar 2015 15:54:01 MDT</pubDate>
-      <author>Nick O'Neill</author>
+      <pubDate>Mon, 09 Mar 2015 15:54:01 -0600</pubDate>
+      
       <guid>http://spencer.gibb.us/preso/cloud-native-devnexus/</guid>
       <description>&lt;style&gt;
     /*.reveal .slides {
@@ -671,13 +675,13 @@ http :8080/&lt;/p&gt;
 &lt;/style&gt;
 
 </description>
-      
     </item>
+    
     <item>
       <title>go hugo</title>
       <link>http://spencer.gibb.us/blog/2015/03/03/go-hugo/</link>
-      <pubDate>Tue, 03 Mar 2015 15:45:06 MST</pubDate>
-      <author>Nick O'Neill</author>
+      <pubDate>Tue, 03 Mar 2015 15:45:06 -0700</pubDate>
+      
       <guid>http://spencer.gibb.us/blog/2015/03/03/go-hugo/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve migrated my blog from &lt;a href=&#34;http://octopress.org&#34;&gt;octopress&lt;/a&gt; to &lt;a href=&#34;http://gohugo.io&#34;&gt;hugo&lt;/a&gt; by &lt;a href=&#34;https://github.com/spf13&#34;&gt;Steve Francia&lt;/a&gt;.&lt;/p&gt;
 
@@ -685,23 +689,23 @@ http :8080/&lt;/p&gt;
 
 &lt;p&gt;Hopefully you will see more blog posts here and maybe on &lt;a href=&#34;http://spring.io&#34;&gt;http://spring.io&lt;/a&gt;&lt;/p&gt;
 </description>
-      
     </item>
+    
     <item>
       <title>license</title>
       <link>http://spencer.gibb.us/license/</link>
-      <pubDate>Tue, 03 Mar 2015 15:21:38 MST</pubDate>
-      <author>Nick O'Neill</author>
+      <pubDate>Tue, 03 Mar 2015 15:21:38 -0700</pubDate>
+      
       <guid>http://spencer.gibb.us/license/</guid>
       <description>&lt;p&gt;Copyright &amp;copy; 2013 - 2015, Spencer Gibb; all rights reserved.&lt;/p&gt;
 </description>
-      
     </item>
+    
     <item>
       <title>Introducing Battleschool</title>
       <link>http://spencer.gibb.us/blog/2014/02/03/introducing-battleschool/</link>
-      <pubDate>Mon, 03 Feb 2014 23:18:53 MST</pubDate>
-      <author>Nick O'Neill</author>
+      <pubDate>Mon, 03 Feb 2014 23:18:53 -0700</pubDate>
+      
       <guid>http://spencer.gibb.us/blog/2014/02/03/introducing-battleschool/</guid>
       <description>
 
@@ -736,7 +740,7 @@ downloading packages to install.&lt;/p&gt;
 &lt;p&gt;In short, battleschool downloads and executes ansible playbooks against your local machine in a manner that is simple to
 configure and repeatable in cases of disaster (bad) or new machines (good).&lt;/p&gt;
 
-&lt;h3 id=&#34;simple-install:5a51e744cb3148bd389d3805956e280f&#34;&gt;Simple Install&lt;/h3&gt;
+&lt;h3 id=&#34;simple-install&#34;&gt;Simple Install&lt;/h3&gt;
 
 &lt;p&gt;I wanted a no forking install for battleschool.&lt;/p&gt;
 
@@ -750,7 +754,7 @@ $ sudo pip install battleschool
 deal with alternative installs of ansible via &lt;a href=&#34;http://brew.sh&#34;&gt;homebrew&lt;/a&gt;, &lt;a href=&#34;http://www.macports.org&#34;&gt;macports&lt;/a&gt; or
 &lt;a href=&#34;http://en.wikipedia.org/wiki/Advanced_Packaging_Tool&#34;&gt;apt&lt;/a&gt; (yes, this will work on linux/bsd as well).&lt;/p&gt;
 
-&lt;h3 id=&#34;private-playbook-repos:5a51e744cb3148bd389d3805956e280f&#34;&gt;Private Playbook Repos&lt;/h3&gt;
+&lt;h3 id=&#34;private-playbook-repos&#34;&gt;Private Playbook Repos&lt;/h3&gt;
 
 &lt;p&gt;Battleschool uses the &lt;a href=&#34;http://docs.ansible.com/git_module.html&#34;&gt;git&lt;/a&gt; and
 &lt;a href=&#34;http://docs.ansible.com/get_url_module.html&#34;&gt;get_url&lt;/a&gt; ansible modules to download remote playbooks.  That means you can
@@ -759,24 +763,24 @@ use private, self-hosted git repositories, private or public &lt;a href=&#34;htt
 forking battleschool.  Other version control systems (VCS) such as svn or mercurial should be simple to add because of
 ansible&amp;rsquo;s support for them.&lt;/p&gt;
 
-&lt;h3 id=&#34;built-on-ansible:5a51e744cb3148bd389d3805956e280f&#34;&gt;Built On Ansible&lt;/h3&gt;
+&lt;h3 id=&#34;built-on-ansible&#34;&gt;Built On Ansible&lt;/h3&gt;
 
 &lt;p&gt;I use ansible&amp;rsquo;s python api, so most of ansible-playbooks options are available to battleschool.  All of ansible&amp;rsquo;s
 &lt;a href=&#34;http://docs.ansible.com/modules_by_category.html&#34;&gt;modules&lt;/a&gt; are available.  I have been using ansible 1.3 to develop
 and plan on upgrading to 1.4 shortly.  Ansible, IMHO, is the most straightforward provisioner I have tried.  It&amp;rsquo;s
 written in python, which I have enjoyed.&lt;/p&gt;
 
-&lt;h2 id=&#34;tl-dr:5a51e744cb3148bd389d3805956e280f&#34;&gt;TL;DR&lt;/h2&gt;
+&lt;h2 id=&#34;tl-dr&#34;&gt;TL;DR&lt;/h2&gt;
 
 &lt;p&gt;Some of this comes from the &lt;a href=&#34;https://github.com/spencergibb/battleschool/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;about-the-name:5a51e744cb3148bd389d3805956e280f&#34;&gt;About the Name&lt;/h3&gt;
+&lt;h3 id=&#34;about-the-name&#34;&gt;About the Name&lt;/h3&gt;
 
 &lt;p&gt;I learned about the term &lt;a href=&#34;http://en.wikipedia.org/wiki/Ansible#In_Card.27s_work&#34;&gt;ansible&lt;/a&gt; from Ender&amp;rsquo;s Game. Taking a
 cue from Kitchenplan, I wanted to name my project with something from the enderverse.  I settled on battleschool as the
 project name and battle as the command.&lt;/p&gt;
 
-&lt;h3 id=&#34;running-battleschool:5a51e744cb3148bd389d3805956e280f&#34;&gt;Running battleschool&lt;/h3&gt;
+&lt;h3 id=&#34;running-battleschool&#34;&gt;Running battleschool&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;battle --ask-sudo-pass     #if you have setup nopasswd in sudo then omit --ask-sudo-pass
 &lt;/code&gt;&lt;/pre&gt;
@@ -790,7 +794,7 @@ cd .battleschool
 curl -L https://db.tt/aG2uyydU &amp;gt; config.yml    #this downloads my config as a starting point
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;config-yml:5a51e744cb3148bd389d3805956e280f&#34;&gt;config.yml&lt;/h3&gt;
+&lt;h3 id=&#34;config-yml&#34;&gt;config.yml&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;---
 sources:
@@ -808,9 +812,9 @@ sources:
          #- adium.yml
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id=&#34;explanation-of-battleschool-config-yml:5a51e744cb3148bd389d3805956e280f&#34;&gt;explanation of ~/.battleschool/config.yml&lt;/h4&gt;
+&lt;h4 id=&#34;explanation-of-battleschool-config-yml&#34;&gt;explanation of ~/.battleschool/config.yml&lt;/h4&gt;
 
-&lt;h5 id=&#34;local-sources:5a51e744cb3148bd389d3805956e280f&#34;&gt;local sources&lt;/h5&gt;
+&lt;h5 id=&#34;local-sources&#34;&gt;local sources&lt;/h5&gt;
 
 &lt;pre&gt;&lt;code&gt;sources:
   local:
@@ -822,7 +826,7 @@ can be listed under local.  Each playbook will be executed in order.  This can u
 configuration per workstation.  (You could install apps with homebrew or macports if those are installed, for example).
 After adding url sources (see below), this should probably be used sparingly.&lt;/p&gt;
 
-&lt;h5 id=&#34;url-sources:5a51e744cb3148bd389d3805956e280f&#34;&gt;url sources&lt;/h5&gt;
+&lt;h5 id=&#34;url-sources&#34;&gt;url sources&lt;/h5&gt;
 
 &lt;p&gt;url:
      - name: playbook.yml
@@ -844,7 +848,7 @@ you run battleschool).  For example, if you are restoring a machine, you might r
 &lt;p&gt;&lt;em&gt;NOTE: playbooks under the &lt;code&gt;local&lt;/code&gt; or &lt;code&gt;url&lt;/code&gt; sections, cannot reference anything outside of their own contents (e.g.
 files, templates, roles, etc&amp;hellip;).  See git sources below for more advanced playbooks.&lt;/em&gt;&lt;/p&gt;
 
-&lt;h5 id=&#34;git-sources:5a51e744cb3148bd389d3805956e280f&#34;&gt;git sources&lt;/h5&gt;
+&lt;h5 id=&#34;git-sources&#34;&gt;git sources&lt;/h5&gt;
 
 &lt;pre&gt;&lt;code&gt;git:
   - name: &#39;osx&#39;
@@ -857,7 +861,7 @@ files, templates, roles, etc&amp;hellip;).  See git sources below for more advan
 playsbooks is the relative location to a playbook in the specified git repository.  In the example above, adium.yml
 is in the root of the ansible-osx repository.&lt;/p&gt;
 
-&lt;h5 id=&#34;git-repo-sources:5a51e744cb3148bd389d3805956e280f&#34;&gt;git repo sources&lt;/h5&gt;
+&lt;h5 id=&#34;git-repo-sources&#34;&gt;git repo sources&lt;/h5&gt;
 
 &lt;p&gt;Directory Layout&lt;/p&gt;
 
@@ -878,7 +882,7 @@ library/                  # optional remote module definitions
 directory layout. The &lt;code&gt;library&lt;/code&gt; directory is the location for placing
 &lt;a href=&#34;http://docs.ansible.com/developing_modules.html&#34;&gt;custom ansible modules&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h4 id=&#34;the-mac-pkg-module:5a51e744cb3148bd389d3805956e280f&#34;&gt;the mac_pkg module&lt;/h4&gt;
+&lt;h4 id=&#34;the-mac-pkg-module&#34;&gt;the mac_pkg module&lt;/h4&gt;
 
 &lt;p&gt;This is the meat of battleschool.  How do you install mac apps?&lt;/p&gt;
 
@@ -937,13 +941,13 @@ used instead.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;NOTE: battleschool, currently does not install apps from the Apple App Store.&lt;/em&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;homebrew:5a51e744cb3148bd389d3805956e280f&#34;&gt;Homebrew&lt;/h3&gt;
+&lt;h3 id=&#34;homebrew&#34;&gt;Homebrew&lt;/h3&gt;
 
 &lt;p&gt;So, you like &lt;a href=&#34;http://brew.sh&#34;&gt;homebrew&lt;/a&gt; and want to use it to install apps on you mac.  No problem.  Battleschool can
 install homebrew for you (&lt;a href=&#34;https://raw.github.com/spencergibb/ansible-osx/master/homebrew.yml&#34;&gt;see this playbook&lt;/a&gt;).
 Already have homebrew installed? No, problem, it won&amp;rsquo;t try and install it again.&lt;/p&gt;
 
-&lt;h2 id=&#34;where-to-start:5a51e744cb3148bd389d3805956e280f&#34;&gt;Where to start?&lt;/h2&gt;
+&lt;h2 id=&#34;where-to-start&#34;&gt;Where to start?&lt;/h2&gt;
 
 &lt;p&gt;Probably the easiest way to start is by looking at my configuration:&lt;/p&gt;
 
@@ -953,19 +957,32 @@ Already have homebrew installed? No, problem, it won&amp;rsquo;t try and install
 
 &lt;p&gt;My playbook git repo: &lt;a href=&#34;https://github.com/spencergibb/ansible-osx&#34;&gt;https://github.com/spencergibb/ansible-osx&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;how-to-contact-me-or-the-community:5a51e744cb3148bd389d3805956e280f&#34;&gt;How to contact me or the community?&lt;/h3&gt;
+&lt;h3 id=&#34;how-to-contact-me-or-the-community&#34;&gt;How to contact me or the community?&lt;/h3&gt;
 
 &lt;p&gt;Google group: &lt;a href=&#34;https://groups.google.com/d/forum/battle-school&#34;&gt;https://groups.google.com/d/forum/battle-school&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Github project for issues, forks, pull requests: &lt;a href=&#34;https://github.com/spencergibb/battleschool&#34;&gt;https://github.com/spencergibb/battleschool&lt;/a&gt;&lt;/p&gt;
 </description>
-      
     </item>
+    
     <item>
-      <title>about</title>
+      <title>New Blog</title>
+      <link>http://spencer.gibb.us/blog/2013/03/12/new-blog/</link>
+      <pubDate>Tue, 12 Mar 2013 11:58:47 -0700</pubDate>
+      
+      <guid>http://spencer.gibb.us/blog/2013/03/12/new-blog/</guid>
+      <description>&lt;p&gt;Welcome to me new blog.  I&amp;rsquo;ve wanted to post more than just snippets to twitter.  I want to write about my experiences
+with &lt;a href=&#34;http://dropwizard.codahale.com&#34;&gt;Dropwizard&lt;/a&gt;, &lt;a href=&#34;http://aws.amazon.com&#34;&gt;Amazon web services&lt;/a&gt;,
+&lt;a href=&#34;http://cassandra.apache.org&#34;&gt;Cassandra&lt;/a&gt;, &lt;a href=&#34;http://mongodb.org&#34;&gt;MongoDB&lt;/a&gt;, &lt;a href=&#34;http://netflix.github.org&#34;&gt;Netflix OSS&lt;/a&gt;,
+and &lt;a href=&#34;http://github.com/32degrees/halfpipe&#34;&gt;Halfpipe&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>About</title>
       <link>http://spencer.gibb.us/about/</link>
       <pubDate>Tue, 12 Mar 2013 12:27:08 -0700</pubDate>
-      <author>Nick O'Neill</author>
+      
       <guid>http://spencer.gibb.us/about/</guid>
       <description>
 
@@ -973,7 +990,7 @@ Already have homebrew installed? No, problem, it won&amp;rsquo;t try and install
 &lt;a href=&#34;http://spencer.gibb.us/resume/spencer_gibb_resume.docx&#34;&gt;docx&lt;/a&gt;
 &lt;a href=&#34;http://spencer.gibb.us/resume/spencer_gibb_resume.txt&#34;&gt;txt&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;spencer-gibb:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Spencer Gibb&lt;/h2&gt;
+&lt;h2 id=&#34;spencer-gibb&#34;&gt;Spencer Gibb&lt;/h2&gt;
 
 &lt;p&gt;1919 Jackson St, Kaysville, UT 84037&lt;br/&gt;
 Mobile: 801-540-5830&lt;br/&gt;
@@ -982,7 +999,7 @@ Mobile: 801-540-5830&lt;br/&gt;
 &lt;a href=&#34;https://github.com/spencergibb&#34;&gt;github&lt;/a&gt;
 &lt;a href=&#34;http://www.linkedin.com/in/spencergibb&#34;&gt;linkedin&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;skills:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Skills&lt;/h2&gt;
+&lt;h2 id=&#34;skills&#34;&gt;Skills&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Java tech (Spring, Scala, Hibernate, JPA, Maven, Swing, Ant, GWT, JEE, JSE)&lt;/li&gt;
@@ -997,7 +1014,7 @@ Mobile: 801-540-5830&lt;br/&gt;
 &lt;li&gt;Mentoring junior co-workers&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;professional-experience:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Professional Experience&lt;/h2&gt;
+&lt;h2 id=&#34;professional-experience&#34;&gt;Professional Experience&lt;/h2&gt;
 
 &lt;p&gt;STAFF ENGINEER, Pivotal, Palo Alto CA (Remote), Jul 2014 – Present&lt;/p&gt;
 
@@ -1121,7 +1138,7 @@ Side JavaScript)&lt;/li&gt;
 design in Adobe Photoshop.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;open-source-projects:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Open Source Projects&lt;/h4&gt;
+&lt;h4 id=&#34;open-source-projects&#34;&gt;Open Source Projects&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Battleschool: &lt;a href=&#34;https://github.com/spencergibb/battleschool&#34;&gt;https://github.com/spencergibb/battleschool&lt;/a&gt;&lt;br/&gt;
@@ -1130,7 +1147,7 @@ Development environment provisioning using &lt;a href=&#34;http:ansible.com&#34;
 A Dropwizard clone using Spring &amp;amp; Tomcat (superseded by &lt;a href=&#34;https://github.com/spring-cloud&#34;&gt;Spring Cloud&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;technologies:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Technologies&lt;/h4&gt;
+&lt;h4 id=&#34;technologies&#34;&gt;Technologies&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Java (1.4, 5, 6, 7, 8), Groovy, Scala, Spring, Hibernate (JPA), iBatis, Java Server Faces (JSF), Facelets,
@@ -1143,7 +1160,7 @@ Velocity, JUnit, TestNG, DBUnit&lt;/li&gt;
 &lt;li&gt;Misc. – git, C++, C, Python, Ruby, Perl, Shell Scripts, Photoshop, Subversion, CVS&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;education-bs-computer-science-brigham-young-university:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Education – BS, Computer Science, Brigham Young University&lt;/h3&gt;
+&lt;h3 id=&#34;education-bs-computer-science-brigham-young-university&#34;&gt;Education – BS, Computer Science, Brigham Young University&lt;/h3&gt;
 
 &lt;p&gt;Provo UT, December 2002&lt;/p&gt;
 
@@ -1153,7 +1170,7 @@ Concepts, Computer Communication and Networking and Machine Learning.&lt;/li&gt;
 &lt;li&gt;Sun Certified Java Programmer, October 2004&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;volunteer-representative:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Volunteer Representative&lt;/h3&gt;
+&lt;h3 id=&#34;volunteer-representative&#34;&gt;Volunteer Representative&lt;/h3&gt;
 
 &lt;p&gt;The Church of Jesus Christ of Latter-day Saints&lt;br/&gt;
   Recife, Brazil, Dec 1994 – Dec 1996&lt;/p&gt;
@@ -1165,20 +1182,7 @@ Concepts, Computer Communication and Networking and Machine Learning.&lt;/li&gt;
 and leadership skills&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-      
     </item>
-    <item>
-      <title>New Blog</title>
-      <link>http://spencer.gibb.us/blog/2013/03/12/new-blog/</link>
-      <pubDate>Tue, 12 Mar 2013 11:58:47 -0700</pubDate>
-      <author>Nick O'Neill</author>
-      <guid>http://spencer.gibb.us/blog/2013/03/12/new-blog/</guid>
-      <description>&lt;p&gt;Welcome to me new blog.  I&amp;rsquo;ve wanted to post more than just snippets to twitter.  I want to write about my experiences
-with &lt;a href=&#34;http://dropwizard.codahale.com&#34;&gt;Dropwizard&lt;/a&gt;, &lt;a href=&#34;http://aws.amazon.com&#34;&gt;Amazon web services&lt;/a&gt;,
-&lt;a href=&#34;http://cassandra.apache.org&#34;&gt;Cassandra&lt;/a&gt;, &lt;a href=&#34;http://mongodb.org&#34;&gt;MongoDB&lt;/a&gt;, &lt;a href=&#34;http://netflix.github.org&#34;&gt;Netflix OSS&lt;/a&gt;,
-and &lt;a href=&#34;http://github.com/32degrees/halfpipe&#34;&gt;Halfpipe&lt;/a&gt;&lt;/p&gt;
-</description>
-      
-    </item>
+    
   </channel>
 </rss>

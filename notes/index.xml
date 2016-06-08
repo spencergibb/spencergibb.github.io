@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Spencer Gibb</title>
+    <title>Notes on Spencer Gibb</title>
     <link>http://spencer.gibb.us/notes/</link>
+    <description>Recent content in Notes on Spencer Gibb</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <author>Spencer Gibb</author>
-    <rights>Copyright (c) 2015, Spencer Gibb; all rights reserved.</rights>
-    <updated>Wed, 11 Mar 2015 09:45:06 -0700</updated>
+    <copyright>Copyright (c) 2013 - 2015, Spencer Gibb; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 11 Mar 2015 09:45:06 -0700</lastBuildDate>
+    <atom:link href="http://spencer.gibb.us/notes/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Spring Cloud Devnexus Notes</title>
       <link>http://spencer.gibb.us/notes/spring-cloud-devnexus-notes/</link>
       <pubDate>Wed, 11 Mar 2015 09:45:06 -0700</pubDate>
-      <author>Nick O'Neill</author>
+      
       <guid>http://spencer.gibb.us/notes/spring-cloud-devnexus-notes/</guid>
       <description>
 
-&lt;h2 id=&#34;monolithic-vs-microservices:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;Monolithic vs Microservices&lt;/h2&gt;
+&lt;h2 id=&#34;monolithic-vs-microservices&#34;&gt;Monolithic vs Microservices&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Easy/Hard vs Simple/Complex&lt;/li&gt;
@@ -42,11 +44,12 @@
 &lt;li&gt;more scaling vectors&lt;/li&gt;
 &lt;li&gt;dev friendly&lt;/li&gt;
 &lt;li&gt;easier to scale dev&lt;/li&gt;
-&lt;li&gt;no long term commitment to tech stack&lt;/li&gt;
+&lt;li&gt;no long term commitment to tech stack
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;microservices-with-spring-boot:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;Microservices with Spring Boot&lt;/h2&gt;
+&lt;h2 id=&#34;microservices-with-spring-boot&#34;&gt;Microservices with Spring Boot&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;partition strategies
@@ -62,7 +65,7 @@
 &lt;li&gt;Choreography vs Orchestration&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;no-man-microservice-is-an-island:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;No Man (Microservice) is an Island&lt;/h2&gt;
+&lt;h2 id=&#34;no-man-microservice-is-an-island&#34;&gt;No Man (Microservice) is an Island&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;No free lunch
@@ -74,14 +77,15 @@
 &lt;li&gt;Duplication of effort&lt;/li&gt;
 &lt;li&gt;Distributed System complexity&lt;/li&gt;
 &lt;li&gt;Asynchronicity is difficult&lt;/li&gt;
-&lt;li&gt;Testability chalenges&lt;/li&gt;
+&lt;li&gt;Testability chalenges
+&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Spring CLI Support
 http command is from httpie.org&lt;/p&gt;
 
-&lt;h2 id=&#34;configuration-server:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;Configuration Server&lt;/h2&gt;
+&lt;h2 id=&#34;configuration-server&#34;&gt;Configuration Server&lt;/h2&gt;
 
 &lt;p&gt;cd ~/workspace/spencergibb/myfeed&lt;/p&gt;
 
@@ -93,7 +97,7 @@ http -a user:password :11020/myapp/default&lt;br /&gt;
 http -a user:password :11020/myfeed-ui/development
 http -a user:password :11020/myfeed-ui/development/test&lt;/p&gt;
 
-&lt;h3 id=&#34;config-client:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;Config Client&lt;/h3&gt;
+&lt;h3 id=&#34;config-client&#34;&gt;Config Client&lt;/h3&gt;
 
 &lt;p&gt;run myfeed-ui
 http :11040/env&lt;/p&gt;
@@ -120,7 +124,7 @@ http :11040/ui/features&lt;/p&gt;
 
 &lt;p&gt;http POST :11040/shutdown&lt;/p&gt;
 
-&lt;h3 id=&#34;encryption-decryption:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;encryption/decryption&lt;/h3&gt;
+&lt;h3 id=&#34;encryption-decryption&#34;&gt;encryption/decryption&lt;/h3&gt;
 
 &lt;p&gt;cat /Users/sgibb/workspace/spencergibb/myfeed-config/application.yml
 http -a user:password :11020/myapp/default # show encrypted.password&lt;/p&gt;
@@ -131,7 +135,7 @@ spring decrypt &amp;ndash;key=foobar $TESTVAL&lt;/p&gt;
 
 &lt;p&gt;cli and server also support keystores&lt;/p&gt;
 
-&lt;h2 id=&#34;discovery-eureka:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;Discovery: Eureka&lt;/h2&gt;
+&lt;h2 id=&#34;discovery-eureka&#34;&gt;Discovery: Eureka&lt;/h2&gt;
 
 &lt;p&gt;open DiscoveryApp
 start eureka&lt;br /&gt;
@@ -145,7 +149,7 @@ http :11040/metrics # or &lt;a href=&#34;http://ui.myfeed.com:11040/metrics&#34;
 
 &lt;p&gt;by default configserver gives eureka address, can setup eureka to locate configserver&lt;/p&gt;
 
-&lt;h2 id=&#34;ribbon-and-hystrix:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;Ribbon and Hystrix&lt;/h2&gt;
+&lt;h2 id=&#34;ribbon-and-hystrix&#34;&gt;Ribbon and Hystrix&lt;/h2&gt;
 
 &lt;p&gt;open AdminApp, show LoadBalancerClient&lt;/p&gt;
 
@@ -177,12 +181,12 @@ open UiController and show Feign and client call&lt;/p&gt;
 &lt;p&gt;Uses Spring MVC annotations&lt;br /&gt;
 Uses Spring HttpMessageConverters configured by spring boot&lt;/p&gt;
 
-&lt;h2 id=&#34;rx-java:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;Rx Java&lt;/h2&gt;
+&lt;h2 id=&#34;rx-java&#34;&gt;Rx Java&lt;/h2&gt;
 
 &lt;p&gt;show UiController.feed
 show FeedService.feed&lt;/p&gt;
 
-&lt;h2 id=&#34;routing-zuul:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;Routing: Zuul&lt;/h2&gt;
+&lt;h2 id=&#34;routing-zuul&#34;&gt;Routing: Zuul&lt;/h2&gt;
 
 &lt;p&gt;open RoutingApp
 start router&lt;/p&gt;
@@ -197,14 +201,14 @@ start router&lt;/p&gt;
 
 &lt;p&gt;hit &lt;a href=&#34;http://www.myfeed.com:11080/whoami&#34;&gt;http://www.myfeed.com:11080/whoami&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;spring-cloud-security:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;Spring Cloud Security&lt;/h2&gt;
+&lt;h2 id=&#34;spring-cloud-security&#34;&gt;Spring Cloud Security&lt;/h2&gt;
 
 &lt;p&gt;show RouterApp and router application.yml
 show UiApp and ui application.yml&lt;/p&gt;
 
 &lt;p&gt;Spring Session Redis for AdminApp&lt;/p&gt;
 
-&lt;h2 id=&#34;spring-cloud-bus:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;Spring Cloud Bus&lt;/h2&gt;
+&lt;h2 id=&#34;spring-cloud-bus&#34;&gt;Spring Cloud Bus&lt;/h2&gt;
 
 &lt;p&gt;http &amp;ndash;form :11081/bus/env logging.level.ROOT=INFO
 http &amp;ndash;form :11081/bus/env my.prop=my.val
@@ -216,7 +220,7 @@ publish to ApplicationEventPublisher.publish(event)&lt;/p&gt;
 
 &lt;p&gt;ability to extend to other messaging systems besids RabbitMQ&lt;/p&gt;
 
-&lt;h2 id=&#34;spring-cloud-sidecar:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;Spring Cloud Sidecar&lt;/h2&gt;
+&lt;h2 id=&#34;spring-cloud-sidecar&#34;&gt;Spring Cloud Sidecar&lt;/h2&gt;
 
 &lt;p&gt;open s-c-netflix&lt;br /&gt;
 open SidecarApplication&lt;/p&gt;
@@ -243,7 +247,7 @@ http :11100/myfeed-feed/@spencergibb&lt;/p&gt;
 &lt;p&gt;proxy to configserver
 http -a user:password :11100/configserver/myapp-default.yml&lt;/p&gt;
 
-&lt;h2 id=&#34;spring-restdocs:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;Spring Restdocs&lt;/h2&gt;
+&lt;h2 id=&#34;spring-restdocs&#34;&gt;Spring Restdocs&lt;/h2&gt;
 
 &lt;p&gt;./myfeed-user/target/myfeed-user-1.0.0.BUILD-SNAPSHOT.jar &amp;ndash;server.port=11072&lt;/p&gt;
 
@@ -251,13 +255,13 @@ http -a user:password :11100/configserver/myapp-default.yml&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://localhost:11072/docs/getting-started-guide.html&#34;&gt;http://localhost:11072/docs/getting-started-guide.html&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;spring-session-redis:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;Spring Session Redis&lt;/h2&gt;
+&lt;h2 id=&#34;spring-session-redis&#34;&gt;Spring Session Redis&lt;/h2&gt;
 
 &lt;p&gt;open RouterApp show @EnableRedisHttpSession&lt;/p&gt;
 
 &lt;p&gt;show admin application.yml show security part&lt;/p&gt;
 
-&lt;h2 id=&#34;preview-spring-cloud-consul:b0d38ecd712165cb7e1e9c7fb26cb748&#34;&gt;Preview: Spring Cloud Consul&lt;/h2&gt;
+&lt;h2 id=&#34;preview-spring-cloud-consul&#34;&gt;Preview: Spring Cloud Consul&lt;/h2&gt;
 
 &lt;p&gt;cat run_consul.sh&lt;br /&gt;
 ./run_consul.sh&lt;/p&gt;
@@ -292,7 +296,7 @@ http :8080/&lt;/p&gt;
 
 &lt;p&gt;http :8080/bus/refresh&lt;/p&gt;
 </description>
-      
     </item>
+    
   </channel>
 </rss>

@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Spencer Gibb</title>
+    <title>Scs on Spencer Gibb</title>
     <link>http://spencer.gibb.us/categories/scs/</link>
+    <description>Recent content in Scs on Spencer Gibb</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <author>Spencer Gibb</author>
-    <rights>Copyright (c) 2015, Spencer Gibb; all rights reserved.</rights>
-    <updated>Mon, 02 Nov 2015 17:36:23 MST</updated>
+    <copyright>Copyright (c) 2013 - 2015, Spencer Gibb; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 02 Nov 2015 17:36:23 -0700</lastBuildDate>
+    <atom:link href="http://spencer.gibb.us/categories/scs/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>scs training 2015</title>
       <link>http://spencer.gibb.us/preso/scs-training-2015/</link>
-      <pubDate>Mon, 02 Nov 2015 17:36:23 MST</pubDate>
-      <author>Nick O'Neill</author>
+      <pubDate>Mon, 02 Nov 2015 17:36:23 -0700</pubDate>
+      
       <guid>http://spencer.gibb.us/preso/scs-training-2015/</guid>
       <description>&lt;style&gt;
     /*.reveal .slides {
@@ -41,7 +43,7 @@
         text-shadow: none; }
 &lt;/style&gt;
 </description>
-      
     </item>
+    
   </channel>
 </rss>

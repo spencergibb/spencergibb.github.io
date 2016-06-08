@@ -1,96 +1,111 @@
-jQuery(window).resize(function(){
-	sideBarFix();
-})
-jQuery(window).scroll(function(){
-	sideBarFix();
-})
-jQuery(document).ready(function(){
-	sideBarFix();
-	jQuery('.nav a').click(function(){
-		if($(this).next().is('ul')){
-			if($(this).hasClass('open')){
-				$(this).next('ul').slideUp(200);
-				$(this).removeClass('open');
-			}
-			else{
-				$(this).next('ul').slideDown(200);
-				$(this).addClass('open');
-			}
-			
-			return false;
-		}
-		else{
-			return true;
-		};
-	});
-	jQuery('#expand_content_menu, #body_hover').click(function(){
-		var expandAreaWide = jQuery('.left_sidebar_content_area').width();
-		if(!jQuery('#expand_content_menu').hasClass('open'))
-		{
-			jQuery('#expand_content_menu').addClass('open');
-			jQuery('#expand_content_menu span').removeClass('icon icon-fontawesome-webfont-1 ');
-			jQuery('#expand_content_menu span').addClass('menu_cross');
-			jQuery('#expand_content_menu span').html('&times;');
-			jQuery('#body_hover').fadeIn(200);
-			jQuery('.left_sidebar_content_area').animate({'margin-left':"0px"},100);
-			jQuery('.main_content_area').animate({"margin-right":'-'+expandAreaWide+'px'},100);
-			if(jQuery(window).width()>=768){
-				jQuery('#expand_content_menu').animate({left:290},100);
-			}
-		}
-		else{
-			jQuery('#expand_content_menu').removeClass('open');
-			jQuery('#expand_content_menu span').addClass('icon icon-fontawesome-webfont-1 ');
-			jQuery('#expand_content_menu span').removeClass('menu_cross');
-			jQuery('#expand_content_menu span').html('');
-			jQuery('#body_hover').fadeOut(200);
-			jQuery('.left_sidebar_content_area').animate({"margin-left":"-100%"},500);
-			jQuery('.main_content_area').animate({"margin-right":'0px'},500);
-			if(jQuery(window).width()>=768){
-				jQuery('#expand_content_menu').animate({left:10},100);
-			}
-		}
-	});
-	// ********************** Accordion Code start ******************
-	$('.accordion_title').each(function(){
-		var activeIcon = $(this).attr('data-active-icon');
-		var DeActiveIcon = $(this).attr('data-deactive-icon');
-		$(this).find('.icon').removeClass(activeIcon);
-		$(this).find('.icon').addClass(DeActiveIcon);
-	})
-	$('.panel-heading').click(function(){
-		$('.panel-heading').removeClass('active');
-		if(!$(this).next('.panel-collapse').hasClass('in')){
-			$(this).addClass('active');
-		}
-		$('.accordion_title').each(function(){
-			var activeIcon = $(this).attr('data-active-icon');
-			var DeActiveIcon = $(this).attr('data-deactive-icon');
-			$(this).find('.icon').removeClass(activeIcon);
-			$(this).find('.icon').addClass(DeActiveIcon);
-		})
-		var activeIcon = $(this).find('.accordion_title').attr('data-active-icon');
-		var DeActiveIcon = $(this).find('.accordion_title').attr('data-deactive-icon');
-		if($(this).hasClass('active')){
-			$(this).find('.icon').removeClass(DeActiveIcon);
-			$(this).find('.icon').addClass(activeIcon);
-		}
-		var activeColor = $(this).find('.accordion_title').css('background-color');
-		$(this).next().find('.panel-body').css({"border-color":activeColor});
-	});
-	// ********************** Accordion Code End ******************
-});
+// Dean Attali / Beautiful Jekyll 2016
 
-function sideBarFix(){
-	var SelectHeight;
-	if(jQuery('.left_sidebar_content_area').height()>=jQuery('.main_content_area').height()){
-		SelectHeight = jQuery('.left_sidebar_content_area').height();
-		SelectHeight += "px"; 
-		jQuery('.left_sidebar_content_area, .main_content_area').css({'min-height':SelectHeight});
-	}
-	else{
-		SelectHeight = jQuery('.main_content_area').height();
-		SelectHeight += "px"; 
-		jQuery('.left_sidebar_content_area, .main_content_area').css({'min-height':SelectHeight});
-	}
-}
+var main = {
+
+  bigImgEl : null,
+  numImgs : null,
+
+  init : function() {
+    // Shorten the navbar after scrolling a little bit down
+    $(window).scroll(function() {
+        if ($(".navbar").offset().top > 50) {
+            $(".navbar").addClass("top-nav-short");
+        } else {
+            $(".navbar").removeClass("top-nav-short");
+        }
+    });
+    
+    // On mobile, hide the avatar when expanding the navbar menu
+    $('#main-navbar').on('show.bs.collapse', function () {
+      $(".navbar").addClass("top-nav-expanded");
+    });
+    $('#main-navbar').on('hidden.bs.collapse', function () {
+      $(".navbar").removeClass("top-nav-expanded");
+    });
+  
+    // On mobile, when clicking on a multi-level navbar menu, show the child links
+    $('#main-navbar').on("click", ".navlinks-parent", function(e) {
+      var target = e.target;
+      $.each($(".navlinks-parent"), function(key, value) {
+        if (value == target) {
+          $(value).parent().toggleClass("show-children");
+        } else {
+          $(value).parent().removeClass("show-children");
+        }
+      });
+    });
+    
+    // show the big header image  
+    main.initImgs();
+  },
+  
+  initImgs : function() {
+    // If the page was large images to randomly select from, choose an image
+    if ($("#header-big-imgs").length > 0) {
+      main.bigImgEl = $("#header-big-imgs");
+      main.numImgs = main.bigImgEl.attr("data-num-img");
+
+          // 2fc73a3a967e97599c9763d05e564189
+    // set an initial image
+    var imgInfo = main.getImgInfo();
+    var src = imgInfo.src;
+    var desc = imgInfo.desc;
+      main.setImg(src, desc);
+    
+    // For better UX, prefetch the next image so that it will already be loaded when we want to show it
+      var getNextImg = function() {
+      var imgInfo = main.getImgInfo();
+      var src = imgInfo.src;
+      var desc = imgInfo.desc;      
+      
+    var prefetchImg = new Image();
+      prefetchImg.src = src;
+    // if I want to do something once the image is ready: `prefetchImg.onload = function(){}`
+    
+      setTimeout(function(){
+                  var img = $("<div></div>").addClass("big-img-transition").css("background-image", 'url(' + src + ')');
+        $(".intro-header.big-img").prepend(img);
+        setTimeout(function(){ img.css("opacity", "1"); }, 50);
+      
+      // after the animation of fading in the new image is done, prefetch the next one
+        //img.one("transitioned webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
+      setTimeout(function() {
+        main.setImg(src, desc);
+      img.remove();
+        getNextImg();
+      }, 1000); 
+        //});   
+      }, 6000);
+      };
+    
+    // If there are multiple images, cycle through them
+    if (main.numImgs > 1) {
+        getNextImg();
+    }
+    }
+  },
+  
+  getImgInfo : function() {
+    var randNum = Math.floor((Math.random() * main.numImgs) + 1);
+    var src = main.bigImgEl.attr("data-img-src-" + randNum);
+  var desc = main.bigImgEl.attr("data-img-desc-" + randNum);
+  
+  return {
+    src : src,
+    desc : desc
+  }
+  },
+  
+  setImg : function(src, desc) {
+  $(".intro-header.big-img").css("background-image", 'url(' + src + ')');
+  if (typeof desc !== typeof undefined && desc !== false) {
+    $(".img-desc").text(desc).show();
+  } else {
+    $(".img-desc").hide();  
+  }
+  }
+};
+
+// 2fc73a3a967e97599c9763d05e564189
+
+document.addEventListener('DOMContentLoaded', main.init);

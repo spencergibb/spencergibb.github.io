@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Spencer Gibb</title>
+    <title>Posts on Spencer Gibb</title>
     <link>http://spencer.gibb.us/post/</link>
+    <description>Recent content in Posts on Spencer Gibb</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <author>Spencer Gibb</author>
-    <rights>Copyright (c) 2015, Spencer Gibb; all rights reserved.</rights>
-    <updated>Tue, 06 Oct 2015 09:07:07 MDT</updated>
+    <copyright>Copyright (c) 2013 - 2015, Spencer Gibb; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 06 Oct 2015 09:07:07 -0600</lastBuildDate>
+    <atom:link href="http://spencer.gibb.us/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Trello for Feelings</title>
       <link>http://spencer.gibb.us/blog/2015/10/06/trello-for-feelings/</link>
-      <pubDate>Tue, 06 Oct 2015 09:07:07 MDT</pubDate>
-      <author>Nick O'Neill</author>
+      <pubDate>Tue, 06 Oct 2015 09:07:07 -0600</pubDate>
+      
       <guid>http://spencer.gibb.us/blog/2015/10/06/trello-for-feelings/</guid>
       <description>&lt;p&gt;Computer geeks often don&amp;rsquo;t know how to express their feelings very well. If &lt;a href=&#34;http://randsinrepose.com/archives/the-nerd-handbook/&#34;&gt;The Nerd Handbook&lt;/a&gt; rings a bell for you or your significant other, you know what I&amp;rsquo;m talking about. It rang true with me. The trouble I have is how to deal with someone else&amp;rsquo;s feelings and figure out what the heck mine are. I had a thought the other day and so far it has helped.&lt;/p&gt;
 
@@ -28,13 +30,13 @@
 
 &lt;p&gt;&amp;ldquo;Conflict is inevitable, but drama is a choice&amp;rdquo; &lt;a href=&#34;https://twitter.com/ChrisBrownOnAir&#34;&gt;@ChrisBrownOnAir&lt;/a&gt;&lt;/p&gt;
 </description>
-      
     </item>
+    
     <item>
       <title>Spring Cloud Config Push Notifications</title>
       <link>http://spencer.gibb.us/blog/2015/09/24/spring-cloud-config-push-notifications/</link>
-      <pubDate>Thu, 24 Sep 2015 10:48:18 MDT</pubDate>
-      <author>Nick O'Neill</author>
+      <pubDate>Thu, 24 Sep 2015 10:48:18 -0600</pubDate>
+      
       <guid>http://spencer.gibb.us/blog/2015/09/24/spring-cloud-config-push-notifications/</guid>
       <description>
 
@@ -45,7 +47,7 @@ to config clients.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; I am using &lt;a href=&#34;https://github.com/jkbrzt/httpie&#34;&gt;HTTPie&lt;/a&gt; (pronounced &lt;em&gt;aych-tee-tee-pie&lt;/em&gt;) for these demos. I believe it provides a more user friendly experience. To install on a mac with &lt;a href=&#34;http://brew.sh/&#34;&gt;Homebrew&lt;/a&gt;: &lt;code&gt;brew install httpie&lt;/code&gt;, otherwise see &lt;a href=&#34;https://github.com/jkbrzt/httpie#installation&#34;&gt;the install docs&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;dependencies:e78e9db90ac45826e12a3a6531ebb194&#34;&gt;Dependencies&lt;/h2&gt;
+&lt;h2 id=&#34;dependencies&#34;&gt;Dependencies&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-xml&#34;&gt;&amp;lt;parent&amp;gt;
   &amp;lt;groupId&amp;gt;org.springframework.cloud&amp;lt;/groupId&amp;gt;
@@ -84,7 +86,7 @@ public class ConfigServerApplication {
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;manual-push:e78e9db90ac45826e12a3a6531ebb194&#34;&gt;Manual push&lt;/h2&gt;
+&lt;h2 id=&#34;manual-push&#34;&gt;Manual push&lt;/h2&gt;
 
 &lt;p&gt;The &lt;code&gt;/monitor&lt;/code&gt; endpoint includes a form encoded post that you can trigger as follows:&lt;/p&gt;
 
@@ -93,7 +95,7 @@ public class ConfigServerApplication {
 
 &lt;p&gt;This allows you to develop your own hooks. It also allows for a central api to manually trigger refresh events.&lt;/p&gt;
 
-&lt;h2 id=&#34;remote-refresh-event:e78e9db90ac45826e12a3a6531ebb194&#34;&gt;Remote Refresh Event&lt;/h2&gt;
+&lt;h2 id=&#34;remote-refresh-event&#34;&gt;Remote Refresh Event&lt;/h2&gt;
 
 &lt;p&gt;Config clients need to have the following dependencies (again, assuming redis) from &lt;code&gt;Brixton.BUILD-SNAPSHOT&lt;/code&gt;&lt;/p&gt;
 
@@ -113,7 +115,7 @@ public class ConfigServerApplication {
 &lt;pre&gt;&lt;code&gt;2015-09-24 12:15:54.257  INFO 11202 --- [enerContainer-2] o.s.cloud.bus.event.RefreshListener      : Received remote refresh request. Keys refreshed [info.description]
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;gitlab-webhook:e78e9db90ac45826e12a3a6531ebb194&#34;&gt;Gitlab webhook&lt;/h2&gt;
+&lt;h2 id=&#34;gitlab-webhook&#34;&gt;Gitlab webhook&lt;/h2&gt;
 
 &lt;p&gt;The Gitlab wehbhook doesn&amp;rsquo;t list the files that changed, so all applications will receive a refresh event. That&amp;rsquo;s the reason I don&amp;rsquo;t have a specific configuration in the simulation link below.&lt;/p&gt;
 
@@ -128,7 +130,7 @@ public GitlabPropertyPathNotificationExtractor gitlabPropertyPathNotificationExt
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;http --json POST :8888/monitor X-Gitlab-Event:&amp;quot;Push Event&amp;quot; commits:=&#39;[{}]&#39;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;github-webhook:e78e9db90ac45826e12a3a6531ebb194&#34;&gt;Github webhook&lt;/h2&gt;
+&lt;h2 id=&#34;github-webhook&#34;&gt;Github webhook&lt;/h2&gt;
 
 &lt;p&gt;Github  reports what files were added, deleted and modified and attempts to only send notifications to the impacted services.&lt;/p&gt;
 
@@ -143,7 +145,7 @@ public GithubPropertyPathNotificationExtractor githubPropertyPathNotificationExt
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;http --json POST :8888/monitor X-Github-Event:&amp;quot;push&amp;quot; commits:=&#39;[{&amp;quot;modified&amp;quot;: [&amp;quot;configserver.yml&amp;quot;] }]&#39;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;test-github-via-ngrok:e78e9db90ac45826e12a3a6531ebb194&#34;&gt;Test github via ngrok:&lt;/h3&gt;
+&lt;h3 id=&#34;test-github-via-ngrok&#34;&gt;Test github via ngrok:&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://ngrok.com/download&#34;&gt;Install ngrok&lt;/a&gt; first.&lt;/p&gt;
 
@@ -152,20 +154,20 @@ public GithubPropertyPathNotificationExtractor githubPropertyPathNotificationExt
 
 &lt;p&gt;Add &lt;code&gt;https://41b2063a.ngrok.com/monitor&lt;/code&gt; to you config repo&amp;rsquo;s github webhooks settings. Commit changes and profit!&lt;/p&gt;
 
-&lt;h2 id=&#34;filesystem-watcher:e78e9db90ac45826e12a3a6531ebb194&#34;&gt;Filesystem watcher&lt;/h2&gt;
+&lt;h2 id=&#34;filesystem-watcher&#34;&gt;Filesystem watcher&lt;/h2&gt;
 
 &lt;p&gt;For the &lt;code&gt;native&lt;/code&gt; file based repository, a watch is created that polls the filesystem for changes. If a change is found, a change event is sent.&lt;/p&gt;
 
-&lt;h2 id=&#34;update-1:e78e9db90ac45826e12a3a6531ebb194&#34;&gt;Update #1&lt;/h2&gt;
+&lt;h2 id=&#34;update-1&#34;&gt;Update #1&lt;/h2&gt;
 
-&lt;h3 id=&#34;auto-configuration:e78e9db90ac45826e12a3a6531ebb194&#34;&gt;Auto-configuration&lt;/h3&gt;
+&lt;h3 id=&#34;auto-configuration&#34;&gt;Auto-configuration&lt;/h3&gt;
 
 &lt;p&gt;You no longer need to add &lt;code&gt;@Bean&lt;/code&gt;s for each extractor, it is auto-configured, and you can disable them with:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;spring.cloud.config.server.monitor.{github|gitlab|bitbucket}.enabled=false
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;bitbucket-webhook:e78e9db90ac45826e12a3a6531ebb194&#34;&gt;Bitbucket webhook&lt;/h3&gt;
+&lt;h3 id=&#34;bitbucket-webhook&#34;&gt;Bitbucket webhook&lt;/h3&gt;
 
 &lt;p&gt;If you create webhook for your config server &lt;code&gt;/watches&lt;/code&gt; on Bitbucket, it will trigger a global config update similar to Gitlab. Bitbucket doesn&amp;rsquo;t says what files changed.&lt;/p&gt;
 
@@ -174,13 +176,13 @@ public GithubPropertyPathNotificationExtractor githubPropertyPathNotificationExt
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;http --json POST :8888/monitor X-Event-Key:&amp;quot;repo:push&amp;quot; X-Hook-UUID:123 push:=&#39;{&amp;quot;changes&amp;quot;: [{}]}&#39;
 &lt;/code&gt;&lt;/pre&gt;
 </description>
-      
     </item>
+    
     <item>
       <title>go hugo</title>
       <link>http://spencer.gibb.us/blog/2015/03/03/go-hugo/</link>
-      <pubDate>Tue, 03 Mar 2015 15:45:06 MST</pubDate>
-      <author>Nick O'Neill</author>
+      <pubDate>Tue, 03 Mar 2015 15:45:06 -0700</pubDate>
+      
       <guid>http://spencer.gibb.us/blog/2015/03/03/go-hugo/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve migrated my blog from &lt;a href=&#34;http://octopress.org&#34;&gt;octopress&lt;/a&gt; to &lt;a href=&#34;http://gohugo.io&#34;&gt;hugo&lt;/a&gt; by &lt;a href=&#34;https://github.com/spf13&#34;&gt;Steve Francia&lt;/a&gt;.&lt;/p&gt;
 
@@ -188,13 +190,13 @@ public GithubPropertyPathNotificationExtractor githubPropertyPathNotificationExt
 
 &lt;p&gt;Hopefully you will see more blog posts here and maybe on &lt;a href=&#34;http://spring.io&#34;&gt;http://spring.io&lt;/a&gt;&lt;/p&gt;
 </description>
-      
     </item>
+    
     <item>
       <title>Introducing Battleschool</title>
       <link>http://spencer.gibb.us/blog/2014/02/03/introducing-battleschool/</link>
-      <pubDate>Mon, 03 Feb 2014 23:18:53 MST</pubDate>
-      <author>Nick O'Neill</author>
+      <pubDate>Mon, 03 Feb 2014 23:18:53 -0700</pubDate>
+      
       <guid>http://spencer.gibb.us/blog/2014/02/03/introducing-battleschool/</guid>
       <description>
 
@@ -229,7 +231,7 @@ downloading packages to install.&lt;/p&gt;
 &lt;p&gt;In short, battleschool downloads and executes ansible playbooks against your local machine in a manner that is simple to
 configure and repeatable in cases of disaster (bad) or new machines (good).&lt;/p&gt;
 
-&lt;h3 id=&#34;simple-install:5a51e744cb3148bd389d3805956e280f&#34;&gt;Simple Install&lt;/h3&gt;
+&lt;h3 id=&#34;simple-install&#34;&gt;Simple Install&lt;/h3&gt;
 
 &lt;p&gt;I wanted a no forking install for battleschool.&lt;/p&gt;
 
@@ -243,7 +245,7 @@ $ sudo pip install battleschool
 deal with alternative installs of ansible via &lt;a href=&#34;http://brew.sh&#34;&gt;homebrew&lt;/a&gt;, &lt;a href=&#34;http://www.macports.org&#34;&gt;macports&lt;/a&gt; or
 &lt;a href=&#34;http://en.wikipedia.org/wiki/Advanced_Packaging_Tool&#34;&gt;apt&lt;/a&gt; (yes, this will work on linux/bsd as well).&lt;/p&gt;
 
-&lt;h3 id=&#34;private-playbook-repos:5a51e744cb3148bd389d3805956e280f&#34;&gt;Private Playbook Repos&lt;/h3&gt;
+&lt;h3 id=&#34;private-playbook-repos&#34;&gt;Private Playbook Repos&lt;/h3&gt;
 
 &lt;p&gt;Battleschool uses the &lt;a href=&#34;http://docs.ansible.com/git_module.html&#34;&gt;git&lt;/a&gt; and
 &lt;a href=&#34;http://docs.ansible.com/get_url_module.html&#34;&gt;get_url&lt;/a&gt; ansible modules to download remote playbooks.  That means you can
@@ -252,24 +254,24 @@ use private, self-hosted git repositories, private or public &lt;a href=&#34;htt
 forking battleschool.  Other version control systems (VCS) such as svn or mercurial should be simple to add because of
 ansible&amp;rsquo;s support for them.&lt;/p&gt;
 
-&lt;h3 id=&#34;built-on-ansible:5a51e744cb3148bd389d3805956e280f&#34;&gt;Built On Ansible&lt;/h3&gt;
+&lt;h3 id=&#34;built-on-ansible&#34;&gt;Built On Ansible&lt;/h3&gt;
 
 &lt;p&gt;I use ansible&amp;rsquo;s python api, so most of ansible-playbooks options are available to battleschool.  All of ansible&amp;rsquo;s
 &lt;a href=&#34;http://docs.ansible.com/modules_by_category.html&#34;&gt;modules&lt;/a&gt; are available.  I have been using ansible 1.3 to develop
 and plan on upgrading to 1.4 shortly.  Ansible, IMHO, is the most straightforward provisioner I have tried.  It&amp;rsquo;s
 written in python, which I have enjoyed.&lt;/p&gt;
 
-&lt;h2 id=&#34;tl-dr:5a51e744cb3148bd389d3805956e280f&#34;&gt;TL;DR&lt;/h2&gt;
+&lt;h2 id=&#34;tl-dr&#34;&gt;TL;DR&lt;/h2&gt;
 
 &lt;p&gt;Some of this comes from the &lt;a href=&#34;https://github.com/spencergibb/battleschool/blob/master/README.md&#34;&gt;README.md&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;about-the-name:5a51e744cb3148bd389d3805956e280f&#34;&gt;About the Name&lt;/h3&gt;
+&lt;h3 id=&#34;about-the-name&#34;&gt;About the Name&lt;/h3&gt;
 
 &lt;p&gt;I learned about the term &lt;a href=&#34;http://en.wikipedia.org/wiki/Ansible#In_Card.27s_work&#34;&gt;ansible&lt;/a&gt; from Ender&amp;rsquo;s Game. Taking a
 cue from Kitchenplan, I wanted to name my project with something from the enderverse.  I settled on battleschool as the
 project name and battle as the command.&lt;/p&gt;
 
-&lt;h3 id=&#34;running-battleschool:5a51e744cb3148bd389d3805956e280f&#34;&gt;Running battleschool&lt;/h3&gt;
+&lt;h3 id=&#34;running-battleschool&#34;&gt;Running battleschool&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;battle --ask-sudo-pass     #if you have setup nopasswd in sudo then omit --ask-sudo-pass
 &lt;/code&gt;&lt;/pre&gt;
@@ -283,7 +285,7 @@ cd .battleschool
 curl -L https://db.tt/aG2uyydU &amp;gt; config.yml    #this downloads my config as a starting point
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;config-yml:5a51e744cb3148bd389d3805956e280f&#34;&gt;config.yml&lt;/h3&gt;
+&lt;h3 id=&#34;config-yml&#34;&gt;config.yml&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;---
 sources:
@@ -301,9 +303,9 @@ sources:
          #- adium.yml
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id=&#34;explanation-of-battleschool-config-yml:5a51e744cb3148bd389d3805956e280f&#34;&gt;explanation of ~/.battleschool/config.yml&lt;/h4&gt;
+&lt;h4 id=&#34;explanation-of-battleschool-config-yml&#34;&gt;explanation of ~/.battleschool/config.yml&lt;/h4&gt;
 
-&lt;h5 id=&#34;local-sources:5a51e744cb3148bd389d3805956e280f&#34;&gt;local sources&lt;/h5&gt;
+&lt;h5 id=&#34;local-sources&#34;&gt;local sources&lt;/h5&gt;
 
 &lt;pre&gt;&lt;code&gt;sources:
   local:
@@ -315,7 +317,7 @@ can be listed under local.  Each playbook will be executed in order.  This can u
 configuration per workstation.  (You could install apps with homebrew or macports if those are installed, for example).
 After adding url sources (see below), this should probably be used sparingly.&lt;/p&gt;
 
-&lt;h5 id=&#34;url-sources:5a51e744cb3148bd389d3805956e280f&#34;&gt;url sources&lt;/h5&gt;
+&lt;h5 id=&#34;url-sources&#34;&gt;url sources&lt;/h5&gt;
 
 &lt;p&gt;url:
      - name: playbook.yml
@@ -337,7 +339,7 @@ you run battleschool).  For example, if you are restoring a machine, you might r
 &lt;p&gt;&lt;em&gt;NOTE: playbooks under the &lt;code&gt;local&lt;/code&gt; or &lt;code&gt;url&lt;/code&gt; sections, cannot reference anything outside of their own contents (e.g.
 files, templates, roles, etc&amp;hellip;).  See git sources below for more advanced playbooks.&lt;/em&gt;&lt;/p&gt;
 
-&lt;h5 id=&#34;git-sources:5a51e744cb3148bd389d3805956e280f&#34;&gt;git sources&lt;/h5&gt;
+&lt;h5 id=&#34;git-sources&#34;&gt;git sources&lt;/h5&gt;
 
 &lt;pre&gt;&lt;code&gt;git:
   - name: &#39;osx&#39;
@@ -350,7 +352,7 @@ files, templates, roles, etc&amp;hellip;).  See git sources below for more advan
 playsbooks is the relative location to a playbook in the specified git repository.  In the example above, adium.yml
 is in the root of the ansible-osx repository.&lt;/p&gt;
 
-&lt;h5 id=&#34;git-repo-sources:5a51e744cb3148bd389d3805956e280f&#34;&gt;git repo sources&lt;/h5&gt;
+&lt;h5 id=&#34;git-repo-sources&#34;&gt;git repo sources&lt;/h5&gt;
 
 &lt;p&gt;Directory Layout&lt;/p&gt;
 
@@ -371,7 +373,7 @@ library/                  # optional remote module definitions
 directory layout. The &lt;code&gt;library&lt;/code&gt; directory is the location for placing
 &lt;a href=&#34;http://docs.ansible.com/developing_modules.html&#34;&gt;custom ansible modules&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h4 id=&#34;the-mac-pkg-module:5a51e744cb3148bd389d3805956e280f&#34;&gt;the mac_pkg module&lt;/h4&gt;
+&lt;h4 id=&#34;the-mac-pkg-module&#34;&gt;the mac_pkg module&lt;/h4&gt;
 
 &lt;p&gt;This is the meat of battleschool.  How do you install mac apps?&lt;/p&gt;
 
@@ -430,13 +432,13 @@ used instead.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;NOTE: battleschool, currently does not install apps from the Apple App Store.&lt;/em&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;homebrew:5a51e744cb3148bd389d3805956e280f&#34;&gt;Homebrew&lt;/h3&gt;
+&lt;h3 id=&#34;homebrew&#34;&gt;Homebrew&lt;/h3&gt;
 
 &lt;p&gt;So, you like &lt;a href=&#34;http://brew.sh&#34;&gt;homebrew&lt;/a&gt; and want to use it to install apps on you mac.  No problem.  Battleschool can
 install homebrew for you (&lt;a href=&#34;https://raw.github.com/spencergibb/ansible-osx/master/homebrew.yml&#34;&gt;see this playbook&lt;/a&gt;).
 Already have homebrew installed? No, problem, it won&amp;rsquo;t try and install it again.&lt;/p&gt;
 
-&lt;h2 id=&#34;where-to-start:5a51e744cb3148bd389d3805956e280f&#34;&gt;Where to start?&lt;/h2&gt;
+&lt;h2 id=&#34;where-to-start&#34;&gt;Where to start?&lt;/h2&gt;
 
 &lt;p&gt;Probably the easiest way to start is by looking at my configuration:&lt;/p&gt;
 
@@ -446,26 +448,26 @@ Already have homebrew installed? No, problem, it won&amp;rsquo;t try and install
 
 &lt;p&gt;My playbook git repo: &lt;a href=&#34;https://github.com/spencergibb/ansible-osx&#34;&gt;https://github.com/spencergibb/ansible-osx&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;how-to-contact-me-or-the-community:5a51e744cb3148bd389d3805956e280f&#34;&gt;How to contact me or the community?&lt;/h3&gt;
+&lt;h3 id=&#34;how-to-contact-me-or-the-community&#34;&gt;How to contact me or the community?&lt;/h3&gt;
 
 &lt;p&gt;Google group: &lt;a href=&#34;https://groups.google.com/d/forum/battle-school&#34;&gt;https://groups.google.com/d/forum/battle-school&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Github project for issues, forks, pull requests: &lt;a href=&#34;https://github.com/spencergibb/battleschool&#34;&gt;https://github.com/spencergibb/battleschool&lt;/a&gt;&lt;/p&gt;
 </description>
-      
     </item>
+    
     <item>
       <title>New Blog</title>
       <link>http://spencer.gibb.us/blog/2013/03/12/new-blog/</link>
       <pubDate>Tue, 12 Mar 2013 11:58:47 -0700</pubDate>
-      <author>Nick O'Neill</author>
+      
       <guid>http://spencer.gibb.us/blog/2013/03/12/new-blog/</guid>
       <description>&lt;p&gt;Welcome to me new blog.  I&amp;rsquo;ve wanted to post more than just snippets to twitter.  I want to write about my experiences
 with &lt;a href=&#34;http://dropwizard.codahale.com&#34;&gt;Dropwizard&lt;/a&gt;, &lt;a href=&#34;http://aws.amazon.com&#34;&gt;Amazon web services&lt;/a&gt;,
 &lt;a href=&#34;http://cassandra.apache.org&#34;&gt;Cassandra&lt;/a&gt;, &lt;a href=&#34;http://mongodb.org&#34;&gt;MongoDB&lt;/a&gt;, &lt;a href=&#34;http://netflix.github.org&#34;&gt;Netflix OSS&lt;/a&gt;,
 and &lt;a href=&#34;http://github.com/32degrees/halfpipe&#34;&gt;Halfpipe&lt;/a&gt;&lt;/p&gt;
 </description>
-      
     </item>
+    
   </channel>
 </rss>

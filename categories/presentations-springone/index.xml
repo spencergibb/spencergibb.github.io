@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Spencer Gibb</title>
+    <title>Presentations Springone on Spencer Gibb</title>
     <link>http://spencer.gibb.us/categories/presentations-springone/</link>
+    <description>Recent content in Presentations Springone on Spencer Gibb</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <author>Spencer Gibb</author>
-    <rights>Copyright (c) 2015, Spencer Gibb; all rights reserved.</rights>
-    <updated>Sun, 27 Sep 2015 14:35:54 MDT</updated>
+    <copyright>Copyright (c) 2013 - 2015, Spencer Gibb; all rights reserved.</copyright>
+    <lastBuildDate>Sun, 27 Sep 2015 14:35:54 -0600</lastBuildDate>
+    <atom:link href="http://spencer.gibb.us/categories/presentations-springone/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Spring Cloud *: SpringOne 2GX 2015</title>
       <link>http://spencer.gibb.us/preso/spring-cloud-star-springone-2015/</link>
-      <pubDate>Sun, 27 Sep 2015 14:35:54 MDT</pubDate>
-      <author>Nick O'Neill</author>
+      <pubDate>Sun, 27 Sep 2015 14:35:54 -0600</pubDate>
+      
       <guid>http://spencer.gibb.us/preso/spring-cloud-star-springone-2015/</guid>
       <description>&lt;style&gt;
     /*.reveal .slides {
@@ -41,7 +43,7 @@
         text-shadow: none; }
 &lt;/style&gt;
 </description>
-      
     </item>
+    
   </channel>
 </rss>

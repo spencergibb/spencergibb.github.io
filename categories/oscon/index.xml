@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Spencer Gibb</title>
+    <title>Oscon on Spencer Gibb</title>
     <link>http://spencer.gibb.us/categories/oscon/</link>
+    <description>Recent content in Oscon on Spencer Gibb</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <author>Spencer Gibb</author>
-    <rights>Copyright (c) 2015, Spencer Gibb; all rights reserved.</rights>
-    <updated>Wed, 01 Jul 2015 15:54:01 MDT</updated>
+    <copyright>Copyright (c) 2013 - 2015, Spencer Gibb; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 01 Jul 2015 15:54:01 -0600</lastBuildDate>
+    <atom:link href="http://spencer.gibb.us/categories/oscon/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Microservices with Spring Cloud and Netflix OSS</title>
       <link>http://spencer.gibb.us/preso/spring-cloud-oscon-2015/</link>
-      <pubDate>Wed, 01 Jul 2015 15:54:01 MDT</pubDate>
-      <author>Nick O'Neill</author>
+      <pubDate>Wed, 01 Jul 2015 15:54:01 -0600</pubDate>
+      
       <guid>http://spencer.gibb.us/preso/spring-cloud-oscon-2015/</guid>
       <description>&lt;style&gt;
     /*.reveal .slides {
@@ -41,7 +43,7 @@
         text-shadow: none; }
 &lt;/style&gt;
 </description>
-      
     </item>
+    
   </channel>
 </rss>

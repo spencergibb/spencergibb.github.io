@@ -1,321 +1,182 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-<head>
-    <link href="http://gmpg.org/xfn/11" rel="profile">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<html lang="en">
 
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-    <title>Spring Cloud Devnexus Notes &middot; Spencer Gibb</title>
+  <title>Spring Cloud Devnexus Notes</title>
 
-    
-    <link rel="stylesheet" href="http://spencer.gibb.us/css/poole.css">
-    <link rel="stylesheet" href="http://spencer.gibb.us/css/hyde.css">
-    <link rel="stylesheet" href="http://spencer.gibb.us/css/poole-overrides.css">
-    <link rel="stylesheet" href="http://spencer.gibb.us/css/hyde-overrides.css">
-    <link rel="stylesheet" href="http://spencer.gibb.us/css/hyde-x.css">
-    <link rel="stylesheet" href="http://spencer.gibb.us/css/highlight/sunburst.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+  <meta name="author" content="Spencer Gibb" />
+  
+  
 
-    
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://spencer.gibb.us/apple-touch-icon-144-precomposed.png">
-    <link href="http://spencer.gibb.us/favicon.png" rel="icon">
+  <meta name="generator" content="Hugo 0.16" />
 
-    
-    <link href="" rel="alternate" type="application/rss+xml" title="Spencer Gibb &middot; Spencer Gibb" />
+  <link rel="alternate" href="http://spencer.gibb.us/index.xml" type="application/rss+xml" title="Spencer Gibb">
 
-    <meta name="description" content="">
-    <meta name="keywords" content="spring-cloud,spring,clud">
-    
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="http://spencer.gibb.uscss/bootstrap.min.css" />
+  <link rel="stylesheet" href="http://spencer.gibb.uscss/main.css" />
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="http://spencer.gibb.uscss/pygment_highlights.css" />
+  
+  
+  <meta property="og:title" content="Spring Cloud Devnexus Notes" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/" />
+  <meta property="og:image" content="images/spencer-gibb-square-med.jpg" />
+  
 </head>
-<body class="theme-base-spencer">
 
-<div class="content container">
-  <div class="post">
-    <h1>Spring Cloud Devnexus Notes</h1>
-    
 
-<h2 id="monolithic-vs-microservices:b0d38ecd712165cb7e1e9c7fb26cb748">Monolithic vs Microservices</h2>
-
-<ul>
-<li>Easy/Hard vs Simple/Complex</li>
-<li>Monolithic
-
-<ul>
-<li>Complex / Easy</li>
-<li>Language / Framework modularity</li>
-<li>Fewer scaling vectors</li>
-<li>Long-term commitment to tech stack</li>
-<li>coupled changes make harder deploys</li>
-<li>hard to scale dev</li>
-</ul></li>
-<li>Microservice
-
-<ul>
-<li>Simple / Hard</li>
-<li>for continuous delivery</li>
-<li>12 factor apps</li>
-<li>diversity of clients (mobile, desktop, devices)</li>
-<li>modularity based on services</li>
-<li>uncoupled changes enable frequent deploys</li>
-<li>more scaling vectors</li>
-<li>dev friendly</li>
-<li>easier to scale dev</li>
-<li>no long term commitment to tech stack</li>
-</ul></li>
-</ul>
-
-<h2 id="microservices-with-spring-boot:b0d38ecd712165cb7e1e9c7fb26cb748">Microservices with Spring Boot</h2>
-
-<ul>
-<li>partition strategies
-
-<ul>
-<li>Noun (product info service)</li>
-<li>Verb (shipping service)</li>
-<li>Single Responsibility Principle</li>
-<li>Bounded Context</li>
-</ul></li>
-<li>Polyglot persistence</li>
-<li>Unix pipes and filters</li>
-<li>Choreography vs Orchestration</li>
-</ul>
-
-<h2 id="no-man-microservice-is-an-island:b0d38ecd712165cb7e1e9c7fb26cb748">No Man (Microservice) is an Island</h2>
-
-<ul>
-<li>No free lunch
-
-<ul>
-<li>Ops overhead</li>
-<li>Substantial Devops Skills required</li>
-<li>Implicit interfaces</li>
-<li>Duplication of effort</li>
-<li>Distributed System complexity</li>
-<li>Asynchronicity is difficult</li>
-<li>Testability chalenges</li>
-</ul></li>
-</ul>
-
-<p>Spring CLI Support
-http command is from httpie.org</p>
-
-<h2 id="configuration-server:b0d38ecd712165cb7e1e9c7fb26cb748">Configuration Server</h2>
-
-<p>cd ~/workspace/spencergibb/myfeed</p>
-
-<p>show ConfigApp
-start config server</p>
-
-<p>http -a user:password :11020/admin/health<br />
-http -a user:password :11020/myapp/default<br />
-http -a user:password :11020/myfeed-ui/development
-http -a user:password :11020/myfeed-ui/development/test</p>
-
-<h3 id="config-client:b0d38ecd712165cb7e1e9c7fb26cb748">Config Client</h3>
-
-<p>run myfeed-ui
-http :11040/env</p>
-
-<p>http :11040/info
-http &ndash;form :11040/env info.foo=bar
-http :11040/env
-http :11040/info</p>
-
-<p>http &ndash;form :11040/env logging.level.ROOT=DEBUG
-http &ndash;form :11040/env logging.level.com.netflix=OFF</p>
-
-<p>open UiApp
-show @RefreshScope</p>
-
-<p>http :11040/ui/features
-http &ndash;form :11040/env myfeed.ui.featureAaaFlag=devnexus
-http POST :11040/refresh
-http :11040/ui/features</p>
-
-<p>change a value at <a href="https://github.com/spencergibb/myfeed-config">https://github.com/spencergibb/myfeed-config</a></p>
-
-<p>http POST :11040/refresh</p>
-
-<p>http POST :11040/shutdown</p>
-
-<h3 id="encryption-decryption:b0d38ecd712165cb7e1e9c7fb26cb748">encryption/decryption</h3>
-
-<p>cat /Users/sgibb/workspace/spencergibb/myfeed-config/application.yml
-http -a user:password :11020/myapp/default # show encrypted.password</p>
-
-<p>export TESTVAL=<code>spring encrypt --key=foobar this is a test</code><br />
-echo $TESTVAL<br />
-spring decrypt &ndash;key=foobar $TESTVAL</p>
-
-<p>cli and server also support keystores</p>
-
-<h2 id="discovery-eureka:b0d38ecd712165cb7e1e9c7fb26cb748">Discovery: Eureka</h2>
-
-<p>open DiscoveryApp
-start eureka<br />
-<a href="http://discovery.myfeed.com:11010/">http://discovery.myfeed.com:11010/</a></p>
-
-<p>open CustomerApp.java
-start Ui again</p>
-
-<p>show eureka dashboard<br />
-http :11040/metrics # or <a href="http://ui.myfeed.com:11040/metrics">http://ui.myfeed.com:11040/metrics</a></p>
-
-<p>by default configserver gives eureka address, can setup eureka to locate configserver</p>
-
-<h2 id="ribbon-and-hystrix:b0d38ecd712165cb7e1e9c7fb26cb748">Ribbon and Hystrix</h2>
-
-<p>open AdminApp, show LoadBalancerClient</p>
-
-<p>open feed UserService and show HystrixCommand</p>
-
-<p>open TurbineApp and start</p>
-
-<p>open AdminApp, show @EnableHystrixDashboard</p>
-
-<p>start admin app
-start feed app</p>
-
-<p>hit this over and over and break circuit<br />
-<a href="http://feed.myfeed.com:11060/@spencergibb">http://feed.myfeed.com:11060/@spencergibb</a></p>
-
-<p>goto <a href="http://admin.myfeed.com:11050/admin/">http://admin.myfeed.com:11050/admin/</a>
-show dashboard</p>
-
-<p>start users</p>
-
-<p>hit customers over and over again<br />
-show dashboard</p>
-
-<p>open feed UserService again and show RestTemplate</p>
-
-<p>open UiApp and show @FeignClientScan
-open UiController and show Feign and client call</p>
-
-<p>Uses Spring MVC annotations<br />
-Uses Spring HttpMessageConverters configured by spring boot</p>
-
-<h2 id="rx-java:b0d38ecd712165cb7e1e9c7fb26cb748">Rx Java</h2>
-
-<p>show UiController.feed
-show FeedService.feed</p>
-
-<h2 id="routing-zuul:b0d38ecd712165cb7e1e9c7fb26cb748">Routing: Zuul</h2>
-
-<p>open RoutingApp
-start router</p>
-
-<p><a href="http://www.myfeed.com:11080">http://www.myfeed.com:11080</a></p>
-
-<p>cat /Users/sgibb/workspace/spencergibb/myfeed-config/myfeed-router.yml</p>
-
-<p>http :11081/routes</p>
-
-<p>run other uis</p>
-
-<p>hit <a href="http://www.myfeed.com:11080/whoami">http://www.myfeed.com:11080/whoami</a></p>
-
-<h2 id="spring-cloud-security:b0d38ecd712165cb7e1e9c7fb26cb748">Spring Cloud Security</h2>
-
-<p>show RouterApp and router application.yml
-show UiApp and ui application.yml</p>
-
-<p>Spring Session Redis for AdminApp</p>
-
-<h2 id="spring-cloud-bus:b0d38ecd712165cb7e1e9c7fb26cb748">Spring Cloud Bus</h2>
-
-<p>http &ndash;form :11081/bus/env logging.level.ROOT=INFO
-http &ndash;form :11081/bus/env my.prop=my.val
-http POST :11081/bus/refresh</p>
-
-<p>open s-c-bus<br />
-extend RemoteApplicationEvent<br />
-publish to ApplicationEventPublisher.publish(event)</p>
-
-<p>ability to extend to other messaging systems besids RabbitMQ</p>
-
-<h2 id="spring-cloud-sidecar:b0d38ecd712165cb7e1e9c7fb26cb748">Spring Cloud Sidecar</h2>
-
-<p>open s-c-netflix<br />
-open SidecarApplication</p>
-
-<p>run sidecar</p>
-
-<p>http :11100
-http :11100/ping
-http :11100/health</p>
-
-<p>shut down local server<br />
-http :11100/health</p>
-
-<p>run local server<br />
-http :11100/health</p>
-
-<p>web interface for discovery<br />
-http :11100/hosts/configserver etc&hellip;</p>
-
-<p>zuul proxy<br />
-http :11100/myfeed-user
-http :11100/myfeed-feed/@spencergibb</p>
-
-<p>proxy to configserver
-http -a user:password :11100/configserver/myapp-default.yml</p>
-
-<h2 id="spring-restdocs:b0d38ecd712165cb7e1e9c7fb26cb748">Spring Restdocs</h2>
-
-<p>./myfeed-user/target/myfeed-user-1.0.0.BUILD-SNAPSHOT.jar &ndash;server.port=11072</p>
-
-<p><a href="http://localhost:11072/docs/api-guide.html">http://localhost:11072/docs/api-guide.html</a></p>
-
-<p><a href="http://localhost:11072/docs/getting-started-guide.html">http://localhost:11072/docs/getting-started-guide.html</a></p>
-
-<h2 id="spring-session-redis:b0d38ecd712165cb7e1e9c7fb26cb748">Spring Session Redis</h2>
-
-<p>open RouterApp show @EnableRedisHttpSession</p>
-
-<p>show admin application.yml show security part</p>
-
-<h2 id="preview-spring-cloud-consul:b0d38ecd712165cb7e1e9c7fb26cb748">Preview: Spring Cloud Consul</h2>
-
-<p>cat run_consul.sh<br />
-./run_consul.sh</p>
-
-<p>open <a href="http://consului.local.spring.io:8500">http://consului.local.spring.io:8500</a></p>
-
-<p>open s-c-consul</p>
-
-<p>show sample pom.xml<br />
-show SampleApplication<br />
-run SampleApplication</p>
-
-<p>http :8080/health</p>
-
-<p>show consul ui services</p>
-
-<p>http :8080/myenv prop==myprop</p>
-
-<p>add testConsulApp property through consul ui</p>
-
-<p>run SampleApplication 8083</p>
-
-<p>run this until 8083 shows up<br />
-http :8080/</p>
-
-<p>http POST :8083/shutdown<br />
-http :8080/</p>
-
-<p>run SampleApplication 8083</p>
-
-<p>http &ndash;form :8080/bus/env my.value=consul.value</p>
-
-<p>http :8080/bus/refresh</p>
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://spencer.gibb.us">Spencer Gibb</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+      
+        
+          <li>
+          <a title="Blog" href="http://spencer.gibb.us/">Blog</a>
+  	      </li>
+  	    
+      
+        
+          <li>
+          <a title="Presentations" href="http://spencer.gibb.us/categories/presentations/">Presentations</a>
+  	      </li>
+  	    
+      
+        
+          <li>
+          <a title="About" href="http://spencer.gibb.us/about/">About</a>
+  	      </li>
+  	    
+      
+      </ul>
+    </div>
+
+	<div class="avatar-container">
+	  <div class="avatar-img-border">
+      
+          <a title="Spencer Gibb" href="http://spencer.gibb.us">
+              <img class="avatar-img" src="http://spencer.gibb.usimages/spencer-gibb-square-med.jpg" alt="Spencer Gibb" />
+          </a>
+      
+	  </div>
+	</div>
 
   </div>
-</div>
-<script src="http://spencer.gibb.us/js/highlight.pack.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
+</nav>
 
-</body>
+
+    <div role="main" class="container main-content">
+
+      
+        NO MATCHING PARTIAL
+      
+
+    </div>
+
+    <footer>
+  <div class="container beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+          <li>
+            <a href="https://github.com/spencergibb" title="GitHub">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+		      
+          <li>
+            <a href="https://twitter.com/spencerbgibb" title="Twitter">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+		      
+		      
+          <li>
+            <a href="https://linkedin.com/spencergibb" title="LinkedIn">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+	    	  
+          <li>
+            <a href="https://stackoverflow.com/users/2730527/spencergibb" title="StackOverflow">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          
+
+    		  <li>
+      			<a href="http://spencer.gibb.usindex.xml" title="RSS">
+      			  <span class="fa-stack fa-lg">
+        				<i class="fa fa-circle fa-stack-2x"></i>
+        				<i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+      			  </span>
+      			</a>
+    		  </li>		
+
+        </ul>
+        <p class="copyright text-muted">
+    		  Spencer Gibb
+    		  &nbsp;&bull;&nbsp;
+    		  2015
+    		  
+    		  
+    		  &nbsp;&bull;&nbsp;
+    		  <a href="http://spencer.gibb.us">Spencer Gibb</a>
+    		  
+  	    </p>
+  	        
+    		<p class="theme-by text-muted">
+    		  Theme by
+    		  <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
+    		</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="http://spencer.gibb.usjs/jquery-1.11.2.min.js"></script>
+<script src="http://spencer.gibb.usjs/bootstrap.min.js"></script>
+<script src="http://spencer.gibb.usjs/main.js"></script>
+
+
+
+  </body>
 </html>
