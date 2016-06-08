@@ -1,10 +1,11 @@
 +++
 date = "2013-03-12T12:27:08-07:00"
-title = "about"
+title = "About"
 menu = "main"
 categories = [
   "resume"
 ]
+weight = 10
 +++
 
 Download: [pdf](/resume/spencer_gibb_resume.pdf)
