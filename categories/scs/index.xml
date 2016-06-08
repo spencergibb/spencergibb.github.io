@@ -16,7 +16,8 @@
       <pubDate>Mon, 02 Nov 2015 17:36:23 -0700</pubDate>
       
       <guid>http://spencer.gibb.us/preso/scs-training-2015/</guid>
-      <description>&lt;style&gt;
+      <description>&lt;!--more--&gt;
+&lt;style&gt;
     /*.reveal .slides {
         text-align: left;
     }

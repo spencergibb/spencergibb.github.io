@@ -66,7 +66,8 @@
       <pubDate>Thu, 19 Nov 2015 15:54:01 -0600</pubDate>
       
       <guid>http://spencer.gibb.us/preso/spring-cloud-ujug-2015/</guid>
-      <description>&lt;style&gt;
+      <description>&lt;!--more--&gt;
+&lt;style&gt;
     /*.reveal .slides {
         text-align: left;
     }
@@ -101,7 +102,8 @@
       <pubDate>Mon, 02 Nov 2015 17:36:23 -0700</pubDate>
       
       <guid>http://spencer.gibb.us/preso/scs-training-2015/</guid>
-      <description>&lt;style&gt;
+      <description>&lt;!--more--&gt;
+&lt;style&gt;
     /*.reveal .slides {
         text-align: left;
     }
@@ -136,7 +138,8 @@
       <pubDate>Sun, 27 Sep 2015 14:35:54 -0600</pubDate>
       
       <guid>http://spencer.gibb.us/preso/spring-cloud-star-springone-2015/</guid>
-      <description>&lt;style&gt;
+      <description>&lt;!--more--&gt;
+&lt;style&gt;
     /*.reveal .slides {
         text-align: left;
     }
@@ -171,7 +174,8 @@
       <pubDate>Wed, 16 Sep 2015 00:00:00 -0600</pubDate>
       
       <guid>http://spencer.gibb.us/preso/spring-cloud-dcjug-2015/</guid>
-      <description>&lt;style&gt;
+      <description>&lt;!--more--&gt;
+&lt;style&gt;
     /*.reveal .slides {
         text-align: left;
     }
@@ -206,7 +210,8 @@
       <pubDate>Wed, 01 Jul 2015 15:54:01 -0600</pubDate>
       
       <guid>http://spencer.gibb.us/preso/spring-cloud-oscon-2015/</guid>
-      <description>&lt;style&gt;
+      <description>&lt;!--more--&gt;
+&lt;style&gt;
     /*.reveal .slides {
         text-align: left;
     }
@@ -241,7 +246,8 @@
       <pubDate>Mon, 09 Mar 2015 15:54:01 -0600</pubDate>
       
       <guid>http://spencer.gibb.us/preso/cloud-native-devnexus/</guid>
-      <description>&lt;style&gt;
+      <description>&lt;!--more--&gt;
+&lt;style&gt;
     /*.reveal .slides {
         text-align: left;
     }

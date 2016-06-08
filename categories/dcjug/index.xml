@@ -16,7 +16,8 @@
       <pubDate>Wed, 16 Sep 2015 00:00:00 -0600</pubDate>
       
       <guid>http://spencer.gibb.us/preso/spring-cloud-dcjug-2015/</guid>
-      <description>&lt;style&gt;
+      <description>&lt;!--more--&gt;
+&lt;style&gt;
     /*.reveal .slides {
         text-align: left;
     }

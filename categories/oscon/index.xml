@@ -16,7 +16,8 @@
       <pubDate>Wed, 01 Jul 2015 15:54:01 -0600</pubDate>
       
       <guid>http://spencer.gibb.us/preso/spring-cloud-oscon-2015/</guid>
-      <description>&lt;style&gt;
+      <description>&lt;!--more--&gt;
+&lt;style&gt;
     /*.reveal .slides {
         text-align: left;
     }

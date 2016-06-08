@@ -28,7 +28,8 @@
       <pubDate>Mon, 09 Mar 2015 15:54:01 -0600</pubDate>
       
       <guid>http://spencer.gibb.us/preso/cloud-native-devnexus/</guid>
-      <description>&lt;style&gt;
+      <description>&lt;!--more--&gt;
+&lt;style&gt;
     /*.reveal .slides {
         text-align: left;
     }
