@@ -9,8 +9,8 @@ reveal = false
 +++
 
 I was invited to speak and lead a discussion about different Cloud Discovery and Configuration Mechanisms at the [Utah Software Architecture Meetup](http://www.meetup.com/Utah-Software-Architecture-Meetup/events/226822735/). Good pizza and discussion were had.
- 
-Here are my [Slides](/preso/2016-02-04 Microservices with Spring Cloud - Utah Arch Meetup.pdf).
 
 <!--more-->
+ 
+Here are my [Slides](/preso/2016-02-04 Microservices with Spring Cloud - Utah Arch Meetup.pdf).
 

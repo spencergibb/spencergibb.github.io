@@ -9,10 +9,10 @@ reveal = false
 +++
 
 I was invited to speak about comparing different Discovery and Configuration Implementations in Spring Cloud at [Spring I/O](http://www.springio.net/) in beautiful Barcelona!
+
+<!--more-->
  
 Here are my [Slides](2016-05-18 Spring Cloud Discovery and Config Sys Comparison.pdf).
 
 I also gave a two hour workshop on Cloud Native Applications with Spring Cloud & Netflix OSS.
-
-<!--more-->
 

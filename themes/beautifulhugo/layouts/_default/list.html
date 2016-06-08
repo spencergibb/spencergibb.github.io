@@ -42,9 +42,8 @@
                     <p class="post-meta">
                         Posted on {{ .Date.Format "January 2, 2006" }}
                         {{ if isset .Params "categories" }}
-                        &middot;
                         {{ $baseUrl := .Site.BaseURL }}
-                        {{ range .Params.categories }}<a class="post-meta" href="{{ $baseUrl }}categories/{{ . | urlize }}">{{ . }}</a> {{ end }}
+                        {{ range .Params.categories }}&middot; <a class="post-meta" href="{{ $baseUrl }}categories/{{ . | urlize }}">{{ . }}</a> {{ end }}
                         {{ end }}
                     </p>
                 </article>

@@ -9,8 +9,8 @@ reveal = false
 +++
 
 I was invited to speak about different Discovery and Configuration Implementations in Spring Cloud at the fabulous [Devnexus](https://devnexus.com) Conference run by the [Atlanta Java User Group](http://www.ajug.org/).
- 
-Here are my [Slides](2016-02-17 Spring Cloud *.pdf).
 
 <!--more-->
+ 
+Here are my [Slides](2016-02-17 Spring Cloud *.pdf).
 

@@ -10,7 +10,7 @@ theme = "beautifulhugo"
 [author]
     name = "Spencer Gibb"
     github = "spencergibb"
-    linkedin = "spencergibb"
+    linkedin = "in/spencergibb"
     stackoverflow = "2730527/spencergibb"
     twitter = "spencerbgibb"
 
@@ -29,7 +29,7 @@ theme = "beautifulhugo"
 
 [[menu.main]]
     name = "Blog"
-    url = "/"
+    url = "/post"
     weight = 1
 
 [[menu.main]]
