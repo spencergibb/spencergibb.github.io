@@ -1,3 +1,21 @@
+{{ if eq .Params.reveal false }}
+<html lang="en">
+
+{{ partial "head.html" . }}
+
+<body>
+
+{{ partial "nav.html" . }}
+
+<div role="main" class="container main-content">
+    {{ partial "post.html" . }}
+</div>
+
+{{ partial "footer.html" . }}
+
+</body>
+</html>
+{{else}}
 {{ partial "preso/head" . }}
 
 <div class="reveal">
@@ -17,3 +35,4 @@
 </div>
 
 {{ partial "preso/foot" . }}
+{{end}}

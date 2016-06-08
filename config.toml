@@ -1,4 +1,4 @@
-baseurl = "http://spencer.gibb.us"
+baseurl = "http://spencer.gibb.us/"
 languageCode = "en-us"
 title = "Spencer Gibb"
 builddrafts = true
