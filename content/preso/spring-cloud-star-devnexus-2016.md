@@ -12,5 +12,5 @@ I was invited to speak about different Discovery and Configuration Implementatio
 
 <!--more-->
  
-Here are my [Slides](2016-02-17 Spring Cloud *.pdf).
+Here are my [Slides](/preso/2016-02-17 Spring Cloud *.pdf).
 

@@ -12,5 +12,5 @@ I was invited to speak about different Discovery and Configuration Implementatio
 
 <!--more-->
  
-Here are my [Slides](2016-04-22 Spring Cloud Star.pdf) and here is [the video](https://youtu.be/sESK0svJ4Gs).
+Here are my [Slides](/preso/2016-04-22 Spring Cloud Star.pdf) and here is [the video](https://youtu.be/sESK0svJ4Gs).
 
