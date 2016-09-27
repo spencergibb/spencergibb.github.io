@@ -7,8 +7,32 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2013 - 2015, Spencer Gibb; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 18 May 2016 14:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 21 Sep 2016 12:00:00 -0500</lastBuildDate>
     <atom:link href="http://spencer.gibb.us/categories/presentations/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Chelsea High School Career Talk</title>
+      <link>http://spencer.gibb.us/preso/chelsea-career-talk-2016/</link>
+      <pubDate>Wed, 21 Sep 2016 12:00:00 -0500</pubDate>
+      
+      <guid>http://spencer.gibb.us/preso/chelsea-career-talk-2016/</guid>
+      <description>&lt;p&gt;I had the great privilege to speak to students at &lt;a href=&#34;http://www.chelsea.k12.mi.us/&#34;&gt;Chelsea High School&lt;/a&gt; in Michigan about my company and what it is like to work there.&lt;/p&gt;
+
+&lt;p&gt;Here are my slides in &lt;a href=&#34;http://spencer.gibb.us/preso/2016-09-21 Chelsea Career Talk.pdf&#34;&gt;pdf&lt;/a&gt; and &lt;a href=&#34;http://spencer.gibb.us/preso/2016-09-21 Chelsea Career Talk.key&#34;&gt;Keynote&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Spring Cloud with Consul and Vault</title>
+      <link>http://spencer.gibb.us/preso/spring-cloud-with-consul-and-vault-2016/</link>
+      <pubDate>Tue, 02 Aug 2016 17:00:00 -0800</pubDate>
+      
+      <guid>http://spencer.gibb.us/preso/spring-cloud-with-consul-and-vault-2016/</guid>
+      <description>&lt;p&gt;I had a great time at &lt;a href=&#34;https://2016.event.springoneplatform.io/schedule/sessions/spring_cloud_with_consul_and_vault.html&#34;&gt;SpringOne Platform&lt;/a&gt; speaking about using &lt;a href=&#34;http://consul.io&#34;&gt;Consul&lt;/a&gt; for discovery and configuration and &lt;a href=&#34;https://www.vaultproject.io/&#34;&gt;Vault&lt;/a&gt; as a configuration source.&lt;/p&gt;
+
+&lt;p&gt;Here are my slides in &lt;a href=&#34;http://spencer.gibb.us/preso/2016-08-02 Spring Cloud with Consul and Vault.pdf&#34;&gt;pdf&lt;/a&gt; and &lt;a href=&#34;http://spencer.gibb.us/preso/2016-08-02 Spring Cloud with Consul and Vault.key&#34;&gt;Keynote&lt;/a&gt;. I&amp;rsquo;ll post the video when available.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Spring Cloud *: Exploring Spring Cloud Implementations</title>
@@ -102,6 +126,42 @@
       <pubDate>Mon, 02 Nov 2015 17:36:23 -0700</pubDate>
       
       <guid>http://spencer.gibb.us/preso/scs-training-2015/</guid>
+      <description>&lt;!--more--&gt;
+&lt;style&gt;
+    /*.reveal .slides {
+        text-align: left;
+    }
+    .reveal .slides section &gt; * {
+        margin-left: 0;
+        margin-right: 0;
+    }*/
+    .reveal section img {
+        border: 0px;
+        box-shadow: 0 0 0px rgba(0, 0, 0, 0.55);
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+        margin: 0 0 20px 0;
+        font-family: &#34;League Gothic&#34;, Impact, sans-serif;
+        line-height: 0.9em;
+        letter-spacing: 0.02em;
+        text-transform: none;
+        text-shadow: none; }
+&lt;/style&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Spring Cloud *: SpringOne 2GX 2015</title>
+      <link>http://spencer.gibb.us/preso/spring-cloud-star-springone-2015/</link>
+      <pubDate>Sun, 27 Sep 2015 14:35:54 -0600</pubDate>
+      
+      <guid>http://spencer.gibb.us/preso/spring-cloud-star-springone-2015/</guid>
       <description>&lt;!--more--&gt;
 &lt;style&gt;
     /*.reveal .slides {

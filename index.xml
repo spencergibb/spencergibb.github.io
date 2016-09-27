@@ -7,8 +7,32 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2013 - 2015, Spencer Gibb; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 18 May 2016 14:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 21 Sep 2016 12:00:00 -0500</lastBuildDate>
     <atom:link href="http://spencer.gibb.us/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Chelsea High School Career Talk</title>
+      <link>http://spencer.gibb.us/preso/chelsea-career-talk-2016/</link>
+      <pubDate>Wed, 21 Sep 2016 12:00:00 -0500</pubDate>
+      
+      <guid>http://spencer.gibb.us/preso/chelsea-career-talk-2016/</guid>
+      <description>&lt;p&gt;I had the great privilege to speak to students at &lt;a href=&#34;http://www.chelsea.k12.mi.us/&#34;&gt;Chelsea High School&lt;/a&gt; in Michigan about my company and what it is like to work there.&lt;/p&gt;
+
+&lt;p&gt;Here are my slides in &lt;a href=&#34;http://spencer.gibb.us/preso/2016-09-21 Chelsea Career Talk.pdf&#34;&gt;pdf&lt;/a&gt; and &lt;a href=&#34;http://spencer.gibb.us/preso/2016-09-21 Chelsea Career Talk.key&#34;&gt;Keynote&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Spring Cloud with Consul and Vault</title>
+      <link>http://spencer.gibb.us/preso/spring-cloud-with-consul-and-vault-2016/</link>
+      <pubDate>Tue, 02 Aug 2016 17:00:00 -0800</pubDate>
+      
+      <guid>http://spencer.gibb.us/preso/spring-cloud-with-consul-and-vault-2016/</guid>
+      <description>&lt;p&gt;I had a great time at &lt;a href=&#34;https://2016.event.springoneplatform.io/schedule/sessions/spring_cloud_with_consul_and_vault.html&#34;&gt;SpringOne Platform&lt;/a&gt; speaking about using &lt;a href=&#34;http://consul.io&#34;&gt;Consul&lt;/a&gt; for discovery and configuration and &lt;a href=&#34;https://www.vaultproject.io/&#34;&gt;Vault&lt;/a&gt; as a configuration source.&lt;/p&gt;
+
+&lt;p&gt;Here are my slides in &lt;a href=&#34;http://spencer.gibb.us/preso/2016-08-02 Spring Cloud with Consul and Vault.pdf&#34;&gt;pdf&lt;/a&gt; and &lt;a href=&#34;http://spencer.gibb.us/preso/2016-08-02 Spring Cloud with Consul and Vault.key&#34;&gt;Keynote&lt;/a&gt;. I&amp;rsquo;ll post the video when available.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Spring Cloud *: Exploring Spring Cloud Implementations</title>
@@ -730,30 +754,6 @@ http :8080/&lt;/p&gt;
         text-shadow: none; }
 &lt;/style&gt;
 
-</description>
-    </item>
-    
-    <item>
-      <title>go hugo</title>
-      <link>http://spencer.gibb.us/blog/2015/03/03/go-hugo/</link>
-      <pubDate>Tue, 03 Mar 2015 15:45:06 -0700</pubDate>
-      
-      <guid>http://spencer.gibb.us/blog/2015/03/03/go-hugo/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve migrated my blog from &lt;a href=&#34;http://octopress.org&#34;&gt;octopress&lt;/a&gt; to &lt;a href=&#34;http://gohugo.io&#34;&gt;hugo&lt;/a&gt; by &lt;a href=&#34;https://github.com/spf13&#34;&gt;Steve Francia&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I used &lt;a href=&#34;http://andy4thehuynh.github.io/post/hugo--simple-deploy-to-github-pages/&#34;&gt;this post&lt;/a&gt; to setup the deploy to github pages and of course the &lt;a href=&#34;http://gohugo.io/overview/introduction&#34;&gt;hugo documentation&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Hopefully you will see more blog posts here and maybe on &lt;a href=&#34;http://spring.io&#34;&gt;http://spring.io&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>license</title>
-      <link>http://spencer.gibb.us/license/</link>
-      <pubDate>Tue, 03 Mar 2015 15:21:38 -0700</pubDate>
-      
-      <guid>http://spencer.gibb.us/license/</guid>
-      <description>&lt;p&gt;Copyright &amp;copy; 2013 - 2015, Spencer Gibb; all rights reserved.&lt;/p&gt;
 </description>
     </item>
     
