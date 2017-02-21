@@ -65,6 +65,46 @@ Note:
 
 
 
+## Configure Route with URL
+
+`PreDecorationFilter` sets `routeHost` key.
+```
+zuul:
+  routes:
+    stores:
+      url: http://localhost:8081
+      path: /stores/**
+```
+
+
+
+## Configure Route with Ribbon & Hystrix
+
+`PreDecorationFilter` sets `serviceId` key.
+
+```
+zuul:
+  routes:
+    test: 
+      serviceId: testclient
+      path: /testing123/**
+```
+
+
+
+## Which HTTP Client
+<style type="text/css">
+p { text-align: left; }
+</style>
+
+The default is Apache `HttpClient`.
+
+Set `ribbon.okhttp.enabled=true` to use OkHttp 3 `OkHttpClient`.
+
+Set `ribbon.restclient.enabled=true` to use deprecated Netflix `RestClient`.
+
+
+
 ## Custom Route Matching Filter
 
 ```
@@ -105,6 +145,15 @@ public class QueryParamPreFilter extends ZuulFilter {
 
 ## Custom Routing Filter
 
+Custom routing filters translate from:
+
+- HttpServletRequest to the client request.
+- Makes the remote request. <!-- .element: class="fragment" -->
+- Translates client response to HttpServletResponse. <!-- .element: class="fragment" -->
+
+
+## Custom Routing Filter Cont.
+
 ```
 public class OkHttpRoutingFilter extends ZuulFilter {
 	@Autowired
@@ -121,7 +170,6 @@ public class OkHttpRoutingFilter extends ZuulFilter {
 	}
 }
 ```
-
 
 
 ### Custom Routing Filter Cont.
@@ -143,7 +191,6 @@ public class OkHttpRoutingFilter extends ZuulFilter {
 		// continued...
 	}
 ```
-
 
 
 ### Custom Routing Filter Cont.
@@ -168,7 +215,6 @@ public class OkHttpRoutingFilter extends ZuulFilter {
 ```
 
 
-
 ### Custom Routing Filter Cont.
 
 ```java
@@ -184,7 +230,6 @@ public class OkHttpRoutingFilter extends ZuulFilter {
 		// continued...
 	}
 ```
-
 
 
 ### Custom Routing Filter Cont.
