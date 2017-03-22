@@ -11,6 +11,34 @@ email: sgibb@pivotal.io
 
 
 
+## What is an API Gateway?
+
+* Single entry point for all clients
+* Common in microservice architectures <!-- .element: class="fragment" -->
+* Client insulation from services <!-- .element: class="fragment" -->
+* Security, surgical routing, Load Shedding, etc... <!-- .element: class="fragment" -->
+
+
+
+## What is an API Gateway?
+
+![apigateway](/images/apigateway.jpg)
+<style>img[alt=apigateway] { width: 80%; margin: auto; display: block; }</style>
+
+Image credit http://microservices.io
+
+
+
+## Backend For Frontend
+
+![backendforfrontend](/images/backendforfrontend.png)
+<style>img[alt=backendforfrontend] { width: 80%; margin: auto; display: block; }</style>
+
+Image credit http://microservices.io
+
+
+
+
 <!-- .slide: data-background="#000000" -->
 <style>#there-is-no-dana-only-zuul- { color: white; }</style>
 
@@ -48,6 +76,8 @@ Note:
 ## `@EnableZuulProxy`
 
 Include: `spring-cloud-starter-zuul`
+
+**Embedded** or **Dedicated**
 
 Note:
 - Default Filters installed
@@ -347,6 +377,25 @@ spring.cloud.gateway.routes:
 		- Query=baz
 		- Cookie=chocolate, ch.p
 		- After=1900-01-20T17:42:47.789-07:00[America/Denver]
+```
+
+
+
+## Route Matching
+
+DSL
+```java
+@Bean
+public RouteLocator customRouteLocator() {
+	return Routes.locator()
+		.route("test")
+			.uri("http://httpbin.org:80")
+			.predicate(host("**.abc.org").and(path("/image/png")))
+			.addResponseHeader("X-TestHeader", "foobar")
+		.and()
+			// more routes
+		.build();
+}
 ```
 
 
