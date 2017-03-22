@@ -2,13 +2,293 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Spencer Gibb</title>
-    <link>http://spencer.gibb.us/</link>
+    <link>http://spencer.gibb.us/index.xml</link>
     <description>Recent content on Spencer Gibb</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2013 - 2015, Spencer Gibb; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 21 Sep 2016 12:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 12 Mar 2013 12:27:08 -0700</lastBuildDate>
     <atom:link href="http://spencer.gibb.us/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>About</title>
+      <link>http://spencer.gibb.us/about/</link>
+      <pubDate>Tue, 12 Mar 2013 12:27:08 -0700</pubDate>
+      
+      <guid>http://spencer.gibb.us/about/</guid>
+      <description>
+
+&lt;p&gt;Download: &lt;a href=&#34;http://spencer.gibb.us/resume/spencer_gibb_resume.pdf&#34;&gt;pdf&lt;/a&gt;
+&lt;a href=&#34;http://spencer.gibb.us/resume/spencer_gibb_resume.docx&#34;&gt;docx&lt;/a&gt;
+&lt;a href=&#34;http://spencer.gibb.us/resume/spencer_gibb_resume.txt&#34;&gt;txt&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;spencer-gibb&#34;&gt;Spencer Gibb&lt;/h2&gt;
+
+&lt;p&gt;1919 Jackson St, Kaysville, UT 84037&lt;br/&gt;
+Mobile: 801-540-5830&lt;br/&gt;
+&lt;a href=&#34;mailto:spencer@gibb.us&#34;&gt;spencer at gibb.us&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&#34;http://twitter.com/spencerbgibb&#34;&gt;@spencerbgibb&lt;/a&gt;
+&lt;a href=&#34;https://github.com/spencergibb&#34;&gt;github&lt;/a&gt;
+&lt;a href=&#34;http://www.linkedin.com/in/spencergibb&#34;&gt;linkedin&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;skills&#34;&gt;Skills&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Java tech (Spring, Scala, Hibernate, JPA, Maven, Swing, Ant, GWT, JEE, JSE)&lt;/li&gt;
+&lt;li&gt;Web tech (nodejs, HTML, CSS, JS, Rest)&lt;/li&gt;
+&lt;li&gt;Large scale distributed systems&lt;/li&gt;
+&lt;li&gt;NoSQL and SQL databases&lt;/li&gt;
+&lt;li&gt;Working in cross-functional teams&lt;/li&gt;
+&lt;li&gt;Unit and integration testing&lt;/li&gt;
+&lt;li&gt;Team leadership&lt;/li&gt;
+&lt;li&gt;Full product life cycle&lt;/li&gt;
+&lt;li&gt;Functional requirements&lt;/li&gt;
+&lt;li&gt;Mentoring junior co-workers&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;professional-experience&#34;&gt;Professional Experience&lt;/h2&gt;
+
+&lt;p&gt;STAFF ENGINEER, Pivotal, Palo Alto CA (Remote), Jul 2014 – Present&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Co-lead on &lt;a href=&#34;https://github.com/spring-cloud&#34;&gt;Spring Cloud&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;PRINCIPAL ENGINEER, Domo, American Fork UT, May 2013 – Jun 2014&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Dropwizard, AWS, MySQL, Java, Spring&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;PRINCIPAL ENGINEER, FamilySearch, Salt Lake City UT, Feb 2013 – May 2013&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Cassandra, Dropwizard, AWS, MongoDB, json, 800M records&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;ARCHITECT/PRINCIPAL ENGINEER, LDS Church, Salt Lake City UT&lt;br&gt;
+Nov 2010 – Jan 2013&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Developer on Leader Portal (nodejs, Javascript, Riak), Nov/2012 – Jan/2013&lt;/li&gt;
+&lt;li&gt;Team lead on digital catalog application (Java, Spring, MarkLogic), Sep/2011 – Aug/2012&lt;/li&gt;
+&lt;li&gt;Enterprise Software Architect for a portfolio of applications, Nov/2010 – Sep/2011
+
+&lt;ul&gt;
+&lt;li&gt;Responsible for architectural cohesion across all projects in the portfolio&lt;/li&gt;
+&lt;li&gt;Continued, part time, as lead software engineer for preservation system&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;SENIOR SOFTWARE ENGINEER, LDS Church, Salt Lake City UT&lt;br&gt;
+  Jul 2007 – Jul 2008, Jul 2009 – Nov 2010&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Developed Digital Preservation submission application (GWT, Java, Scala, Spring)&lt;/li&gt;
+&lt;li&gt;Developed Personal Video Conferencing account creation application (JSF, Spring)&lt;/li&gt;
+&lt;li&gt;Senior team member on entrance security project for the 130+ temples (see
+www.lds.org/temples for explanation)&lt;/li&gt;
+&lt;li&gt;Developed web services, web-applications and Swing clients&lt;/li&gt;
+&lt;li&gt;Developed using Java Server Faces, Facelets, Java Persistence API (Hibernate provider),
+Web Services (XFire)&lt;/li&gt;
+&lt;li&gt;Developed swing interface for bar-coding application to inventory between 2-4 million
+archive items&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;SOFTWARE CONTRACTOR, Salt Lake City UT&lt;br/&gt;
+  Jul 2007 – Present&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;(Company: STG Inc., Client: Northrop Grumman) Senior Engineer on a large government
+research application.  Implemented code using Spring, iBatis, SQL, Apache Digester,
+JavaCC and Oracle 10g.  Database contained over 750 tables.&lt;/li&gt;
+&lt;li&gt;(Company: Alta Consulting LLC, Client: RX America) Designed, architected and implemented
+a web service to gather and send data to a 3rd party printing company using JEE 5, Web
+Services, JPA, Session EJB&amp;rsquo;s, Oracle and XML&lt;/li&gt;
+&lt;li&gt;(Company: Self, Client: Broadweave) Developed RESTful shopping cart API using Maven,
+Spring, Hibernate and CXF&lt;/li&gt;
+&lt;li&gt;(Company: Self, Client: Broadweave) Created administration application using Eclipse
+Rich Client Platform (RCP)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;SENIOR SOFTWARE DEVELOPER, Collabraspace Inc., Annapolis MD&lt;br&gt;
+ Aug 2004 – Jul 2007&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Team Leader on a complex government application&lt;/li&gt;
+&lt;li&gt;Tasked, mentored and reviewed deliverables for each team member&lt;/li&gt;
+&lt;li&gt;Lead developer for 1st Air Force Collaborative Decision Aid, a Weblogic Portal
+application that integrates various third party applications and a custom J2EE/Swing
+Applet&lt;/li&gt;
+&lt;li&gt;Developer for CollobraSuite, a set of graphical collaboration modules using Swing, J2EE,
+and BEA Weblogic Portal&lt;/li&gt;
+&lt;li&gt;Built multiple N-Tier clusters using J2EE, Web Services, Weblogic, Oracle and Apache&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;SOFTWARE DEVELOPMENT SPECIALIST, Dept. of Defense, Ft. Meade MD&lt;br&gt;
+ Apr 2003 – Aug 2004&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Ported an Oracle Forms-based issue tracking system to a web-based application&lt;/li&gt;
+&lt;li&gt;Mentored other team members in Java and J2EE best practices&lt;/li&gt;
+&lt;li&gt;Collaborated in design of a legacy database port to Oracle&lt;/li&gt;
+&lt;li&gt;Developed applications with BEA Weblogic 8 and Oracle 9&lt;/li&gt;
+&lt;li&gt;Completed &amp;lsquo;Software Engineering Process&amp;rsquo; Course&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;SENIOR DEVELOPER, BuildersNet, Inc., Orem UT&lt;br&gt;
+ Jan 2002 – Sep 2002&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Designed and developed web-based applications in: e-commerce, web hosting and groupware
+applications&lt;/li&gt;
+&lt;li&gt;Built systems, installed and configured Linux, Apache, BIND, and MySQL&lt;/li&gt;
+&lt;li&gt;Designed and created database schemas for applications&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;PARTNER/SENIOR ENGINEER, NetBing LLC, Orem UT&lt;br&gt;
+ Mar 2001 – Jan 2002&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Designed and implemented E-Commerce systems in a J2EE/Linux environment&lt;/li&gt;
+&lt;li&gt;Collaborated in decisions regarding purchase of hardware, software and Internet
+connectivity&lt;/li&gt;
+&lt;li&gt;Designed and implemented a scalable and flexible e-commerce system using JSP, EJB 2.0
+(Entity and Session beans), PHP, payment gateway and 3rd party loan software integration&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;USER INTERFACE ENGINEER, Excite@Home (Formerly iMall Inc), Orem UT&lt;br/&gt;
+ Jan 1998 – Dec 2001&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Team member on large-scale web applications for AT&amp;amp;T Small Business Hosting and IBM
+Homepage Creator&lt;/li&gt;
+&lt;li&gt;Created co-branded web based interfaces using Java, JSP/Servlets, and Netscape Server
+Side JavaScript)&lt;/li&gt;
+&lt;li&gt;Developed EJBs BEA Weblogic Application Server in a cooperative environment&lt;/li&gt;
+&lt;li&gt;Gained expertise in JSP/Servlets, JavaScript, and HTML and performed limited graphic
+design in Adobe Photoshop.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;open-source-projects&#34;&gt;Open Source Projects&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Battleschool: &lt;a href=&#34;https://github.com/spencergibb/battleschool&#34;&gt;https://github.com/spencergibb/battleschool&lt;/a&gt;&lt;br/&gt;
+Development environment provisioning using &lt;a href=&#34;http:ansible.com&#34;&gt;ansible&lt;/a&gt;, ala boxen -&amp;gt; puppet, kitchenplan -&amp;gt; chef&lt;/li&gt;
+&lt;li&gt;Halfpipe: &lt;a href=&#34;https://github.com/spencergibb/halfpipe&#34;&gt;https://github.com/spencergibb/halfpipe&lt;/a&gt;&lt;br/&gt;
+A Dropwizard clone using Spring &amp;amp; Tomcat (superseded by &lt;a href=&#34;https://github.com/spring-cloud&#34;&gt;Spring Cloud&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;technologies&#34;&gt;Technologies&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Java (1.4, 5, 6, 7, 8), Groovy, Scala, Spring, Hibernate (JPA), iBatis, Java Server Faces (JSF), Facelets,
+JEE (JSP, EJB, JMS, Servlets), Swing, JDBC, Maven, Ant, Eclipse, Eclipse RCP, JAX-RS,
+Velocity, JUnit, TestNG, DBUnit&lt;/li&gt;
+&lt;li&gt;App Servers:  Tomcat, Jetty, Weblogic, Websphere, JBoss, Glassfish&lt;/li&gt;
+&lt;li&gt;JavaScript, HTML, CSS, Web Services, Apache, PHP&lt;/li&gt;
+&lt;li&gt;Platforms – Linux (Ubuntu, Red Hat, Fedora, Debian), Solaris, Mac, Windows&lt;/li&gt;
+&lt;li&gt;Database – SQL, Oracle, MySQL, Riak, Mongodb&lt;/li&gt;
+&lt;li&gt;Misc. – git, C++, C, Python, Ruby, Perl, Shell Scripts, Photoshop, Subversion, CVS&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;education-bs-computer-science-brigham-young-university&#34;&gt;Education – BS, Computer Science, Brigham Young University&lt;/h3&gt;
+
+&lt;p&gt;Provo UT, December 2002&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Senior courses in: Software Engineering, Distributed System Design, Database Modeling
+Concepts, Computer Communication and Networking and Machine Learning.&lt;/li&gt;
+&lt;li&gt;Sun Certified Java Programmer, October 2004&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;volunteer-representative&#34;&gt;Volunteer Representative&lt;/h3&gt;
+
+&lt;p&gt;The Church of Jesus Christ of Latter-day Saints&lt;br/&gt;
+  Recife, Brazil, Dec 1994 – Dec 1996&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Learned Portuguese almost fluently&lt;/li&gt;
+&lt;li&gt;Developed and taught weekly training meetings for 20 – 30 representatives&lt;/li&gt;
+&lt;li&gt;Traveled and helped individual representatives learn problem solving, effective teaching
+and leadership skills&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The API Gateway is Dead! Long Live the API Gateway!</title>
+      <link>http://spencer.gibb.us/preso/detroit-cf-api-gateway-2017-03/</link>
+      <pubDate>Tue, 21 Mar 2017 18:00:00 -0500</pubDate>
+      
+      <guid>http://spencer.gibb.us/preso/detroit-cf-api-gateway-2017-03/</guid>
+      <description>&lt;!--more--&gt;
+&lt;style&gt;
+    /*.reveal .slides {
+        text-align: left;
+    }
+    .reveal .slides section &gt; * {
+        margin-left: 0;
+        margin-right: 0;
+    }*/
+    .reveal section img {
+        border: 0px;
+        box-shadow: 0 0 0px rgba(0, 0, 0, 0.55);
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+        margin: 0 0 20px 0;
+        font-family: &#34;League Gothic&#34;, Impact, sans-serif;
+        line-height: 0.9em;
+        letter-spacing: 0.02em;
+        text-transform: none;
+        text-shadow: none; }
+&lt;/style&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>The API Gateway is Dead! Long Live the API Gateway!</title>
+      <link>http://spencer.gibb.us/preso/pivotal-toronto-api-gateway-2017-02/</link>
+      <pubDate>Wed, 22 Feb 2017 18:00:00 -0500</pubDate>
+      
+      <guid>http://spencer.gibb.us/preso/pivotal-toronto-api-gateway-2017-02/</guid>
+      <description>&lt;!--more--&gt;
+&lt;style&gt;
+    /*.reveal .slides {
+        text-align: left;
+    }
+    .reveal .slides section &gt; * {
+        margin-left: 0;
+        margin-right: 0;
+    }*/
+    .reveal section img {
+        border: 0px;
+        box-shadow: 0 0 0px rgba(0, 0, 0, 0.55);
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+        margin: 0 0 20px 0;
+        font-family: &#34;League Gothic&#34;, Impact, sans-serif;
+        line-height: 0.9em;
+        letter-spacing: 0.02em;
+        text-transform: none;
+        text-shadow: none; }
+&lt;/style&gt;
+
+</description>
+    </item>
     
     <item>
       <title>Chelsea High School Career Talk</title>
@@ -18,8 +298,9 @@
       <guid>http://spencer.gibb.us/preso/chelsea-career-talk-2016/</guid>
       <description>&lt;p&gt;I had the great privilege to speak to students at &lt;a href=&#34;http://www.chelsea.k12.mi.us/&#34;&gt;Chelsea High School&lt;/a&gt; in Michigan about my company and what it is like to work there.&lt;/p&gt;
 
-&lt;p&gt;Here are my slides in &lt;a href=&#34;http://spencer.gibb.us/preso/2016-09-21 Chelsea Career Talk.pdf&#34;&gt;pdf&lt;/a&gt; and &lt;a href=&#34;http://spencer.gibb.us/preso/2016-09-21 Chelsea Career Talk.key&#34;&gt;Keynote&lt;/a&gt;.&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Here are my slides in &lt;a href=&#34;http://spencer.gibb.us/preso/2016-09-21 Chelsea Career Talk.pdf&#34;&gt;pdf&lt;/a&gt; and &lt;a href=&#34;http://spencer.gibb.us/preso/2016-09-21 Chelsea Career Talk.key&#34;&gt;Keynote&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -30,8 +311,9 @@
       <guid>http://spencer.gibb.us/preso/spring-cloud-with-consul-and-vault-2016/</guid>
       <description>&lt;p&gt;I had a great time at &lt;a href=&#34;https://2016.event.springoneplatform.io/schedule/sessions/spring_cloud_with_consul_and_vault.html&#34;&gt;SpringOne Platform&lt;/a&gt; speaking about using &lt;a href=&#34;http://consul.io&#34;&gt;Consul&lt;/a&gt; for discovery and configuration and &lt;a href=&#34;https://www.vaultproject.io/&#34;&gt;Vault&lt;/a&gt; as a configuration source.&lt;/p&gt;
 
-&lt;p&gt;Here are my slides in &lt;a href=&#34;http://spencer.gibb.us/preso/2016-08-02 Spring Cloud with Consul and Vault.pdf&#34;&gt;pdf&lt;/a&gt; and &lt;a href=&#34;http://spencer.gibb.us/preso/2016-08-02 Spring Cloud with Consul and Vault.key&#34;&gt;Keynote&lt;/a&gt;. I&amp;rsquo;ll post the video when available.&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Here are my slides in &lt;a href=&#34;http://spencer.gibb.us/preso/2016-08-02 Spring Cloud with Consul and Vault.pdf&#34;&gt;pdf&lt;/a&gt; and &lt;a href=&#34;http://spencer.gibb.us/preso/2016-08-02 Spring Cloud with Consul and Vault.key&#34;&gt;Keynote&lt;/a&gt;. I&amp;rsquo;ll post the video when available.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -42,10 +324,11 @@
       <guid>http://spencer.gibb.us/preso/spring-cloud-discovery-config-springio-2016/</guid>
       <description>&lt;p&gt;I was invited to speak about comparing different Discovery and Configuration Implementations in Spring Cloud at &lt;a href=&#34;http://www.springio.net/&#34;&gt;Spring I/O&lt;/a&gt; in beautiful Barcelona!&lt;/p&gt;
 
+&lt;p&gt;&lt;/p&gt;
+
 &lt;p&gt;Here are my &lt;a href=&#34;http://spencer.gibb.us/preso/2016-05-18 Spring Cloud Discovery and Config Sys Comparison.pdf&#34;&gt;Slides&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;I also gave a two hour workshop on Cloud Native Applications with Spring Cloud &amp;amp; Netflix OSS.&lt;/p&gt;
-</description>
+&lt;p&gt;I also gave a two hour workshop on Cloud Native Applications with Spring Cloud &amp;amp; Netflix OSS.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -56,8 +339,9 @@
       <guid>http://spencer.gibb.us/preso/spring-cloud-star-devoxxfr-2016/</guid>
       <description>&lt;p&gt;I was invited to speak about different Discovery and Configuration Implementations in Spring Cloud at &lt;a href=&#34;http://devoxx.fr/&#34;&gt;Devoxx France&lt;/a&gt; in beautiful Paris!&lt;/p&gt;
 
-&lt;p&gt;Here are my &lt;a href=&#34;http://spencer.gibb.us/preso/2016-04-22 Spring Cloud Star.pdf&#34;&gt;Slides&lt;/a&gt; and here is &lt;a href=&#34;https://youtu.be/sESK0svJ4Gs&#34;&gt;the video&lt;/a&gt;.&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Here are my &lt;a href=&#34;http://spencer.gibb.us/preso/2016-04-22 Spring Cloud Star.pdf&#34;&gt;Slides&lt;/a&gt; and here is &lt;a href=&#34;https://youtu.be/sESK0svJ4Gs&#34;&gt;the video&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -68,8 +352,9 @@
       <guid>http://spencer.gibb.us/preso/spring-cloud-star-devnexus-2016/</guid>
       <description>&lt;p&gt;I was invited to speak about different Discovery and Configuration Implementations in Spring Cloud at the fabulous &lt;a href=&#34;https://devnexus.com&#34;&gt;Devnexus&lt;/a&gt; Conference run by the &lt;a href=&#34;http://www.ajug.org/&#34;&gt;Atlanta Java User Group&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Here are my &lt;a href=&#34;http://spencer.gibb.us/preso/2016-02-17 Spring Cloud *.pdf&#34;&gt;Slides&lt;/a&gt;.&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Here are my &lt;a href=&#34;http://spencer.gibb.us/preso/2016-02-17 Spring Cloud *.pdf&#34;&gt;Slides&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -80,8 +365,9 @@
       <guid>http://spencer.gibb.us/preso/utah-arch-2016/</guid>
       <description>&lt;p&gt;I was invited to speak and lead a discussion about different Cloud Discovery and Configuration Mechanisms at the &lt;a href=&#34;http://www.meetup.com/Utah-Software-Architecture-Meetup/events/226822735/&#34;&gt;Utah Software Architecture Meetup&lt;/a&gt;. Good pizza and discussion were had.&lt;/p&gt;
 
-&lt;p&gt;Here are my &lt;a href=&#34;http://spencer.gibb.us/preso/2016-02-04 Microservices with Spring Cloud - Utah Arch Meetup.pdf&#34;&gt;Slides&lt;/a&gt;.&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Here are my &lt;a href=&#34;http://spencer.gibb.us/preso/2016-02-04 Microservices with Spring Cloud - Utah Arch Meetup.pdf&#34;&gt;Slides&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -164,6 +450,8 @@
       <guid>http://spencer.gibb.us/blog/2015/10/06/trello-for-feelings/</guid>
       <description>&lt;p&gt;Computer geeks often don&amp;rsquo;t know how to express their feelings very well. If &lt;a href=&#34;http://randsinrepose.com/archives/the-nerd-handbook/&#34;&gt;The Nerd Handbook&lt;/a&gt; rings a bell for you or your significant other, you know what I&amp;rsquo;m talking about. It rang true with me. The trouble I have is how to deal with someone else&amp;rsquo;s feelings and figure out what the heck mine are. I had a thought the other day and so far it has helped.&lt;/p&gt;
 
+&lt;p&gt;&lt;/p&gt;
+
 &lt;p&gt;I was sitting in a weekly project meeting where we discuss things relevant to our project: bugs, releases, hiring, problems, highlights, etc&amp;hellip; I was listening when I had the thought, &amp;ldquo;I wish feelings were as easy as software.&amp;rdquo; I had seen a colleague &lt;a href=&#34;https://twitter.com/caseywest/status/650788737614540806&#34;&gt;tweet&lt;/a&gt; about a &lt;a href=&#34;http://osfeels.com/&#34;&gt;software conference about feelings&lt;/a&gt;. Then I thought, why not?&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;ve always admired &lt;a href=&#34;http://trello.com&#34;&gt;Trello&lt;/a&gt; as a project management tool, but haven&amp;rsquo;t had a really good, solid opportunity to use it. I&amp;rsquo;ve heard friends and co-workers say they use it at home for shopping and to-do lists. What if I could use it to help me talk about feelings with my wife? I setup a short appointment (20-45 min) 3-4 times a week on our calendar. I created a private Trello &lt;a href=&#34;https://trello.com/guide/board_basics.html&#34;&gt;board&lt;/a&gt; that we could use to guide our discussions. I created lists like: To Discuss, Follow Up, Completed and Goals. The first card I created was titled &amp;ldquo;Trello&amp;rdquo; and had a checklist to show her how to use Trello. Next was &amp;ldquo;Outline&amp;rdquo;, how would these discussions go.&lt;/p&gt;
@@ -174,8 +462,7 @@
 
 &lt;p&gt;Not to say that this replaces all communication, but for me it&amp;rsquo;s a good start and for my wife it&amp;rsquo;s a relief.&lt;/p&gt;
 
-&lt;p&gt;&amp;ldquo;Conflict is inevitable, but drama is a choice&amp;rdquo; &lt;a href=&#34;https://twitter.com/ChrisBrownOnAir&#34;&gt;@ChrisBrownOnAir&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&amp;ldquo;Conflict is inevitable, but drama is a choice&amp;rdquo; &lt;a href=&#34;https://twitter.com/ChrisBrownOnAir&#34;&gt;@ChrisBrownOnAir&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -220,12 +507,12 @@
       <pubDate>Thu, 24 Sep 2015 10:48:18 -0600</pubDate>
       
       <guid>http://spencer.gibb.us/blog/2015/09/24/spring-cloud-config-push-notifications/</guid>
-      <description>
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/spring-cloud/spring-cloud-config/commit/8d8e07a78e73c3e1e08f4277a76c6e1a4104f103&#34;&gt;This commit (8d8e07a78)&lt;/a&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/spring-cloud/spring-cloud-config/commit/8d8e07a78e73c3e1e08f4277a76c6e1a4104f103&#34;&gt;This commit (8d8e07a78)&lt;/a&gt;
 by &lt;a href=&#34;https://github.com/dsyer&#34;&gt;Dave Syer&lt;/a&gt; in &lt;a href=&#34;https://github.com/spring-cloud/spring-cloud-config&#34;&gt;spring-cloud-config&lt;/a&gt;
 added support for &lt;a href=&#34;http://cloud.spring.io/spring-cloud-config/spring-cloud-config.html#_push_notifications_and_spring_cloud_bus&#34;&gt;push notifications&lt;/a&gt;
 to config clients.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; I am using &lt;a href=&#34;https://github.com/jkbrzt/httpie&#34;&gt;HTTPie&lt;/a&gt; (pronounced &lt;em&gt;aych-tee-tee-pie&lt;/em&gt;) for these demos. I believe it provides a more user friendly experience. To install on a mac with &lt;a href=&#34;http://brew.sh/&#34;&gt;Homebrew&lt;/a&gt;: &lt;code&gt;brew install httpie&lt;/code&gt;, otherwise see &lt;a href=&#34;https://github.com/jkbrzt/httpie#installation&#34;&gt;the install docs&lt;/a&gt;.&lt;/p&gt;
 
@@ -356,8 +643,7 @@ public GithubPropertyPathNotificationExtractor githubPropertyPathNotificationExt
 &lt;p&gt;To simulate the Bitbucket webhook:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;http --json POST :8888/monitor X-Event-Key:&amp;quot;repo:push&amp;quot; X-Hook-UUID:123 push:=&#39;{&amp;quot;changes&amp;quot;: [{}]}&#39;
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
     <item>
@@ -393,367 +679,6 @@ public GithubPropertyPathNotificationExtractor githubPropertyPathNotificationExt
         text-transform: none;
         text-shadow: none; }
 &lt;/style&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Microservices with Spring Cloud and Netflix OSS</title>
-      <link>http://spencer.gibb.us/preso/spring-cloud-oscon-2015/</link>
-      <pubDate>Wed, 01 Jul 2015 15:54:01 -0600</pubDate>
-      
-      <guid>http://spencer.gibb.us/preso/spring-cloud-oscon-2015/</guid>
-      <description>&lt;!--more--&gt;
-&lt;style&gt;
-    /*.reveal .slides {
-        text-align: left;
-    }
-    .reveal .slides section &gt; * {
-        margin-left: 0;
-        margin-right: 0;
-    }*/
-    .reveal section img {
-        border: 0px;
-        box-shadow: 0 0 0px rgba(0, 0, 0, 0.55);
-    }
-
-    .reveal h1,
-    .reveal h2,
-    .reveal h3,
-    .reveal h4,
-    .reveal h5,
-    .reveal h6 {
-        margin: 0 0 20px 0;
-        font-family: &#34;League Gothic&#34;, Impact, sans-serif;
-        line-height: 0.9em;
-        letter-spacing: 0.02em;
-        text-transform: none;
-        text-shadow: none; }
-&lt;/style&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Spring Cloud Devnexus Notes</title>
-      <link>http://spencer.gibb.us/notes/spring-cloud-devnexus-notes/</link>
-      <pubDate>Wed, 11 Mar 2015 09:45:06 -0700</pubDate>
-      
-      <guid>http://spencer.gibb.us/notes/spring-cloud-devnexus-notes/</guid>
-      <description>
-
-&lt;h2 id=&#34;monolithic-vs-microservices&#34;&gt;Monolithic vs Microservices&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Easy/Hard vs Simple/Complex&lt;/li&gt;
-&lt;li&gt;Monolithic
-
-&lt;ul&gt;
-&lt;li&gt;Complex / Easy&lt;/li&gt;
-&lt;li&gt;Language / Framework modularity&lt;/li&gt;
-&lt;li&gt;Fewer scaling vectors&lt;/li&gt;
-&lt;li&gt;Long-term commitment to tech stack&lt;/li&gt;
-&lt;li&gt;coupled changes make harder deploys&lt;/li&gt;
-&lt;li&gt;hard to scale dev&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Microservice
-
-&lt;ul&gt;
-&lt;li&gt;Simple / Hard&lt;/li&gt;
-&lt;li&gt;for continuous delivery&lt;/li&gt;
-&lt;li&gt;12 factor apps&lt;/li&gt;
-&lt;li&gt;diversity of clients (mobile, desktop, devices)&lt;/li&gt;
-&lt;li&gt;modularity based on services&lt;/li&gt;
-&lt;li&gt;uncoupled changes enable frequent deploys&lt;/li&gt;
-&lt;li&gt;more scaling vectors&lt;/li&gt;
-&lt;li&gt;dev friendly&lt;/li&gt;
-&lt;li&gt;easier to scale dev&lt;/li&gt;
-&lt;li&gt;no long term commitment to tech stack
-&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;microservices-with-spring-boot&#34;&gt;Microservices with Spring Boot&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;partition strategies
-
-&lt;ul&gt;
-&lt;li&gt;Noun (product info service)&lt;/li&gt;
-&lt;li&gt;Verb (shipping service)&lt;/li&gt;
-&lt;li&gt;Single Responsibility Principle&lt;/li&gt;
-&lt;li&gt;Bounded Context&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Polyglot persistence&lt;/li&gt;
-&lt;li&gt;Unix pipes and filters&lt;/li&gt;
-&lt;li&gt;Choreography vs Orchestration&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;no-man-microservice-is-an-island&#34;&gt;No Man (Microservice) is an Island&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;No free lunch
-
-&lt;ul&gt;
-&lt;li&gt;Ops overhead&lt;/li&gt;
-&lt;li&gt;Substantial Devops Skills required&lt;/li&gt;
-&lt;li&gt;Implicit interfaces&lt;/li&gt;
-&lt;li&gt;Duplication of effort&lt;/li&gt;
-&lt;li&gt;Distributed System complexity&lt;/li&gt;
-&lt;li&gt;Asynchronicity is difficult&lt;/li&gt;
-&lt;li&gt;Testability chalenges
-&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Spring CLI Support
-http command is from httpie.org&lt;/p&gt;
-
-&lt;h2 id=&#34;configuration-server&#34;&gt;Configuration Server&lt;/h2&gt;
-
-&lt;p&gt;cd ~/workspace/spencergibb/myfeed&lt;/p&gt;
-
-&lt;p&gt;show ConfigApp
-start config server&lt;/p&gt;
-
-&lt;p&gt;http -a user:password :11020/admin/health&lt;br /&gt;
-http -a user:password :11020/myapp/default&lt;br /&gt;
-http -a user:password :11020/myfeed-ui/development
-http -a user:password :11020/myfeed-ui/development/test&lt;/p&gt;
-
-&lt;h3 id=&#34;config-client&#34;&gt;Config Client&lt;/h3&gt;
-
-&lt;p&gt;run myfeed-ui
-http :11040/env&lt;/p&gt;
-
-&lt;p&gt;http :11040/info
-http &amp;ndash;form :11040/env info.foo=bar
-http :11040/env
-http :11040/info&lt;/p&gt;
-
-&lt;p&gt;http &amp;ndash;form :11040/env logging.level.ROOT=DEBUG
-http &amp;ndash;form :11040/env logging.level.com.netflix=OFF&lt;/p&gt;
-
-&lt;p&gt;open UiApp
-show @RefreshScope&lt;/p&gt;
-
-&lt;p&gt;http :11040/ui/features
-http &amp;ndash;form :11040/env myfeed.ui.featureAaaFlag=devnexus
-http POST :11040/refresh
-http :11040/ui/features&lt;/p&gt;
-
-&lt;p&gt;change a value at &lt;a href=&#34;https://github.com/spencergibb/myfeed-config&#34;&gt;https://github.com/spencergibb/myfeed-config&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;http POST :11040/refresh&lt;/p&gt;
-
-&lt;p&gt;http POST :11040/shutdown&lt;/p&gt;
-
-&lt;h3 id=&#34;encryption-decryption&#34;&gt;encryption/decryption&lt;/h3&gt;
-
-&lt;p&gt;cat /Users/sgibb/workspace/spencergibb/myfeed-config/application.yml
-http -a user:password :11020/myapp/default # show encrypted.password&lt;/p&gt;
-
-&lt;p&gt;export TESTVAL=&lt;code&gt;spring encrypt --key=foobar this is a test&lt;/code&gt;&lt;br /&gt;
-echo $TESTVAL&lt;br /&gt;
-spring decrypt &amp;ndash;key=foobar $TESTVAL&lt;/p&gt;
-
-&lt;p&gt;cli and server also support keystores&lt;/p&gt;
-
-&lt;h2 id=&#34;discovery-eureka&#34;&gt;Discovery: Eureka&lt;/h2&gt;
-
-&lt;p&gt;open DiscoveryApp
-start eureka&lt;br /&gt;
-&lt;a href=&#34;http://discovery.myfeed.com:11010/&#34;&gt;http://discovery.myfeed.com:11010/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;open CustomerApp.java
-start Ui again&lt;/p&gt;
-
-&lt;p&gt;show eureka dashboard&lt;br /&gt;
-http :11040/metrics # or &lt;a href=&#34;http://ui.myfeed.com:11040/metrics&#34;&gt;http://ui.myfeed.com:11040/metrics&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;by default configserver gives eureka address, can setup eureka to locate configserver&lt;/p&gt;
-
-&lt;h2 id=&#34;ribbon-and-hystrix&#34;&gt;Ribbon and Hystrix&lt;/h2&gt;
-
-&lt;p&gt;open AdminApp, show LoadBalancerClient&lt;/p&gt;
-
-&lt;p&gt;open feed UserService and show HystrixCommand&lt;/p&gt;
-
-&lt;p&gt;open TurbineApp and start&lt;/p&gt;
-
-&lt;p&gt;open AdminApp, show @EnableHystrixDashboard&lt;/p&gt;
-
-&lt;p&gt;start admin app
-start feed app&lt;/p&gt;
-
-&lt;p&gt;hit this over and over and break circuit&lt;br /&gt;
-&lt;a href=&#34;http://feed.myfeed.com:11060/@spencergibb&#34;&gt;http://feed.myfeed.com:11060/@spencergibb&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;goto &lt;a href=&#34;http://admin.myfeed.com:11050/admin/&#34;&gt;http://admin.myfeed.com:11050/admin/&lt;/a&gt;
-show dashboard&lt;/p&gt;
-
-&lt;p&gt;start users&lt;/p&gt;
-
-&lt;p&gt;hit customers over and over again&lt;br /&gt;
-show dashboard&lt;/p&gt;
-
-&lt;p&gt;open feed UserService again and show RestTemplate&lt;/p&gt;
-
-&lt;p&gt;open UiApp and show @FeignClientScan
-open UiController and show Feign and client call&lt;/p&gt;
-
-&lt;p&gt;Uses Spring MVC annotations&lt;br /&gt;
-Uses Spring HttpMessageConverters configured by spring boot&lt;/p&gt;
-
-&lt;h2 id=&#34;rx-java&#34;&gt;Rx Java&lt;/h2&gt;
-
-&lt;p&gt;show UiController.feed
-show FeedService.feed&lt;/p&gt;
-
-&lt;h2 id=&#34;routing-zuul&#34;&gt;Routing: Zuul&lt;/h2&gt;
-
-&lt;p&gt;open RoutingApp
-start router&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.myfeed.com:11080&#34;&gt;http://www.myfeed.com:11080&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;cat /Users/sgibb/workspace/spencergibb/myfeed-config/myfeed-router.yml&lt;/p&gt;
-
-&lt;p&gt;http :11081/routes&lt;/p&gt;
-
-&lt;p&gt;run other uis&lt;/p&gt;
-
-&lt;p&gt;hit &lt;a href=&#34;http://www.myfeed.com:11080/whoami&#34;&gt;http://www.myfeed.com:11080/whoami&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;spring-cloud-security&#34;&gt;Spring Cloud Security&lt;/h2&gt;
-
-&lt;p&gt;show RouterApp and router application.yml
-show UiApp and ui application.yml&lt;/p&gt;
-
-&lt;p&gt;Spring Session Redis for AdminApp&lt;/p&gt;
-
-&lt;h2 id=&#34;spring-cloud-bus&#34;&gt;Spring Cloud Bus&lt;/h2&gt;
-
-&lt;p&gt;http &amp;ndash;form :11081/bus/env logging.level.ROOT=INFO
-http &amp;ndash;form :11081/bus/env my.prop=my.val
-http POST :11081/bus/refresh&lt;/p&gt;
-
-&lt;p&gt;open s-c-bus&lt;br /&gt;
-extend RemoteApplicationEvent&lt;br /&gt;
-publish to ApplicationEventPublisher.publish(event)&lt;/p&gt;
-
-&lt;p&gt;ability to extend to other messaging systems besids RabbitMQ&lt;/p&gt;
-
-&lt;h2 id=&#34;spring-cloud-sidecar&#34;&gt;Spring Cloud Sidecar&lt;/h2&gt;
-
-&lt;p&gt;open s-c-netflix&lt;br /&gt;
-open SidecarApplication&lt;/p&gt;
-
-&lt;p&gt;run sidecar&lt;/p&gt;
-
-&lt;p&gt;http :11100
-http :11100/ping
-http :11100/health&lt;/p&gt;
-
-&lt;p&gt;shut down local server&lt;br /&gt;
-http :11100/health&lt;/p&gt;
-
-&lt;p&gt;run local server&lt;br /&gt;
-http :11100/health&lt;/p&gt;
-
-&lt;p&gt;web interface for discovery&lt;br /&gt;
-http :11100/hosts/configserver etc&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;zuul proxy&lt;br /&gt;
-http :11100/myfeed-user
-http :11100/myfeed-feed/@spencergibb&lt;/p&gt;
-
-&lt;p&gt;proxy to configserver
-http -a user:password :11100/configserver/myapp-default.yml&lt;/p&gt;
-
-&lt;h2 id=&#34;spring-restdocs&#34;&gt;Spring Restdocs&lt;/h2&gt;
-
-&lt;p&gt;./myfeed-user/target/myfeed-user-1.0.0.BUILD-SNAPSHOT.jar &amp;ndash;server.port=11072&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://localhost:11072/docs/api-guide.html&#34;&gt;http://localhost:11072/docs/api-guide.html&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://localhost:11072/docs/getting-started-guide.html&#34;&gt;http://localhost:11072/docs/getting-started-guide.html&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;spring-session-redis&#34;&gt;Spring Session Redis&lt;/h2&gt;
-
-&lt;p&gt;open RouterApp show @EnableRedisHttpSession&lt;/p&gt;
-
-&lt;p&gt;show admin application.yml show security part&lt;/p&gt;
-
-&lt;h2 id=&#34;preview-spring-cloud-consul&#34;&gt;Preview: Spring Cloud Consul&lt;/h2&gt;
-
-&lt;p&gt;cat run_consul.sh&lt;br /&gt;
-./run_consul.sh&lt;/p&gt;
-
-&lt;p&gt;open &lt;a href=&#34;http://consului.local.spring.io:8500&#34;&gt;http://consului.local.spring.io:8500&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;open s-c-consul&lt;/p&gt;
-
-&lt;p&gt;show sample pom.xml&lt;br /&gt;
-show SampleApplication&lt;br /&gt;
-run SampleApplication&lt;/p&gt;
-
-&lt;p&gt;http :8080/health&lt;/p&gt;
-
-&lt;p&gt;show consul ui services&lt;/p&gt;
-
-&lt;p&gt;http :8080/myenv prop==myprop&lt;/p&gt;
-
-&lt;p&gt;add testConsulApp property through consul ui&lt;/p&gt;
-
-&lt;p&gt;run SampleApplication 8083&lt;/p&gt;
-
-&lt;p&gt;run this until 8083 shows up&lt;br /&gt;
-http :8080/&lt;/p&gt;
-
-&lt;p&gt;http POST :8083/shutdown&lt;br /&gt;
-http :8080/&lt;/p&gt;
-
-&lt;p&gt;run SampleApplication 8083&lt;/p&gt;
-
-&lt;p&gt;http &amp;ndash;form :8080/bus/env my.value=consul.value&lt;/p&gt;
-
-&lt;p&gt;http :8080/bus/refresh&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Cloud Native Apps with Spring Cloud</title>
-      <link>http://spencer.gibb.us/preso/cloud-native-devnexus/</link>
-      <pubDate>Mon, 09 Mar 2015 15:54:01 -0600</pubDate>
-      
-      <guid>http://spencer.gibb.us/preso/cloud-native-devnexus/</guid>
-      <description>&lt;!--more--&gt;
-&lt;style&gt;
-    /*.reveal .slides {
-        text-align: left;
-    }
-    .reveal .slides section &gt; * {
-        margin-left: 0;
-        margin-right: 0;
-    }*/
-    .reveal section img {
-        border: 0px;
-        box-shadow: 0 0 0px rgba(0, 0, 0, 0.55);
-    }
-
-    .reveal h1,
-    .reveal h2,
-    .reveal h3,
-    .reveal h4,
-    .reveal h5,
-    .reveal h6 {
-        margin: 0 0 20px 0;
-        font-family: &#34;League Gothic&#34;, Impact, sans-serif;
-        line-height: 0.9em;
-        letter-spacing: 0.02em;
-        text-transform: none;
-        text-shadow: none; }
-&lt;/style&gt;
-
 </description>
     </item>
     

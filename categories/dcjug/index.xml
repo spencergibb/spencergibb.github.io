@@ -2,12 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dcjug on Spencer Gibb</title>
-    <link>http://spencer.gibb.us/categories/dcjug/</link>
+    <link>http://spencer.gibb.us/categories/dcjug/index.xml</link>
     <description>Recent content in Dcjug on Spencer Gibb</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2013 - 2015, Spencer Gibb; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 16 Sep 2015 00:00:00 -0600</lastBuildDate>
     <atom:link href="http://spencer.gibb.us/categories/dcjug/index.xml" rel="self" type="application/rss+xml" />
     
     <item>

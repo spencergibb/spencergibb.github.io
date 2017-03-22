@@ -2,12 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Springoneplatform on Spencer Gibb</title>
-    <link>http://spencer.gibb.us/categories/springoneplatform/</link>
+    <link>http://spencer.gibb.us/categories/springoneplatform/index.xml</link>
     <description>Recent content in Springoneplatform on Spencer Gibb</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2013 - 2015, Spencer Gibb; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 02 Aug 2016 17:00:00 -0800</lastBuildDate>
     <atom:link href="http://spencer.gibb.us/categories/springoneplatform/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -18,8 +17,9 @@
       <guid>http://spencer.gibb.us/preso/spring-cloud-with-consul-and-vault-2016/</guid>
       <description>&lt;p&gt;I had a great time at &lt;a href=&#34;https://2016.event.springoneplatform.io/schedule/sessions/spring_cloud_with_consul_and_vault.html&#34;&gt;SpringOne Platform&lt;/a&gt; speaking about using &lt;a href=&#34;http://consul.io&#34;&gt;Consul&lt;/a&gt; for discovery and configuration and &lt;a href=&#34;https://www.vaultproject.io/&#34;&gt;Vault&lt;/a&gt; as a configuration source.&lt;/p&gt;
 
-&lt;p&gt;Here are my slides in &lt;a href=&#34;http://spencer.gibb.us/preso/2016-08-02 Spring Cloud with Consul and Vault.pdf&#34;&gt;pdf&lt;/a&gt; and &lt;a href=&#34;http://spencer.gibb.us/preso/2016-08-02 Spring Cloud with Consul and Vault.key&#34;&gt;Keynote&lt;/a&gt;. I&amp;rsquo;ll post the video when available.&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Here are my slides in &lt;a href=&#34;http://spencer.gibb.us/preso/2016-08-02 Spring Cloud with Consul and Vault.pdf&#34;&gt;pdf&lt;/a&gt; and &lt;a href=&#34;http://spencer.gibb.us/preso/2016-08-02 Spring Cloud with Consul and Vault.key&#34;&gt;Keynote&lt;/a&gt;. I&amp;rsquo;ll post the video when available.&lt;/p&gt;</description>
     </item>
     
   </channel>

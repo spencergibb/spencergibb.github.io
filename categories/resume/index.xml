@@ -2,12 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Resume on Spencer Gibb</title>
-    <link>http://spencer.gibb.us/categories/resume/</link>
+    <link>http://spencer.gibb.us/categories/resume/index.xml</link>
     <description>Recent content in Resume on Spencer Gibb</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2013 - 2015, Spencer Gibb; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 12 Mar 2013 12:27:08 -0700</lastBuildDate>
     <atom:link href="http://spencer.gibb.us/categories/resume/index.xml" rel="self" type="application/rss+xml" />
     
     <item>

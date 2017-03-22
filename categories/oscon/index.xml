@@ -2,12 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Oscon on Spencer Gibb</title>
-    <link>http://spencer.gibb.us/categories/oscon/</link>
+    <link>http://spencer.gibb.us/categories/oscon/index.xml</link>
     <description>Recent content in Oscon on Spencer Gibb</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2013 - 2015, Spencer Gibb; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 01 Jul 2015 15:54:01 -0600</lastBuildDate>
     <atom:link href="http://spencer.gibb.us/categories/oscon/index.xml" rel="self" type="application/rss+xml" />
     
     <item>

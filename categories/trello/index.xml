@@ -2,12 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Trello on Spencer Gibb</title>
-    <link>http://spencer.gibb.us/categories/trello/</link>
+    <link>http://spencer.gibb.us/categories/trello/index.xml</link>
     <description>Recent content in Trello on Spencer Gibb</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2013 - 2015, Spencer Gibb; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 06 Oct 2015 09:07:07 -0600</lastBuildDate>
     <atom:link href="http://spencer.gibb.us/categories/trello/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -17,6 +16,8 @@
       
       <guid>http://spencer.gibb.us/blog/2015/10/06/trello-for-feelings/</guid>
       <description>&lt;p&gt;Computer geeks often don&amp;rsquo;t know how to express their feelings very well. If &lt;a href=&#34;http://randsinrepose.com/archives/the-nerd-handbook/&#34;&gt;The Nerd Handbook&lt;/a&gt; rings a bell for you or your significant other, you know what I&amp;rsquo;m talking about. It rang true with me. The trouble I have is how to deal with someone else&amp;rsquo;s feelings and figure out what the heck mine are. I had a thought the other day and so far it has helped.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;I was sitting in a weekly project meeting where we discuss things relevant to our project: bugs, releases, hiring, problems, highlights, etc&amp;hellip; I was listening when I had the thought, &amp;ldquo;I wish feelings were as easy as software.&amp;rdquo; I had seen a colleague &lt;a href=&#34;https://twitter.com/caseywest/status/650788737614540806&#34;&gt;tweet&lt;/a&gt; about a &lt;a href=&#34;http://osfeels.com/&#34;&gt;software conference about feelings&lt;/a&gt;. Then I thought, why not?&lt;/p&gt;
 
@@ -28,8 +29,7 @@
 
 &lt;p&gt;Not to say that this replaces all communication, but for me it&amp;rsquo;s a good start and for my wife it&amp;rsquo;s a relief.&lt;/p&gt;
 
-&lt;p&gt;&amp;ldquo;Conflict is inevitable, but drama is a choice&amp;rdquo; &lt;a href=&#34;https://twitter.com/ChrisBrownOnAir&#34;&gt;@ChrisBrownOnAir&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&amp;ldquo;Conflict is inevitable, but drama is a choice&amp;rdquo; &lt;a href=&#34;https://twitter.com/ChrisBrownOnAir&#34;&gt;@ChrisBrownOnAir&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -2,12 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Battleschool on Spencer Gibb</title>
-    <link>http://spencer.gibb.us/categories/battleschool/</link>
+    <link>http://spencer.gibb.us/categories/battleschool/index.xml</link>
     <description>Recent content in Battleschool on Spencer Gibb</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2013 - 2015, Spencer Gibb; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 03 Feb 2014 23:18:53 -0700</lastBuildDate>
     <atom:link href="http://spencer.gibb.us/categories/battleschool/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -16,13 +15,13 @@
       <pubDate>Mon, 03 Feb 2014 23:18:53 -0700</pubDate>
       
       <guid>http://spencer.gibb.us/blog/2014/02/03/introducing-battleschool/</guid>
-      <description>
-
-&lt;p&gt;I&amp;rsquo;ve been on an &lt;a href=&#34;http://ansible.com&#34;&gt;Ansible&lt;/a&gt; kick recently at work (&lt;a href=&#34;http://domo.com&#34;&gt;domo&lt;/a&gt;). While working on a
+      <description>&lt;p&gt;I&amp;rsquo;ve been on an &lt;a href=&#34;http://ansible.com&#34;&gt;Ansible&lt;/a&gt; kick recently at work (&lt;a href=&#34;http://domo.com&#34;&gt;domo&lt;/a&gt;). While working on a
 project, I started creating a simple workstation setup playbook.  I got to thinking that someone must have done this
 already.  I remembered &lt;a href=&#34;http://boxen.github.com&#34;&gt;boxen&lt;/a&gt; by github.&lt;/p&gt;
 
 &lt;p&gt;What follows is my journey to the creation of a tool called &lt;a href=&#34;https://github.com/spencergibb/battleschool&#34;&gt;battleschool&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;A few things that aren&amp;rsquo;t necessarily bad about boxen, but rub me the wrong way: 1) Puppet, 2) installation.&lt;/p&gt;
 
@@ -270,8 +269,7 @@ Already have homebrew installed? No, problem, it won&amp;rsquo;t try and install
 
 &lt;p&gt;Google group: &lt;a href=&#34;https://groups.google.com/d/forum/battle-school&#34;&gt;https://groups.google.com/d/forum/battle-school&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Github project for issues, forks, pull requests: &lt;a href=&#34;https://github.com/spencergibb/battleschool&#34;&gt;https://github.com/spencergibb/battleschool&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;Github project for issues, forks, pull requests: &lt;a href=&#34;https://github.com/spencergibb/battleschool&#34;&gt;https://github.com/spencergibb/battleschool&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

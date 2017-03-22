@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Spencer Gibb</title>
-    <link>http://spencer.gibb.us/post/</link>
+    <link>http://spencer.gibb.us/post/index.xml</link>
     <description>Recent content in Posts on Spencer Gibb</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -18,6 +18,8 @@
       <guid>http://spencer.gibb.us/blog/2015/10/06/trello-for-feelings/</guid>
       <description>&lt;p&gt;Computer geeks often don&amp;rsquo;t know how to express their feelings very well. If &lt;a href=&#34;http://randsinrepose.com/archives/the-nerd-handbook/&#34;&gt;The Nerd Handbook&lt;/a&gt; rings a bell for you or your significant other, you know what I&amp;rsquo;m talking about. It rang true with me. The trouble I have is how to deal with someone else&amp;rsquo;s feelings and figure out what the heck mine are. I had a thought the other day and so far it has helped.&lt;/p&gt;
 
+&lt;p&gt;&lt;/p&gt;
+
 &lt;p&gt;I was sitting in a weekly project meeting where we discuss things relevant to our project: bugs, releases, hiring, problems, highlights, etc&amp;hellip; I was listening when I had the thought, &amp;ldquo;I wish feelings were as easy as software.&amp;rdquo; I had seen a colleague &lt;a href=&#34;https://twitter.com/caseywest/status/650788737614540806&#34;&gt;tweet&lt;/a&gt; about a &lt;a href=&#34;http://osfeels.com/&#34;&gt;software conference about feelings&lt;/a&gt;. Then I thought, why not?&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;ve always admired &lt;a href=&#34;http://trello.com&#34;&gt;Trello&lt;/a&gt; as a project management tool, but haven&amp;rsquo;t had a really good, solid opportunity to use it. I&amp;rsquo;ve heard friends and co-workers say they use it at home for shopping and to-do lists. What if I could use it to help me talk about feelings with my wife? I setup a short appointment (20-45 min) 3-4 times a week on our calendar. I created a private Trello &lt;a href=&#34;https://trello.com/guide/board_basics.html&#34;&gt;board&lt;/a&gt; that we could use to guide our discussions. I created lists like: To Discuss, Follow Up, Completed and Goals. The first card I created was titled &amp;ldquo;Trello&amp;rdquo; and had a checklist to show her how to use Trello. Next was &amp;ldquo;Outline&amp;rdquo;, how would these discussions go.&lt;/p&gt;
@@ -28,8 +30,7 @@
 
 &lt;p&gt;Not to say that this replaces all communication, but for me it&amp;rsquo;s a good start and for my wife it&amp;rsquo;s a relief.&lt;/p&gt;
 
-&lt;p&gt;&amp;ldquo;Conflict is inevitable, but drama is a choice&amp;rdquo; &lt;a href=&#34;https://twitter.com/ChrisBrownOnAir&#34;&gt;@ChrisBrownOnAir&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&amp;ldquo;Conflict is inevitable, but drama is a choice&amp;rdquo; &lt;a href=&#34;https://twitter.com/ChrisBrownOnAir&#34;&gt;@ChrisBrownOnAir&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -38,12 +39,12 @@
       <pubDate>Thu, 24 Sep 2015 10:48:18 -0600</pubDate>
       
       <guid>http://spencer.gibb.us/blog/2015/09/24/spring-cloud-config-push-notifications/</guid>
-      <description>
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/spring-cloud/spring-cloud-config/commit/8d8e07a78e73c3e1e08f4277a76c6e1a4104f103&#34;&gt;This commit (8d8e07a78)&lt;/a&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/spring-cloud/spring-cloud-config/commit/8d8e07a78e73c3e1e08f4277a76c6e1a4104f103&#34;&gt;This commit (8d8e07a78)&lt;/a&gt;
 by &lt;a href=&#34;https://github.com/dsyer&#34;&gt;Dave Syer&lt;/a&gt; in &lt;a href=&#34;https://github.com/spring-cloud/spring-cloud-config&#34;&gt;spring-cloud-config&lt;/a&gt;
 added support for &lt;a href=&#34;http://cloud.spring.io/spring-cloud-config/spring-cloud-config.html#_push_notifications_and_spring_cloud_bus&#34;&gt;push notifications&lt;/a&gt;
 to config clients.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; I am using &lt;a href=&#34;https://github.com/jkbrzt/httpie&#34;&gt;HTTPie&lt;/a&gt; (pronounced &lt;em&gt;aych-tee-tee-pie&lt;/em&gt;) for these demos. I believe it provides a more user friendly experience. To install on a mac with &lt;a href=&#34;http://brew.sh/&#34;&gt;Homebrew&lt;/a&gt;: &lt;code&gt;brew install httpie&lt;/code&gt;, otherwise see &lt;a href=&#34;https://github.com/jkbrzt/httpie#installation&#34;&gt;the install docs&lt;/a&gt;.&lt;/p&gt;
 
@@ -174,8 +175,7 @@ public GithubPropertyPathNotificationExtractor githubPropertyPathNotificationExt
 &lt;p&gt;To simulate the Bitbucket webhook:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;http --json POST :8888/monitor X-Event-Key:&amp;quot;repo:push&amp;quot; X-Hook-UUID:123 push:=&#39;{&amp;quot;changes&amp;quot;: [{}]}&#39;
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
     <item>
@@ -186,10 +186,11 @@ public GithubPropertyPathNotificationExtractor githubPropertyPathNotificationExt
       <guid>http://spencer.gibb.us/blog/2015/03/03/go-hugo/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve migrated my blog from &lt;a href=&#34;http://octopress.org&#34;&gt;octopress&lt;/a&gt; to &lt;a href=&#34;http://gohugo.io&#34;&gt;hugo&lt;/a&gt; by &lt;a href=&#34;https://github.com/spf13&#34;&gt;Steve Francia&lt;/a&gt;.&lt;/p&gt;
 
+&lt;p&gt;&lt;/p&gt;
+
 &lt;p&gt;I used &lt;a href=&#34;http://andy4thehuynh.github.io/post/hugo--simple-deploy-to-github-pages/&#34;&gt;this post&lt;/a&gt; to setup the deploy to github pages and of course the &lt;a href=&#34;http://gohugo.io/overview/introduction&#34;&gt;hugo documentation&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Hopefully you will see more blog posts here and maybe on &lt;a href=&#34;http://spring.io&#34;&gt;http://spring.io&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;Hopefully you will see more blog posts here and maybe on &lt;a href=&#34;http://spring.io&#34;&gt;http://spring.io&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -198,13 +199,13 @@ public GithubPropertyPathNotificationExtractor githubPropertyPathNotificationExt
       <pubDate>Mon, 03 Feb 2014 23:18:53 -0700</pubDate>
       
       <guid>http://spencer.gibb.us/blog/2014/02/03/introducing-battleschool/</guid>
-      <description>
-
-&lt;p&gt;I&amp;rsquo;ve been on an &lt;a href=&#34;http://ansible.com&#34;&gt;Ansible&lt;/a&gt; kick recently at work (&lt;a href=&#34;http://domo.com&#34;&gt;domo&lt;/a&gt;). While working on a
+      <description>&lt;p&gt;I&amp;rsquo;ve been on an &lt;a href=&#34;http://ansible.com&#34;&gt;Ansible&lt;/a&gt; kick recently at work (&lt;a href=&#34;http://domo.com&#34;&gt;domo&lt;/a&gt;). While working on a
 project, I started creating a simple workstation setup playbook.  I got to thinking that someone must have done this
 already.  I remembered &lt;a href=&#34;http://boxen.github.com&#34;&gt;boxen&lt;/a&gt; by github.&lt;/p&gt;
 
 &lt;p&gt;What follows is my journey to the creation of a tool called &lt;a href=&#34;https://github.com/spencergibb/battleschool&#34;&gt;battleschool&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;A few things that aren&amp;rsquo;t necessarily bad about boxen, but rub me the wrong way: 1) Puppet, 2) installation.&lt;/p&gt;
 
@@ -452,8 +453,7 @@ Already have homebrew installed? No, problem, it won&amp;rsquo;t try and install
 
 &lt;p&gt;Google group: &lt;a href=&#34;https://groups.google.com/d/forum/battle-school&#34;&gt;https://groups.google.com/d/forum/battle-school&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Github project for issues, forks, pull requests: &lt;a href=&#34;https://github.com/spencergibb/battleschool&#34;&gt;https://github.com/spencergibb/battleschool&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;Github project for issues, forks, pull requests: &lt;a href=&#34;https://github.com/spencergibb/battleschool&#34;&gt;https://github.com/spencergibb/battleschool&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -465,8 +465,8 @@ Already have homebrew installed? No, problem, it won&amp;rsquo;t try and install
       <description>&lt;p&gt;Welcome to me new blog.  I&amp;rsquo;ve wanted to post more than just snippets to twitter.  I want to write about my experiences
 with &lt;a href=&#34;http://dropwizard.codahale.com&#34;&gt;Dropwizard&lt;/a&gt;, &lt;a href=&#34;http://aws.amazon.com&#34;&gt;Amazon web services&lt;/a&gt;,
 &lt;a href=&#34;http://cassandra.apache.org&#34;&gt;Cassandra&lt;/a&gt;, &lt;a href=&#34;http://mongodb.org&#34;&gt;MongoDB&lt;/a&gt;, &lt;a href=&#34;http://netflix.github.org&#34;&gt;Netflix OSS&lt;/a&gt;,
-and &lt;a href=&#34;http://github.com/32degrees/halfpipe&#34;&gt;Halfpipe&lt;/a&gt;&lt;/p&gt;
-</description>
+and &lt;a href=&#34;http://github.com/32degrees/halfpipe&#34;&gt;Halfpipe&lt;/a&gt;
+&lt;/p&gt;</description>
     </item>
     
   </channel>

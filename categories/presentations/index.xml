@@ -2,13 +2,86 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Presentations on Spencer Gibb</title>
-    <link>http://spencer.gibb.us/categories/presentations/</link>
+    <link>http://spencer.gibb.us/categories/presentations/index.xml</link>
     <description>Recent content in Presentations on Spencer Gibb</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2013 - 2015, Spencer Gibb; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 21 Sep 2016 12:00:00 -0500</lastBuildDate>
     <atom:link href="http://spencer.gibb.us/categories/presentations/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>The API Gateway is Dead! Long Live the API Gateway!</title>
+      <link>http://spencer.gibb.us/preso/detroit-cf-api-gateway-2017-03/</link>
+      <pubDate>Tue, 21 Mar 2017 18:00:00 -0500</pubDate>
+      
+      <guid>http://spencer.gibb.us/preso/detroit-cf-api-gateway-2017-03/</guid>
+      <description>&lt;!--more--&gt;
+&lt;style&gt;
+    /*.reveal .slides {
+        text-align: left;
+    }
+    .reveal .slides section &gt; * {
+        margin-left: 0;
+        margin-right: 0;
+    }*/
+    .reveal section img {
+        border: 0px;
+        box-shadow: 0 0 0px rgba(0, 0, 0, 0.55);
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+        margin: 0 0 20px 0;
+        font-family: &#34;League Gothic&#34;, Impact, sans-serif;
+        line-height: 0.9em;
+        letter-spacing: 0.02em;
+        text-transform: none;
+        text-shadow: none; }
+&lt;/style&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>The API Gateway is Dead! Long Live the API Gateway!</title>
+      <link>http://spencer.gibb.us/preso/pivotal-toronto-api-gateway-2017-02/</link>
+      <pubDate>Wed, 22 Feb 2017 18:00:00 -0500</pubDate>
+      
+      <guid>http://spencer.gibb.us/preso/pivotal-toronto-api-gateway-2017-02/</guid>
+      <description>&lt;!--more--&gt;
+&lt;style&gt;
+    /*.reveal .slides {
+        text-align: left;
+    }
+    .reveal .slides section &gt; * {
+        margin-left: 0;
+        margin-right: 0;
+    }*/
+    .reveal section img {
+        border: 0px;
+        box-shadow: 0 0 0px rgba(0, 0, 0, 0.55);
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+        margin: 0 0 20px 0;
+        font-family: &#34;League Gothic&#34;, Impact, sans-serif;
+        line-height: 0.9em;
+        letter-spacing: 0.02em;
+        text-transform: none;
+        text-shadow: none; }
+&lt;/style&gt;
+
+</description>
+    </item>
     
     <item>
       <title>Chelsea High School Career Talk</title>
@@ -18,8 +91,9 @@
       <guid>http://spencer.gibb.us/preso/chelsea-career-talk-2016/</guid>
       <description>&lt;p&gt;I had the great privilege to speak to students at &lt;a href=&#34;http://www.chelsea.k12.mi.us/&#34;&gt;Chelsea High School&lt;/a&gt; in Michigan about my company and what it is like to work there.&lt;/p&gt;
 
-&lt;p&gt;Here are my slides in &lt;a href=&#34;http://spencer.gibb.us/preso/2016-09-21 Chelsea Career Talk.pdf&#34;&gt;pdf&lt;/a&gt; and &lt;a href=&#34;http://spencer.gibb.us/preso/2016-09-21 Chelsea Career Talk.key&#34;&gt;Keynote&lt;/a&gt;.&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Here are my slides in &lt;a href=&#34;http://spencer.gibb.us/preso/2016-09-21 Chelsea Career Talk.pdf&#34;&gt;pdf&lt;/a&gt; and &lt;a href=&#34;http://spencer.gibb.us/preso/2016-09-21 Chelsea Career Talk.key&#34;&gt;Keynote&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -30,8 +104,9 @@
       <guid>http://spencer.gibb.us/preso/spring-cloud-with-consul-and-vault-2016/</guid>
       <description>&lt;p&gt;I had a great time at &lt;a href=&#34;https://2016.event.springoneplatform.io/schedule/sessions/spring_cloud_with_consul_and_vault.html&#34;&gt;SpringOne Platform&lt;/a&gt; speaking about using &lt;a href=&#34;http://consul.io&#34;&gt;Consul&lt;/a&gt; for discovery and configuration and &lt;a href=&#34;https://www.vaultproject.io/&#34;&gt;Vault&lt;/a&gt; as a configuration source.&lt;/p&gt;
 
-&lt;p&gt;Here are my slides in &lt;a href=&#34;http://spencer.gibb.us/preso/2016-08-02 Spring Cloud with Consul and Vault.pdf&#34;&gt;pdf&lt;/a&gt; and &lt;a href=&#34;http://spencer.gibb.us/preso/2016-08-02 Spring Cloud with Consul and Vault.key&#34;&gt;Keynote&lt;/a&gt;. I&amp;rsquo;ll post the video when available.&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Here are my slides in &lt;a href=&#34;http://spencer.gibb.us/preso/2016-08-02 Spring Cloud with Consul and Vault.pdf&#34;&gt;pdf&lt;/a&gt; and &lt;a href=&#34;http://spencer.gibb.us/preso/2016-08-02 Spring Cloud with Consul and Vault.key&#34;&gt;Keynote&lt;/a&gt;. I&amp;rsquo;ll post the video when available.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -42,10 +117,11 @@
       <guid>http://spencer.gibb.us/preso/spring-cloud-discovery-config-springio-2016/</guid>
       <description>&lt;p&gt;I was invited to speak about comparing different Discovery and Configuration Implementations in Spring Cloud at &lt;a href=&#34;http://www.springio.net/&#34;&gt;Spring I/O&lt;/a&gt; in beautiful Barcelona!&lt;/p&gt;
 
+&lt;p&gt;&lt;/p&gt;
+
 &lt;p&gt;Here are my &lt;a href=&#34;http://spencer.gibb.us/preso/2016-05-18 Spring Cloud Discovery and Config Sys Comparison.pdf&#34;&gt;Slides&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;I also gave a two hour workshop on Cloud Native Applications with Spring Cloud &amp;amp; Netflix OSS.&lt;/p&gt;
-</description>
+&lt;p&gt;I also gave a two hour workshop on Cloud Native Applications with Spring Cloud &amp;amp; Netflix OSS.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -56,8 +132,9 @@
       <guid>http://spencer.gibb.us/preso/spring-cloud-star-devoxxfr-2016/</guid>
       <description>&lt;p&gt;I was invited to speak about different Discovery and Configuration Implementations in Spring Cloud at &lt;a href=&#34;http://devoxx.fr/&#34;&gt;Devoxx France&lt;/a&gt; in beautiful Paris!&lt;/p&gt;
 
-&lt;p&gt;Here are my &lt;a href=&#34;http://spencer.gibb.us/preso/2016-04-22 Spring Cloud Star.pdf&#34;&gt;Slides&lt;/a&gt; and here is &lt;a href=&#34;https://youtu.be/sESK0svJ4Gs&#34;&gt;the video&lt;/a&gt;.&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Here are my &lt;a href=&#34;http://spencer.gibb.us/preso/2016-04-22 Spring Cloud Star.pdf&#34;&gt;Slides&lt;/a&gt; and here is &lt;a href=&#34;https://youtu.be/sESK0svJ4Gs&#34;&gt;the video&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -68,8 +145,9 @@
       <guid>http://spencer.gibb.us/preso/spring-cloud-star-devnexus-2016/</guid>
       <description>&lt;p&gt;I was invited to speak about different Discovery and Configuration Implementations in Spring Cloud at the fabulous &lt;a href=&#34;https://devnexus.com&#34;&gt;Devnexus&lt;/a&gt; Conference run by the &lt;a href=&#34;http://www.ajug.org/&#34;&gt;Atlanta Java User Group&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Here are my &lt;a href=&#34;http://spencer.gibb.us/preso/2016-02-17 Spring Cloud *.pdf&#34;&gt;Slides&lt;/a&gt;.&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Here are my &lt;a href=&#34;http://spencer.gibb.us/preso/2016-02-17 Spring Cloud *.pdf&#34;&gt;Slides&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -80,8 +158,9 @@
       <guid>http://spencer.gibb.us/preso/utah-arch-2016/</guid>
       <description>&lt;p&gt;I was invited to speak and lead a discussion about different Cloud Discovery and Configuration Mechanisms at the &lt;a href=&#34;http://www.meetup.com/Utah-Software-Architecture-Meetup/events/226822735/&#34;&gt;Utah Software Architecture Meetup&lt;/a&gt;. Good pizza and discussion were had.&lt;/p&gt;
 
-&lt;p&gt;Here are my &lt;a href=&#34;http://spencer.gibb.us/preso/2016-02-04 Microservices with Spring Cloud - Utah Arch Meetup.pdf&#34;&gt;Slides&lt;/a&gt;.&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Here are my &lt;a href=&#34;http://spencer.gibb.us/preso/2016-02-04 Microservices with Spring Cloud - Utah Arch Meetup.pdf&#34;&gt;Slides&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>

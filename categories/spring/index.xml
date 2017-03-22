@@ -2,12 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Spring on Spencer Gibb</title>
-    <link>http://spencer.gibb.us/categories/spring/</link>
+    <link>http://spencer.gibb.us/categories/spring/index.xml</link>
     <description>Recent content in Spring on Spencer Gibb</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2013 - 2015, Spencer Gibb; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 02 Aug 2016 17:00:00 -0800</lastBuildDate>
     <atom:link href="http://spencer.gibb.us/categories/spring/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -18,8 +17,9 @@
       <guid>http://spencer.gibb.us/preso/spring-cloud-with-consul-and-vault-2016/</guid>
       <description>&lt;p&gt;I had a great time at &lt;a href=&#34;https://2016.event.springoneplatform.io/schedule/sessions/spring_cloud_with_consul_and_vault.html&#34;&gt;SpringOne Platform&lt;/a&gt; speaking about using &lt;a href=&#34;http://consul.io&#34;&gt;Consul&lt;/a&gt; for discovery and configuration and &lt;a href=&#34;https://www.vaultproject.io/&#34;&gt;Vault&lt;/a&gt; as a configuration source.&lt;/p&gt;
 
-&lt;p&gt;Here are my slides in &lt;a href=&#34;http://spencer.gibb.us/preso/2016-08-02 Spring Cloud with Consul and Vault.pdf&#34;&gt;pdf&lt;/a&gt; and &lt;a href=&#34;http://spencer.gibb.us/preso/2016-08-02 Spring Cloud with Consul and Vault.key&#34;&gt;Keynote&lt;/a&gt;. I&amp;rsquo;ll post the video when available.&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Here are my slides in &lt;a href=&#34;http://spencer.gibb.us/preso/2016-08-02 Spring Cloud with Consul and Vault.pdf&#34;&gt;pdf&lt;/a&gt; and &lt;a href=&#34;http://spencer.gibb.us/preso/2016-08-02 Spring Cloud with Consul and Vault.key&#34;&gt;Keynote&lt;/a&gt;. I&amp;rsquo;ll post the video when available.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -28,12 +28,12 @@
       <pubDate>Thu, 24 Sep 2015 10:48:18 -0600</pubDate>
       
       <guid>http://spencer.gibb.us/blog/2015/09/24/spring-cloud-config-push-notifications/</guid>
-      <description>
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/spring-cloud/spring-cloud-config/commit/8d8e07a78e73c3e1e08f4277a76c6e1a4104f103&#34;&gt;This commit (8d8e07a78)&lt;/a&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/spring-cloud/spring-cloud-config/commit/8d8e07a78e73c3e1e08f4277a76c6e1a4104f103&#34;&gt;This commit (8d8e07a78)&lt;/a&gt;
 by &lt;a href=&#34;https://github.com/dsyer&#34;&gt;Dave Syer&lt;/a&gt; in &lt;a href=&#34;https://github.com/spring-cloud/spring-cloud-config&#34;&gt;spring-cloud-config&lt;/a&gt;
 added support for &lt;a href=&#34;http://cloud.spring.io/spring-cloud-config/spring-cloud-config.html#_push_notifications_and_spring_cloud_bus&#34;&gt;push notifications&lt;/a&gt;
 to config clients.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; I am using &lt;a href=&#34;https://github.com/jkbrzt/httpie&#34;&gt;HTTPie&lt;/a&gt; (pronounced &lt;em&gt;aych-tee-tee-pie&lt;/em&gt;) for these demos. I believe it provides a more user friendly experience. To install on a mac with &lt;a href=&#34;http://brew.sh/&#34;&gt;Homebrew&lt;/a&gt;: &lt;code&gt;brew install httpie&lt;/code&gt;, otherwise see &lt;a href=&#34;https://github.com/jkbrzt/httpie#installation&#34;&gt;the install docs&lt;/a&gt;.&lt;/p&gt;
 
@@ -164,8 +164,7 @@ public GithubPropertyPathNotificationExtractor githubPropertyPathNotificationExt
 &lt;p&gt;To simulate the Bitbucket webhook:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;http --json POST :8888/monitor X-Event-Key:&amp;quot;repo:push&amp;quot; X-Hook-UUID:123 push:=&#39;{&amp;quot;changes&amp;quot;: [{}]}&#39;
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
   </channel>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Detroit on Spencer Gibb</title>
+    <link>http://spencer.gibb.us/categories/detroit/index.xml</link>
+    <description>Recent content in Detroit on Spencer Gibb</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright (c) 2013 - 2015, Spencer Gibb; all rights reserved.</copyright>
+    <atom:link href="http://spencer.gibb.us/categories/detroit/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>The API Gateway is Dead! Long Live the API Gateway!</title>
+      <link>http://spencer.gibb.us/preso/detroit-cf-api-gateway-2017-03/</link>
+      <pubDate>Tue, 21 Mar 2017 18:00:00 -0500</pubDate>
+      
+      <guid>http://spencer.gibb.us/preso/detroit-cf-api-gateway-2017-03/</guid>
+      <description>&lt;!--more--&gt;
+&lt;style&gt;
+    /*.reveal .slides {
+        text-align: left;
+    }
+    .reveal .slides section &gt; * {
+        margin-left: 0;
+        margin-right: 0;
+    }*/
+    .reveal section img {
+        border: 0px;
+        box-shadow: 0 0 0px rgba(0, 0, 0, 0.55);
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+        margin: 0 0 20px 0;
+        font-family: &#34;League Gothic&#34;, Impact, sans-serif;
+        line-height: 0.9em;
+        letter-spacing: 0.02em;
+        text-transform: none;
+        text-shadow: none; }
+&lt;/style&gt;
+
+</description>
+    </item>
+    
+  </channel>
+</rss>

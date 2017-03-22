@@ -2,8 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://spencer.gibb.us/</loc>
-    <lastmod>2016-09-21T12:00:00-05:00</lastmod>
+    <loc>http://spencer.gibb.us/about/</loc>
+    <lastmod>2013-03-12T12:27:08-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://spencer.gibb.us/preso/detroit-cf-api-gateway-2017-03/</loc>
+    <lastmod>2017-03-21T18:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://spencer.gibb.us/preso/pivotal-toronto-api-gateway-2017-02/</loc>
+    <lastmod>2017-02-22T18:00:00-05:00</lastmod>
   </url>
   
   <url>
@@ -102,8 +112,200 @@
   </url>
   
   <url>
-    <loc>http://spencer.gibb.us/about/</loc>
+    <loc>http://spencer.gibb.us/categories/battleschool/</loc>
+    <lastmod>2014-02-03T23:18:53-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://spencer.gibb.us/categories/blog/</loc>
+    <lastmod>2015-03-03T15:45:06-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://spencer.gibb.us/categories/career/</loc>
+    <lastmod>2016-09-21T12:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://spencer.gibb.us/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://spencer.gibb.us/categories/chelsea/</loc>
+    <lastmod>2016-09-21T12:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://spencer.gibb.us/categories/cloud-foundry/</loc>
+    <lastmod>2017-03-21T18:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://spencer.gibb.us/categories/consul/</loc>
+    <lastmod>2016-08-02T17:00:00-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://spencer.gibb.us/categories/dcjug/</loc>
+    <lastmod>2015-09-16T00:00:00-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://spencer.gibb.us/categories/detroit/</loc>
+    <lastmod>2017-03-21T18:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://spencer.gibb.us/categories/devnexus/</loc>
+    <lastmod>2016-02-17T14:30:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://spencer.gibb.us/categories/devoxx/</loc>
+    <lastmod>2016-04-22T12:45:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://spencer.gibb.us/categories/feelings/</loc>
+    <lastmod>2015-10-06T09:07:07-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://spencer.gibb.us/categories/france/</loc>
+    <lastmod>2016-04-22T12:45:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://spencer.gibb.us/categories/meetup/</loc>
+    <lastmod>2016-02-06T09:17:30-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://spencer.gibb.us/categories/notes/</loc>
+    <lastmod>2015-03-11T09:45:06-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://spencer.gibb.us/notes/</loc>
+    <lastmod>2015-03-11T09:45:06-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://spencer.gibb.us/categories/oscon/</loc>
+    <lastmod>2015-07-01T15:54:01-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://spencer.gibb.us/categories/pivotal/</loc>
+    <lastmod>2017-02-22T18:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://spencer.gibb.us/post/</loc>
+    <lastmod>2015-10-06T09:07:07-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://spencer.gibb.us/categories/presentations/</loc>
+    <lastmod>2017-03-21T18:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://spencer.gibb.us/preso/</loc>
+    <lastmod>2017-03-21T18:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://spencer.gibb.us/categories/resume/</loc>
     <lastmod>2013-03-12T12:27:08-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://spencer.gibb.us/categories/scs/</loc>
+    <lastmod>2015-11-02T17:36:23-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://spencer.gibb.us/</loc>
+    <lastmod>2013-03-12T12:27:08-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://spencer.gibb.us/categories/spring/</loc>
+    <lastmod>2016-08-02T17:00:00-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://spencer.gibb.us/categories/springio/</loc>
+    <lastmod>2016-05-18T14:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://spencer.gibb.us/categories/springone/</loc>
+    <lastmod>2016-08-02T17:00:00-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://spencer.gibb.us/categories/springoneplatform/</loc>
+    <lastmod>2016-08-02T17:00:00-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://spencer.gibb.us/categories/toronto/</loc>
+    <lastmod>2017-02-22T18:00:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://spencer.gibb.us/categories/trello/</loc>
+    <lastmod>2015-10-06T09:07:07-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://spencer.gibb.us/categories/ujug/</loc>
+    <lastmod>2015-11-19T15:54:01-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://spencer.gibb.us/categories/utaharch/</loc>
+    <lastmod>2016-02-06T09:17:30-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://spencer.gibb.us/categories/vault/</loc>
+    <lastmod>2016-08-02T17:00:00-08:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>
