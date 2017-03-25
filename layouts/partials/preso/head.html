@@ -45,6 +45,13 @@
     }
     </style>
 
+    {{ if ne .Params.css "" }}
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}/lib/css/{{.Params.css}}">
+    {{else}}
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}/lib/css/default-reveal.css">
+    {{end}}
+ 
+
     <!--[if lt IE 9]>
     <script src="{{ .Site.BaseURL }}/lib/js/html5shiv.js"></script>
     <![endif]-->
