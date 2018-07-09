@@ -1,8 +1,8 @@
-baseurl = "http://spencer.gibb.us/"
+baseurl = "http://gibb.tech/"
 languageCode = "en-us"
 title = "Spencer Gibb"
 builddrafts = true
-copyright = "Copyright (c) 2013 - 2015, Spencer Gibb; all rights reserved."
+copyright = "Copyright (c) 2013 - 2018, Spencer Gibb; all rights reserved."
 canonifyurls = true
 # theme = "hyde-x-custom"
 theme = "beautifulhugo"

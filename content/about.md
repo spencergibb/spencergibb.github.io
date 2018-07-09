@@ -14,9 +14,9 @@ Download: [pdf](/resume/spencer_gibb_resume.pdf)
 
 Spencer Gibb
 ---------
-1919 Jackson St, Kaysville, UT 84037<br/>
+Chelsea, MI<br/>
 Mobile: 801-540-5830<br/>
-[spencer at gibb.us](mailto:spencer@gibb.us)<br/>
+[spencer at gibb.tech](mailto:spencer@gibb.tech)<br/>
 [@spencerbgibb](http://twitter.com/spencerbgibb)
 [github](https://github.com/spencergibb)
 [linkedin](http://www.linkedin.com/in/spencergibb)
@@ -36,7 +36,7 @@ Skills
 
 Professional Experience
 ------------------------------------------------------------------------------------------
-STAFF ENGINEER, Pivotal, Palo Alto CA (Remote), Jul 2014 – Present
+PRINCIPAL SOFTWARE ENGINEER, Pivotal, Palo Alto CA (Remote), Jul 2014 – Present
 
 * Co-lead on [Spring Cloud](https://github.com/spring-cloud)
 
