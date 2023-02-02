@@ -36,9 +36,9 @@ Skills
 
 Professional Experience
 ------------------------------------------------------------------------------------------
-PRINCIPAL SOFTWARE ENGINEER, Pivotal, Palo Alto CA (Remote), Jul 2014 – Present
+PRINCIPAL SOFTWARE ENGINEER, VMware (formerly Pivotal), Palo Alto CA (Remote), Jun 2014 – Present
 
-* Co-lead on [Spring Cloud](https://github.com/spring-cloud)
+* Co-founder and lead of [Spring Cloud](https://github.com/spring-cloud)
 
 PRINCIPAL ENGINEER, Domo, American Fork UT, May 2013 – Jun 2014
 
@@ -135,6 +135,8 @@ USER INTERFACE ENGINEER, Excite@Home (Formerly iMall Inc), Orem UT<br/>
 
 #### Open Source Projects
 
+ * Spring Cloud: https://github.com/spring-cloud<br/>
+   Tools for building common patterns in distributed systems with Spring Boot
  * Battleschool: https://github.com/spencergibb/battleschool<br/>
    Development environment provisioning using [ansible](http:ansible.com), ala boxen -> puppet, kitchenplan -> chef
  * Halfpipe: https://github.com/spencergibb/halfpipe<br/>
@@ -142,10 +144,10 @@ USER INTERFACE ENGINEER, Excite@Home (Formerly iMall Inc), Orem UT<br/>
 
 #### Technologies
 
-* Java (1.4, 5, 6, 7, 8), Groovy, Scala, Spring, Hibernate (JPA), iBatis, Java Server Faces (JSF), Facelets,
+* Java, Spring, Kotlin, Groovy, Scala, Hibernate (JPA), iBatis, Java Server Faces (JSF), Facelets,
   JEE (JSP, EJB, JMS, Servlets), Swing, JDBC, Maven, Ant, Eclipse, Eclipse RCP, JAX-RS,
   Velocity, JUnit, TestNG, DBUnit
-* App Servers:  Tomcat, Jetty, Weblogic, Websphere, JBoss, Glassfish
+* App Servers:  Tomcat, Jetty, Netty, Weblogic, Websphere, JBoss, Glassfish
 * JavaScript, HTML, CSS, Web Services, Apache, PHP
 * Platforms – Linux (Ubuntu, Red Hat, Fedora, Debian), Solaris, Mac, Windows
 * Database – SQL, Oracle, MySQL, Riak, Mongodb
