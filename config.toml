@@ -13,6 +13,7 @@ theme = "beautifulhugo"
     linkedin = "in/spencergibb"
     stackoverflow = "2730527/spencergibb"
     twitter = "spencerbgibb"
+    mastodon = "https://social.sdf.org/@spencergibb"
 
 [permalinks]
     # Optional. Change the permalink format for the 'post' content type.
