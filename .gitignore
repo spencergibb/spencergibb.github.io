@@ -2,3 +2,5 @@
 *.iml
 public
 *.swp
+.DS_Store
+.hugo_build.lock
