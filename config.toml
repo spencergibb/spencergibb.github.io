@@ -1,5 +1,5 @@
 baseurl = "http://gibb.tech/"
-languageCode = "en-us"
+DefaultContentLanguage = "en"
 title = "Spencer Gibb"
 builddrafts = true
 copyright = "Copyright (c) 2013 - 2018, Spencer Gibb; all rights reserved."
@@ -27,6 +27,7 @@ theme = "beautifulhugo"
 [Params]
     logo = "images/spencer-gibb-square-med.jpg"
     subtitle = "tech musings"
+    mainSections = ["post","preso"]
 
 [[menu.main]]
     name = "Blog"
