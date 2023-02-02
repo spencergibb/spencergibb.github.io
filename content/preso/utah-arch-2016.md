@@ -12,5 +12,5 @@ I was invited to speak and lead a discussion about different Cloud Discovery and
 
 <!--more-->
  
-Here are my [Slides](/preso/2016-02-04 Microservices with Spring Cloud - Utah Arch Meetup.pdf).
+Here are my [Slides](/preso/2016-02-04%20Microservices%20with%20Spring%20Cloud%20-%20Utah%20Arch%20Meetup.pdf).
 

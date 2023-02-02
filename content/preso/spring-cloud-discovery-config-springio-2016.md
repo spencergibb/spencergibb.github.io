@@ -12,7 +12,7 @@ I was invited to speak about comparing different Discovery and Configuration Imp
 
 <!--more-->
  
-Here are my [Slides](/preso/2016-05-18 Spring Cloud Discovery and Config Sys Comparison.pdf).
+Here are my [Slides](/preso/2016-05-18%20Spring%20Cloud%20Discovery%20and%20Config%20Sys%20Comparison.pdf).
 
 I also gave a two hour workshop on Cloud Native Applications with Spring Cloud & Netflix OSS.
 

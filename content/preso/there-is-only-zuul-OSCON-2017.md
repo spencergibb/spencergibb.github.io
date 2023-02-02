@@ -12,4 +12,4 @@ I had a great time at [OSCON Austin](https://conferences.oreilly.com/oscon/oscon
 
 <!--more-->
 
-Here are my slides in [pdf](/preso/2017-05-11 There Is Only Zuul - OSCON.pdf) and [PowerPoint](/preso/2017-05-11 There Is Only Zuul - OSCON.pptx).
+Here are my slides in [pdf](/preso/2017-05-11%20There%20Is%20Only%20Zuul%20-%20OSCON.pdf) and [PowerPoint](/preso/2017-05-11%20There%20Is%20Only%20Zuul%20-%20OSCON.pptx).

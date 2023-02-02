@@ -12,4 +12,4 @@ I had the great privilege to speak to students at [Chelsea High School](http://w
 
 <!--more-->
 
-Here are my slides in [pdf](/preso/2016-09-21 Chelsea Career Talk.pdf) and [Keynote](/preso/2016-09-21 Chelsea Career Talk.key).
+Here are my slides in [pdf](/preso/2016-09-21%20Chelsea%20Career%20Talk.pdf) and [Keynote](/preso/2016-09-21%20Chelsea%20Career%20Talk.key).
