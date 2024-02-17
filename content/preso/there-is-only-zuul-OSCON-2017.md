@@ -1,7 +1,7 @@
 +++
 categories = ["presentations", "spring", "OSCON", "api-gateway", "zuul", "spring-cloud-gateway"]
 date = "2017-05-02T11:17:05-06:00"
-description = "Presentation at OSCON 22017 in Austin Texas"
+description = "Presentation at OSCON 2017 in Austin Texas"
 keywords = []
 title = "There is Only Zuul"
 reveal = false
