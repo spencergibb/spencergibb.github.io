@@ -2,7 +2,7 @@ baseurl = "http://gibb.tech/"
 DefaultContentLanguage = "en"
 title = "Spencer Gibb"
 builddrafts = true
-copyright = "Copyright (c) 2013 - 2018, Spencer Gibb; all rights reserved."
+copyright = "Copyright (c) 2013 - 2024, Spencer Gibb; all rights reserved."
 canonifyurls = true
 # theme = "hyde-x-custom"
 theme = "beautifulhugo"
@@ -43,3 +43,8 @@ theme = "beautifulhugo"
     name = "Tags"
     url = "/categories/"
     weight = 3
+
+[[menu.main]]
+    name = "RSS"
+    url = "/index.xml"
+    weight = 4
