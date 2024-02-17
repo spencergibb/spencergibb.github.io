@@ -6,3 +6,12 @@
         background: #3b5c81;
     }
 }
+
+.page-subheading {
+    color: #5b8cc5;
+}
+@media (prefers-color-scheme: dark) {
+    .page-subheading {
+        color: #81b0e0;
+    }
+}
