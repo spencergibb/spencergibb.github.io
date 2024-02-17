@@ -25,7 +25,7 @@ theme = "beautifulhugo"
     category = "categories"
 
 [Params]
-    logo = "images/spencer-gibb-square-med.jpg"
+    logo = "images/spencer-gibb-beach-square-med.jpg"
     subtitle = "tech musings"
     mainSections = ["post","preso"]
 
