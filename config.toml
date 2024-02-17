@@ -38,3 +38,8 @@ theme = "beautifulhugo"
     name = "Presentations"
     url = "/categories/presentations/"
     weight = 2
+
+[[menu.main]]
+    name = "Tags"
+    url = "/categories/"
+    weight = 3
