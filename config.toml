@@ -28,6 +28,7 @@ theme = "beautifulhugo"
     logo = "images/spencer-gibb-beach-square-med.jpg"
     subtitle = "tech musings"
     mainSections = ["post","preso"]
+    custom_css = ["css/beautifulhugo-main.css"]
 
 [[menu.main]]
     name = "Blog"

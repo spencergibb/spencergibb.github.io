@@ -1,0 +1,8 @@
+.navbar-custom {
+    background: #81b0e0;
+}
+@media (prefers-color-scheme: dark) {
+    .navbar-custom {
+        background: #3b5c81;
+    }
+}
