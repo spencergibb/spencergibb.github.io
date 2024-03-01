@@ -8,7 +8,7 @@ reveal = false
 
 +++
 
-I had a great time at [ConFoo 2024](https://confoo.ca/en/2024) speaking about "What's New In Spring: 2023/2024 Edition."
+I had a great time at [ConFoo 2024](https://confoo.ca/en/2024) speaking about "[What's New In Spring: 2023/2024 Edition](https://confoo.ca/en/2024/session/what-s-new-in-spring)".
 
 <!--more-->
 

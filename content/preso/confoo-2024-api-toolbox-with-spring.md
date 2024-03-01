@@ -8,7 +8,7 @@ reveal = false
 
 +++
 
-I had a great time at [ConFoo 2024](https://confoo.ca/en/2024) speaking about "API Toolbox with Spring."
+I had a great time at [ConFoo 2024](https://confoo.ca/en/2024) speaking about ["API Toolbox with Spring"](https://confoo.ca/en/2024/session/api-toolbox-with-spring).
 
 <!--more-->
 
