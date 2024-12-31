@@ -84,6 +84,8 @@ I use a little metal [stand](https://www.amazon.com/gp/product/B0BHY2D3RB/) to h
 
 These [leather letter trays](https://www.amazon.com/gp/product/B0915ZTDR3/) are an attempt to keep the clutter to a minimum.
 
+The printer is an [Epson EcoTank ET-3760](https://www.amazon.com/gp/product/B07NK8PM4D/). The ink is so much more affordable. We decided to get this rather than getting new HP ink. Best descision. Wireless or corded network. Scanner and copier when needed. The [ink](https://www.amazon.com/Ultra-high-Capacity-T502520-S-Epson-Printers/dp/B074RG6PN1/) is [cheap](https://www.amazon.com/Ultra-high-Capacity-T502520-S-Epson-Printers/dp/B074RFMST8/) and lasts a long time.
+
 ## Thanks
 
 Thanks for reading this far. Sorry for the boxes. I moved house earlier this year and there are still some boxes around.
