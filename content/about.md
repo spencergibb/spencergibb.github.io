@@ -14,7 +14,7 @@ Download: [pdf](/resume/spencer_gibb_resume.pdf),
 
 Spencer Gibb
 ---------
-Ann Arbor, Michigan  
+Ann Arbor, Michigan
 Mobile: 801-540-5830  
 [spencer at gibb.tech](mailto:spencer@gibb.tech)  
 [@spencerbgibb **X**](https://x.com/spencerbgibb)  
