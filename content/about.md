@@ -17,9 +17,10 @@ Spencer Gibb
 Ann Arbor, Michigan  
 Mobile: 801-540-5830  
 [spencer at gibb.tech](mailto:spencer@gibb.tech)  
-[@spencerbgibb](http://twitter.com/spencerbgibb)  
+[@spencerbgibb **X**](https://x.com/spencerbgibb)  
+[@spencer.gibb.us 🦋](https://bsky.app/profile/spencer.gibb.us)  
 [github](https://github.com/spencergibb)  
-[linkedin](http://www.linkedin.com/in/spencergibb)  
+[linkedin](https://www.linkedin.com/in/spencergibb)  
 
 Skills
 ---------
