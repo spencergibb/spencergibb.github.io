@@ -11,7 +11,7 @@ theme = "beautifulhugo"
     [[module.imports]]
         path = "github.com/halogenica/beautifulhugo"
 
-[author]
+[Params.author]
     name = "Spencer Gibb"
     github = "spencergibb"
     linkedin = "in/spencergibb"
