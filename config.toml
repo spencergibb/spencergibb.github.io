@@ -2,9 +2,8 @@ baseurl = "http://gibb.tech/"
 DefaultContentLanguage = "en"
 title = "Spencer Gibb"
 builddrafts = true
-copyright = "Copyright (c) 2013 - 2024, Spencer Gibb; all rights reserved."
+copyright = "Copyright (c) 2013 - 2025, Spencer Gibb; all rights reserved."
 canonifyurls = true
-# theme = "hyde-x-custom"
 theme = "beautifulhugo"
 
 [module]
@@ -30,6 +29,7 @@ theme = "beautifulhugo"
     category = "categories"
 
 [Params]
+    since = 2013
     logo = "images/spencer-gibb-beach-square-med.jpg"
     subtitle = "tech musings"
     mainSections = ["post","preso"]
