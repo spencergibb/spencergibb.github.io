@@ -112,7 +112,7 @@ PARTNER/SENIOR ENGINEER, NetBing LLC, Orem UT
 * Collaborated in decisions regarding purchase of hardware, software, and Internet connectivity
 * Designed and implemented a scalable and flexible e-commerce system using JSP, EJB 2.0 (Entity and Session beans), PHP, payment gateway, and 3rd party loan software integration
 
-USER INTERFACE ENGINEER, Excite@Home (Formerly iMall Inc), Orem UT<br/>
+USER INTERFACE ENGINEER, Excite@Home (Formerly iMall Inc), Orem UT  
 &nbsp;&nbsp;Jan 1998 – Dec 2001
 
 * Team member on large-scale web applications for AT&T Small Business Hosting and IBM Homepage Creator
