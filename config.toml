@@ -7,6 +7,10 @@ canonifyurls = true
 # theme = "hyde-x-custom"
 theme = "beautifulhugo"
 
+[module]
+    [[module.imports]]
+        path = "github.com/halogenica/beautifulhugo"
+
 [author]
     name = "Spencer Gibb"
     github = "spencergibb"

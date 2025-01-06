@@ -4,12 +4,12 @@
 <head>
     <meta charset="utf-8">
 
-    <title>{{ .Title }} &middot; {{ .Site.Author.name }}</title>
+    <title>{{ .Title }} &middot; {{ .Site.Params.Author.name }}</title>
 
     <meta name="description" content="{{ if ne .Description "" }}{{ .Description }}{{ else }}{{ .Site.Params.defaultDescription }}{{ end }}">
     <meta name="keywords" content="{{ range $index, $element := .Keywords }}{{ if gt $index 0 }},{{ end }}{{ . }}{{ else }}{{ .Site.Params.defaultKeywords }}{{ end }}">
     {{ with .Site.Params.googleAuthorship }}<link rel="author" href="http://plus.google.com/{{ . }}">{{ end }}
-    <meta name="author" content="{{ .Site.Author.name }}">
+    <meta name="author" content="{{ .Site.Params.Author.name }}">
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
