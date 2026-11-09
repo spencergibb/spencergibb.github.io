@@ -1,11 +1,11 @@
 +++
 title = "API Version in Spring at SpringOne 2025"
-date = "2025-09-18T12:00:00-04:00"
+date = "2025-08-28T12:00:00-04:00"
 description = "API Versioning in Spring at SpringOne 2025 in Las Vegas."
 categories = ["blog", "spring", "spring-cloud", "podcast"]
 +++
 
-At SpringOne 2025 in Las Vegas, I presented "API Versioning in Spring".
+At SpringOne 2025 in Las Vegas (August 25–28), I presented "API Versioning in Spring".
 
 <!--more-->
 
