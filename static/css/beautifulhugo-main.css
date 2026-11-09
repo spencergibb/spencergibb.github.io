@@ -7,6 +7,53 @@
     }
 }
 
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link,
+.navbar-custom .theme-toggle {
+    color: #172b40;
+}
+
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus,
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link:focus,
+.navbar-custom .theme-toggle:hover,
+.navbar-custom .theme-toggle:focus {
+    color: #102035;
+}
+
+/* The existing navbar background follows the system color preference. */
+@media (prefers-color-scheme: dark) {
+    .navbar-custom .navbar-brand,
+    .navbar-custom .nav-link,
+    .navbar-custom .theme-toggle {
+        color: #eaf2fb;
+    }
+
+    .navbar-custom .navbar-brand:hover,
+    .navbar-custom .navbar-brand:focus,
+    .navbar-custom .nav-link:hover,
+    .navbar-custom .nav-link:focus,
+    .navbar-custom .theme-toggle:hover,
+    .navbar-custom .theme-toggle:focus {
+        color: #ffffff;
+    }
+}
+
+[data-theme="dark"] {
+    --dark-navbar-text: #eaf2fb;
+    --dark-navbar-hover: #ffffff;
+}
+
+[data-theme="dark"] .navbar-custom .theme-toggle {
+    color: var(--dark-navbar-text);
+}
+
+[data-theme="dark"] .navbar-custom .theme-toggle:hover,
+[data-theme="dark"] .navbar-custom .theme-toggle:focus {
+    color: var(--dark-navbar-hover);
+}
+
 .page-subheading {
     color: #5b8cc5;
 }
