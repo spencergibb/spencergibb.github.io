@@ -1,4 +1,4 @@
-baseurl = "http://gibb.tech/"
+baseurl = "https://gibb.tech/"
 DefaultContentLanguage = "en"
 title = "Spencer Gibb"
 builddrafts = true
