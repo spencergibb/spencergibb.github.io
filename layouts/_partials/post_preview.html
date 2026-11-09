@@ -1,0 +1,10 @@
+<article class="post-preview editorial-preview">
+  <p class="post-meta">
+    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+  </p>
+  <h2 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+  {{ $excerpt := .Summary | plainify | htmlUnescape | strings.TrimSpace }}
+  {{ with $excerpt }}
+    <p class="post-excerpt">{{ . | truncate 240 }}</p>
+  {{ end }}
+</article>

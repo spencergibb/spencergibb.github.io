@@ -1,0 +1,10 @@
+<header class="compact-header">
+  <div class="editorial-column">
+    <h1>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}</h1>
+    {{ if .IsHome }}
+      <p class="compact-intro">{{ .Site.Params.subtitle }}</p>
+    {{ else }}
+      {{ with .Description }}<p class="compact-intro">{{ . }}</p>{{ end }}
+    {{ end }}
+  </div>
+</header>

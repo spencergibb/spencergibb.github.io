@@ -1,8 +1,7 @@
 baseurl = "https://gibb.tech/"
 DefaultContentLanguage = "en"
 title = "Spencer Gibb"
-builddrafts = true
-copyright = "Copyright (c) 2013 - 2025, Spencer Gibb; all rights reserved."
+copyright = "Spencer Gibb; all rights reserved."
 canonifyurls = true
 
 [module]
@@ -36,26 +35,23 @@ canonifyurls = true
 [Params]
     since = 2013
     logo = "images/spencer-gibb-devoxx-cropped-hi-res.jpg"
-    subtitle = "tech musings"
+    subtitle = "Spring Cloud co-founder. Writing about Java, distributed systems, and developer tools."
+    navShort = true
+    rss = true
     mainSections = ["post","preso"]
     custom_css = ["css/beautifulhugo-main.css"]
 
 [[menu.main]]
-    name = "Blog"
-    url = "/post"
+    name = "Writing"
+    url = "/post/"
     weight = 1
 
 [[menu.main]]
-    name = "Presentations"
+    name = "Talks"
     url = "/categories/presentations/"
     weight = 2
 
 [[menu.main]]
-    name = "Tags"
-    url = "/categories/"
+    name = "About"
+    url = "/about/"
     weight = 3
-
-[[menu.main]]
-    name = "RSS"
-    url = "/index.xml"
-    weight = 4

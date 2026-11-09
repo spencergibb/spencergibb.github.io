@@ -1,5 +1,5 @@
 ---
-title: "Confoo Montreal 2024"
+title: "ConFoo Montreal 2024"
 author: ""
 type: ""
 date: 2024-03-01T14:57:50-05:00

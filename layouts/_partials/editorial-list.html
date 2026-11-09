@@ -1,0 +1,11 @@
+<main class="editorial-column editorial-feed" id="main-content">
+  {{ if .IsHome }}<h2 class="feed-label">Latest writing &amp; talks</h2>{{ end }}
+  {{ with .Content }}<div class="content-section">{{ . }}</div>{{ end }}
+  <div class="posts-list">
+    {{ $pag := partial "func/paginate.html" . }}
+    {{ range $pag.Pages }}
+      {{ partial "post_preview.html" . }}
+    {{ end }}
+  </div>
+  {{ partial "paginator.html" . }}
+</main>

@@ -1,0 +1,14 @@
+<footer class="site-footer">
+  <div class="editorial-column">
+    {{ with .Site.Params.disclaimerText }}<p>{{ . }}</p>{{ end }}
+    <nav class="site-footer-links" aria-label="Social links and subscription">
+      <a href="mailto:spencer@gibb.tech">Email</a>
+      <a href="https://github.com/{{ .Site.Params.author.github }}" rel="me">GitHub</a>
+      <a href="https://www.linkedin.com/{{ .Site.Params.author.linkedin }}">LinkedIn</a>
+      <a href="https://bsky.app/profile/{{ .Site.Params.author.bluesky }}" rel="me">Bluesky</a>
+      {{ with .Site.Home.OutputFormats.Get "RSS" }}<a href="{{ .RelPermalink }}">RSS</a>{{ end }}
+    </nav>
+    <p class="site-footer-copyright">&copy; {{ .Site.Params.since }}–{{ now.Format "2006" }} {{ .Site.Params.author.name }}</p>
+    <p class="site-footer-credit">Built with <a href="https://gohugo.io/">Hugo</a> and <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>.</p>
+  </div>
+</footer>

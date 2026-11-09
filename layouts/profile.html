@@ -1,0 +1,11 @@
+{{ define "header" }}
+  {{ partial "compact-header.html" . }}
+{{ end }}
+
+{{ define "main" }}
+  <main class="editorial-column profile-copy" id="main-content">
+    <article>
+      {{ .Content }}
+    </article>
+  </main>
+{{ end }}

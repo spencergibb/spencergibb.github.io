@@ -17,11 +17,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/reveal.css">
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/theme/{{ .Params.theme }}.css" id="theme">
+    <link rel="stylesheet" href="{{ "css/reveal.css" | relURL }}">
+    <link rel="stylesheet" href="{{ printf "css/theme/%s.css" (.Params.theme | default "white") | relURL }}" id="theme">
 
     <!-- Code syntax highlighting -->
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}/lib/css/zenburn.css">
+    <link rel="stylesheet" href="{{ "lib/css/zenburn.css" | relURL }}">
 
     <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 		<script>
@@ -45,10 +45,8 @@
     }
     </style>
 
-    {{ if ne .Params.css "" }}
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}/lib/css/{{.Params.css}}">
-    {{else}}
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}/lib/css/default-reveal.css">
+    {{ with .Params.css }}
+    <link rel="stylesheet" href="{{ printf "lib/css/%s" . | relURL }}">
     {{end}}
  
 

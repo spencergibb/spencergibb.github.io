@@ -8,7 +8,7 @@ reveal = false
 
 +++
 
-I had a great time at [JNation 2024](https://jnation.pdf) speaking about "What's New In Spring: 2023/2024 Edition".
+I had a great time at [JNation 2024](https://jnation.pt/) speaking about "What's New In Spring: 2023/2024 Edition".
 
 <!--more-->
 
