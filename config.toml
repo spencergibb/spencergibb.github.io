@@ -4,11 +4,16 @@ title = "Spencer Gibb"
 builddrafts = true
 copyright = "Copyright (c) 2013 - 2025, Spencer Gibb; all rights reserved."
 canonifyurls = true
-theme = "beautifulhugo"
 
 [module]
+    [module.hugoVersion]
+        min = "0.169.0"
     [[module.imports]]
-        path = "github.com/halogenica/beautifulhugo"
+        path = "github.com/halogenica/beautifulhugo/v5"
+
+[security]
+    # The presentation archive contains trusted, hand-authored HTML pages.
+    allowContent = ['! ^text/org$']
 
 [Params.author]
     name = "Spencer Gibb"
@@ -24,7 +29,7 @@ theme = "beautifulhugo"
     # The format shown here is the same one Jekyll/Octopress uses by default.
     post = "/blog/:year/:month/:day/:title/"
 
-[indexes]
+[taxonomies]
     # Optional. Use if you want tags and lists.
     category = "categories"
 
